@@ -142,6 +142,37 @@ section {
   border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
+/* ================= NEW ADDITION ================= */
+
+.demo {
+  margin-top: 60px;
+}
+
+.demo h2 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.demo-card {
+  background: #0a0a0a;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.demo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
 /* CERTIFICATE */
 #certificate {
   padding: 80px 20px;
@@ -180,39 +211,9 @@ footer {
   .projects {
     grid-template-columns: 1fr;
   }
-}
-
-/* ========================= */
-/* 🔥 ADDED STEP 2 SECTION */
-/* ========================= */
-
-#trust {
-  padding: 70px 20px;
-  text-align: center;
-}
-
-#trust h2 {
-  color: gold;
-  margin-top: 40px;
-}
-
-.skill {
-  max-width: 700px;
-  margin: auto;
-  text-align: left;
-}
-
-.bar {
-  background: #111;
-  border-radius: 10px;
-  height: 10px;
-  margin-bottom: 15px;
-}
-
-.fill {
-  height: 10px;
-  background: gold;
-  border-radius: 10px;
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 </style>
@@ -251,25 +252,18 @@ footer {
 
 </div>
 
-<!-- ABOUT -->
 <section>
   <h2>About Me</h2>
-  <p>
-    I am Dawood Tariq, a professional Web Developer with real office experience,
-    specializing in modern websites, CMS setup, and landing pages.
-  </p>
+  <p>I am Dawood Tariq, a professional Web Developer with real office experience.</p>
 </section>
 
-<!-- SERVICES -->
 <section>
   <h2>Services</h2>
   <p>Web Development | CMS Setup | Landing Pages | Excel Automation | Documentation</p>
 </section>
 
-<!-- PROJECTS -->
 <section>
   <h2>Projects</h2>
-
   <div class="projects">
     <div class="card">Corporate Website</div>
     <div class="card">Landing Page Design</div>
@@ -277,35 +271,19 @@ footer {
   </div>
 </section>
 
-<!-- 🔥 ADDED TRUST SECTION -->
-<section id="trust">
+<!-- 🔥 NEW ADDED SECTION -->
+<section class="demo">
+  <h2>Live Demo Projects</h2>
 
-  <h2>Why Work With Me</h2>
-  <p>Hands-on experience in modern web development and responsive design</p>
-  <p>Strong CMS and landing page building skills</p>
-  <p>Forex & Gold market analysis knowledge</p>
-  <p>Excel & documentation expertise</p>
-  <p>Focus on clean UI and client satisfaction</p>
+  <div class="demo-grid">
+    <div class="demo-card" onclick="window.open('#','_blank')">
+      💼 Business Website Demo
+    </div>
 
-  <h2>Skills</h2>
-
-  <div class="skill">
-    <p>Web Development</p>
-    <div class="bar"><div class="fill" style="width:90%"></div></div>
-
-    <p>JavaScript</p>
-    <div class="bar"><div class="fill" style="width:70%"></div></div>
-
-    <p>CMS Setup</p>
-    <div class="bar"><div class="fill" style="width:80%"></div></div>
-
-    <p>Excel & Documentation</p>
-    <div class="bar"><div class="fill" style="width:85%"></div></div>
-
-    <p>Trading Analysis</p>
-    <div class="bar"><div class="fill" style="width:75%"></div></div>
+    <div class="demo-card" onclick="window.open('#','_blank')">
+      📊 Trading Dashboard Demo
+    </div>
   </div>
-
 </section>
 
 <section id="certificate">
