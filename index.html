@@ -43,6 +43,7 @@ header {
   gap: 5px;
 }
 
+/* PROFILE IMAGE */
 .profile img {
   width: 110px;
   height: 110px;
@@ -141,40 +142,6 @@ section {
   border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
-/* ================= NEW SECTION ================= */
-.demo {
-  margin-top: 60px;
-}
-
-.demo h2 {
-  color: gold;
-}
-
-.demo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.demo-card {
-  background: #0a0a0a;
-  padding: 25px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 215, 0, 0.2);
-  cursor: pointer;
-}
-
-/* ================= RESTORED SECTION ================= */
-#trust {
-  padding: 70px 20px;
-  text-align: center;
-}
-
-#trust h2 {
-  color: gold;
-  margin-top: 40px;
-}
-
 /* CERTIFICATE */
 #certificate {
   padding: 80px 20px;
@@ -213,9 +180,39 @@ footer {
   .projects {
     grid-template-columns: 1fr;
   }
-  .demo-grid {
-    grid-template-columns: 1fr;
-  }
+}
+
+/* ========================= */
+/* 🔥 ADDED STEP 2 SECTION */
+/* ========================= */
+
+#trust {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+#trust h2 {
+  color: gold;
+  margin-top: 40px;
+}
+
+.skill {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.bar {
+  background: #111;
+  border-radius: 10px;
+  height: 10px;
+  margin-bottom: 15px;
+}
+
+.fill {
+  height: 10px;
+  background: gold;
+  border-radius: 10px;
 }
 
 </style>
@@ -235,6 +232,7 @@ footer {
 <div class="hero">
 
   <h1>Dawood Tariq</h1>
+
   <h2>Web Developer • Forex & Gold Trader • Excel & Documentation Specialist</h2>
 
   <p class="subtitle">
@@ -255,7 +253,10 @@ footer {
 
 <section>
   <h2>About Me</h2>
-  <p>I am Dawood Tariq, a professional Web Developer with real office experience.</p>
+  <p>
+    I am Dawood Tariq, a professional Web Developer with real office experience,
+    specializing in modern websites, CMS setup, and landing pages.
+  </p>
 </section>
 
 <section>
@@ -265,30 +266,12 @@ footer {
 
 <section>
   <h2>Projects</h2>
+
   <div class="projects">
     <div class="card">Corporate Website</div>
     <div class="card">Landing Page Design</div>
     <div class="card">CMS Setup</div>
   </div>
-</section>
-
-<!-- NEW -->
-<section class="demo">
-  <h2>Live Demo Projects</h2>
-  <div class="demo-grid">
-    <div class="demo-card">Business Website Demo</div>
-    <div class="demo-card">Trading Dashboard Demo</div>
-  </div>
-</section>
-
-<!-- RESTORED -->
-<section id="trust">
-  <h2>Why Work With Me</h2>
-  <p>Strong experience in modern web development and UI design</p>
-  <p>CMS and landing page expertise</p>
-  <p>Trading market knowledge</p>
-  <p>Excel & documentation skills</p>
-  <p>Client-focused delivery</p>
 </section>
 
 <section id="certificate">
