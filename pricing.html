@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pricing | Dawood Tariq</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #000;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,215,0,0.2);
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HEADER TEXT */
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+header h1 {
+  color: gold;
+  font-size: 40px;
+}
+
+header p {
+  color: #bdbdbd;
+}
+
+/* PRICING CONTAINER */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 20px;
+}
+
+/* PRICE CARD */
+.price-card {
+  width: 300px;
+  background: #0a0a0a;
+  border: 1px solid rgba(255,215,0,0.2);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.price-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,215,0,0.2);
+}
+
+.price-card h3 {
+  color: gold;
+  font-size: 20px;
+}
+
+.price-card h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: white;
+}
+
+.price-card ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.price-card ul li {
+  margin: 8px 0;
+  color: #bdbdbd;
+}
+
+.price-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.price-card button:hover {
+  transform: scale(1.05);
+}
+
+.highlight {
+  border: 2px solid gold;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #bdbdbd;
+  border-top: 1px solid rgba(255,215,0,0.1);
+  margin-top: 40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1>Pricing Packages</h1>
+  <p>Choose the best plan for your business</p>
+</header>
+
+<!-- PRICING -->
+<div class="pricing-container">
+
+  <!-- STARTER -->
+  <div class="price-card">
+    <h3>Starter Website</h3>
+    <h1>$100</h1>
+    <ul>
+      <li>✔ 1-Page Landing Website</li>
+      <li>✔ Mobile Responsive Design</li>
+      <li>✔ Basic UI Design</li>
+      <li>✔ WhatsApp Integration</li>
+      <li>✔ 2 Days Delivery</li>
+    </ul>
+    <button onclick="window.open('https://wa.me/923428305707?text=I%20want%20Starter%20Website%20($100)','_blank')">
+      Get Starter
+    </button>
+  </div>
+
+  <!-- BUSINESS -->
+  <div class="price-card highlight">
+    <h3>Business Website</h3>
+    <h1>$200</h1>
+    <ul>
+      <li>✔ Multi-Page Website (5 Pages)</li>
+      <li>✔ Premium UI Design</li>
+      <li>✔ Contact Form Integration</li>
+      <li>✔ SEO Setup</li>
+      <li>✔ Speed Optimization</li>
+      <li>✔ 3–4 Days Delivery</li>
+    </ul>
+    <button onclick="window.open('https://wa.me/923428305707?text=I%20want%20Business%20Website%20($200)','_blank')">
+      Get Business
+    </button>
+  </div>
+
+  <!-- PREMIUM -->
+  <div class="price-card">
+    <h3>Premium SaaS System</h3>
+    <h1>$300+</h1>
+    <ul>
+      <li>✔ Full SaaS / Advanced System</li>
+      <li>✔ Dashboard / Admin Panel</li>
+      <li>✔ Database Integration</li>
+      <li>✔ Authentication System</li>
+      <li>✔ API Integration</li>
+      <li>✔ Custom Features</li>
+      <li>✔ Priority Support</li>
+    </ul>
+    <button onclick="window.open('https://wa.me/923428305707?text=I%20want%20Premium%20SaaS%20($300+)','_blank')">
+      Get Premium
+    </button>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Dawood Tariq | Pricing Page
+</footer>
+
+</body>
+</html>
