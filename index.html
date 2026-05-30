@@ -207,6 +207,29 @@ footer {
   }
 }
 
+/* ========================= */
+/* 🔥 ADDED FLOAT WHATSAPP BUTTON */
+/* ========================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #25D366;
+}
+
 </style>
 </head>
 
@@ -240,7 +263,6 @@ footer {
     ⚡ Response Time: 1–2 Hours
   </p>
 
-  <!-- HIRE ME BUTTON (UNCHANGED) -->
   <button class="hire-btn">Hire Me</button>
 
   <button class="btn" onclick="scrollToCertificate()">Explore My Work</button>
@@ -302,12 +324,19 @@ footer {
   © 2026 Dawood Tariq | All Rights Reserved
 </footer>
 
+<!-- 🔥 ADDED FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/923428305707?text=Hi%20Dawood%20I%20want%20to%20hire%20you"
+   class="whatsapp-float"
+   target="_blank">
+   WhatsApp
+</a>
+
 <script>
 function scrollToCertificate() {
   document.getElementById("certificate").scrollIntoView({ behavior: "smooth" });
 }
 
-/* ✅ ADDED WHATSAPP HIRE BUTTON FUNCTION */
+/* HIRE BUTTON FUNCTION */
 document.querySelector(".hire-btn").addEventListener("click", function () {
   window.open(
     "https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20a%20project.%20Please%20let%20me%20know%20your%20availability.",
