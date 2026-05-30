@@ -232,7 +232,6 @@ footer {
     and delivering structured business solutions through development, trading, and data systems.
   </p>
 
-  <!-- ADDED -->
   <p style="color: gold; margin-top: 10px; font-weight: 600;">
     🚀 Available for Freelance Work
   </p>
@@ -241,6 +240,7 @@ footer {
     ⚡ Response Time: 1–2 Hours
   </p>
 
+  <!-- HIRE ME BUTTON (UNCHANGED) -->
   <button class="hire-btn">Hire Me</button>
 
   <button class="btn" onclick="scrollToCertificate()">Explore My Work</button>
@@ -306,6 +306,14 @@ footer {
 function scrollToCertificate() {
   document.getElementById("certificate").scrollIntoView({ behavior: "smooth" });
 }
+
+/* ✅ ADDED WHATSAPP HIRE BUTTON FUNCTION */
+document.querySelector(".hire-btn").addEventListener("click", function () {
+  window.open(
+    "https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20a%20project.%20Please%20let%20me%20know%20your%20availability.",
+    "_blank"
+  );
+});
 </script>
 
 </body>
