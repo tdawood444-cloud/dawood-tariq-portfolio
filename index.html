@@ -132,6 +132,26 @@ section {
   background: rgba(255,215,0,0.1);
 }
 
+/* CERTIFICATE SECTION */
+#certificate {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#certificate h2 {
+  color: gold;
+  font-size: 36px;
+}
+
+#certificate img {
+  width: 90%;
+  max-width: 750px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 2px solid gold;
+  box-shadow: 0 0 25px rgba(255,215,0,0.2);
+}
+
 /* CONTACT */
 a {
   color: gold;
@@ -188,7 +208,8 @@ footer {
     and delivering structured business solutions through development, trading, and data systems.
   </p>
 
-  <button class="btn">Explore My Work</button>
+  <!-- BUTTON UPDATED -->
+  <button class="btn" onclick="scrollToCertificate()">Explore My Work</button>
 
   <div class="stats">
     <div class="box">
@@ -236,6 +257,12 @@ footer {
   </div>
 </section>
 
+<!-- CERTIFICATE SECTION (ADDED) -->
+<section id="certificate">
+  <h2>FundedNext Elite Certificate</h2>
+  <img src="certificate.jpg" alt="Certificate">
+</section>
+
 <!-- CONTACT -->
 <section>
   <h2>Contact Me</h2>
@@ -246,6 +273,12 @@ footer {
 <footer>
   © 2026 Dawood Tariq | All Rights Reserved
 </footer>
+
+<script>
+function scrollToCertificate() {
+  document.getElementById("certificate").scrollIntoView({ behavior: "smooth" });
+}
+</script>
 
 </body>
 </html>
