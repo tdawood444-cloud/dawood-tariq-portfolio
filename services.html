@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Services | Dawood Tariq</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #000;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.logo {
+  font-weight: 700;
+  color: gold;
+  font-size: 20px;
+}
+
+/* NAV */
+nav a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 70px 20px 30px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  color: gold;
+}
+
+.hero p {
+  color: #bbb;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.card h2 {
+  color: gold;
+  font-size: 20px;
+}
+
+.card p {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
+  color: #aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DAWOOD TARIQ</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>My Services</h1>
+  <p>
+    I provide professional digital solutions in web development, trading systems, Excel automation,
+    and business documentation to help clients grow efficiently.
+  </p>
+</div>
+
+<section class="services">
+
+  <div class="card">
+    <h2>Web Development</h2>
+    <p>Modern, responsive, and fast websites using clean HTML, CSS, and JavaScript.</p>
+  </div>
+
+  <div class="card">
+    <h2>Landing Pages</h2>
+    <p>High-converting landing pages for businesses, ads, and personal branding.</p>
+  </div>
+
+  <div class="card">
+    <h2>CMS Setup</h2>
+    <p>WordPress and CMS setup for easy website management and updates.</p>
+  </div>
+
+  <div class="card">
+    <h2>Excel Automation</h2>
+    <p>Advanced Excel sheets, dashboards, and automation tools for business use.</p>
+  </div>
+
+  <div class="card">
+    <h2>Import / Export Docs</h2>
+    <p>Professional documentation support for import/export and logistics work.</p>
+  </div>
+
+  <div class="card">
+    <h2>Trading Tools</h2>
+    <p>Trading journals, risk calculators, and strategy-based tools for Forex & Gold.</p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Dawood Tariq | All Rights Reserved
+</footer>
+
+</body>
+</html>
