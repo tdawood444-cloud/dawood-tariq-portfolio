@@ -43,14 +43,12 @@ header {
   gap: 5px;
 }
 
-/* PROFILE IMAGE */
 .profile img {
-  width: 110px;
-  height: 110px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  border: 3px solid gold;
+  border: 2px solid gold;
   object-fit: cover;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
 }
 
 .profile p {
@@ -83,7 +81,7 @@ header {
   line-height: 1.6;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
   margin-top: 20px;
   padding: 12px 25px;
@@ -93,8 +91,15 @@ header {
   cursor: pointer;
   font-weight: 700;
   border-radius: 6px;
+  transition: 0.3s;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+/* NEW HERO BUTTON (HIRE ME) */
 .hire-btn {
   margin-top: 15px;
   padding: 12px 25px;
@@ -104,8 +109,12 @@ header {
   font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  background: gold;
+  color: black;
 }
 
 /* STATS */
@@ -135,6 +144,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  margin-top: 20px;
 }
 
 .card {
@@ -142,6 +152,12 @@ section {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid rgba(255, 215, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
 }
 
 /* CERTIFICATE */
@@ -152,11 +168,13 @@ section {
 
 #certificate h2 {
   color: gold;
+  font-size: 34px;
 }
 
 #certificate img {
   width: 90%;
   max-width: 750px;
+  margin-top: 20px;
   border-radius: 12px;
   border: 2px solid gold;
 }
@@ -173,8 +191,9 @@ a {
 footer {
   text-align: center;
   padding: 20px;
-  background: #000;
+  background: #000000;
   color: #bdbdbd;
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 /* RESPONSIVE */
@@ -182,39 +201,10 @@ footer {
   .projects {
     grid-template-columns: 1fr;
   }
-}
 
-/* ========================= */
-/* 🔥 ADDED STEP 2 SECTION */
-/* ========================= */
-
-#trust {
-  padding: 70px 20px;
-  text-align: center;
-}
-
-#trust h2 {
-  color: gold;
-  margin-top: 40px;
-}
-
-.skill {
-  max-width: 700px;
-  margin: auto;
-  text-align: left;
-}
-
-.bar {
-  background: #111;
-  border-radius: 10px;
-  height: 10px;
-  margin-bottom: 15px;
-}
-
-.fill {
-  height: 10px;
-  background: gold;
-  border-radius: 10px;
+  .hero h1 {
+    font-size: 32px;
+  }
 }
 
 </style>
@@ -224,34 +214,7 @@ footer {
 
 <header>
   <div class="logo">DAWOOD TARIQ</div>
-</header>
 
-<!-- HERO BUTTON (Hire Me Added) -->
-<section class="hero">
-
-  <h1>DAWOOD TARIQ</h1>
-  <h2>Web Developer & Trader</h2>
-
-  <p class="subtitle">
-    I build modern websites and also work as a professional trader in Forex & Gold markets.
-  </p>
-
-  <a 
-    class="hire-btn"
-    href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20my%20project"
-    target="_blank"
-  >
-    Hire Me
-  </a>
-
-</section>
-
-<footer>
-  © 2026 Dawood Tariq. All Rights Reserved.
-</footer>
-
-</body>
-</html>
   <div class="profile">
     <img src="profile.jpg" alt="profile">
     <p>Dawood Tariq</p>
@@ -269,13 +232,34 @@ footer {
     and delivering structured business solutions through development, trading, and data systems.
   </p>
 
+  <!-- ADDED -->
+  <p style="color: gold; margin-top: 10px; font-weight: 600;">
+    🚀 Available for Freelance Work
+  </p>
+
+  <p style="color: #bdbdbd; margin-top: 5px;">
+    ⚡ Response Time: 1–2 Hours
+  </p>
+
   <button class="hire-btn">Hire Me</button>
+
   <button class="btn" onclick="scrollToCertificate()">Explore My Work</button>
 
   <div class="stats">
-    <div class="box"><h2>2+ Years</h2><p>Web Development</p></div>
-    <div class="box"><h2>3 Years</h2><p>Forex & Gold Trading</p></div>
-    <div class="box"><h2>Advanced</h2><p>Excel & Documentation</p></div>
+    <div class="box">
+      <h2>2+ Years</h2>
+      <p>Web Development</p>
+    </div>
+
+    <div class="box">
+      <h2>3 Years</h2>
+      <p>Forex & Gold Trading</p>
+    </div>
+
+    <div class="box">
+      <h2>Advanced</h2>
+      <p>Excel & Documentation</p>
+    </div>
   </div>
 
 </div>
