@@ -7,12 +7,16 @@
 
 <title>Dawood Tariq | Web Developer Portfolio</title>
 
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 body {
   margin: 0;
-  font-family: Arial;
-  background: radial-gradient(circle, #0f172a, #020617);
-  color: white;
+  font-family: 'Playfair Display', serif;
+  background: #000000;
+  color: #ffffff;
 }
 
 /* HEADER */
@@ -21,18 +25,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
+  background: #0a0a0a;
+  border-bottom: 1px solid rgba(255,215,0,0.2);
 }
 
 /* LOGO */
 .logo {
-  font-weight: bold;
+  font-weight: 700;
   color: gold;
   font-size: 18px;
+  letter-spacing: 1px;
 }
 
-/* PROFILE (TOP RIGHT) */
+/* PROFILE */
 .profile {
   display: flex;
   flex-direction: column;
@@ -50,7 +55,7 @@ header {
 
 .profile p {
   font-size: 12px;
-  color: #e2e8f0;
+  color: #cccccc;
   margin: 0;
 }
 
@@ -63,30 +68,39 @@ header {
 .hero h1 {
   font-size: 60px;
   color: gold;
+  letter-spacing: 2px;
 }
 
 .hero h2 {
   font-size: 20px;
-  color: #e2e8f0;
-  font-weight: 500;
+  color: #ffffff;
+  font-weight: 400;
   margin-top: 10px;
 }
 
 .subtitle {
   max-width: 750px;
   margin: 15px auto;
-  color: #94a3b8;
+  color: #bdbdbd;
   line-height: 1.6;
 }
 
+/* BUTTON */
 .btn {
   margin-top: 20px;
   padding: 12px 25px;
   background: gold;
+  color: black;
   border: none;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
 }
 
 /* STATS */
@@ -99,16 +113,18 @@ header {
 }
 
 .box {
-  background: rgba(255,255,255,0.05);
+  background: #0a0a0a;
   padding: 15px 25px;
   border-radius: 10px;
   min-width: 150px;
+  border: 1px solid rgba(255,215,0,0.1);
 }
 
 /* SECTIONS */
 section {
   padding: 60px 20px;
   text-align: center;
+  color: #ffffff;
 }
 
 /* PROJECTS */
@@ -120,19 +136,21 @@ section {
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
+  background: #0a0a0a;
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  border: 1px solid rgba(255,215,0,0.1);
 }
 
 .card:hover {
   transform: scale(1.05);
-  background: rgba(255,215,0,0.1);
+  background: #111111;
+  box-shadow: 0 0 10px rgba(255,215,0,0.2);
 }
 
-/* CERTIFICATE SECTION */
+/* CERTIFICATE */
 #certificate {
   padding: 80px 20px;
   text-align: center;
@@ -149,7 +167,6 @@ section {
   margin-top: 20px;
   border-radius: 12px;
   border: 2px solid gold;
-  box-shadow: 0 0 25px rgba(255,215,0,0.2);
 }
 
 /* CONTACT */
@@ -164,9 +181,10 @@ a {
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(255,255,255,0.05);
+  background: #0a0a0a;
   margin-top: 40px;
-  color: #94a3b8;
+  color: #bdbdbd;
+  border-top: 1px solid rgba(255,215,0,0.1);
 }
 
 /* RESPONSIVE */
@@ -179,6 +197,7 @@ footer {
     font-size: 32px;
   }
 }
+
 </style>
 </head>
 
@@ -187,14 +206,12 @@ footer {
 <header>
   <div class="logo">DAWOOD TARIQ</div>
 
-  <!-- PROFILE PIC -->
   <div class="profile">
     <img src="profile.jpg" alt="Dawood Tariq">
     <p>Dawood Tariq</p>
   </div>
 </header>
 
-<!-- HERO -->
 <div class="hero">
 
   <h1>Dawood Tariq</h1>
@@ -208,7 +225,6 @@ footer {
     and delivering structured business solutions through development, trading, and data systems.
   </p>
 
-  <!-- BUTTON UPDATED -->
   <button class="btn" onclick="scrollToCertificate()">Explore My Work</button>
 
   <div class="stats">
@@ -230,7 +246,6 @@ footer {
 
 </div>
 
-<!-- ABOUT -->
 <section>
   <h2>About Me</h2>
   <p>
@@ -240,13 +255,11 @@ footer {
   </p>
 </section>
 
-<!-- SERVICES -->
 <section>
   <h2>Services</h2>
   <p>Web Development | CMS Setup | Landing Pages | Excel Automation | Documentation</p>
 </section>
 
-<!-- PROJECTS -->
 <section>
   <h2>Projects</h2>
 
@@ -257,13 +270,11 @@ footer {
   </div>
 </section>
 
-<!-- CERTIFICATE SECTION (ADDED) -->
 <section id="certificate">
   <h2>FundedNext Elite Certificate</h2>
   <img src="certificate.jpg" alt="Certificate">
 </section>
 
-<!-- CONTACT -->
 <section>
   <h2>Contact Me</h2>
   <a href="mailto:youremail@gmail.com">Email: youremail@gmail.com</a>
