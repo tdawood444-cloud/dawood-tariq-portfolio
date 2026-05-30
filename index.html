@@ -35,6 +35,24 @@ header {
   font-size: 18px;
 }
 
+/* NAVBAR (ADDED FIX) */
+nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
 /* PROFILE */
 .profile {
   display: flex;
@@ -99,7 +117,7 @@ header {
   box-shadow: 0 0 15px gold;
 }
 
-/* NEW HERO BUTTON (HIRE ME) */
+/* HIRE BUTTON */
 .hire-btn {
   margin-top: 15px;
   padding: 12px 25px;
@@ -207,9 +225,7 @@ footer {
   }
 }
 
-/* ========================= */
-/* 🔥 ADDED FLOAT WHATSAPP BUTTON */
-/* ========================= */
+/* WHATSAPP FLOAT BUTTON */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -235,9 +251,10 @@ footer {
 
 <body>
 
+<!-- HEADER (FIXED STRUCTURE) -->
 <header>
+
   <div class="logo">DAWOOD TARIQ</div>
-<header>
 
   <nav>
     <a href="index.html">Home</a>
@@ -253,6 +270,7 @@ footer {
 
 </header>
 
+<!-- HERO -->
 <div class="hero">
 
   <h1>Dawood Tariq</h1>
@@ -333,7 +351,7 @@ footer {
   © 2026 Dawood Tariq | All Rights Reserved
 </footer>
 
-<!-- 🔥 ADDED FLOATING WHATSAPP BUTTON -->
+<!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/923428305707?text=Hi%20Dawood%20I%20want%20to%20hire%20you"
    class="whatsapp-float"
    target="_blank">
@@ -345,10 +363,9 @@ function scrollToCertificate() {
   document.getElementById("certificate").scrollIntoView({ behavior: "smooth" });
 }
 
-/* HIRE BUTTON FUNCTION */
 document.querySelector(".hire-btn").addEventListener("click", function () {
   window.open(
-    "https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20a%20project.%20Please%20let%20me%20know%20your%20availability.",
+    "https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20a%20project.",
     "_blank"
   );
 });
