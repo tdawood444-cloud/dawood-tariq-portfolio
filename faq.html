@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>FAQ | Dawood Tariq</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #000;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,215,0,0.2);
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+header h1 {
+  color: gold;
+  font-size: 40px;
+}
+
+header p {
+  color: #bdbdbd;
+}
+
+/* FAQ BOX */
+.faq-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* FAQ ITEM */
+.faq-item {
+  background: #0a0a0a;
+  border: 1px solid rgba(255,215,0,0.2);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* QUESTION */
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background: rgba(255,215,0,0.05);
+}
+
+/* ANSWER */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ACTIVE */
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1>Frequently Asked Questions</h1>
+  <p>Click on a question to see the answer</p>
+</header>
+
+<!-- FAQ -->
+<div class="faq-container">
+
+  <div class="faq-item">
+    <div class="faq-question">1. What type of websites do you build?</div>
+    <div class="faq-answer">
+      I build modern, responsive websites including business websites, landing pages, portfolios, and simple SaaS-style systems.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">2. How long does it take to build a website?</div>
+    <div class="faq-answer">
+      A landing page takes 1–2 days, while multi-page websites take 3–5 days depending on requirements.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">3. Will my website be mobile friendly?</div>
+    <div class="faq-answer">
+      Yes, all websites are fully responsive and work perfectly on mobile, tablet, and desktop devices.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">4. Can you redesign my existing website?</div>
+    <div class="faq-answer">
+      Yes, I can redesign old websites into modern, fast, and professional designs.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">5. Do you provide hosting and deployment?</div>
+    <div class="faq-answer">
+      Yes, I can help deploy websites using Vercel, Netlify, or GitHub Pages.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">6. What markets do you trade?</div>
+    <div class="faq-answer">
+      I trade Forex and Gold (XAUUSD) using price action and Smart Money Concepts.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">7. What trading strategy do you use?</div>
+    <div class="faq-answer">
+      I use liquidity zones, order blocks, and EMA confirmation strategies on lower timeframes.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">8. Do you provide trading signals?</div>
+    <div class="faq-answer">
+      Yes, I provide trading signals based on my analysis of Forex and Gold (XAUUSD) using price action and SMC concepts.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">9. What Excel services do you offer?</div>
+    <div class="faq-answer">
+      I create automated Excel sheets, dashboards, calculators, and business data tools.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">10. Can you help with import/export documentation?</div>
+    <div class="faq-answer">
+      Yes, I provide professional documentation support for import/export and logistics work.
+    </div>
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+const items = document.querySelectorAll(".faq-item");
+
+items.forEach(item => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
+</script>
+
+</body>
+</html>
