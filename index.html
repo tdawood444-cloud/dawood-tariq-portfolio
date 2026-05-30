@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Dawood Tariq | Web Developer Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle, #0f172a, #020617);
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+header .logo {
+  font-weight: bold;
+  color: gold;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  color: gold;
+}
+
+.hero h2 {
+  font-size: 22px;
+  color: #cbd5e1;
+  font-weight: normal;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: rgba(255,255,255,0.05);
+  padding: 15px 25px;
+  border-radius: 10px;
+  min-width: 150px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: rgba(255,215,0,0.1);
+}
+
+/* CONTACT */
+a {
+  color: gold;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  margin-top: 40px;
+  color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DAWOOD TARIQ</div>
+  <div>Web Developer Portfolio</div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Dawood Tariq</h1>
+  <h2>Web Developer | CMS Setup | Landing Pages | Frontend Developer</h2>
+
+  <button class="btn" onclick="trackClick()">View My Portfolio</button>
+
+  <div class="stats">
+    <div class="box">
+      <h2 id="visitors">1</h2>
+      <p>Visitors</p>
+    </div>
+
+    <div class="box">
+      <h2 id="clicks">0</h2>
+      <p>Portfolio Clicks</p>
+    </div>
+
+    <div class="box">
+      <h2>2026</h2>
+      <p>Experience Year</p>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am Dawood Tariq, a web developer specializing in building modern,
+    responsive, and professional websites for businesses, startups, and freelancers.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <h2>Services</h2>
+  <p>Landing Pages | CMS Setup | Corporate Websites | Responsive Design</p>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="card" onclick="trackClick()">Corporate Website</div>
+    <div class="card" onclick="trackClick()">Landing Page Design</div>
+    <div class="card" onclick="trackClick()">CMS Layout Setup</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact Me</h2>
+  <a href="mailto:youremail@gmail.com">Email: youremail@gmail.com</a>
+  <a href="https://wa.me/923428305707">WhatsApp Me</a>
+</section>
+
+<footer>
+  © 2026 Dawood Tariq | All Rights Reserved
+</footer>
+
+<script>
+let visitors = localStorage.getItem("visitors");
+visitors = visitors ? parseInt(visitors) + 1 : 1;
+localStorage.setItem("visitors", visitors);
+document.getElementById("visitors").innerText = visitors;
+
+let clicks = localStorage.getItem("clicks") || 0;
+document.getElementById("clicks").innerText = clicks;
+
+function trackClick(){
+  clicks++;
+  localStorage.setItem("clicks", clicks);
+  document.getElementById("clicks").innerText = clicks;
+}
+</script>
+
+</body>
+</html>
