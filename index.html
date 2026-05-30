@@ -28,14 +28,12 @@ header {
   border-bottom: 1px solid rgba(255, 215, 0, 0.2);
 }
 
-/* LOGO */
 .logo {
   font-weight: 700;
   color: gold;
   font-size: 18px;
 }
 
-/* PROFILE */
 .profile {
   display: flex;
   flex-direction: column;
@@ -81,7 +79,7 @@ header {
   line-height: 1.6;
 }
 
-/* BUTTON */
+/* BUTTONS */
 .btn {
   margin-top: 20px;
   padding: 12px 25px;
@@ -99,7 +97,6 @@ header {
   box-shadow: 0 0 15px gold;
 }
 
-/* NEW HERO BUTTON (HIRE ME) */
 .hire-btn {
   margin-top: 15px;
   padding: 12px 25px;
@@ -161,16 +158,6 @@ section {
 }
 
 /* CERTIFICATE */
-#certificate {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-#certificate h2 {
-  color: gold;
-  font-size: 34px;
-}
-
 #certificate img {
   width: 90%;
   max-width: 750px;
@@ -196,20 +183,66 @@ footer {
   border-top: 1px solid rgba(255, 215, 0, 0.1);
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-  .projects {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
+/* PRICING */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-/* ========================= */
-/* 🔥 ADDED FLOAT WHATSAPP BUTTON */
-/* ========================= */
+.price-card {
+  width: 300px;
+  background: #0a0a0a;
+  border: 1px solid rgba(255,215,0,0.2);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.price-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,215,0,0.2);
+}
+
+.price-card h3 {
+  color: gold;
+}
+
+.price-card h1 {
+  font-size: 36px;
+}
+
+.price-card ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.price-card ul li {
+  margin: 8px 0;
+  color: #bdbdbd;
+}
+
+.price-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.highlight {
+  border: 2px solid gold;
+  transform: scale(1.05);
+}
+
+/* FLOAT WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -220,14 +253,22 @@ footer {
   border-radius: 50px;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
-  transition: 0.3s;
   z-index: 999;
+  transition: 0.3s;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 20px #25D366;
+}
+
+@media(max-width:768px){
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
 }
 
 </style>
@@ -239,7 +280,7 @@ footer {
   <div class="logo">DAWOOD TARIQ</div>
 
   <div class="profile">
-    <img src="profile.jpg" alt="profile">
+    <img src="profile.jpg" alt="">
     <p>Dawood Tariq</p>
   </div>
 </header>
@@ -247,101 +288,103 @@ footer {
 <div class="hero">
 
   <h1>Dawood Tariq</h1>
-
-  <h2>Web Developer • Forex & Gold Trader • Excel & Documentation Specialist</h2>
+  <h2>Web Developer • Forex Trader • Excel Specialist</h2>
 
   <p class="subtitle">
-    Building modern responsive websites, analyzing financial markets with precision,
-    and delivering structured business solutions through development, trading, and data systems.
-  </p>
-
-  <p style="color: gold; margin-top: 10px; font-weight: 600;">
-    🚀 Available for Freelance Work
-  </p>
-
-  <p style="color: #bdbdbd; margin-top: 5px;">
-    ⚡ Response Time: 1–2 Hours
+    Building modern responsive websites, trading systems, and business solutions.
   </p>
 
   <button class="hire-btn">Hire Me</button>
-
   <button class="btn" onclick="scrollToCertificate()">Explore My Work</button>
 
   <div class="stats">
-    <div class="box">
-      <h2>2+ Years</h2>
-      <p>Web Development</p>
-    </div>
-
-    <div class="box">
-      <h2>3 Years</h2>
-      <p>Forex & Gold Trading</p>
-    </div>
-
-    <div class="box">
-      <h2>Advanced</h2>
-      <p>Excel & Documentation</p>
-    </div>
+    <div class="box"><h2>2+ Years</h2><p>Web Dev</p></div>
+    <div class="box"><h2>3 Years</h2><p>Trading</p></div>
+    <div class="box"><h2>Advanced</h2><p>Excel</p></div>
   </div>
 
 </div>
 
 <section>
   <h2>About Me</h2>
-  <p>
-    I am Dawood Tariq, a professional Web Developer with real office experience,
-    specializing in modern websites, CMS setup, and landing pages.
-  </p>
-</section>
-
-<section>
-  <h2>Services</h2>
-  <p>Web Development | CMS Setup | Landing Pages | Excel Automation | Documentation</p>
+  <p>Professional Web Developer & Trader</p>
 </section>
 
 <section>
   <h2>Projects</h2>
-
   <div class="projects">
     <div class="card">Corporate Website</div>
-    <div class="card">Landing Page Design</div>
+    <div class="card">Landing Page</div>
     <div class="card">CMS Setup</div>
   </div>
 </section>
 
+<!-- PRICING SECTION -->
+<section>
+  <h2 style="color:gold;">Pricing Packages</h2>
+
+  <div class="pricing-container">
+
+    <div class="price-card">
+      <h3>Starter</h3>
+      <h1>$100</h1>
+      <ul>
+        <li>1 Page Website</li>
+        <li>Mobile Responsive</li>
+        <li>WhatsApp Integration</li>
+      </ul>
+      <button onclick="window.open('https://wa.me/923428305707')">Get Starter</button>
+    </div>
+
+    <div class="price-card highlight">
+      <h3>Business</h3>
+      <h1>$200</h1>
+      <ul>
+        <li>5 Pages Website</li>
+        <li>SEO Setup</li>
+        <li>Contact Form</li>
+      </ul>
+      <button onclick="window.open('https://wa.me/923428305707')">Get Business</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Premium</h3>
+      <h1>$300+</h1>
+      <ul>
+        <li>SaaS System</li>
+        <li>Dashboard</li>
+        <li>Advanced Features</li>
+      </ul>
+      <button onclick="window.open('https://wa.me/923428305707')">Get Premium</button>
+    </div>
+
+  </div>
+</section>
+
 <section id="certificate">
-  <h2>FundedNext Elite Certificate</h2>
-  <img src="certificate.jpg" alt="certificate">
+  <h2 style="color:gold;">Certificate</h2>
+  <img src="certificate.jpg">
 </section>
 
 <section>
-  <h2>Contact Me</h2>
-  <a href="mailto:youremail@gmail.com">Email: youremail@gmail.com</a>
-  <a href="https://wa.me/923428305707">WhatsApp Me</a>
+  <h2>Contact</h2>
+  <a href="mailto:youremail@gmail.com">Email</a>
+  <a href="https://wa.me/923428305707">WhatsApp</a>
 </section>
 
 <footer>
-  © 2026 Dawood Tariq | All Rights Reserved
+  © 2026 Dawood Tariq
 </footer>
 
-<!-- 🔥 ADDED FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/923428305707?text=Hi%20Dawood%20I%20want%20to%20hire%20you"
-   class="whatsapp-float"
-   target="_blank">
-   WhatsApp
-</a>
+<a class="whatsapp-float" href="https://wa.me/923428305707">WhatsApp</a>
 
 <script>
-function scrollToCertificate() {
-  document.getElementById("certificate").scrollIntoView({ behavior: "smooth" });
+function scrollToCertificate(){
+  document.getElementById("certificate").scrollIntoView({behavior:"smooth"});
 }
 
-/* HIRE BUTTON FUNCTION */
-document.querySelector(".hire-btn").addEventListener("click", function () {
-  window.open(
-    "https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20a%20project.%20Please%20let%20me%20know%20your%20availability.",
-    "_blank"
-  );
+document.querySelector(".hire-btn").addEventListener("click", function(){
+  window.open("https://wa.me/923428305707","_blank");
 });
 </script>
 
