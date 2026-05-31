@@ -1,184 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <title>Services | Dawood Tariq</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+:root{
+  --black:#050505;
+  --gold:#cfa64a;
+  --gold2:#ffd369;
+  --muted:#b9b9b9;
+  --line:rgba(207,166,74,.25);
+}
 
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background: #000;
-  color: #fff;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(207,166,74,.12), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(255,211,105,.08), transparent 30%),
+    var(--black);
+  color:#fff;
+}
+
+a{
+  text-decoration:none;
 }
 
 /* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  padding:16px 7%;
+  background:rgba(5,5,5,.9);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-.logo {
-  font-weight: 700;
-  color: gold;
-  font-size: 20px;
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
 
-/* NAV */
-nav a {
-  color: #ccc;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 14px;
+.brand img{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  object-fit:contain;
+  border:1px solid var(--gold);
+  background:#111;
+  padding:5px;
 }
 
-nav a:hover {
-  color: gold;
+.brand h3{
+  font-family:'Cinzel',serif;
+  color:var(--gold2);
+  font-size:17px;
+}
+
+.brand p{
+  color:var(--muted);
+  font-size:12px;
+}
+
+nav{
+  display:flex;
+  gap:22px;
+}
+
+nav a{
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--gold2);
 }
 
 /* HERO */
-.hero {
-  text-align: center;
-  padding: 70px 20px 30px;
+.hero{
+  padding:90px 7% 60px;
+  text-align:center;
 }
 
-.hero h1 {
-  font-size: 45px;
-  color: gold;
+.hero span{
+  color:var(--gold2);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
 }
 
-.hero p {
-  color: #bbb;
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.6;
+.hero h1{
+  font-family:'Cinzel',serif;
+  font-size:56px;
+  margin-top:14px;
+}
+
+.hero p{
+  max-width:800px;
+  margin:18px auto 0;
+  color:var(--muted);
+  line-height:1.8;
 }
 
 /* SERVICES */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 50px 20px;
-  max-width: 1100px;
-  margin: auto;
+section{
+  padding:55px 7%;
 }
 
-.card {
-  background: #0a0a0a;
-  border: 1px solid rgba(255, 215, 0, 0.15);
-  border-radius: 10px;
-  padding: 25px;
-  transition: 0.3s;
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+.card{
+  background:rgba(255,255,255,.035);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:30px;
+  transition:.3s;
 }
 
-.card h2 {
-  color: gold;
-  font-size: 20px;
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 30px rgba(207,166,74,.14);
 }
 
-.card p {
-  color: #bbb;
-  font-size: 14px;
-  line-height: 1.6;
+.card h3{
+  font-family:'Cinzel',serif;
+  color:var(--gold2);
+  margin-bottom:12px;
 }
 
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 20px;
-  background: gold;
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
-  border-radius: 6px;
-  transition: 0.3s;
+.card p{
+  color:var(--muted);
+  line-height:1.75;
+  font-size:15px;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+.card ul{
+  margin-top:15px;
+  padding-left:18px;
+  color:#ddd;
+  line-height:1.9;
+  font-size:14px;
+}
+
+/* CTA */
+.cta{
+  max-width:900px;
+  margin:30px auto 0;
+  text-align:center;
+  background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:42px 25px;
+}
+
+.cta h2{
+  font-family:'Cinzel',serif;
+  color:var(--gold2);
+  font-size:34px;
+}
+
+.cta p{
+  color:var(--muted);
+  margin:14px 0 24px;
+}
+
+.btn{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#000;
+  padding:14px 28px;
+  border-radius:40px;
+  font-weight:800;
 }
 
 /* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid rgba(255, 215, 0, 0.1);
-  color: #aaa;
+footer{
+  padding:25px;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid var(--line);
 }
 
+/* MOBILE */
+@media(max-width:900px){
+  header{
+    flex-direction:column;
+    gap:14px;
+    text-align:center;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:13px;
+  }
+
+  .hero{
+    padding:60px 18px 35px;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  section{
+    padding:45px 18px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">DAWOOD TARIQ</div>
+  <div class="brand">
+    <img src="logo.png" alt="Dawood Tariq Logo">
+    <div>
+      <h3>Dawood Tariq</h3>
+      <p>Web Developer | Professional Trader</p>
+    </div>
+  </div>
 
-  <!-- NAVIGATION (PORTFOLIO REMOVED) -->
   <nav>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="pricing.html">Pricing</a>
-    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="index.html#contact">Contact</a>
   </nav>
 </header>
 
 <div class="hero">
-  <h1>My Services</h1>
+  <span>Premium Services</span>
+  <h1>What I Can Do For You</h1>
   <p>
-    I provide professional digital solutions in web development, trading systems, Excel automation,
-    and business documentation to help clients grow efficiently.
+    I provide clean, professional and business-focused services in web development,
+    Forex & Gold trading, Excel automation and documentation support.
   </p>
 </div>
 
-<section class="services">
+<section>
+  <div class="cards">
 
-  <div class="card">
-    <h2>Web Development</h2>
-    <p>Modern, responsive, and fast websites using clean HTML, CSS, and JavaScript.</p>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Premium responsive websites for personal brands, freelancers and businesses.</p>
+      <ul>
+        <li>Modern website design</li>
+        <li>Mobile friendly layout</li>
+        <li>Fast loading pages</li>
+        <li>Professional structure</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Landing Pages</h3>
+      <p>Clean pages created to present your offer and convert visitors into clients.</p>
+      <ul>
+        <li>Service landing pages</li>
+        <li>Freelancer pages</li>
+        <li>Business offer pages</li>
+        <li>WhatsApp contact buttons</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Forex & Gold Trading</h3>
+      <p>Professional trading support focused on strategy, discipline and risk control.</p>
+      <ul>
+        <li>XAUUSD analysis</li>
+        <li>Trading signals</li>
+        <li>Risk management</li>
+        <li>Trading psychology</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Excel Automation</h3>
+      <p>Smart Excel systems to manage business, trading and daily workflow better.</p>
+      <ul>
+        <li>Trading journals</li>
+        <li>Dashboards</li>
+        <li>Calculators</li>
+        <li>Business trackers</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Documentation Support</h3>
+      <p>Professional support for import/export and business documentation tasks.</p>
+      <ul>
+        <li>GD-related work</li>
+        <li>Import documents</li>
+        <li>Export documents</li>
+        <li>Organized records</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Website Maintenance</h3>
+      <p>Improve, fix and update your existing website with a clean professional touch.</p>
+      <ul>
+        <li>Mobile fixing</li>
+        <li>Design improvement</li>
+        <li>Content updates</li>
+        <li>Layout cleanup</li>
+      </ul>
+    </div>
+
   </div>
+</section>
 
-  <div class="card">
-    <h2>Landing Pages</h2>
-    <p>High-converting landing pages for businesses, ads, and personal branding.</p>
+<section>
+  <div class="cta">
+    <h2>Need A Professional Service?</h2>
+    <p>Contact me directly and let’s discuss your website, trading, Excel or documentation project.</p>
+    <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20your%20services." target="_blank">
+      Contact Me On WhatsApp
+    </a>
   </div>
-
-  <div class="card">
-    <h2>CMS Setup</h2>
-    <p>WordPress and CMS setup for easy website management and updates.</p>
-  </div>
-
-  <div class="card">
-    <h2>Excel Automation</h2>
-    <p>Advanced Excel sheets, dashboards, and automation tools for business use.</p>
-  </div>
-
-  <div class="card">
-    <h2>Import / Export Docs</h2>
-    <p>Professional documentation support for import/export and logistics work.</p>
-  </div>
-
-  <div class="card">
-    <h2>Trading Tools</h2>
-    <p>Trading journals, risk calculators, and strategy-based tools for Forex & Gold.</p>
-  </div>
-
 </section>
 
 <footer>
