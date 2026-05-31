@@ -1,208 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <title>FAQ | Dawood Tariq</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background: #000;
-  color: white;
+:root{
+--black:#050505;
+--gold:#cfa64a;
+--gold2:#ffd369;
+--muted:#b9b9b9;
+--line:rgba(207,166,74,.25);
 }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px;
-  border-bottom: 1px solid rgba(255,215,0,0.2);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-nav a {
-  color: gold;
-  text-decoration: none;
-  font-weight: bold;
+body{
+font-family:'Inter',sans-serif;
+background:
+radial-gradient(circle at top right, rgba(207,166,74,.12), transparent 35%),
+radial-gradient(circle at bottom left, rgba(255,211,105,.08), transparent 30%),
+var(--black);
+color:#fff;
 }
 
-nav a:hover {
-  color: white;
+a{text-decoration:none;}
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+padding:16px 7%;
+background:rgba(5,5,5,.92);
+backdrop-filter:blur(14px);
+border-bottom:1px solid var(--line);
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 60px 20px 20px;
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
 }
 
-header h1 {
-  color: gold;
-  font-size: 40px;
+.brand img{
+width:46px;
+height:46px;
+border-radius:50%;
+object-fit:contain;
+border:1px solid var(--gold);
+background:#111;
+padding:5px;
 }
 
-header p {
-  color: #bdbdbd;
+.brand h3{
+font-family:'Cinzel',serif;
+color:var(--gold2);
+font-size:17px;
 }
 
-/* FAQ BOX */
-.faq-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+.brand p{
+font-size:12px;
+color:var(--muted);
 }
 
-/* FAQ ITEM */
-.faq-item {
-  background: #0a0a0a;
-  border: 1px solid rgba(255,215,0,0.2);
-  margin-bottom: 15px;
-  border-radius: 10px;
-  overflow: hidden;
+nav{
+display:flex;
+gap:20px;
 }
 
-/* QUESTION */
-.faq-question {
-  padding: 15px;
-  cursor: pointer;
-  font-weight: bold;
-  color: gold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav a{
+color:#fff;
+font-weight:600;
+font-size:14px;
 }
 
-.faq-question:hover {
-  background: rgba(255,215,0,0.05);
+nav a:hover{
+color:var(--gold2);
 }
 
-/* ANSWER */
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  padding: 0 15px;
-  color: #ccc;
-  line-height: 1.6;
+/* HERO */
+.hero{
+padding:85px 7% 45px;
+text-align:center;
 }
 
-/* ACTIVE */
-.faq-item.active .faq-answer {
-  max-height: 300px;
-  padding: 15px;
+.hero span{
+color:var(--gold2);
+font-size:13px;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
 }
 
+.hero h1{
+font-family:'Cinzel',serif;
+font-size:52px;
+margin-top:15px;
+}
+
+.hero p{
+max-width:760px;
+margin:18px auto 0;
+color:var(--muted);
+line-height:1.8;
+}
+
+/* FAQ */
+section{
+padding:40px 7%;
+}
+
+.faq{
+max-width:950px;
+margin:auto;
+display:grid;
+gap:18px;
+}
+
+details{
+background:rgba(255,255,255,.035);
+border:1px solid var(--line);
+border-radius:20px;
+padding:20px 24px;
+}
+
+summary{
+cursor:pointer;
+font-weight:700;
+font-size:17px;
+color:var(--gold2);
+list-style:none;
+}
+
+summary::-webkit-details-marker{
+display:none;
+}
+
+details p{
+margin-top:14px;
+color:var(--muted);
+line-height:1.8;
+font-size:15px;
+}
+
+/* CTA */
+.cta{
+max-width:850px;
+margin:auto;
+text-align:center;
+background:rgba(255,255,255,.035);
+border:1px solid var(--line);
+border-radius:26px;
+padding:42px 25px;
+}
+
+.cta h2{
+font-family:'Cinzel',serif;
+color:var(--gold2);
+font-size:34px;
+}
+
+.cta p{
+color:var(--muted);
+margin:14px 0 20px;
+}
+
+.btn{
+display:inline-block;
+background:linear-gradient(135deg,var(--gold),var(--gold2));
+color:#000;
+padding:14px 28px;
+border-radius:40px;
+font-weight:800;
+}
+
+footer{
+padding:25px;
+text-align:center;
+color:var(--muted);
+border-top:1px solid var(--line);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+gap:14px;
+text-align:center;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+padding:55px 18px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+section{
+padding:35px 18px;
+}
+}
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<header>
+
+<div class="brand">
+<img src="logo.png" alt="logo">
+
+<div>
+<h3>Dawood Tariq</h3>
+<p>Web Developer | Professional Trader</p>
+</div>
+</div>
+
 <nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="pricing.html">Pricing</a>
-  <a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="pricing.html">Pricing</a>
+<a href="faq.html">FAQ</a>
+<a href="index.html#contact">Contact</a>
 </nav>
 
-<!-- HEADER -->
-<header>
-  <h1>Frequently Asked Questions</h1>
-  <p>Click on a question to see the answer</p>
 </header>
 
-<!-- FAQ -->
-<div class="faq-container">
+<div class="hero">
 
-  <div class="faq-item">
-    <div class="faq-question">1. What type of websites do you build?</div>
-    <div class="faq-answer">
-      I build modern, responsive websites including business websites, landing pages, portfolios, and simple SaaS-style systems.
-    </div>
-  </div>
+<span>Frequently Asked Questions</span>
 
-  <div class="faq-item">
-    <div class="faq-question">2. How long does it take to build a website?</div>
-    <div class="faq-answer">
-      A landing page takes 1–2 days, while multi-page websites take 3–5 days depending on requirements.
-    </div>
-  </div>
+<h1>Questions & Answers</h1>
 
-  <div class="faq-item">
-    <div class="faq-question">3. Will my website be mobile friendly?</div>
-    <div class="faq-answer">
-      Yes, all websites are fully responsive and work perfectly on mobile, tablet, and desktop devices.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">4. Can you redesign my existing website?</div>
-    <div class="faq-answer">
-      Yes, I can redesign old websites into modern, fast, and professional designs.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">5. Do you provide hosting and deployment?</div>
-    <div class="faq-answer">
-      Yes, I can help deploy websites using Vercel, Netlify, or GitHub Pages.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">6. What markets do you trade?</div>
-    <div class="faq-answer">
-      I trade Forex and Gold (XAUUSD) using price action and Smart Money Concepts.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">7. What trading strategy do you use?</div>
-    <div class="faq-answer">
-      I use liquidity zones, order blocks, and EMA confirmation strategies on lower timeframes.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">8. Do you provide trading signals?</div>
-    <div class="faq-answer">
-      Yes, I provide trading signals based on my analysis of Forex and Gold (XAUUSD) using price action and SMC concepts.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">9. What Excel services do you offer?</div>
-    <div class="faq-answer">
-      I create automated Excel sheets, dashboards, calculators, and business data tools.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">10. Can you help with import/export documentation?</div>
-    <div class="faq-answer">
-      Yes, I provide professional documentation support for import/export and logistics work.
-    </div>
-  </div>
+<p>
+Quick answers about websites, trading, Excel and documentation support.
+</p>
 
 </div>
 
-<!-- SCRIPT -->
-<script>
-const items = document.querySelectorAll(".faq-item");
+<section>
 
-items.forEach(item => {
-  item.addEventListener("click", () => {
-    item.classList.toggle("active");
-  });
-});
-</script>
+<div class="faq">
+
+<details>
+<summary>Do you create fully responsive websites?</summary>
+<p>
+Yes. Every website is built to work smoothly on mobile phones, tablets and desktop screens.
+</p>
+</details>
+
+<details>
+<summary>Do you provide domain and hosting?</summary>
+<p>
+I can launch your website on a free platform like GitHub Pages, or help connect your custom domain and paid hosting. Domain and hosting costs are paid by the client directly.
+</p>
+</details>
+
+<details>
+<summary>Can you help launch my website on a paid platform?</summary>
+<p>
+Yes. If you purchase domain and hosting, I can connect everything, upload files, launch the website and test it.
+</p>
+</details>
+
+<details>
+<summary>Do first-time website clients receive any offer?</summary>
+<p>
+Yes. First website clients receive a free simple logo design and 5% discount on website packages.
+</p>
+</details>
+
+<details>
+<summary>How long does website delivery take?</summary>
+<p>
+Simple websites are usually faster. Larger projects depend on pages and features required.
+</p>
+</details>
+
+<details>
+<summary>Do you provide Forex and Gold trading services?</summary>
+<p>
+Yes. I provide XAUUSD market analysis, trading signals, strategy support, risk management and trading psychology guidance.
+</p>
+</details>
+
+<details>
+<summary>Do you offer trading signals only?</summary>
+<p>
+Yes. Signals can be provided, and support can also include strategy and risk management depending on your package.
+</p>
+</details>
+
+<details>
+<summary>Do you create Excel dashboards and journals?</summary>
+<p>
+Yes. I create Excel dashboards, calculators, trackers, journals and organized business sheets.
+</p>
+</details>
+
+<details>
+<summary>Can you help with documentation work?</summary>
+<p>
+Yes. I support import/export documentation, business files and organized document workflows.
+</p>
+</details>
+
+<details>
+<summary>How do I contact you?</summary>
+<p>
+You can contact me directly through WhatsApp, email or Telegram from the website contact section.
+</p>
+</details>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="cta">
+
+<h2>Still Have A Question?</h2>
+
+<p>
+Send me a message directly and I’ll reply.
+</p>
+
+<a class="btn"
+href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20have%20a%20question%20about%20your%20services."
+target="_blank">
+Contact Me On WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Dawood Tariq | All Rights Reserved
+</footer>
 
 </body>
 </html>
