@@ -1,152 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <title>Contact | Dawood Tariq</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background: #000;
-  color: white;
+:root{
+--black:#050505;
+--gold:#cfa64a;
+--gold2:#ffd369;
+--muted:#b9b9b9;
+--line:rgba(207,166,74,.25);
 }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px;
-  border-bottom: 1px solid rgba(255,215,0,0.2);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-nav a {
-  color: gold;
-  text-decoration: none;
-  font-weight: bold;
+body{
+font-family:'Inter',sans-serif;
+background:
+radial-gradient(circle at top right, rgba(207,166,74,.12), transparent 35%),
+radial-gradient(circle at bottom left, rgba(255,211,105,.08), transparent 30%),
+var(--black);
+color:#fff;
 }
 
-nav a:hover {
-  color: white;
+a{text-decoration:none;}
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+padding:16px 7%;
+background:rgba(5,5,5,.92);
+backdrop-filter:blur(14px);
+border-bottom:1px solid var(--line);
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 60px 20px 20px;
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
 }
 
-header h1 {
-  color: gold;
-  font-size: 40px;
+.brand img{
+width:46px;
+height:46px;
+border-radius:50%;
+object-fit:contain;
+border:1px solid var(--gold);
+background:#111;
+padding:5px;
 }
 
-header p {
-  color: #bdbdbd;
+.brand h3{
+font-family:'Cinzel',serif;
+color:var(--gold2);
+font-size:17px;
 }
 
-/* CONTACT BOX */
-.contact-box {
-  max-width: 600px;
-  margin: 40px auto;
-  background: #0a0a0a;
-  padding: 30px;
-  border-radius: 15px;
-  border: 1px solid rgba(255,215,0,0.2);
-  text-align: center;
+.brand p{
+font-size:12px;
+color:var(--muted);
 }
 
-.contact-box h2 {
-  color: gold;
-  margin-bottom: 15px;
+nav{
+display:flex;
+gap:20px;
 }
 
-.contact-box p {
-  color: #bdbdbd;
-  margin: 10px 0;
-  font-size: 16px;
+nav a{
+color:#fff;
+font-weight:600;
+font-size:14px;
 }
 
-/* BUTTONS */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: gold;
-  color: black;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
+nav a:hover{
+color:var(--gold2);
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px gold;
+/* HERO */
+.hero{
+padding:85px 7% 50px;
+text-align:center;
+}
+
+.hero span{
+color:var(--gold2);
+font-size:13px;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+.hero h1{
+font-family:'Cinzel',serif;
+font-size:52px;
+margin-top:15px;
+}
+
+.hero p{
+max-width:760px;
+margin:18px auto 0;
+color:var(--muted);
+line-height:1.8;
+}
+
+/* SECTION */
+section{
+padding:45px 7%;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.card{
+background:rgba(255,255,255,.035);
+border:1px solid var(--line);
+border-radius:22px;
+padding:28px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 28px rgba(207,166,74,.14);
+}
+
+.card h3{
+font-family:'Cinzel',serif;
+color:var(--gold2);
+margin-bottom:10px;
+}
+
+.card p{
+color:var(--muted);
+line-height:1.8;
+font-size:15px;
+}
+
+.card a{
+display:inline-block;
+margin-top:16px;
+color:#000;
+background:linear-gradient(135deg,var(--gold),var(--gold2));
+padding:12px 22px;
+border-radius:40px;
+font-weight:800;
+}
+
+/* INFO BOX */
+.info-box{
+max-width:950px;
+margin:auto;
+background:rgba(255,255,255,.035);
+border:1px solid var(--line);
+border-radius:24px;
+padding:35px;
+text-align:center;
+}
+
+.info-box h2{
+font-family:'Cinzel',serif;
+color:var(--gold2);
+font-size:32px;
+margin-bottom:16px;
+}
+
+.info-box p{
+color:var(--muted);
+line-height:1.9;
+}
+
+/* CTA */
+.cta{
+max-width:850px;
+margin:auto;
+text-align:center;
+background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+border:1px solid var(--line);
+border-radius:26px;
+padding:42px 25px;
+}
+
+.cta h2{
+font-family:'Cinzel',serif;
+color:var(--gold2);
+font-size:34px;
+}
+
+.cta p{
+color:var(--muted);
+margin:14px 0 20px;
+}
+
+.btn{
+display:inline-block;
+background:linear-gradient(135deg,var(--gold),var(--gold2));
+color:#000;
+padding:14px 28px;
+border-radius:40px;
+font-weight:800;
 }
 
 /* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #bdbdbd;
-  border-top: 1px solid rgba(255,215,0,0.1);
-  margin-top: 40px;
+footer{
+padding:25px;
+text-align:center;
+color:var(--muted);
+border-top:1px solid var(--line);
 }
 
+/* MOBILE */
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+gap:14px;
+text-align:center;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+padding:55px 18px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+section{
+padding:35px 18px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+}
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<header>
+
+<div class="brand">
+<img src="logo.png" alt="logo">
+
+<div>
+<h3>Dawood Tariq</h3>
+<p>Web Developer | Professional Trader</p>
+</div>
+</div>
+
 <nav>
-  <a href="index.html">Home</a>
-  <a href="pricing.html">Pricing</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="pricing.html">Pricing</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
 </nav>
 
-<!-- HEADER -->
-<header>
-  <h1>Contact Me</h1>
-  <p>Feel free to reach out for projects or collaboration</p>
 </header>
 
-<!-- CONTACT BOX -->
-<div class="contact-box">
+<div class="hero">
 
-  <h2>Get In Touch</h2>
+<span>Contact</span>
 
-  <p>📧 Email: <b>tdawood444@gmail.com</b></p>
+<h1>Let’s Work Together</h1>
 
-  <p>📱 WhatsApp: <b>03428305707</b></p>
-
-  <!-- EMAIL BUTTON (GMAIL READY) -->
-  <a class="btn"
-     href="mailto:tdawood444@gmail.com?subject=Project%20Inquiry%20for%20Dawood%20Tariq&body=Hi%20Dawood,%0D%0AI%20want%20to%20discuss%20a%20project%20with%20you.%0D%0A">
-     Send Email
-  </a>
-
-  <!-- WHATSAPP BUTTON -->
-  <a class="btn"
-     href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20a%20project"
-     target="_blank">
-     WhatsApp Me
-  </a>
+<p>
+Have a website project, need trading support, Excel automation or documentation help?
+I’m available and ready to discuss your work.
+</p>
 
 </div>
 
-<!-- FOOTER -->
+<section>
+
+<div class="cards">
+
+<div class="card">
+<h3>WhatsApp</h3>
+<p>
+Fastest way to contact me directly.
+</p>
+
+<a href="https://wa.me/923428305707"
+target="_blank">
+Chat On WhatsApp
+</a>
+
+</div>
+
+<div class="card">
+<h3>Email</h3>
+<p>
+For project discussion and business inquiries.
+</p>
+
+<a href="mailto:tdawood444@gmail.com">
+Send Email
+</a>
+
+</div>
+
+<div class="card">
+<h3>Telegram</h3>
+<p>
+Quick messages and trading-related communication.
+</p>
+
+<a href="https://t.me/Dawoodforex"
+target="_blank">
+Open Telegram
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="info-box">
+
+<h2>What You Can Contact Me For</h2>
+
+<p>
+• Website Development & Design<br><br>
+• Landing Pages & Portfolio Websites<br><br>
+• Forex & Gold Trading Support<br><br>
+• Excel Dashboards & Automation<br><br>
+• Import / Export Documentation<br><br>
+• Website Updates & Maintenance
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="info-box">
+
+<h2>Response Time</h2>
+
+<p>
+I usually reply within 1–2 hours depending on availability.
+For urgent work, WhatsApp is the fastest option.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="cta">
+
+<h2>Ready To Start?</h2>
+
+<p>
+Send me your project details and let’s discuss the best solution.
+</p>
+
+<a class="btn"
+href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20a%20project."
+target="_blank">
+Contact Me On WhatsApp
+</a>
+
+</div>
+
+</section>
+
 <footer>
-  © 2026 Dawood Tariq | Contact Page
+© 2026 Dawood Tariq | All Rights Reserved
 </footer>
 
 </body>
