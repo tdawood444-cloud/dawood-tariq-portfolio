@@ -673,271 +673,319 @@ footer{
 <footer>
   © 2026 Dawood Tariq | All Rights Reserved
 </footer>
+<!-- AI ASSISTANT START -->
+<div class="ai-widget">
+  <button class="ai-open-btn" onclick="toggleAI()">AI Assistant</button>
 
+  <div class="ai-panel" id="aiPanel">
 
-<!-- AI ASSISTANT CHATBOT START -->
-<div class="ai-chatbot">
-  <button class="ai-chat-button" onclick="toggleAIChat()">💬 AI Assistant</button>
-
-  <div class="ai-chat-box" id="aiChatBox">
-    <div class="ai-chat-header">
-      <span>AI Assistant</span>
-      <button onclick="toggleAIChat()">×</button>
-    </div>
-
-    <div class="ai-chat-body" id="aiChatBody">
-      <div class="bot-message">
-        Hi, I’m Dawood Tariq’s AI Assistant. I can help with website services, Excel work, trading services, pricing, support queries, and contact details.
+    <div class="ai-header">
+      <div>
+        <strong>AI Assistant</strong>
+        <small id="aiGreeting">Welcome 👋</small>
       </div>
-
-      <div class="quick-buttons">
-        <button onclick="aiReply('website')">Website Services</button>
-        <button onclick="aiReply('excel')">Excel & Automation</button>
-        <button onclick="aiReply('trading')">Trading Services</button>
-        <button onclick="aiReply('pricing')">Pricing</button>
-        <button onclick="aiReply('support')">Support Query</button>
-        <button onclick="aiReply('contact')">Contact Dawood</button>
-      </div>
+      <button onclick="toggleAI()">×</button>
     </div>
 
-    <div class="ai-chat-input">
-      <input type="text" id="aiUserInput" placeholder="Ask anything..." onkeypress="handleAIEnter(event)">
-      <button onclick="sendAIMessage()">Send</button>
+    <div class="ai-faq">
+      <button onclick="quickAsk('website')">Website</button>
+      <button onclick="quickAsk('pricing')">Pricing</button>
+      <button onclick="quickAsk('excel')">Excel</button>
+      <button onclick="quickAsk('trading')">Trading</button>
+      <button onclick="quickAsk('documents')">Docs</button>
+      <button onclick="quickAsk('contact')">Contact</button>
     </div>
+
+    <div class="ai-chat" id="aiChat"></div>
+
+    <div class="ai-input-area">
+      <input id="aiInput" type="text" placeholder="Ask anything..." onkeypress="aiEnter(event)">
+      <button onclick="sendAI()">Send</button>
+    </div>
+
   </div>
 </div>
 
 <style>
-.ai-chatbot {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  font-family: Arial, sans-serif;
+.ai-widget{
+position:fixed;
+right:18px;
+bottom:18px;
+z-index:99999;
+font-family:Arial,sans-serif;
 }
 
-.ai-chat-button {
-  background: #000;
-  color: #fff;
-  border: 2px solid gold;
-  padding: 12px 18px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: bold;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+.ai-open-btn{
+background:#111;
+color:#fff;
+border:none;
+padding:13px 20px;
+border-radius:30px;
+font-weight:700;
+cursor:pointer;
 }
 
-.ai-chat-box {
-  display: none;
-  width: 320px;
-  background: #111;
-  color: #fff;
-  border: 1px solid gold;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(255, 215, 0, 0.35);
-  margin-bottom: 12px;
+.ai-panel{
+display:none;
+width:360px;
+height:560px;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 12px 35px rgba(0,0,0,.35);
+margin-bottom:12px;
+animation:fadeAI .25s ease;
 }
 
-.ai-chat-header {
-  background: #000;
-  color: gold;
-  padding: 14px;
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.4);
+@keyframes fadeAI{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
 }
 
-.ai-chat-header button {
-  background: none;
-  border: none;
-  color: gold;
-  font-size: 22px;
-  cursor: pointer;
+.ai-header{
+background:#111;
+color:#fff;
+padding:14px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.ai-chat-body {
-  padding: 12px;
-  max-height: 330px;
-  overflow-y: auto;
+.ai-header small{
+display:block;
+color:#ccc;
+margin-top:4px;
 }
 
-.bot-message,
-.user-message {
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  line-height: 1.4;
-  font-size: 14px;
+.ai-header button{
+background:none;
+border:none;
+color:#fff;
+font-size:22px;
+cursor:pointer;
 }
 
-.bot-message {
-  background: #1c1c1c;
-  border-left: 3px solid gold;
+.ai-faq{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:6px;
+padding:10px;
+background:#f3f3f3;
 }
 
-.user-message {
-  background: gold;
-  color: #000;
-  text-align: right;
-  font-weight: bold;
+.ai-faq button{
+background:#fff;
+border:1px solid #ddd;
+padding:8px;
+border-radius:10px;
+cursor:pointer;
 }
 
-.quick-buttons button {
-  display: block;
-  width: 100%;
-  margin: 7px 0;
-  padding: 9px;
-  background: #000;
-  color: #fff;
-  border: 1px solid gold;
-  border-radius: 8px;
-  cursor: pointer;
+.ai-faq button:hover{
+background:#111;
+color:#fff;
 }
 
-.quick-buttons button:hover {
-  background: gold;
-  color: #000;
+.ai-chat{
+height:370px;
+overflow-y:auto;
+padding:12px;
+background:#fff;
 }
 
-.ai-chat-input {
-  display: flex;
-  border-top: 1px solid rgba(255, 215, 0, 0.4);
+.ai-msg{
+max-width:85%;
+padding:10px;
+margin-bottom:10px;
+border-radius:14px;
+font-size:14px;
+line-height:1.45;
 }
 
-.ai-chat-input input {
-  flex: 1;
-  padding: 12px;
-  border: none;
-  outline: none;
-  background: #000;
-  color: #fff;
+.ai-msg.bot{
+background:#f2f2f2;
+color:#111;
 }
 
-.ai-chat-input button {
-  background: gold;
-  color: #000;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-  font-weight: bold;
+.ai-msg.user{
+background:#2a2a2a;
+color:#fff;
+margin-left:auto;
 }
 
-.ai-whatsapp-btn {
-  display: inline-block;
-  background: gold;
-  color: #000;
-  padding: 9px 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 8px;
+.ai-input-area{
+display:flex;
+border-top:1px solid #ddd;
 }
 
-@media (max-width: 480px) {
-  .ai-chat-box {
-    width: 90vw;
-  }
+.ai-input-area input{
+flex:1;
+border:none;
+padding:13px;
+outline:none;
+}
 
-  .ai-chatbot {
-    right: 10px;
-    bottom: 15px;
-  }
+.ai-input-area button{
+background:#111;
+color:#fff;
+border:none;
+padding:0 16px;
+cursor:pointer;
+}
+
+.ai-wa{
+display:inline-block;
+background:#111;
+color:#fff;
+padding:8px 10px;
+border-radius:8px;
+text-decoration:none;
+margin-top:7px;
+font-weight:bold;
+}
+
+@media(max-width:480px){
+.ai-panel{
+width:92vw;
+height:560px;
+}
 }
 </style>
 
 <script>
-function toggleAIChat() {
-  const chatBox = document.getElementById("aiChatBox");
-  chatBox.style.display = chatBox.style.display === "block" ? "none" : "block";
+const aiChat=document.getElementById("aiChat");
+
+function toggleAI(){
+const p=document.getElementById("aiPanel");
+p.style.display=p.style.display==="block"?"none":"block";
 }
 
-function addBotMessage(message) {
-  const chatBody = document.getElementById("aiChatBody");
-  chatBody.innerHTML += `<div class="bot-message">${message}</div>`;
-  chatBody.scrollTop = chatBody.scrollHeight;
+function addMsg(text,sender){
+const d=document.createElement("div");
+d.className="ai-msg "+sender;
+d.innerHTML=text;
+aiChat.appendChild(d);
+aiChat.scrollTop=aiChat.scrollHeight;
 }
 
-function addUserMessage(message) {
-  const chatBody = document.getElementById("aiChatBody");
-  chatBody.innerHTML += `<div class="user-message">${message}</div>`;
-  chatBody.scrollTop = chatBody.scrollHeight;
+function typing(){
+addMsg("Typing...","bot");
+setTimeout(()=>{
+aiChat.lastChild.remove();
+},500);
 }
 
-function aiReply(type) {
-  let message = "";
-
-  if (type === "website") {
-    message = "I can help you with website development, landing pages, portfolio websites, business websites, mobile responsive design, GitHub Pages setup, and website fixes.";
-  }
-
-  else if (type === "excel") {
-    message = "Dawood can help with Excel dashboards, automation tools, business trackers, trading journals, reporting sheets, and data management work.";
-  }
-
-  else if (type === "trading") {
-    message = "Dawood provides trading-related support including XAUUSD guidance, signal packages, strategy support, risk management, and trading journal tools. Trading always involves risk, so use proper risk management.";
-  }
-
-  else if (type === "pricing") {
-    message = "Pricing depends on the service. Website, Excel, documentation, and trading support packages can be discussed based on your exact requirement.";
-  }
-
-  else if (type === "support") {
-    message = "Please explain your problem clearly. Mention what service you need, your issue, deadline, and budget. Then Dawood can guide you properly.";
-  }
-
-  else if (type === "contact") {
-    message = `You can contact Dawood directly on WhatsApp.<br><a class="ai-whatsapp-btn" href="https://wa.me/923428305707" target="_blank">Message Dawood on WhatsApp</a>`;
-  }
-
-  addBotMessage(message);
+function rand(a){
+return a[Math.floor(Math.random()*a.length)];
 }
 
-function sendAIMessage() {
-  const input = document.getElementById("aiUserInput");
-  const text = input.value.trim();
-
-  if (text === "") return;
-
-  addUserMessage(text);
-  input.value = "";
-
-  const lowerText = text.toLowerCase();
-
-  if (lowerText.includes("website") || lowerText.includes("landing") || lowerText.includes("portfolio")) {
-    aiReply("website");
-  }
-
-  else if (lowerText.includes("excel") || lowerText.includes("dashboard") || lowerText.includes("automation") || lowerText.includes("sheet")) {
-    aiReply("excel");
-  }
-
-  else if (lowerText.includes("trading") || lowerText.includes("gold") || lowerText.includes("xauusd") || lowerText.includes("signal")) {
-    aiReply("trading");
-  }
-
-  else if (lowerText.includes("price") || lowerText.includes("pricing") || lowerText.includes("cost") || lowerText.includes("package")) {
-    aiReply("pricing");
-  }
-
-  else if (lowerText.includes("contact") || lowerText.includes("whatsapp") || lowerText.includes("message")) {
-    aiReply("contact");
-  }
-
-  else {
-    addBotMessage(`Thanks for your query. Dawood can review your exact requirement and guide you personally.<br><a class="ai-whatsapp-btn" href="https://wa.me/923428305707" target="_blank">Send Your Query on WhatsApp</a>`);
-  }
+function quickAsk(type){
+addMsg(type,"user");
+setTimeout(()=>{
+reply(type);
+},500);
 }
 
-function handleAIEnter(event) {
-  if (event.key === "Enter") {
-    sendAIMessage();
-  }
+function reply(type){
+
+const answers={
+
+website:[
+"Dawood creates responsive portfolio websites, landing pages, and business websites.",
+"Website support includes design, mobile layout, pages, and custom features.",
+"Please share your website type, pages needed, and timeline."
+],
+
+pricing:[
+"Pricing depends on project size and features.",
+"Share your exact requirement for a proper quote.",
+"Website, Excel, trading, and documentation have custom pricing."
+],
+
+excel:[
+"Dawood creates Excel dashboards, automation sheets, trackers, and reports.",
+"Excel work includes trading journals and business sheets.",
+"Please tell me what sheet or dashboard you need."
+],
+
+trading:[
+"Trading support includes XAUUSD guidance and strategy support.",
+"Dawood offers trading journal and risk planning help.",
+"Please mention whether you need signals or strategy help."
+],
+
+documents:[
+"Import/export and business documentation support is available.",
+"Share the document type you need.",
+"Dawood can help with documentation formatting and support."
+],
+
+contact:[
+`Contact Dawood directly.<br><a class="ai-wa" href="https://wa.me/923428305707" target="_blank">WhatsApp Dawood</a>`,
+`Need quick support?<br><a class="ai-wa" href="https://wa.me/923428305707" target="_blank">Open WhatsApp</a>`,
+`Send project details here:<br><a class="ai-wa" href="https://wa.me/923428305707" target="_blank">Message Dawood</a>`
+],
+
+default:[
+"I can help with website, Excel, trading, docs, pricing, or support.",
+"Please tell me more so I can guide you properly.",
+"Happy to help. Explain your requirement."
+]
+
+};
+
+addMsg(rand(answers[type]||answers.default),"bot");
 }
+
+function detect(t){
+t=t.toLowerCase();
+
+if(t.includes("website")||t.includes("web")||t.includes("portfolio")) return "website";
+if(t.includes("price")||t.includes("cost")||t.includes("pricing")) return "pricing";
+if(t.includes("excel")||t.includes("dashboard")||t.includes("sheet")) return "excel";
+if(t.includes("trading")||t.includes("gold")||t.includes("xauusd")) return "trading";
+if(t.includes("import")||t.includes("export")||t.includes("document")) return "documents";
+if(t.includes("contact")||t.includes("whatsapp")) return "contact";
+
+return "default";
+}
+
+function sendAI(){
+const input=document.getElementById("aiInput");
+const text=input.value.trim();
+
+if(!text)return;
+
+addMsg(text,"user");
+input.value="";
+
+typing();
+
+setTimeout(()=>{
+reply(detect(text));
+},600);
+}
+
+function aiEnter(e){
+if(e.key==="Enter") sendAI();
+}
+
+function greet(){
+const h=new Date().getHours();
+let msg="Welcome 👋";
+
+if(h<12) msg="Good morning 👋";
+else if(h<18) msg="Good afternoon 👋";
+else msg="Good evening 👋";
+
+document.getElementById("aiGreeting").innerText=msg;
+
+addMsg(msg+" I'm Dawood Tariq’s AI Assistant. Ask me anything about services or support.","bot");
+}
+
+greet();
 </script>
-<!-- AI ASSISTANT CHATBOT END -->
+<!-- AI ASSISTANT END -->
 <script>
 function toggleMenu(){
   document.getElementById("navMenu").classList.toggle("active");
