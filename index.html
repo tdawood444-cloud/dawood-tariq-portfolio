@@ -79,21 +79,15 @@ header{
   gap:12px;
 }
 
-/* LOGO FIXED - CLEAR + NOT HIDDEN */
 .brand img{
   width:58px;
   height:58px;
-
   object-fit:contain;
-
   display:block;
-
   background:transparent;
   border:none;
-
   padding:0;
   margin:0;
-
   image-rendering:auto;
   filter: drop-shadow(0 0 8px rgba(207,166,74,.22));
 }
@@ -124,6 +118,18 @@ nav a{
 
 nav a:hover{
   color:var(--gold2);
+}
+
+/* MOBILE MENU BUTTON */
+.menu-btn{
+  display:none;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  color:#fff;
+  font-size:28px;
+  padding:8px 14px;
+  border-radius:12px;
+  cursor:pointer;
 }
 
 /* HERO */
@@ -210,7 +216,6 @@ nav a:hover{
   box-shadow:0 0 45px rgba(207,166,74,.12);
 }
 
-/* HERO LOGO FIXED - NO CIRCLE CROP */
 .hero-logo{
   width:240px;
   height:auto;
@@ -412,25 +417,51 @@ footer{
 
 /* RESPONSIVE */
 @media(max-width:950px){
+
   header{
-    flex-direction:column;
-    gap:14px;
-    text-align:center;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 18px;
   }
 
   .brand{
-    justify-content:center;
+    justify-content:flex-start;
   }
 
   .brand img{
-    width:78px;
-    max-height:62px;
+    width:52px;
+    height:52px;
+  }
+
+  .brand h3{
+    font-size:14px;
+  }
+
+  .brand p{
+    font-size:11px;
+  }
+
+  .menu-btn{
+    display:block;
   }
 
   nav{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:13px;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#050505;
+    border-bottom:1px solid var(--line);
+    padding:18px;
+    flex-direction:column;
+    text-align:center;
+    gap:18px;
+  }
+
+  nav.active{
+    display:flex;
   }
 
   .hero{
@@ -494,14 +525,16 @@ footer{
     </div>
   </div>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="pricing.html">Pricing</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-  <a href="landing-page.html">Demo</a>
-</nav>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="landing-page.html">Demo</a>
+  </nav>
 </header>
 
 <main>
@@ -646,6 +679,12 @@ footer{
    target="_blank">
    WhatsApp
 </a>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
