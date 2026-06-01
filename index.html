@@ -678,7 +678,6 @@ footer{
   <button class="ai-open-btn" onclick="toggleAI()">AI Assistant</button>
 
   <div class="ai-panel" id="aiPanel">
-
     <div class="ai-header">
       <div>
         <strong>AI Assistant</strong>
@@ -702,7 +701,6 @@ footer{
       <input id="aiInput" type="text" placeholder="Ask anything..." onkeypress="aiEnter(event)">
       <button onclick="sendAI()">Send</button>
     </div>
-
   </div>
 </div>
 
@@ -724,12 +722,6 @@ border-radius:30px;
 font-weight:700;
 cursor:pointer;
 box-shadow:0 4px 14px rgba(0,0,0,.25);
-}
-border:none;
-padding:13px 20px;
-border-radius:30px;
-font-weight:700;
-cursor:pointer;
 }
 
 .ai-panel{
@@ -786,11 +778,8 @@ border:1px solid #ddd;
 padding:8px;
 border-radius:10px;
 cursor:pointer;
-}
-
-.ai-faq button:hover{
-background:#111;
-color:#fff;
+font-weight:600;
+font-size:12px;
 }
 
 .ai-chat{
@@ -828,16 +817,18 @@ border-top:1px solid #ddd;
 .ai-input-area input{
 flex:1;
 border:none;
-padding:16px;
+padding:14px;
 outline:none;
+font-size:14px;
 }
 
 .ai-input-area button{
 background:#111;
 color:#fff;
 border:none;
-padding:0 16px;
+padding:0 14px;
 cursor:pointer;
+font-weight:700;
 }
 
 .ai-wa{
@@ -851,16 +842,67 @@ margin-top:7px;
 font-weight:bold;
 }
 
+/* MOBILE FRIENDLY FIX */
 @media(max-width:480px){
+.ai-widget{
+right:10px;
+bottom:10px;
+}
+
+.ai-open-btn{
+padding:11px 16px;
+font-size:13px;
+}
+
 .ai-panel{
-width:92vw;
-height:560px;
+width:88vw;
+height:72vh;
+max-height:520px;
+border-radius:16px;
+margin-bottom:10px;
+}
+
+.ai-header{
+padding:12px;
+}
+
+.ai-faq{
+grid-template-columns:repeat(3,1fr);
+padding:8px;
+gap:5px;
+}
+
+.ai-faq button{
+padding:7px 4px;
+font-size:11px;
+}
+
+.ai-chat{
+height:calc(72vh - 170px);
+max-height:350px;
+padding:10px;
+}
+
+.ai-msg{
+font-size:13px;
+max-width:90%;
+}
+
+.ai-input-area input{
+padding:13px;
+font-size:13px;
 }
 }
 </style>
 
 <script>
 const aiChat=document.getElementById("aiChat");
+let clientName="";
+
+window.onload=function(){
+document.getElementById("aiPanel").style.display="none";
+greet();
+};
 
 function toggleAI(){
 const p=document.getElementById("aiPanel");
@@ -878,8 +920,10 @@ aiChat.scrollTop=aiChat.scrollHeight;
 function typing(){
 addMsg("Typing...","bot");
 setTimeout(()=>{
+if(aiChat.lastChild && aiChat.lastChild.innerHTML==="Typing..."){
 aiChat.lastChild.remove();
-},500);
+}
+},450);
 }
 
 function rand(a){
@@ -888,71 +932,100 @@ return a[Math.floor(Math.random()*a.length)];
 
 function quickAsk(type){
 addMsg(type,"user");
-setTimeout(()=>{
-reply(type);
-},500);
+typing();
+setTimeout(()=>{reply(type);},600);
 }
 
 function reply(type){
-
 const answers={
 
+greeting:[
+"Hello 👋 Welcome! May I know your name?",
+"Hi 👋 I’m Dawood Tariq’s AI Assistant. What’s your name?"
+],
+
+name:[
+`Thanks ${clientName}. How can I help you today? Website, Excel, trading, or documents?`
+],
+
 website:[
-"Dawood creates responsive portfolio websites, landing pages, and business websites.",
-"Website support includes design, mobile layout, pages, and custom features.",
-"Please share your website type, pages needed, and timeline."
+"Dawood creates responsive portfolio websites, landing pages, business websites, and mobile-friendly pages. How many pages do you need?"
+],
+
+delivery:[
+"Delivery depends on project size. Simple websites are faster, larger projects depend on features."
+],
+
+discount:[
+"Yes. First website clients receive a free simple logo + 5% discount."
+],
+
+github:[
+"Yes. Dawood can launch your website on GitHub Pages."
+],
+
+urgent:[
+"Yes, urgent work is possible depending on availability. Dawood usually replies in 1–2 hours. For urgent work, WhatsApp is fastest.<br><a class='ai-wa' href='https://wa.me/923428305707' target='_blank'>Message on WhatsApp</a>"
 ],
 
 pricing:[
-"Pricing depends on project size and features.",
-"Share your exact requirement for a proper quote.",
-"Website, Excel, trading, and documentation have custom pricing."
+"Pricing depends on project size, pages, and features. First website clients get a free simple logo + 5% discount."
+],
+
+revisions:[
+"Yes, revisions are available. The number of revisions depends on the project package and work scope."
+],
+
+payment:[
+"Payment depends on the project type. You can discuss payment details directly with Dawood on WhatsApp."
 ],
 
 excel:[
-"Dawood creates Excel dashboards, automation sheets, trackers, and reports.",
-"Excel work includes trading journals and business sheets.",
-"Please tell me what sheet or dashboard you need."
+"Dawood creates Excel dashboards, automation sheets, trackers, reports, trading journals, and business sheets. What type of Excel file do you need?"
 ],
 
 trading:[
-"Trading support includes XAUUSD guidance and strategy support.",
-"Dawood offers trading journal and risk planning help.",
-"Please mention whether you need signals or strategy help."
+"Trading support includes XAUUSD guidance, strategy support, trading journal, and risk planning. Do you need signals or strategy help?"
 ],
 
 documents:[
-"Import/export and business documentation support is available.",
-"Share the document type you need.",
-"Dawood can help with documentation formatting and support."
+"Import/export and business documentation support is available. What document do you need help with?"
 ],
 
 contact:[
-`Contact Dawood directly.<br><a class="ai-wa" href="https://wa.me/923428305707" target="_blank">WhatsApp Dawood</a>`,
-`Need quick support?<br><a class="ai-wa" href="https://wa.me/923428305707" target="_blank">Open WhatsApp</a>`,
-`Send project details here:<br><a class="ai-wa" href="https://wa.me/923428305707" target="_blank">Message Dawood</a>`
+`Contact Dawood directly on WhatsApp.<br><a class="ai-wa" href="https://wa.me/923428305707" target="_blank">WhatsApp Dawood</a>`
 ],
 
 default:[
-"I can help with website, Excel, trading, docs, pricing, or support.",
-"Please tell me more so I can guide you properly.",
-"Happy to help. Explain your requirement."
+"I can help with website, Excel, trading, or documents. Which one do you need?"
 ]
-
 };
 
 addMsg(rand(answers[type]||answers.default),"bot");
 }
 
 function detect(t){
-t=t.toLowerCase();
+let text=t.toLowerCase().trim();
 
-if(t.includes("website")||t.includes("web")||t.includes("portfolio")) return "website";
-if(t.includes("price")||t.includes("cost")||t.includes("pricing")) return "pricing";
-if(t.includes("excel")||t.includes("dashboard")||t.includes("sheet")) return "excel";
-if(t.includes("trading")||t.includes("gold")||t.includes("xauusd")) return "trading";
-if(t.includes("import")||t.includes("export")||t.includes("document")) return "documents";
-if(t.includes("contact")||t.includes("whatsapp")) return "contact";
+if(text==="hi"||text==="hello"||text==="hey"||text==="hy") return "greeting";
+
+if(text.includes("my name is")){
+clientName=t.replace(/my name is/i,"").trim().split(" ")[0];
+return "name";
+}
+
+if(text.includes("how long")||text.includes("delivery")||text.includes("deliver")||text.includes("deadline")) return "delivery";
+if(text.includes("discount")||text.includes("first time")||text.includes("first-time")) return "discount";
+if(text.includes("github")||text.includes("launch")||text.includes("publish")||text.includes("deploy")) return "github";
+if(text.includes("urgent")||text.includes("fast")||text.includes("quick")) return "urgent";
+if(text.includes("revision")||text.includes("changes")) return "revisions";
+if(text.includes("payment")||text.includes("pay")) return "payment";
+if(text.includes("website")||text.includes("web")||text.includes("portfolio")) return "website";
+if(text.includes("price")||text.includes("cost")||text.includes("pricing")) return "pricing";
+if(text.includes("excel")||text.includes("dashboard")||text.includes("sheet")) return "excel";
+if(text.includes("trading")||text.includes("gold")||text.includes("xauusd")||text.includes("signal")) return "trading";
+if(text.includes("import")||text.includes("export")||text.includes("document")||text.includes("docs")) return "documents";
+if(text.includes("contact")||text.includes("whatsapp")||text.includes("number")) return "contact";
 
 return "default";
 }
@@ -960,17 +1033,13 @@ return "default";
 function sendAI(){
 const input=document.getElementById("aiInput");
 const text=input.value.trim();
-
 if(!text)return;
 
 addMsg(text,"user");
 input.value="";
 
 typing();
-
-setTimeout(()=>{
-reply(detect(text));
-},600);
+setTimeout(()=>{reply(detect(text));},650);
 }
 
 function aiEnter(e){
@@ -987,10 +1056,10 @@ else msg="Good evening 👋";
 
 document.getElementById("aiGreeting").innerText=msg;
 
-addMsg(msg+" I'm Dawood Tariq’s AI Assistant. Ask me anything about services or support.","bot");
+if(aiChat.innerHTML.trim()===""){
+addMsg(msg+" I'm Dawood Tariq’s AI Assistant. I can help with website, Excel, trading, documents, pricing, delivery time, GitHub Pages, urgent work, and contact support.","bot");
 }
-
-greet();
+}
 </script>
 <!-- AI ASSISTANT END -->
 <script>
