@@ -120,6 +120,29 @@ nav a:hover{
   color:var(--blue);
 }
 
+/* HAMBURGER BUTTON - MOBILE ONLY */
+.menu-toggle{
+  display:none;
+  width:44px;
+  height:38px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(255,255,255,.07);
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+}
+
+.menu-toggle span{
+  width:22px;
+  height:2px;
+  background:#fff;
+  border-radius:20px;
+  display:block;
+}
+
 /* HERO */
 .hero{
   min-height:92vh;
@@ -554,15 +577,57 @@ footer{
 /* MOBILE */
 @media(max-width:950px){
   header{
-    flex-direction:column;
+    flex-direction:row;
     gap:16px;
-    text-align:center;
+    text-align:left;
+    padding:14px 18px;
+  }
+
+  .logo-mark{
+    width:44px;
+    height:44px;
+    border-radius:14px;
+  }
+
+  .logo h3{
+    font-size:16px;
+  }
+
+  .logo p{
+    font-size:11px;
+  }
+
+  .menu-toggle{
+    display:flex;
   }
 
   nav{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:14px;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:18px;
+    right:18px;
+    flex-direction:column;
+    gap:0;
+    padding:14px;
+    background:rgba(3,7,18,.96);
+    border:1px solid var(--line);
+    border-radius:18px;
+    backdrop-filter:blur(18px);
+    box-shadow:0 30px 70px rgba(0,0,0,.55);
+  }
+
+  nav.active{
+    display:flex;
+  }
+
+  nav a{
+    padding:13px 12px;
+    border-bottom:1px solid rgba(255,255,255,.10);
+  }
+
+  nav a:last-child{
+    border-bottom:none;
   }
 
   .hero{
@@ -615,7 +680,13 @@ footer{
     </div>
   </div>
 
- <nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+ <nav id="mainNav">
   <a href="index.html">Home</a>
   <a href="services.html">Services</a>
   <a href="pricing.html">Pricing</a>
@@ -908,6 +979,27 @@ footer{
 <footer>
   © 2026 VertexFlow Studio Demo | 3D Landing Page Concept
 </footer>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  menuToggle.addEventListener("click", function () {
+    mainNav.classList.toggle("active");
+
+    const isOpen = mainNav.classList.contains("active");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  const navLinks = mainNav.querySelectorAll("a");
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      mainNav.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
 
 </body>
 </html>
