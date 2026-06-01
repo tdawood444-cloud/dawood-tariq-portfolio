@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>VertexFlow Studio | 3D Business Landing Page Demo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#030712;
+  --blue:#38bdf8;
+  --purple:#8b5cf6;
+  --pink:#ec4899;
+  --text:#ffffff;
+  --muted:#b8c0d9;
+  --line:rgba(255,255,255,.16);
+  --glass:rgba(255,255,255,.08);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  overflow-x:hidden;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-3;
+  background:
+    linear-gradient(rgba(3,7,18,.82),rgba(3,7,18,.92)),
+    url("https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+}
+
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(56,189,248,.24), transparent 30%),
+    radial-gradient(circle at 80% 10%, rgba(139,92,246,.26), transparent 30%),
+    radial-gradient(circle at 60% 90%, rgba(236,72,153,.16), transparent 32%);
+}
+
+a{
+  text-decoration:none;
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(3,7,18,.72);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo-mark{
+  width:50px;
+  height:50px;
+  border-radius:16px;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  background:linear-gradient(135deg,var(--blue),var(--purple),var(--pink));
+  box-shadow:0 0 35px rgba(56,189,248,.35);
+}
+
+.logo h3{
+  font-size:18px;
+  font-weight:900;
+}
+
+.logo p{
+  color:var(--muted);
+  font-size:12px;
+}
+
+nav{
+  display:flex;
+  gap:24px;
+}
+
+nav a{
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+}
+
+nav a:hover{
+  color:var(--blue);
+}
+
+/* HERO */
+.hero{
+  min-height:92vh;
+  padding:90px 7% 65px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:55px;
+  align-items:center;
+}
+
+.kicker{
+  color:var(--blue);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  margin-top:18px;
+  font-size:68px;
+  line-height:1.02;
+  letter-spacing:-2px;
+}
+
+.hero h1 span{
+  background:linear-gradient(135deg,var(--blue),var(--purple),var(--pink));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.hero p{
+  max-width:660px;
+  margin-top:22px;
+  color:var(--muted);
+  line-height:1.9;
+  font-size:17px;
+}
+
+.actions{
+  margin-top:32px;
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 28px;
+  border-radius:50px;
+  font-weight:900;
+  transition:.3s;
+}
+
+.btn-primary{
+  background:linear-gradient(135deg,var(--blue),var(--purple));
+  color:#fff;
+  box-shadow:0 15px 45px rgba(56,189,248,.22);
+}
+
+.btn-secondary{
+  border:1px solid var(--line);
+  color:#fff;
+  background:rgba(255,255,255,.06);
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+}
+
+/* 3D DASHBOARD */
+.visual{
+  perspective:1200px;
+}
+
+.dashboard{
+  transform:rotateY(-10deg) rotateX(7deg);
+  background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.03));
+  border:1px solid var(--line);
+  border-radius:34px;
+  padding:28px;
+  box-shadow:
+    0 55px 110px rgba(0,0,0,.65),
+    0 0 70px rgba(56,189,248,.18);
+  position:relative;
+}
+
+.dashboard::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  z-index:-1;
+  border-radius:34px;
+  background:linear-gradient(135deg,rgba(56,189,248,.35),rgba(139,92,246,.28),rgba(236,72,153,.20));
+  filter:blur(22px);
+}
+
+.window{
+  background:#060b1b;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:26px;
+  padding:26px;
+  min-height:430px;
+}
+
+.window-dots{
+  display:flex;
+  gap:8px;
+  margin-bottom:25px;
+}
+
+.dot{
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--blue),var(--purple));
+}
+
+.window h2{
+  font-size:30px;
+}
+
+.window p{
+  color:var(--muted);
+  margin:13px 0 24px;
+  line-height:1.7;
+}
+
+.chart{
+  height:150px;
+  border-radius:22px;
+  background:
+    linear-gradient(135deg,rgba(56,189,248,.18),rgba(139,92,246,.12)),
+    repeating-linear-gradient(90deg,transparent 0 38px,rgba(255,255,255,.04) 39px 40px);
+  border:1px solid var(--line);
+  position:relative;
+  overflow:hidden;
+}
+
+.chart::after{
+  content:"";
+  position:absolute;
+  left:8%;
+  right:8%;
+  bottom:35px;
+  height:72px;
+  border-radius:60% 40% 50% 20%;
+  border-top:5px solid var(--blue);
+  border-right:5px solid var(--purple);
+  transform:skewX(-16deg);
+}
+
+.mini-grid{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+
+.mini{
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+}
+
+.mini h4{
+  color:var(--blue);
+  margin-bottom:6px;
+}
+
+.mini p{
+  margin:0;
+  font-size:13px;
+}
+
+/* SECTIONS */
+section{
+  padding:80px 7%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:42px;
+}
+
+.section-title span{
+  color:var(--blue);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.section-title h2{
+  margin-top:12px;
+  font-size:42px;
+  letter-spacing:-1px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.card{
+  background:var(--glass);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:32px;
+  box-shadow:0 35px 80px rgba(0,0,0,.35);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px) rotateX(2deg);
+  box-shadow:0 35px 90px rgba(56,189,248,.14);
+}
+
+.icon{
+  width:56px;
+  height:56px;
+  border-radius:18px;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  margin-bottom:20px;
+  background:linear-gradient(135deg,var(--blue),var(--purple));
+}
+
+.card h3{
+  font-size:22px;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+/* STATS */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.stat{
+  text-align:center;
+  background:rgba(255,255,255,.07);
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:30px 20px;
+}
+
+.stat h2{
+  font-size:36px;
+  background:linear-gradient(135deg,var(--blue),var(--purple));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.stat p{
+  color:var(--muted);
+  margin-top:8px;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.testimonial{
+  background:rgba(255,255,255,.07);
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:30px;
+}
+
+.testimonial p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.testimonial h4{
+  margin-top:18px;
+  color:#fff;
+}
+
+.testimonial span{
+  color:var(--blue);
+  font-size:13px;
+}
+
+/* PRICING */
+.pricing{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.price-card{
+  background:rgba(255,255,255,.07);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:34px;
+  position:relative;
+}
+
+.featured{
+  border:2px solid var(--blue);
+  box-shadow:0 0 70px rgba(56,189,248,.18);
+}
+
+.badge{
+  position:absolute;
+  top:-14px;
+  right:24px;
+  background:linear-gradient(135deg,var(--blue),var(--purple));
+  padding:8px 14px;
+  border-radius:30px;
+  font-size:12px;
+  font-weight:900;
+}
+
+.price-card h3{
+  font-size:24px;
+}
+
+.price{
+  font-size:38px;
+  margin:14px 0;
+  font-weight:900;
+}
+
+.price-card ul{
+  margin-top:18px;
+  padding-left:18px;
+  color:var(--muted);
+  line-height:2;
+}
+
+/* PROCESS */
+.process{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.step{
+  background:rgba(255,255,255,.07);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:28px;
+  text-align:center;
+}
+
+.step strong{
+  font-size:34px;
+  color:var(--blue);
+}
+
+.step h3{
+  margin-top:10px;
+}
+
+.step p{
+  color:var(--muted);
+  line-height:1.7;
+  margin-top:8px;
+}
+
+/* FAQ */
+.faq{
+  max-width:950px;
+  margin:auto;
+  display:grid;
+  gap:16px;
+}
+
+details{
+  background:rgba(255,255,255,.07);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:20px 24px;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:800;
+  color:#fff;
+}
+
+details p{
+  margin-top:12px;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+/* CTA */
+.cta{
+  max-width:980px;
+  margin:auto;
+  text-align:center;
+  background:linear-gradient(145deg,rgba(56,189,248,.14),rgba(139,92,246,.12));
+  border:1px solid var(--line);
+  border-radius:34px;
+  padding:56px 30px;
+  box-shadow:0 35px 90px rgba(0,0,0,.45);
+}
+
+.cta h2{
+  font-size:42px;
+}
+
+.cta p{
+  color:var(--muted);
+  margin:16px 0 26px;
+  line-height:1.8;
+}
+
+footer{
+  padding:28px;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+}
+
+/* MOBILE */
+@media(max-width:950px){
+  header{
+    flex-direction:column;
+    gap:16px;
+    text-align:center;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:65px 18px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .actions{
+    justify-content:center;
+  }
+
+  .dashboard{
+    transform:none;
+  }
+
+  section{
+    padding:60px 18px;
+  }
+
+  .cards,
+  .stats,
+  .testimonials,
+  .pricing,
+  .process,
+  .mini-grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-title h2,
+  .cta h2{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">VF</div>
+    <div>
+      <h3>VertexFlow Studio</h3>
+      <p>3D Business Landing Page</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#stats">Stats</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <div class="kicker">Digital Growth Demo</div>
+
+    <h1>Build Modern Digital Experiences That <span>Stand Out</span></h1>
+
+    <p>
+      A premium demo landing page for freelancers, agencies and growing businesses.
+      Designed with 3D visuals, glassmorphism, responsive layout and a strong conversion-focused structure.
+    </p>
+
+    <div class="actions">
+      <a href="#contact" class="btn btn-primary">Start A Project</a>
+      <a href="#services" class="btn btn-secondary">Explore Services</a>
+    </div>
+  </div>
+
+  <div class="visual">
+    <div class="dashboard">
+      <div class="window">
+        <div class="window-dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+
+        <h2>3D Website Dashboard</h2>
+        <p>Modern UI concept built to present services, results and business trust.</p>
+
+        <div class="chart"></div>
+
+        <div class="mini-grid">
+          <div class="mini">
+            <h4>Responsive</h4>
+            <p>Phone, tablet and desktop ready.</p>
+          </div>
+
+          <div class="mini">
+            <h4>Premium UI</h4>
+            <p>Glass cards and glowing depth.</p>
+          </div>
+
+          <div class="mini">
+            <h4>CTA Flow</h4>
+            <p>Designed to guide visitors.</p>
+          </div>
+
+          <div class="mini">
+            <h4>Fast Layout</h4>
+            <p>Clean and lightweight sections.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <span>Services</span>
+    <h2>What This Demo Includes</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">01</div>
+      <h3>Modern Hero Section</h3>
+      <p>Strong headline, business description and clear buttons for better first impression.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">02</div>
+      <h3>3D Visual Design</h3>
+      <p>Floating dashboard card, glassmorphism and glow effects for a premium tech look.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">03</div>
+      <h3>Service Cards</h3>
+      <p>Professional cards to explain offers clearly and make the page easy to scan.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">04</div>
+      <h3>Mobile Responsive</h3>
+      <p>Layout adapts smoothly across mobile phones, tablets and desktop screens.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">05</div>
+      <h3>Pricing Section</h3>
+      <p>Clean pricing cards help visitors quickly understand package options.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">06</div>
+      <h3>Lead Focused CTA</h3>
+      <p>Call-to-action sections guide visitors toward contacting or starting a project.</p>
+    </div>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="stats">
+    <div class="stat">
+      <h2>120+</h2>
+      <p>Demo Projects</p>
+    </div>
+
+    <div class="stat">
+      <h2>98%</h2>
+      <p>Client Satisfaction</p>
+    </div>
+
+    <div class="stat">
+      <h2>24/7</h2>
+      <p>Support Ready</p>
+    </div>
+
+    <div class="stat">
+      <h2>100%</h2>
+      <p>Responsive Design</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <span>Reviews</span>
+    <h2>Client Style Testimonials</h2>
+  </div>
+
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>“The design looks modern, clean and professional. The landing page structure is clear and easy to understand.”</p>
+      <h4>Sarah Mitchell</h4>
+      <span>Startup Founder</span>
+    </div>
+
+    <div class="testimonial">
+      <p>“The 3D style and responsive layout give the page a premium look. Great for business presentation.”</p>
+      <h4>David Morgan</h4>
+      <span>Agency Owner</span>
+    </div>
+
+    <div class="testimonial">
+      <p>“Clean sections, strong CTA buttons and mobile friendly layout. Exactly what a landing page should have.”</p>
+      <h4>Emma Collins</h4>
+      <span>Business Consultant</span>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="section-title">
+    <span>Packages</span>
+    <h2>Demo Pricing Layout</h2>
+  </div>
+
+  <div class="pricing">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <div class="price">$99</div>
+      <ul>
+        <li>Single landing page</li>
+        <li>Responsive layout</li>
+        <li>Basic sections</li>
+        <li>Contact CTA</li>
+      </ul>
+    </div>
+
+    <div class="price-card featured">
+      <div class="badge">Popular</div>
+      <h3>Business</h3>
+      <div class="price">$199</div>
+      <ul>
+        <li>Premium landing page</li>
+        <li>3D visual section</li>
+        <li>Pricing + FAQ</li>
+        <li>Responsive design</li>
+      </ul>
+    </div>
+
+    <div class="price-card">
+      <h3>Premium</h3>
+      <div class="price">$299</div>
+      <ul>
+        <li>Advanced UI style</li>
+        <li>Full landing page flow</li>
+        <li>Extra sections</li>
+        <li>Priority delivery</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <span>Process</span>
+    <h2>How A Project Works</h2>
+  </div>
+
+  <div class="process">
+    <div class="step">
+      <strong>1</strong>
+      <h3>Discuss</h3>
+      <p>Client shares business goal and required sections.</p>
+    </div>
+
+    <div class="step">
+      <strong>2</strong>
+      <h3>Plan</h3>
+      <p>Structure and layout are planned for conversion.</p>
+    </div>
+
+    <div class="step">
+      <strong>3</strong>
+      <h3>Design</h3>
+      <p>Modern responsive landing page is created.</p>
+    </div>
+
+    <div class="step">
+      <strong>4</strong>
+      <h3>Launch</h3>
+      <p>Final page is tested and ready to publish.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <span>FAQ</span>
+    <h2>Common Questions</h2>
+  </div>
+
+  <div class="faq">
+    <details>
+      <summary>Is this landing page mobile responsive?</summary>
+      <p>Yes, this demo is designed to work smoothly on mobile, tablet and desktop screens.</p>
+    </details>
+
+    <details>
+      <summary>Can colors and branding be changed?</summary>
+      <p>Yes, the design can be customized for any brand color, logo and business style.</p>
+    </details>
+
+    <details>
+      <summary>Can this be used for a real business?</summary>
+      <p>Yes, the same layout can be adapted for freelancers, agencies, consultants and small businesses.</p>
+    </details>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="cta">
+    <h2>Ready To Build A Modern Landing Page?</h2>
+    <p>
+      This demo project shows a complete landing page layout with 3D visuals,
+      responsive sections, pricing cards, testimonials and CTA flow.
+    </p>
+
+    <a href="#" class="btn btn-primary">Demo Contact Button</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 VertexFlow Studio Demo | 3D Landing Page Concept
+</footer>
+
+</body>
+</html>
