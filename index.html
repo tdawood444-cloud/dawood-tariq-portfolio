@@ -689,10 +689,10 @@ footer{
     <div class="ai-faq">
       <button onclick="quickAsk('website')">Website</button>
       <button onclick="quickAsk('pricing')">Pricing</button>
+      <button onclick="quickAsk('portfolio')">Portfolio</button>
       <button onclick="quickAsk('excel')">Excel</button>
       <button onclick="quickAsk('trading')">Trading</button>
-      <button onclick="quickAsk('documents')">Docs</button>
-      <button onclick="quickAsk('contact')">Contact</button>
+      <button onclick="quickAsk('quote')">Quote</button>
     </div>
 
     <div class="ai-chat" id="aiChat"></div>
@@ -726,8 +726,8 @@ box-shadow:0 4px 14px rgba(0,0,0,.25);
 
 .ai-panel{
 display:none;
-width:360px;
-height:560px;
+width:380px;
+height:580px;
 background:#fff;
 border-radius:18px;
 overflow:hidden;
@@ -783,14 +783,14 @@ font-size:12px;
 }
 
 .ai-chat{
-height:370px;
+height:390px;
 overflow-y:auto;
 padding:12px;
 background:#fff;
 }
 
 .ai-msg{
-max-width:85%;
+max-width:88%;
 padding:10px;
 margin-bottom:10px;
 border-radius:14px;
@@ -817,7 +817,7 @@ border-top:1px solid #ddd;
 .ai-input-area input{
 flex:1;
 border:none;
-padding:14px;
+padding:15px;
 outline:none;
 font-size:14px;
 }
@@ -826,7 +826,7 @@ font-size:14px;
 background:#111;
 color:#fff;
 border:none;
-padding:0 14px;
+padding:0 15px;
 cursor:pointer;
 font-weight:700;
 }
@@ -835,35 +835,63 @@ font-weight:700;
 display:inline-block;
 background:#111;
 color:#fff;
-padding:8px 10px;
+padding:9px 11px;
 border-radius:8px;
 text-decoration:none;
 margin-top:7px;
 font-weight:bold;
 }
 
-/* MOBILE FRIENDLY FIX */
+.ai-card{
+background:#fff;
+border:1px solid #ddd;
+border-radius:12px;
+padding:10px;
+margin-top:8px;
+}
+
+.ai-card strong{
+display:block;
+margin-bottom:4px;
+}
+
+.ai-price{
+background:#fff;
+border:1px solid #ddd;
+border-radius:12px;
+padding:10px;
+margin-top:8px;
+}
+
+.ai-price b{
+color:#111;
+}
+
 @media(max-width:480px){
 .ai-widget{
-right:10px;
-bottom:10px;
+right:0;
+bottom:0;
+width:100%;
 }
 
 .ai-open-btn{
+position:fixed;
+right:10px;
+bottom:10px;
 padding:11px 16px;
 font-size:13px;
 }
 
 .ai-panel{
-width:88vw;
-height:72vh;
-max-height:520px;
-border-radius:16px;
-margin-bottom:10px;
+width:100vw;
+height:100vh;
+max-height:100vh;
+border-radius:0;
+margin-bottom:0;
 }
 
 .ai-header{
-padding:12px;
+padding:14px;
 }
 
 .ai-faq{
@@ -873,31 +901,39 @@ gap:5px;
 }
 
 .ai-faq button{
-padding:7px 4px;
+padding:8px 4px;
 font-size:11px;
 }
 
 .ai-chat{
-height:calc(72vh - 170px);
-max-height:350px;
+height:calc(100vh - 178px);
 padding:10px;
 }
 
 .ai-msg{
 font-size:13px;
-max-width:90%;
+max-width:92%;
 }
 
 .ai-input-area input{
-padding:13px;
-font-size:13px;
+padding:15px;
+font-size:14px;
 }
 }
 </style>
 
 <script>
 const aiChat=document.getElementById("aiChat");
-let clientName="";
+
+let lead={
+name:"",
+service:"",
+pages:"",
+deadline:"",
+budget:""
+};
+
+let lastQuestion="";
 
 window.onload=function(){
 document.getElementById("aiPanel").style.display="none";
@@ -936,6 +972,11 @@ typing();
 setTimeout(()=>{reply(type);},600);
 }
 
+function whatsappLink(){
+let msg=`Hello Dawood, I want a quote.%0AName: ${lead.name || "Not provided"}%0AService: ${lead.service || "Not provided"}%0APages/Work Size: ${lead.pages || "Not provided"}%0ADeadline: ${lead.deadline || "Not provided"}%0ABudget: ${lead.budget || "Not provided"}`;
+return `https://wa.me/923428305707?text=${msg}`;
+}
+
 function reply(type){
 const answers={
 
@@ -945,39 +986,100 @@ greeting:[
 ],
 
 name:[
-`Thanks ${clientName}. How can I help you today? Website, Excel, trading, or documents?`
+`Thanks ${lead.name}. What service do you need: website, Excel, trading, or documents?`
 ],
 
 website:[
-"Dawood creates responsive portfolio websites, landing pages, business websites, and mobile-friendly pages. How many pages do you need?"
+"Yes, Dawood can create business websites, portfolio websites, landing pages, service websites, and mobile-friendly pages. How many pages do you need?"
 ],
 
-delivery:[
-"Delivery depends on project size. Simple websites are faster, larger projects depend on features."
+business:[
+"Yes, Dawood can make a professional business website with Home, About, Services, Pricing, FAQ, Contact, WhatsApp button, and mobile layout. How many pages do you need?"
 ],
 
-discount:[
-"Yes. First website clients receive a free  logo + 5% discount."
+landing:[
+"Yes, Dawood can create a clean landing page for your product, service, portfolio, or business. Do you need simple landing page or advanced landing page with sections and WhatsApp lead button?"
 ],
 
-github:[
-"Yes. Dawood can launch your website on GitHub Pages."
-],
-
-urgent:[
-"Yes, urgent work is possible depending on availability. Dawood usually replies in 1–2 hours. For urgent work, WhatsApp is fastest.<br><a class='ai-wa' href='https://wa.me/923428305707' target='_blank'>Message on WhatsApp</a>"
+pages5:[
+"For a 5-page website, the best package is usually Standard or Premium depending on features. Standard is good for normal business pages. Premium is better if you need advanced layout, more sections, portfolio cards, FAQ, and stronger conversion."
 ],
 
 pricing:[
-"Pricing depends on project size, pages, and features. First website clients get a free simple logo + 5% discount."
+`Website packages:<br><br>
+<div class="ai-price"><b>Starter</b><br>Basic 1-page website / landing page. Best for simple online presence.</div>
+<div class="ai-price"><b>Standard</b><br>Multi-page website, mobile-friendly layout, services section, contact button, and clean design.</div>
+<div class="ai-price"><b>Premium</b><br>Advanced business website with strong sections, FAQ, portfolio cards, better layout, revisions, and lead-focused design.</div>
+<br>Tell me how many pages you need and I’ll guide you to the right package.`
+],
+
+portfolio:[
+`Yes, here are sample project types Dawood can show/create:<br>
+<div class="ai-card"><strong>Business Website</strong>Clean pages for services, pricing, FAQ, and contact.</div>
+<div class="ai-card"><strong>Portfolio Website</strong>Personal brand website with work, skills, testimonials, and contact.</div>
+<div class="ai-card"><strong>Landing Page</strong>High-converting one-page design for service or product.</div>
+<div class="ai-card"><strong>Excel Dashboard</strong>Reports, trackers, automation sheets, and trading journals.</div>
+Do you want a website sample style or a quote?`
+],
+
+samples:[
+"Yes, Dawood can share website samples and project cards. You can ask for business website sample, portfolio sample, landing page sample, or Excel dashboard sample."
+],
+
+urgent:[
+"Yes, urgent delivery is possible depending on project size and current availability. Small websites or edits can be faster. For urgent work, send your details on WhatsApp now.<br><a class='ai-wa' href='"+whatsappLink()+"' target='_blank'>Get Urgent Quote</a>"
+],
+
+delivery:[
+"Delivery depends on project size. Simple websites are faster, while larger websites depend on pages, features, content, and revisions. What deadline do you have?"
+],
+
+logo:[
+"Yes, a simple logo can be provided with website work. First website clients may also receive a free simple logo + 5% discount."
+],
+
+github:[
+"Yes, Dawood can publish your website on GitHub Pages. He can also guide you with basic hosting setup and deployment."
+],
+
+hosting:[
+"Yes, website hosting/deployment help is available. GitHub Pages is good for simple static websites. For bigger projects, hosting depends on features."
 ],
 
 revisions:[
-"Yes, revisions are available. The number of revisions depends on the project package and work scope."
+"Yes, revisions are available. The number of revisions depends on the selected package and project scope. What changes do you want?"
 ],
 
 payment:[
-"Payment depends on the project type. You can discuss payment details directly with Dawood on WhatsApp."
+"Payment methods available: Bank Transfer, USDT, and Upwork contract. If you prefer safe freelance protection, you can create a contract with Dawood on Upwork."
+],
+
+upwork:[
+"Yes, Dawood can work through Upwork. You can create a contract there for safe project handling, milestones, and payment protection."
+],
+
+quote:[
+"Sure, I can help you get a quote. What is your name?"
+],
+
+leadService:[
+`Thanks ${lead.name || ""}. What service do you need: website, Excel, trading, or documents?`
+],
+
+leadPages:[
+"Great. How many pages or how much work do you need?"
+],
+
+leadDeadline:[
+"Good. What is your deadline: urgent, today, 2-3 days, or normal delivery?"
+],
+
+leadBudget:[
+"Almost done. Do you have a budget range?"
+],
+
+leadDone:[
+`Perfect. Send this to Dawood for a fast quote:<br><a class="ai-wa" href="${whatsappLink()}" target="_blank">Send Quote Details on WhatsApp</a>`
 ],
 
 excel:[
@@ -985,11 +1087,11 @@ excel:[
 ],
 
 trading:[
-"Trading support includes XAUUSD guidance, strategy support, trading journal, and risk planning. Do you need signals or strategy help?"
+"Trading support includes XAUUSD guidance, strategy support, trading journal, risk planning, and signals. Do you need signals, strategy help, or journal/risk tools?"
 ],
 
 documents:[
-"Import/export and business documentation support is available. What document do you need help with?"
+"Import/export and business documentation support is available, including GD/documentation-related work. What document do you need help with?"
 ],
 
 contact:[
@@ -997,7 +1099,7 @@ contact:[
 ],
 
 default:[
-"I can help with website, Excel, trading, or documents. Which one do you need?"
+"I can help with website, pricing, portfolio samples, Excel, trading, documents, urgent delivery, payment methods, GitHub Pages, revisions, and WhatsApp quote. What do you need?"
 ]
 };
 
@@ -1007,25 +1109,131 @@ addMsg(rand(answers[type]||answers.default),"bot");
 function detect(t){
 let text=t.toLowerCase().trim();
 
-if(text==="hi"||text==="hello"||text==="hey"||text==="hy") return "greeting";
+if(lastQuestion==="name"){
+lead.name=t.trim().split(" ")[0];
+lastQuestion="service";
+return "leadService";
+}
+
+if(lastQuestion==="service"){
+lead.service=t;
+lastQuestion="pages";
+return "leadPages";
+}
+
+if(lastQuestion==="pages"){
+lead.pages=t;
+lastQuestion="deadline";
+return "leadDeadline";
+}
+
+if(lastQuestion==="deadline"){
+lead.deadline=t;
+lastQuestion="budget";
+return "leadBudget";
+}
+
+if(lastQuestion==="budget"){
+lead.budget=t;
+lastQuestion="";
+return "leadDone";
+}
+
+if(text==="hi"||text==="hello"||text==="hey"||text==="hy"){
+lastQuestion="name";
+return "greeting";
+}
 
 if(text.includes("my name is")){
-clientName=t.replace(/my name is/i,"").trim().split(" ")[0];
+lead.name=t.replace(/my name is/i,"").trim().split(" ")[0];
+lastQuestion="service";
 return "name";
 }
 
-if(text.includes("how long")||text.includes("delivery")||text.includes("deliver")||text.includes("deadline")) return "delivery";
-if(text.includes("discount")||text.includes("first time")||text.includes("first-time")) return "discount";
-if(text.includes("github")||text.includes("launch")||text.includes("publish")||text.includes("deploy")) return "github";
-if(text.includes("urgent")||text.includes("fast")||text.includes("quick")) return "urgent";
-if(text.includes("revision")||text.includes("changes")) return "revisions";
-if(text.includes("payment")||text.includes("pay")) return "payment";
-if(text.includes("website")||text.includes("web")||text.includes("portfolio")) return "website";
-if(text.includes("price")||text.includes("cost")||text.includes("pricing")) return "pricing";
-if(text.includes("excel")||text.includes("dashboard")||text.includes("sheet")) return "excel";
-if(text.includes("trading")||text.includes("gold")||text.includes("xauusd")||text.includes("signal")) return "trading";
-if(text.includes("import")||text.includes("export")||text.includes("document")||text.includes("docs")) return "documents";
-if(text.includes("contact")||text.includes("whatsapp")||text.includes("number")) return "contact";
+if(text.includes("quote")||text.includes("whatsapp quote")||text.includes("estimate")){
+lastQuestion="name";
+return "quote";
+}
+
+if(text.includes("business site")||text.includes("business website")||text.includes("company website")||text.includes("make my business")){
+lead.service="Business Website";
+lastQuestion="pages";
+return "business";
+}
+
+if(text.includes("landing page")||text.includes("single page")){
+lead.service="Landing Page";
+lastQuestion="pages";
+return "landing";
+}
+
+if(text.includes("5 page")||text.includes("5-page")||text.includes("five page")||text.includes("5 pages")){
+lead.pages="5 pages";
+lastQuestion="deadline";
+return "pages5";
+}
+
+if(text.includes("sample")||text.includes("samples")||text.includes("portfolio")||text.includes("previous work")||text.includes("work proof")){
+return "portfolio";
+}
+
+if(text.includes("how long")||text.includes("delivery")||text.includes("deliver")||text.includes("deadline")||text.includes("finish today")||text.includes("today")){
+return "delivery";
+}
+
+if(text.includes("urgent")||text.includes("fast")||text.includes("quick")||text.includes("asap")){
+return "urgent";
+}
+
+if(text.includes("logo")){
+return "logo";
+}
+
+if(text.includes("github")||text.includes("launch")||text.includes("publish")||text.includes("deploy")){
+return "github";
+}
+
+if(text.includes("hosting")||text.includes("host")){
+return "hosting";
+}
+
+if(text.includes("revision")||text.includes("changes")||text.includes("edit again")){
+return "revisions";
+}
+
+if(text.includes("payment")||text.includes("pay")||text.includes("bank")||text.includes("usdt")||text.includes("transfer")){
+return "payment";
+}
+
+if(text.includes("upwork")||text.includes("contract")){
+return "upwork";
+}
+
+if(text.includes("price")||text.includes("cost")||text.includes("pricing")||text.includes("package")||text.includes("packages")){
+return "pricing";
+}
+
+if(text.includes("website")||text.includes("web")||text.includes("site")){
+lead.service="Website";
+lastQuestion="pages";
+return "website";
+}
+
+if(text.includes("excel")||text.includes("dashboard")||text.includes("sheet")||text.includes("automation")){
+return "excel";
+}
+
+if(text.includes("trading")||text.includes("gold")||text.includes("xauusd")||text.includes("signal")||text.includes("signals")){
+return "trading";
+}
+
+if(text.includes("import")||text.includes("export")||text.includes("document")||text.includes("docs")||text.includes("gd")){
+return "documents";
+}
+
+if(text.includes("contact")||text.includes("whatsapp")||text.includes("number")){
+return "contact";
+}
 
 return "default";
 }
@@ -1057,7 +1265,7 @@ else msg="Good evening 👋";
 document.getElementById("aiGreeting").innerText=msg;
 
 if(aiChat.innerHTML.trim()===""){
-addMsg(msg+" I'm Dawood Tariq’s AI Assistant. I can help with website, Excel, trading, documents, pricing, delivery time, GitHub Pages, urgent work, and contact support.","bot");
+addMsg(msg+" I'm Dawood Tariq’s AI Assistant. I can help with websites, pricing packages, portfolio samples, Excel, trading, documents, payment methods, urgent delivery, GitHub Pages, revisions, and WhatsApp quotes.","bot");
 }
 }
 </script>
