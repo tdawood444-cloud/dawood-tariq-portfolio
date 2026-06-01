@@ -73,6 +73,17 @@ font-size:14px;
 
 nav a:hover{color:var(--gold2);}
 
+.menu-toggle{
+display:none;
+background:none;
+border:1px solid var(--gold);
+color:var(--gold2);
+font-size:26px;
+padding:6px 12px;
+border-radius:8px;
+cursor:pointer;
+}
+
 .hero{
 padding:85px 7% 50px;
 text-align:center;
@@ -248,16 +259,56 @@ color:var(--muted);
 border-top:1px solid var(--line);
 }
 
+/* MOBILE HEADER + HAMBURGER */
 @media(max-width:900px){
 header{
+padding:14px 18px;
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+position:absolute;
+top:75px;
+left:0;
+width:100%;
+background:rgba(5,5,5,.98);
+border-bottom:1px solid var(--line);
+padding:18px;
 flex-direction:column;
 gap:14px;
 text-align:center;
 }
 
-nav{
-flex-wrap:wrap;
-justify-content:center;
+nav.active{
+display:flex;
+}
+
+nav a{
+font-size:15px;
+padding:10px 0;
+border-bottom:1px solid rgba(207,166,74,.15);
+}
+
+.brand h3{
+font-size:15px;
+}
+
+.brand p{
+font-size:11px;
+}
+
+.brand img{
+width:42px;
+height:42px;
 }
 
 .hero{
@@ -291,7 +342,9 @@ grid-template-columns:1fr;
 </div>
 </div>
 
-<nav>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<nav id="navMenu">
   <a href="index.html">Home</a>
   <a href="services.html">Services</a>
   <a href="pricing.html">Pricing</a>
@@ -528,6 +581,12 @@ Contact Me On WhatsApp
 <footer>
 © 2026 Dawood Tariq | All Rights Reserved
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
