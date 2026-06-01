@@ -4,18 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="google-site-verification" content="bFXjDvDsyrvKpTUFZRE9VWSM5eRM9Jzs8qVqgLDnmB0" />
-<!-- SEO -->
+
 <title>Dawood Tariq | Web Developer, Professional Trader & Excel Specialist</title>
 
-<meta name="description"
-content="Dawood Tariq provides premium website development, responsive business websites, Forex and Gold trading support, Excel automation, dashboards and import export documentation services.">
-
-<meta name="keywords"
-content="Dawood Tariq, Web Developer, Professional Trader, XAUUSD, Gold Trading, Forex Signals, Excel Automation, Excel Dashboard, Import Export Documentation, Website Design, Portfolio Website, Freelancer">
-
+<meta name="description" content="Dawood Tariq provides premium website development, responsive business websites, Forex and Gold trading support, Excel automation, dashboards and import export documentation services.">
+<meta name="keywords" content="Dawood Tariq, Web Developer, Professional Trader, XAUUSD, Gold Trading, Forex Signals, Excel Automation, Excel Dashboard, Import Export Documentation, Website Design, Portfolio Website, Freelancer">
 <meta name="author" content="Dawood Tariq">
 <meta name="robots" content="index, follow">
-
 <link rel="icon" href="logo.png">
 
 <meta property="og:title" content="Dawood Tariq | Web Developer, Professional Trader & Excel Specialist">
@@ -84,14 +79,17 @@ header{
   gap:12px;
 }
 
+/* LOGO FIXED - CLEAR + NOT HIDDEN */
 .brand img{
-  width:46px;
-  height:46px;
-  border-radius:50%;
+  width:72px;
+  height:auto;
+  max-height:58px;
   object-fit:contain;
+  border-radius:14px;
   border:1px solid var(--gold);
-  background:#111;
-  padding:5px;
+  background:#080808;
+  padding:3px;
+  display:block;
 }
 
 .brand h3{
@@ -206,15 +204,19 @@ nav a:hover{
   box-shadow:0 0 45px rgba(207,166,74,.12);
 }
 
+/* HERO LOGO FIXED - NO CIRCLE CROP */
 .hero-logo{
-  width:160px;
-  height:160px;
+  width:240px;
+  height:auto;
+  max-height:240px;
   object-fit:contain;
-  border-radius:50%;
+  border-radius:22px;
   background:#090909;
   border:1px solid var(--gold);
-  padding:18px;
+  padding:6px;
   box-shadow:0 0 35px rgba(207,166,74,.22);
+  display:block;
+  margin:auto;
 }
 
 .hero-card h3{
@@ -410,6 +412,15 @@ footer{
     text-align:center;
   }
 
+  .brand{
+    justify-content:center;
+  }
+
+  .brand img{
+    width:78px;
+    max-height:62px;
+  }
+
   nav{
     flex-wrap:wrap;
     justify-content:center;
@@ -446,8 +457,8 @@ footer{
   }
 
   .hero-logo{
-    width:125px;
-    height:125px;
+    width:220px;
+    max-height:220px;
   }
 
   .stats,
