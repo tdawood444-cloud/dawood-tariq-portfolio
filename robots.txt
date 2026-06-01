@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://tdawood444-cloud.github.io/dawood-tariq/sitemap.xml
