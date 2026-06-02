@@ -1340,8 +1340,7 @@ if(panel.style.display === "flex"){    localStorage.setItem("dtAiOpened","yes");
 }
 
 function openAIDemo(){
-  document.getElementById("aiPanel").style.display = "block";
-  document.getElementById("aiSoftBubble").style.display = "none";
+document.getElementById("aiPanel").style.display = "flex";  document.getElementById("aiSoftBubble").style.display = "none";
 
   if(aiChat.innerHTML.trim() === "") greet();
 
