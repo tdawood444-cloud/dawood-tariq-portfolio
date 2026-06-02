@@ -4,7 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>Contact | Dawood Tariq</title>
+<title>Contact | Dawood Tariq | Website Development, AI Assistant, Trading & Excel Automation</title>
+
+<meta name="description" content="Contact Dawood Tariq for premium website development, AI website assistant, mobile friendly landing pages, Excel automation, import/export documentation and trading support.">
+<meta name="keywords" content="Dawood Tariq, TradeOpsHub, Website Developer, AI Website Assistant, Landing Page Design, Mobile Friendly Website, Excel Automation, Import Export Documentation, Trading Support, XAUUSD Trading">
+<meta name="author" content="Dawood Tariq">
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -23,6 +27,10 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:'Inter',sans-serif;
 background:
@@ -30,6 +38,7 @@ radial-gradient(circle at top right, rgba(207,166,74,.12), transparent 35%),
 radial-gradient(circle at bottom left, rgba(255,211,105,.08), transparent 30%),
 var(--black);
 color:#fff;
+overflow-x:hidden;
 }
 
 a{text-decoration:none;}
@@ -77,15 +86,18 @@ color:var(--muted);
 nav{
 display:flex;
 gap:20px;
+align-items:center;
 }
 
 nav a{
 color:#fff;
 font-weight:600;
 font-size:14px;
+transition:.3s;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.active{
 color:var(--gold2);
 }
 
@@ -130,6 +142,33 @@ line-height:1.8;
 /* SECTION */
 section{
 padding:45px 7%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:30px;
+}
+
+.section-title span{
+color:var(--gold2);
+font-size:13px;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+.section-title h2{
+font-family:'Cinzel',serif;
+font-size:36px;
+margin-top:10px;
+color:#fff;
+}
+
+.section-title p{
+max-width:760px;
+margin:14px auto 0;
+color:var(--muted);
+line-height:1.8;
 }
 
 /* CARDS */
@@ -198,6 +237,74 @@ color:var(--muted);
 line-height:1.9;
 }
 
+/* PROCESS */
+.process{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+max-width:1050px;
+margin:auto;
+}
+
+.step{
+background:rgba(255,255,255,.035);
+border:1px solid var(--line);
+border-radius:22px;
+padding:28px;
+text-align:center;
+}
+
+.step span{
+display:inline-flex;
+width:46px;
+height:46px;
+border-radius:50%;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,var(--gold),var(--gold2));
+color:#000;
+font-weight:900;
+margin-bottom:15px;
+}
+
+.step h3{
+font-family:'Cinzel',serif;
+color:var(--gold2);
+margin-bottom:10px;
+}
+
+.step p{
+color:var(--muted);
+line-height:1.8;
+}
+
+/* OFFER */
+.offer{
+max-width:950px;
+margin:auto;
+background:linear-gradient(180deg,rgba(207,166,74,.12),rgba(255,255,255,.025));
+border:1px solid var(--line);
+border-radius:26px;
+padding:38px 26px;
+text-align:center;
+}
+
+.offer h2{
+font-family:'Cinzel',serif;
+color:var(--gold2);
+font-size:34px;
+}
+
+.offer p{
+color:var(--muted);
+line-height:1.9;
+margin-top:14px;
+}
+
+.offer strong{
+color:#fff;
+}
+
 /* CTA */
 .cta{
 max-width:850px;
@@ -218,6 +325,7 @@ font-size:34px;
 .cta p{
 color:var(--muted);
 margin:14px 0 20px;
+line-height:1.8;
 }
 
 .btn{
@@ -265,6 +373,18 @@ padding:18px;
 flex-direction:column;
 gap:14px;
 text-align:center;
+animation:menuSlide .25s ease;
+}
+
+@keyframes menuSlide{
+from{
+opacity:0;
+transform:translateY(-10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 nav.active{
@@ -305,6 +425,20 @@ padding:35px 18px;
 .cards{
 grid-template-columns:1fr;
 }
+
+.process{
+grid-template-columns:1fr;
+}
+
+.section-title h2{
+font-size:30px;
+}
+
+.info-box h2,
+.cta h2,
+.offer h2{
+font-size:28px;
+}
 }
 </style>
 </head>
@@ -314,7 +448,7 @@ grid-template-columns:1fr;
 <header>
 
 <div class="brand">
-<img src="logo.png" alt="logo">
+<img src="logo.png" alt="Dawood Tariq logo">
 
 <div>
 <h3>Dawood Tariq</h3>
@@ -329,7 +463,7 @@ grid-template-columns:1fr;
   <a href="services.html">Services</a>
   <a href="pricing.html">Pricing</a>
   <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
+  <a class="active" href="contact.html">Contact</a>
   <a href="landing-page.html">Demo</a>
 </nav>
 
@@ -342,8 +476,8 @@ grid-template-columns:1fr;
 <h1>Let’s Work Together</h1>
 
 <p>
-Have a website project, need trading support, Excel automation or documentation help?
-I’m available and ready to discuss your work.
+Have a website project, need an AI Website Assistant, trading support, Excel automation or import/export documentation help?
+I’m available and ready to discuss your work with professional support.
 </p>
 
 </div>
@@ -355,7 +489,7 @@ I’m available and ready to discuss your work.
 <div class="card">
 <h3>WhatsApp</h3>
 <p>
-Fastest way to contact me directly.
+Fastest way to contact me directly for website projects, urgent work and service details.
 </p>
 
 <a href="https://wa.me/923428305707"
@@ -368,7 +502,7 @@ Chat On WhatsApp
 <div class="card">
 <h3>Email</h3>
 <p>
-For project discussion and business inquiries.
+For project discussion, website requirements, business inquiries and professional communication.
 </p>
 
 <a href="mailto:tdawood444@gmail.com">
@@ -380,7 +514,7 @@ Send Email
 <div class="card">
 <h3>Telegram</h3>
 <p>
-Quick messages and trading-related communication.
+Quick messages and trading-related communication for Forex, gold and market support.
 </p>
 
 <a href="https://t.me/Dawoodforex"
@@ -396,18 +530,195 @@ Open Telegram
 
 <section>
 
-<div class="info-box">
-
+<div class="section-title">
+<span>Services Inquiry</span>
 <h2>What You Can Contact Me For</h2>
+<p>
+Choose the service you need and send me your project details. I can guide you with the best option based on your goal.
+</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌐 Website Development</h3>
+<p>
+Business websites, portfolio websites, service websites, mobile friendly websites and landing pages.
+</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Website Assistant</h3>
+<p>
+Smart website assistant for quick replies, visitor support, service guidance and WhatsApp redirection.
+</p>
+</div>
+
+<div class="card">
+<h3>✨ 3D Website Design</h3>
+<p>
+Premium modern website design with advanced layout, clean sections and professional visual style.
+</p>
+</div>
+
+<div class="card">
+<h3>📊 Excel Automation</h3>
+<p>
+Excel dashboards, automation tools, sheets, calculators, reports and business tracking systems.
+</p>
+</div>
+
+<div class="card">
+<h3>📄 Import / Export Documentation</h3>
+<p>
+Documentation support, import/export file guidance and business documentation assistance.
+</p>
+</div>
+
+<div class="card">
+<h3>📈 Trading Support</h3>
+<p>
+XAUUSD trading support, journal setup, risk tools and trading-related guidance.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="offer">
+
+<h2>🎁 First Website Client Offer</h2>
 
 <p>
-• Website Development & Design<br><br>
-• Landing Pages & Portfolio Websites<br><br>
-• Forex & Gold Trading Support<br><br>
-• Excel Dashboards & Automation<br><br>
-• Import / Export Documentation<br><br>
-• Website Updates & Maintenance
+If you are launching your website for the first time, you can get
+<strong>5% discount</strong> plus <strong>1 FREE Premium Logo</strong>
+with your website package.
 </p>
+
+<p>
+This offer is best for new businesses, personal brands, service providers, traders and freelancers who want a professional online presence.
+</p>
+
+<a class="btn"
+href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20claim%20the%20First%20Website%20Client%20Offer."
+target="_blank">
+Claim Offer On WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<span>Simple Process</span>
+<h2>How We Start Your Project</h2>
+</div>
+
+<div class="process">
+
+<div class="step">
+<span>1</span>
+<h3>Send Message</h3>
+<p>
+Contact me on WhatsApp, Email or Telegram and tell me what service you need.
+</p>
+</div>
+
+<div class="step">
+<span>2</span>
+<h3>Discuss Requirements</h3>
+<p>
+We discuss your website, AI assistant, Excel tool, documentation or trading support requirements.
+</p>
+</div>
+
+<div class="step">
+<span>3</span>
+<h3>Project Starts</h3>
+<p>
+After final discussion and payment confirmation, your project work starts professionally.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="info-box">
+
+<h2>Payment Methods</h2>
+
+<p>
+For service orders and project payments, currently available payment methods are:
+<br><br>
+<strong>USDT (TRC20)</strong>
+<br><br>
+<strong>Bank Transfer</strong>
+<br><br>
+Payment details will be shared after project discussion and confirmation.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<span>Why Contact Me</span>
+<h2>Professional Support For Your Work</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Mobile Friendly Design</h3>
+<p>
+Your website will be designed to look clean and professional on laptop, tablet and mobile screens.
+</p>
+</div>
+
+<div class="card">
+<h3>Premium Branding</h3>
+<p>
+I focus on clean sections, modern layout, strong call-to-action buttons and professional presentation.
+</p>
+</div>
+
+<div class="card">
+<h3>SEO Friendly Structure</h3>
+<p>
+Website pages are structured with clear headings, service keywords and professional content flow.
+</p>
+</div>
+
+<div class="card">
+<h3>AI Assistant Support</h3>
+<p>
+I can add a smart AI-style assistant to help visitors understand your services and contact you faster.
+</p>
+</div>
+
+<div class="card">
+<h3>Clear Communication</h3>
+<p>
+You can discuss your project clearly before starting, so the final work matches your business needs.
+</p>
+</div>
+
+<div class="card">
+<h3>Website Maintenance</h3>
+<p>
+I can also help with future updates, small changes, content edits and website improvements.
+</p>
+</div>
 
 </div>
 
@@ -430,12 +741,28 @@ For urgent work, WhatsApp is the fastest option.
 
 <section>
 
+<div class="info-box">
+
+<h2>Need Help Choosing A Service?</h2>
+
+<p>
+If you are not sure which package or service is right for you, send me a message with your goal.
+I can guide you whether you need a simple landing page, premium website, AI Website Assistant,
+Excel automation, trading journal, documentation support or website maintenance.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
 <div class="cta">
 
 <h2>Ready To Start?</h2>
 
 <p>
-Send me your project details and let’s discuss the best solution.
+Send me your project details and let’s discuss the best solution for your website, AI assistant, Excel automation, documentation or trading support.
 </p>
 
 <a class="btn"
@@ -456,6 +783,23 @@ Contact Me On WhatsApp
 function toggleMenu(){
   document.getElementById("navMenu").classList.toggle("active");
 }
+
+/* Auto close mobile menu after clicking any link */
+document.querySelectorAll("#navMenu a").forEach(function(link){
+  link.addEventListener("click", function(){
+    document.getElementById("navMenu").classList.remove("active");
+  });
+});
+
+/* Close menu when clicking outside */
+document.addEventListener("click", function(event){
+  const navMenu = document.getElementById("navMenu");
+  const menuToggle = document.querySelector(".menu-toggle");
+
+  if(!navMenu.contains(event.target) && !menuToggle.contains(event.target)){
+    navMenu.classList.remove("active");
+  }
+});
 </script>
 
 </body>
