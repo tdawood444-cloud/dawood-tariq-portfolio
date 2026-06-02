@@ -1317,8 +1317,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const panel = document.getElementById("aiPanel");
     const bubble = document.getElementById("aiSoftBubble");
 
-    if(!aiOpenedOnce && panel.style.display !== "block"){
-      bubble.style.display = "block";
+if(!aiOpenedOnce && panel.style.display !== "flex"){      bubble.style.display = "flex";
     }
   },12000);
 });
