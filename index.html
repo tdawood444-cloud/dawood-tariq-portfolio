@@ -863,8 +863,15 @@ footer{
 </footer>
 <!-- AI ASSISTANT START -->
 <div class="dt-ai-widget">
+
+  <div class="dt-ai-soft-bubble" id="aiSoftBubble" onclick="toggleAI()">
+    👋 Need help choosing a website package?
+  </div>
+
   <button class="dt-ai-launcher" onclick="toggleAI()" aria-label="Open AI Assistant">
-    <span class="dt-ai-avatar">DT</span>
+    <span class="dt-ai-avatar">
+      <span class="dt-ai-face">DT</span>
+    </span>
     <span>
       <b>Dawood AI</b>
       <small>Ask me anything</small>
@@ -874,7 +881,9 @@ footer{
   <div class="dt-ai-panel" id="aiPanel">
     <div class="dt-ai-header">
       <div class="dt-ai-head-left">
-        <div class="dt-ai-avatar big">DT</div>
+        <div class="dt-ai-avatar big">
+          <span class="dt-ai-face">DT</span>
+        </div>
         <div>
           <strong>Dawood AI Assistant</strong>
           <small id="aiGreeting">Welcome 👋</small>
@@ -914,7 +923,29 @@ footer{
   right:18px;
   bottom:18px;
   z-index:999999;
-  font-family:Arial, sans-serif;
+  font-family:Arial,sans-serif;
+}
+
+.dt-ai-soft-bubble{
+  display:none;
+  position:fixed;
+  right:18px;
+  bottom:84px;
+  background:#111;
+  color:#fff;
+  border:1px solid rgba(255,215,0,.55);
+  padding:10px 14px;
+  border-radius:18px;
+  font-size:13px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  animation:dtSoftPop .35s ease;
+}
+
+@keyframes dtSoftPop{
+  from{opacity:0;transform:translateY(10px);}
+  to{opacity:1;transform:translateY(0);}
 }
 
 .dt-ai-launcher{
@@ -938,21 +969,39 @@ footer{
 }
 
 .dt-ai-avatar{
-  width:38px;
-  height:38px;
+  width:40px;
+  height:40px;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  background:linear-gradient(135deg,#ffd700,#ff7a00,#00d4ff);
-  color:#111;
+  background:conic-gradient(from 180deg,#ffd700,#ff7a00,#00d4ff,#ffd700);
+  padding:3px;
+  box-shadow:0 0 0 3px rgba(255,215,0,.15),0 0 18px rgba(255,215,0,.25);
+  animation:dtAvatarGlow 3s infinite ease-in-out;
+}
+
+.dt-ai-face{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background:#111;
+  color:#ffd700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   font-weight:900;
-  box-shadow:0 0 0 3px rgba(255,215,0,.18);
+  font-size:13px;
 }
 
 .dt-ai-avatar.big{
-  width:44px;
-  height:44px;
+  width:46px;
+  height:46px;
+}
+
+@keyframes dtAvatarGlow{
+  0%,100%{box-shadow:0 0 0 3px rgba(255,215,0,.15),0 0 14px rgba(255,215,0,.2);}
+  50%{box-shadow:0 0 0 4px rgba(0,212,255,.16),0 0 22px rgba(255,215,0,.38);}
 }
 
 .dt-ai-panel{
@@ -1077,6 +1126,24 @@ footer{
   margin-bottom:4px;
 }
 
+.dt-ai-followups{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:9px;
+}
+
+.dt-ai-followups button{
+  background:#111;
+  color:#ffd700;
+  border:none;
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:12px;
+  font-weight:800;
+  cursor:pointer;
+}
+
 .dt-ai-wa{
   display:inline-block;
   background:#111;
@@ -1139,6 +1206,13 @@ footer{
     bottom:0;
   }
 
+  .dt-ai-soft-bubble{
+    right:12px;
+    bottom:78px;
+    max-width:260px;
+    font-size:12px;
+  }
+
   .dt-ai-launcher{
     right:12px;
     bottom:12px;
@@ -1189,6 +1263,8 @@ const aiChat = document.getElementById("aiChat");
 
 let voiceOn = false;
 let lastQuestion = "";
+let aiOpenedOnce = localStorage.getItem("dtAiOpened") === "yes";
+
 let lead = {
   name:"",
   service:"",
@@ -1200,11 +1276,28 @@ let lead = {
 document.addEventListener("DOMContentLoaded", function(){
   document.getElementById("aiPanel").style.display = "none";
   greet();
+
+  setTimeout(function(){
+    const panel = document.getElementById("aiPanel");
+    const bubble = document.getElementById("aiSoftBubble");
+
+    if(!aiOpenedOnce && panel.style.display !== "block"){
+      bubble.style.display = "block";
+    }
+  },12000);
 });
 
 function toggleAI(){
   const panel = document.getElementById("aiPanel");
+  const bubble = document.getElementById("aiSoftBubble");
+
   panel.style.display = panel.style.display === "block" ? "none" : "block";
+
+  if(panel.style.display === "block"){
+    localStorage.setItem("dtAiOpened","yes");
+    aiOpenedOnce = true;
+    bubble.style.display = "none";
+  }
 
   if(panel.style.display === "block" && aiChat.innerHTML.trim() === ""){
     greet();
@@ -1213,9 +1306,12 @@ function toggleAI(){
 
 function openAIDemo(){
   document.getElementById("aiPanel").style.display = "block";
+  document.getElementById("aiSoftBubble").style.display = "none";
+
   if(aiChat.innerHTML.trim() === "") greet();
+
   setTimeout(function(){
-    addBot("You opened the live AI demo 🤖 I can guide visitors about services, pricing, portfolio, Excel, trading tools, documents, payment methods and WhatsApp quotes.");
+    addBot("You opened the live AI demo 🤖 I can guide visitors about services, pricing, portfolio, Excel, trading tools, documents, payment methods and WhatsApp quotes.",["pricing","portfolio","quote"]);
   },300);
 }
 
@@ -1249,10 +1345,33 @@ function addUser(text){
   aiChat.scrollTop = aiChat.scrollHeight;
 }
 
-function addBot(html){
+function followupButtons(buttons){
+  if(!buttons || !buttons.length) return "";
+
+  let html = "<div class='dt-ai-followups'>";
+  buttons.forEach(function(btn){
+    const labels = {
+      website:"🌐 Website",
+      pricing:"💰 Pricing",
+      portfolio:"🎨 Portfolio",
+      excel:"📊 Excel",
+      trading:"📈 Trading",
+      quote:"⚡ Get Quote",
+      payment:"💳 Payment",
+      contact:"📲 WhatsApp",
+      delivery:"⏱ Delivery",
+      logo:"⭐ Logo"
+    };
+    html += "<button onclick=\"quickAsk('" + btn + "')\">" + (labels[btn] || btn) + "</button>";
+  });
+  html += "</div>";
+  return html;
+}
+
+function addBot(html, buttons){
   const d = document.createElement("div");
   d.className = "dt-ai-msg bot";
-  d.innerHTML = html;
+  d.innerHTML = html + followupButtons(buttons);
   aiChat.appendChild(d);
   aiChat.scrollTop = aiChat.scrollHeight;
   speak(html);
@@ -1281,9 +1400,13 @@ function quickAsk(type){
     trading:"Trading",
     quote:"Quote",
     payment:"Payment",
-    contact:"WhatsApp"
+    contact:"WhatsApp",
+    delivery:"Delivery",
+    logo:"Logo"
   };
+
   addUser(labels[type] || type);
+
   typing();
   setTimeout(function(){
     removeTyping();
@@ -1299,73 +1422,115 @@ function whatsappLink(){
     "Pages / Work Size: " + encodeURIComponent(lead.pages || "Not provided") + "%0A" +
     "Deadline: " + encodeURIComponent(lead.deadline || "Not provided") + "%0A" +
     "Budget: " + encodeURIComponent(lead.budget || "Not provided");
+
   return "https://wa.me/923428305707?text=" + msg;
 }
 
 function reply(type){
   const answers = {
-    greeting:
-      "Hello 👋 I’m Dawood Tariq’s AI Assistant. I can help you with websites, landing pages, Excel automation, trading tools, import/export documents, pricing and WhatsApp quotes. May I know your name?",
+    greeting:{
+      text:"Hello 👋 I’m Dawood Tariq’s AI Assistant. I can help you with websites, landing pages, Excel automation, trading tools, import/export documents, pricing and WhatsApp quotes. May I know your name?",
+      buttons:["website","pricing","portfolio","quote"]
+    },
 
-    website:
-      "Yes ✅ Dawood can build modern, mobile-friendly websites including portfolio websites, business websites, landing pages, service websites and AI assistant websites.<br><br><div class='dt-ai-card'><strong>Best for clients</strong>Home, Services, Pricing, FAQ, Contact, WhatsApp button, premium logo and responsive layout.</div>How many pages do you need?",
+    website:{
+      text:"Yes ✅ Dawood can build modern, mobile-friendly websites including portfolio websites, business websites, landing pages, service websites and AI assistant websites.<br><br><div class='dt-ai-card'><strong>Best for clients</strong>Home, Services, Pricing, FAQ, Contact, WhatsApp button, premium logo and responsive layout.</div>How many pages do you need?",
+      buttons:["pricing","portfolio","delivery","quote"]
+    },
 
-    pricing:
-      "<div class='dt-ai-price'><b>Starter</b>1-page website or landing page for simple online presence.</div><div class='dt-ai-price'><b>Standard</b>Multi-page website with services, pricing, contact, WhatsApp and mobile layout.</div><div class='dt-ai-price'><b>Premium</b>Advanced business website with stronger sections, FAQ, portfolio cards, AI assistant, revisions and lead-focused design.</div><br>Tell me your pages and features, then I’ll guide you to the best package.",
+    pricing:{
+      text:"<div class='dt-ai-price'><b>Starter</b>1-page website or landing page for simple online presence.</div><div class='dt-ai-price'><b>Standard</b>Multi-page website with services, pricing, contact, WhatsApp and mobile layout.</div><div class='dt-ai-price'><b>Premium</b>Advanced business website with stronger sections, FAQ, portfolio cards, AI assistant, revisions and lead-focused design.</div><br>Tell me your pages and features, then I’ll guide you to the best package.",
+      buttons:["portfolio","delivery","payment","quote"]
+    },
 
-    portfolio:
-      "Dawood can create and show work in these styles:<br><div class='dt-ai-card'><strong>🌐 Business Website</strong>Clean service website with sections, contact and WhatsApp.</div><div class='dt-ai-card'><strong>🎨 Portfolio Website</strong>Personal brand website with skills, work, testimonials and contact.</div><div class='dt-ai-card'><strong>📊 Excel Dashboard</strong>Trackers, reports, automation and trading journals.</div><div class='dt-ai-card'><strong>🤖 AI Assistant Demo</strong>Website chatbot with smart answers and lead capture.</div>",
+    portfolio:{
+      text:"Dawood can create and show work in these styles:<br><div class='dt-ai-card'><strong>🌐 Business Website</strong>Clean service website with sections, contact and WhatsApp.</div><div class='dt-ai-card'><strong>🎨 Portfolio Website</strong>Personal brand website with skills, work, testimonials and contact.</div><div class='dt-ai-card'><strong>📊 Excel Dashboard</strong>Trackers, reports, automation and trading journals.</div><div class='dt-ai-card'><strong>🤖 AI Assistant Demo</strong>Website chatbot with smart answers and lead capture.</div>",
+      buttons:["website","pricing","quote","contact"]
+    },
 
-    excel:
-      "Dawood provides Excel automation, dashboards, trackers, reports, trading journals, risk tools and business sheets. Tell me what Excel file you need and what problem it should solve.",
+    excel:{
+      text:"Dawood provides Excel automation, dashboards, trackers, reports, trading journals, risk tools and business sheets. Tell me what Excel file you need and what problem it should solve.",
+      buttons:["pricing","quote","contact"]
+    },
 
-    trading:
-      "Trading support includes XAUUSD guidance, trading journal, risk planning, strategy support and signals. For signals or trading tools, contact Dawood directly on WhatsApp.<br><a class='dt-ai-wa' href='https://wa.me/923428305707' target='_blank'>📲 WhatsApp Dawood</a>",
+    trading:{
+      text:"Trading support includes XAUUSD guidance, trading journal, risk planning, strategy support and signals. For signals or trading tools, contact Dawood directly on WhatsApp.<br><a class='dt-ai-wa' href='https://wa.me/923428305707' target='_blank'>📲 WhatsApp Dawood</a>",
+      buttons:["excel","quote","contact"]
+    },
 
-    documents:
-      "Dawood can help with import/export documentation, GD-related support and business documents. Tell me the document type and required format.",
+    documents:{
+      text:"Dawood can help with import/export documentation, GD-related support and business documents. Tell me the document type and required format.",
+      buttons:["quote","contact","payment"]
+    },
 
-    payment:
-      "Payment methods available:<br><div class='dt-ai-card'><strong>💳 Bank Transfer</strong>Available for direct payment.</div><div class='dt-ai-card'><strong>🪙 USDT</strong>Available for crypto payment.</div><div class='dt-ai-card'><strong>🛡️ Upwork Contract</strong>Best for milestone and freelance protection.</div>",
+    payment:{
+      text:"Payment methods available:<br><div class='dt-ai-card'><strong>💳 Bank Transfer</strong>Available for direct payment.</div><div class='dt-ai-card'><strong>🪙 USDT</strong>Available for crypto payment.</div><div class='dt-ai-card'><strong>🛡️ Upwork Contract</strong>Best for milestone and freelance protection.</div>",
+      buttons:["quote","contact","pricing"]
+    },
 
-    delivery:
-      "Delivery depends on project size. Simple websites are faster. Larger websites depend on pages, features, content and revisions. Tell me your deadline and I’ll guide you.",
+    delivery:{
+      text:"Delivery depends on project size. Simple websites are faster. Larger websites depend on pages, features, content and revisions. Tell me your deadline and I’ll guide you.",
+      buttons:["pricing","quote","contact"]
+    },
 
-    logo:
-      "Yes ✅ Dawood can provide a premium logo with website work. First-time website clients can get 5% discount + 1 FREE Premium Logo.",
+    logo:{
+      text:"Yes ✅ Dawood can provide a premium logo with website work. First-time website clients can get 5% discount + 1 FREE Premium Logo.",
+      buttons:["website","pricing","quote"]
+    },
 
-    github:
-      "Yes ✅ Dawood can deploy your static website on GitHub Pages and help with basic setup. For advanced websites, hosting depends on features.",
+    github:{
+      text:"Yes ✅ Dawood can deploy your static website on GitHub Pages and help with basic setup. For advanced websites, hosting depends on features.",
+      buttons:["website","pricing","quote"]
+    },
 
-    revisions:
-      "Yes, revisions are available. The number of revisions depends on the package and project scope. Tell me what change you need.",
+    revisions:{
+      text:"Yes, revisions are available. The number of revisions depends on the package and project scope. Tell me what change you need.",
+      buttons:["pricing","quote","contact"]
+    },
 
-    quote:
-      "Sure ⚡ I’ll collect your quote details step by step. What is your name?",
+    quote:{
+      text:"Sure ⚡ I’ll collect your quote details step by step. What is your name?",
+      buttons:[]
+    },
 
-    contact:
-      "You can contact Dawood directly on WhatsApp for project discussion, quote, website work, Excel automation, trading tools or documents.<br><a class='dt-ai-wa' href='https://wa.me/923428305707' target='_blank'>📲 WhatsApp Dawood</a>",
+    contact:{
+      text:"You can contact Dawood directly on WhatsApp for project discussion, quote, website work, Excel automation, trading tools or documents.<br><a class='dt-ai-wa' href='https://wa.me/923428305707' target='_blank'>📲 WhatsApp Dawood</a>",
+      buttons:["pricing","portfolio","quote"]
+    },
 
-    leadService:
-      "Thanks " + (lead.name || "") + " ✅ What service do you need: website, Excel, trading, documents or AI assistant?",
+    leadService:{
+      text:"Thanks " + (lead.name || "") + " ✅ What service do you need: website, Excel, trading, documents or AI assistant?",
+      buttons:["website","excel","trading"]
+    },
 
-    leadPages:
-      "Great. How many pages or how much work do you need?",
+    leadPages:{
+      text:"Great. How many pages or how much work do you need?",
+      buttons:[]
+    },
 
-    leadDeadline:
-      "Good. What is your deadline: urgent, today, 2-3 days or normal delivery?",
+    leadDeadline:{
+      text:"Good. What is your deadline: urgent, today, 2-3 days or normal delivery?",
+      buttons:[]
+    },
 
-    leadBudget:
-      "Almost done. Do you have a budget range?",
+    leadBudget:{
+      text:"Almost done. Do you have a budget range?",
+      buttons:[]
+    },
 
-    leadDone:
-      "Perfect ✅ Send your details to Dawood for a fast quote:<br><a class='dt-ai-wa' href='" + whatsappLink() + "' target='_blank'>📲 Send Quote Details on WhatsApp</a>",
+    leadDone:{
+      text:"Perfect ✅ Send your details to Dawood for a fast quote:<br><a class='dt-ai-wa' href='" + whatsappLink() + "' target='_blank'>📲 Send Quote Details on WhatsApp</a>",
+      buttons:["payment","contact"]
+    },
 
-    default:
-      "I can help with website development, pricing, portfolio, Excel automation, trading tools, import/export documents, payment methods, delivery time, revisions, GitHub Pages and WhatsApp quotes. What do you need?"
+    default:{
+      text:"I can help with website development, pricing, portfolio, Excel automation, trading tools, import/export documents, payment methods, delivery time, revisions, GitHub Pages and WhatsApp quotes. What do you need?",
+      buttons:["website","pricing","portfolio","quote"]
+    }
   };
 
-  addBot(answers[type] || answers.default);
+  const ans = answers[type] || answers.default;
+  addBot(ans.text, ans.buttons);
 }
 
 function detect(text){
@@ -1473,12 +1638,14 @@ function detect(text){
 function sendAI(){
   const input = document.getElementById("aiInput");
   const text = input.value.trim();
+
   if(!text) return;
 
   addUser(text);
   input.value = "";
 
   typing();
+
   setTimeout(function(){
     removeTyping();
     reply(detect(text));
@@ -1501,12 +1668,17 @@ function greet(){
   if(g) g.innerText = msg;
 
   if(aiChat && aiChat.innerHTML.trim() === ""){
-    addBot(msg + " I’m Dawood AI Assistant. I can guide you about website services, pricing, portfolio, Excel automation, trading tools, documents, payment methods and WhatsApp quotes.");
+    addBot(msg + " I’m Dawood AI Assistant. I can guide you about website services, pricing, portfolio, Excel automation, trading tools, documents, payment methods and WhatsApp quotes.",["website","pricing","portfolio","quote"]);
   }
 }
 </script>
 <!-- AI ASSISTANT END -->
 
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 <script>
 function toggleMenu(){
   document.getElementById("navMenu").classList.toggle("active");
