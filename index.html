@@ -1278,9 +1278,12 @@ function toggleMenu(){
   }
 
   .dt-ai-chat{
-    height:auto !important;
-    padding:11px;
-  }
+  flex:1;
+  height:auto !important;
+  min-height:0;
+  padding:11px;
+  overflow-y:auto;
+}
 
   .dt-ai-msg{
     max-width:92%;
