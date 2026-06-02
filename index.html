@@ -1111,6 +1111,19 @@ const p=document.getElementById("aiPanel");
 p.style.display=p.style.display==="block"?"none":"block";
 }
 
+function openAIDemo(){
+const p=document.getElementById("aiPanel");
+p.style.display="block";
+
+if(aiChat.innerHTML.trim()===""){
+greet();
+}
+
+setTimeout(()=>{
+addMsg("You opened the live AI demo 🤖 Ask me about website packages, landing pages, pricing, Excel, trading or contact details.","bot");
+},300);
+}
+
 function addMsg(text,sender){
 const d=document.createElement("div");
 d.className="ai-msg "+sender;
