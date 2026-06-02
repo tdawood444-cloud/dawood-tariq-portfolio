@@ -1329,8 +1329,7 @@ function toggleAI(){
   const bubble = document.getElementById("aiSoftBubble");
 
 panel.style.display = panel.style.display === "flex" ? "none" : "flex";
-  if(panel.style.display === "block"){
-    localStorage.setItem("dtAiOpened","yes");
+if(panel.style.display === "flex"){    localStorage.setItem("dtAiOpened","yes");
     aiOpenedOnce = true;
     bubble.style.display = "none";
   }
