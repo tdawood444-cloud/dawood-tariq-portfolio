@@ -1006,6 +1006,7 @@ footer{
 
 .dt-ai-panel{
   display:none;
+  flex-direction:column;
   position:fixed;
   right:18px;
   bottom:82px;
@@ -1020,6 +1021,29 @@ footer{
   animation:dtAiPop .25s ease;
 }
 
+.dt-ai-panel[style*="block"]{
+  display:flex !important;
+}
+
+.dt-ai-header{
+  flex-shrink:0;
+  min-height:66px;
+}
+
+.dt-ai-top-buttons{
+  flex-shrink:0;
+}
+
+.dt-ai-chat{
+  flex:1;
+  height:auto !important;
+  min-height:0;
+  overflow-y:auto;
+}
+
+.dt-ai-input-area{
+  flex-shrink:0;
+}
 @keyframes dtAiPop{
   from{opacity:0;transform:translateY(18px) scale(.98);}
   to{opacity:1;transform:translateY(0) scale(1);}
