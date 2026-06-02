@@ -914,16 +914,18 @@ box-shadow:0 4px 14px rgba(0,0,0,.25);
 
 .ai-panel{
 display:none;
-width:380px;
-height:580px;
+position:fixed;
+right:18px;
+bottom:78px;
+width:420px;
+height:650px;
+max-width:calc(100vw - 36px);
 background:#fff;
-border-radius:18px;
+border-radius:20px;
 overflow:hidden;
 box-shadow:0 12px 35px rgba(0,0,0,.35);
-margin-bottom:12px;
 animation:fadeAI .25s ease;
 }
-
 @keyframes fadeAI{
 from{opacity:0;transform:translateY(20px);}
 to{opacity:1;transform:translateY(0);}
