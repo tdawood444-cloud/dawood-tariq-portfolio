@@ -195,17 +195,21 @@ nav a:hover::after{
 .hero::after{
   content:"";
   position:absolute;
-  width:120px;
-  height:120px;
+  width:160px;
+  height:160px;
   right:7%;
   top:20%;
-  border-radius:50%;
-  border:1px solid rgba(0,212,255,.32);
+  border-radius:25px;
+  background:linear-gradient(
+    135deg,
+    rgba(155,92,255,.18),
+    rgba(0,212,255,.18)
+  );
   box-shadow:0 0 50px rgba(0,212,255,.18);
   animation:floatShape 8s ease-in-out infinite reverse;
+  transform:rotate(25deg);
   z-index:-1;
 }
-
 @keyframes floatShape{
   0%,100%{transform:translateY(0) rotate(18deg);}
   50%{transform:translateY(-20px) rotate(28deg);}
