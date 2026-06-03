@@ -1,1 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="google-site-verification" content="bFXjDvDsyrvKpTUFZRE9VWSM5eRM9Jzs8qVqgLDnmB0" />
 
+<title>Dawood Tariq | Web Developer, AI Website Assistant, Professional Trader & Excel Specialist</title>
+
+<meta name="description" content="Dawood Tariq provides premium 3D mobile-friendly website development, AI website assistants, responsive business websites, landing pages, Excel automation, trading tools and import export documentation services.">
+<meta name="keywords" content="Dawood Tariq, Web Developer, AI Website Assistant, 3D Website, Professional Trader, XAUUSD, Gold Trading, Excel Automation, Excel Dashboard, Import Export Documentation, Website Design, Portfolio Website, Mobile Friendly Website, Responsive Business Website, Landing Page Designer, WhatsApp Chat Website, SEO Friendly Website, GitHub Pages Website">
+<meta name="author" content="Dawood Tariq">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="logo.png">
+
+<meta property="og:title" content="Dawood Tariq | Web Developer, AI Website Assistant, Professional Trader & Excel Specialist">
+<meta property="og:description" content="Premium 3D websites, AI website assistants, trading support, Excel automation and business documentation services.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#050816;
+  --bg2:#070B14;
+  --purple:#9B5CFF;
+  --cyan:#00D4FF;
+  --blue:#3B82F6;
+  --text:#F8FAFC;
+  --muted:#A8B3CF;
+  --line:rgba(139,92,246,.28);
+  --glass:rgba(255,255,255,.075);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Inter',sans-serif;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(155,92,255,.22), transparent 28%),
+    radial-gradient(circle at 85% 18%, rgba(0,212,255,.18), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(59,130,246,.14), transparent 35%),
+    linear-gradient(135deg,#02040d,#050816 45%,#07111f);
+  color:var(--text);
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.7),transparent 75%);
+  z-index:-2;
+}
+a{text-decoration:none;}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  padding:16px 7%;
+  background:rgba(5,8,22,.76);
+  backdrop-filter:blur(22px);
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+  display:block;
+  filter:drop-shadow(0 0 16px rgba(0,212,255,.35));
+}
+.brand h3{
+  font-family:'Space Grotesk',sans-serif;
+  color:var(--text);
+  font-size:18px;
+}
+.brand p{color:var(--muted);font-size:12px;margin-top:2px;}
+nav{display:flex;gap:22px;}
+nav a{
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  opacity:.88;
+  position:relative;
+}
+nav a:hover{color:var(--cyan);}
+nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+  width:0;
+  height:2px;
+  border-radius:20px;
+  background:linear-gradient(90deg,var(--purple),var(--cyan));
+  transition:.3s;
+}
+nav a:hover::after{width:100%;}
+.menu-btn{
+  display:none;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.22);
+  color:#fff;
+  font-size:28px;
+  padding:8px 14px;
+  border-radius:12px;
+  cursor:pointer;
+  box-shadow:0 0 20px rgba(155,92,255,.18);
+}
+
+/* HERO 3D */
+.hero{
+  min-height:88vh;
+  padding:90px 7% 65px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  gap:50px;
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  perspective:1200px;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  width:380px;
+  height:380px;
+  left:-120px;
+  top:120px;
+  border-radius:42%;
+  background:radial-gradient(circle,rgba(155,92,255,.32),transparent 65%);
+  filter:blur(18px);
+  animation:orbMove 9s ease-in-out infinite;
+  z-index:-1;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  width:320px;
+  height:320px;
+  right:-80px;
+  top:120px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(0,212,255,.26),transparent 65%);
+  filter:blur(18px);
+  animation:orbMove2 10s ease-in-out infinite;
+  z-index:-1;
+}
+@keyframes orbMove{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(-35px) scale(1.12);}
+}
+@keyframes orbMove2{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(32px) scale(1.08);}
+}
+.particle{
+  position:absolute;
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--purple),var(--cyan));
+  opacity:.42;
+  filter:blur(.2px);
+  animation:particleFloat 9s ease-in-out infinite;
+  z-index:-1;
+}
+.p1{left:12%;top:26%;animation-delay:.2s;}
+.p2{left:45%;top:18%;animation-delay:1s;}
+.p3{right:18%;top:35%;animation-delay:1.6s;}
+.p4{left:32%;bottom:18%;animation-delay:2.1s;}
+.p5{right:8%;bottom:22%;animation-delay:2.7s;}
+@keyframes particleFloat{
+  0%,100%{transform:translateY(0) translateX(0);opacity:.32;}
+  50%{transform:translateY(-35px) translateX(18px);opacity:.75;}
+}
+.kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#dce7ff;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+  padding:9px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.12);
+}
+.kicker::before{
+  content:"";
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 14px #22c55e;
+}
+.hero h1{
+  margin-top:18px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:64px;
+  line-height:1.04;
+  letter-spacing:-1.8px;
+}
+.hero h1 span{
+  background:linear-gradient(90deg,var(--purple),var(--cyan));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.hero h2{
+  margin-top:18px;
+  font-size:22px;
+  font-weight:600;
+  color:#eef4ff;
+}
+.hero p{
+  margin-top:20px;
+  color:var(--muted);
+  line-height:1.8;
+  max-width:650px;
+  font-size:16px;
+}
+.hero-actions{
+  margin-top:32px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.btn{
+  padding:14px 25px;
+  border-radius:14px;
+  font-weight:900;
+  font-size:14px;
+  transition:.3s;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  transform-style:preserve-3d;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--purple),var(--cyan));
+  color:#fff;
+  box-shadow:0 14px 35px rgba(0,212,255,.22);
+}
+.btn-secondary{
+  border:1px solid rgba(255,255,255,.16);
+  color:#fff;
+  background:rgba(255,255,255,.035);
+}
+.btn:hover{
+  transform:translateY(-6px) scale(1.03);
+  box-shadow:0 22px 55px rgba(0,212,255,.26);
+}
+.hero-mini{
+  margin-top:26px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(150px,1fr));
+  gap:12px;
+  max-width:520px;
+}
+.hero-mini div{
+  padding:13px 14px;
+  border-radius:18px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.12);
+  color:#eaf6ff;
+  font-weight:800;
+  box-shadow:0 18px 40px rgba(0,0,0,.22);
+  transition:.35s;
+}
+.hero-mini div:hover{
+  transform:translateY(-7px) rotateX(5deg);
+  border-color:rgba(0,212,255,.45);
+  box-shadow:0 22px 60px rgba(0,212,255,.16);
+}
+.hero-card{
+  position:relative;
+  background:
+    radial-gradient(circle at 50% 15%,rgba(0,212,255,.17),transparent 32%),
+    linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.035));
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:34px;
+  padding:38px 36px 42px;
+  text-align:center;
+  box-shadow:
+    0 35px 90px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.16),
+    0 0 90px rgba(0,212,255,.16);
+  transform-style:preserve-3d;
+  animation:cardFloat 6s ease-in-out infinite;
+}
+.hero-card::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:34px;
+  background:linear-gradient(135deg,rgba(155,92,255,.55),rgba(0,212,255,.45),transparent 60%);
+  z-index:-1;
+  filter:blur(14px);
+  opacity:.58;
+}
+.hero-card::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:26px;
+  width:68%;
+  height:18px;
+  transform:translateX(-50%) perspective(400px) rotateX(62deg);
+  background:linear-gradient(90deg,transparent,rgba(0,212,255,.65),rgba(155,92,255,.55),transparent);
+  filter:blur(10px);
+  opacity:.9;
+  animation:platformGlow 4s ease-in-out infinite;
+}
+@keyframes cardFloat{
+  0%,100%{transform:translateY(0) rotateX(0) rotateY(0);}
+  50%{transform:translateY(-14px) rotateX(2deg) rotateY(-2deg);}
+}
+@keyframes platformGlow{
+  0%,100%{opacity:.55;width:58%;}
+  50%{opacity:1;width:75%;}
+}
+.hero-card:hover{
+  transform:translateY(-16px) rotateX(5deg) rotateY(-5deg) scale(1.02);
+}
+.hero-logo{
+  width:285px;
+  height:auto;
+  max-height:285px;
+  object-fit:contain;
+  border-radius:0;
+  background:transparent;
+  border:none;
+  padding:0;
+  box-shadow:none;
+  display:block;
+  margin:auto;
+  filter:drop-shadow(0 28px 50px rgba(0,212,255,.40));
+  animation:logoFloat 5s ease-in-out infinite;
+  position:relative;
+  z-index:2;
+}
+@keyframes logoFloat{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(-15px) scale(1.035);}
+}
+.hero-card h3{
+  margin-top:24px;
+  font-family:'Space Grotesk',sans-serif;
+  color:#fff;
+  font-size:25px;
+  position:relative;
+  z-index:2;
+}
+.hero-card p{
+  margin:10px auto 0;
+  font-size:14px;
+  color:var(--muted);
+  position:relative;
+  z-index:2;
+}
+.available{
+  margin:20px auto 0;
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:30px;
+  background:rgba(34,197,94,.08);
+  border:1px solid rgba(34,197,94,.45);
+  color:#4ade80;
+  font-weight:900;
+  font-size:13px;
+  position:relative;
+  z-index:2;
+}
+  /* OFFER SECTION */
+section{
+  padding:75px 7%;
+}
+
+.offer-box{
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+  background:
+    radial-gradient(circle at 10% 20%,rgba(155,92,255,.28),transparent 30%),
+    linear-gradient(135deg,rgba(255,255,255,.095),rgba(255,255,255,.035));
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:30px;
+  padding:42px 28px;
+  box-shadow:0 28px 80px rgba(0,0,0,.35);
+  transition:.35s ease;
+}
+
+.offer-box:hover{
+  transform:translateY(-10px);
+  box-shadow:0 35px 95px rgba(0,212,255,.16);
+}
+
+.offer-box h2{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:36px;
+  margin-bottom:12px;
+  color:#fff;
+}
+
+.offer-box h2 span{
+  background:linear-gradient(90deg,var(--purple),var(--cyan));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.offer-box p{
+  color:var(--muted);
+  line-height:1.8;
+  max-width:800px;
+  margin:auto;
+}
+
+.offer-points{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:24px;
+}
+
+.offer-point{
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  padding:18px;
+  color:#fff;
+  font-weight:800;
+}
+
+/* STATS */
+.stats{
+  padding:25px 7%;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.stat{
+  background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:22px;
+  padding:26px 18px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.22);
+  transition:.35s ease;
+}
+
+.stat:hover{
+  transform:translateY(-10px) rotateX(4deg);
+  border-color:rgba(0,212,255,.45);
+  box-shadow:0 28px 75px rgba(0,212,255,.15);
+}
+
+.stat h2{
+  color:#fff;
+  font-size:30px;
+  font-family:'Space Grotesk',sans-serif;
+}
+
+.stat p{
+  color:var(--muted);
+  margin-top:6px;
+  font-size:14px;
+}
+
+/* SECTIONS */
+.section-title{
+  text-align:center;
+  margin-bottom:38px;
+}
+
+.section-title span{
+  color:var(--cyan);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.section-title h2{
+  margin-top:10px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:40px;
+}
+
+.section-title h2::first-letter{
+  color:var(--purple);
+}
+
+/* ABOUT */
+.about{
+  max-width:980px;
+  margin:auto;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:24px;
+  padding:34px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,.22);
+  transition:.35s ease;
+}
+
+.about:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 80px rgba(155,92,255,.14);
+}
+
+.about p{
+  color:var(--muted);
+  line-height:1.9;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,380px));
+  gap:20px;
+  justify-content:center;
+}
+
+.card{
+  background:
+    radial-gradient(circle at top left,rgba(155,92,255,.13),transparent 35%),
+    linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.028));
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:24px;
+  padding:28px;
+  transition:.35s ease;
+  box-shadow:0 20px 55px rgba(0,0,0,.22);
+  transform-style:preserve-3d;
+}
+
+.card:hover{
+  transform:translateY(-12px) rotateX(4deg) rotateY(-4deg);
+  border-color:rgba(0,212,255,.5);
+  box-shadow:0 30px 80px rgba(0,212,255,.16);
+}
+
+.card h3{
+  color:#fff;
+  margin-bottom:10px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:21px;
+}
+
+.card p{
+  color:var(--muted);
+  line-height:1.75;
+  font-size:15px;
+}
+
+/* CERTIFICATE */
+#certificate img{
+  width:100%;
+  max-width:820px;
+  display:block;
+  margin:auto;
+  border-radius:22px;
+  border:1px solid rgba(0,212,255,.35);
+  box-shadow:0 25px 80px rgba(0,212,255,.18);
+}
+
+/* CONTACT */
+.contact-box{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  background:linear-gradient(145deg,rgba(155,92,255,.13),rgba(0,212,255,.06));
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:30px;
+  padding:44px 25px;
+  box-shadow:0 28px 80px rgba(0,0,0,.32);
+}
+
+.contact-box h2{
+  font-family:'Space Grotesk',sans-serif;
+  color:#fff;
+  font-size:36px;
+}
+
+.contact-box p{
+  color:var(--muted);
+  margin:12px 0 20px;
+}
+
+.contact-box a{
+  display:block;
+  color:var(--cyan);
+  margin-top:12px;
+  font-weight:800;
+}
+
+footer{
+  padding:25px;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,.1);
+}
+
+/* MOBILE */
+@media(max-width:950px){
+  header{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 18px;
+  }
+
+  .brand img{
+    width:52px;
+    height:52px;
+  }
+
+  .brand h3{
+    font-size:14px;
+  }
+
+  .brand p{
+    font-size:11px;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#050816;
+    border-bottom:1px solid var(--line);
+    padding:18px;
+    flex-direction:column;
+    text-align:center;
+    gap:18px;
+  }
+
+  nav.active{
+    display:flex;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:55px 18px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero h2{
+    font-size:17px;
+  }
+
+  .hero p{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-actions{
+    justify-content:center;
+  }
+
+  .hero-mini{
+    grid-template-columns:1fr;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-card{
+    max-width:340px;
+    margin:auto;
+    padding:28px;
+  }
+
+  .hero-logo{
+    width:220px;
+    max-height:220px;
+  }
+
+  .stats,
+  .cards,
+  .offer-points{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:55px 18px;
+  }
+
+  .section-title h2{
+    font-size:30px;
+  }
+
+  .offer-box h2{
+    font-size:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <img src="logo-icon.png" alt="Dawood Tariq Logo">
+    <div>
+      <h3>Dawood Tariq</h3>
+      <p>Web Developer | Professional Trader</p>
+    </div>
+  </div>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="landing-page.html">Demo</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <span class="particle p1"></span>
+  <span class="particle p2"></span>
+  <span class="particle p3"></span>
+  <span class="particle p4"></span>
+  <span class="particle p5"></span>
+
+  <div>
+    <div class="kicker">Premium 3D Digital Services</div>
+
+    <h1>Build Your Business Online With <span>Smart Digital Systems</span></h1>
+
+    <h2>3D Websites • WordPress Websites • AI Website Assistants • Excel Automation • Trading Tools</h2>
+
+    <p>
+      I build premium, mobile-friendly and SEO-focused websites for businesses, freelancers and personal brands.
+      My websites include modern 3D sections, WhatsApp contact, smart AI assistants, lead-focused design,
+      Excel automation support, WordPress website support and professional service presentation.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20a%20project." target="_blank">
+        Hire Me
+      </a>
+
+      <a class="btn btn-secondary" href="#certificate">
+        View My Work
+      </a>
+
+      <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hello%20Dawood%2C%20I%20want%20my%20first%20website%20live%20and%20want%20to%20claim%2020%25%20OFF%20%2B%201%20FREE%20Premium%20Logo." target="_blank">
+        Claim 20% OFF Offer
+      </a>
+    </div>
+
+    <div class="hero-mini">
+      <div>🌐 Premium Website Design</div>
+      <div>🧩 WordPress Website Setup</div>
+      <div>🤖 AI Assistant Ready</div>
+      <div>📱 Mobile Friendly Layout</div>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <img src="logo.png" alt="Dawood Tariq Logo" class="hero-logo">
+    <h3>Premium Digital Solutions</h3>
+    <p>3D Websites • WordPress • AI Assistant • Trading • Excel Automation</p>
+    <div class="available">● Available For Work</div>
+  </div>
+</section>
+<section class="reveal">
+  <div class="offer-box">
+    <h2>🎁 Limited Time Offer — <span>Get 20% OFF</span></h2>
+    <p>
+      Start your digital journey with a modern, animated and mobile-friendly website.
+      Get <strong>20% OFF on your first website project + 1 FREE Premium Logo</strong>.
+      Perfect for businesses, freelancers and personal brands.
+    </p>
+
+    <div class="offer-points">
+      <div class="offer-point">✔ 20% OFF First Project</div>
+      <div class="offer-point">✔ FREE Premium Logo</div>
+      <div class="offer-point">✔ 3D + Mobile Friendly Design</div>
+    </div>
+
+    <div class="hero-actions" style="justify-content:center;margin-top:24px;">
+      <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hello%20Dawood%2C%20I%20want%20my%20first%20website%20live%20and%20want%20to%20claim%2020%25%20OFF%20%2B%201%20FREE%20Premium%20Logo." target="_blank">
+        Claim 20% OFF on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats reveal">
+  <div class="stat">
+    <h2>3D</h2>
+    <p>Modern Website Experience</p>
+  </div>
+  <div class="stat">
+    <h2>AI</h2>
+    <p>Website Assistant Ready</p>
+  </div>
+  <div class="stat">
+    <h2>WP</h2>
+    <p>WordPress Website Support</p>
+  </div>
+  <div class="stat">
+    <h2>24/7</h2>
+    <p>Client Contact Support</p>
+  </div>
+</div>
+
+<section class="reveal">
+  <div class="section-title">
+    <span>About</span>
+    <h2>Clear, Modern & Premium Digital Work</h2>
+  </div>
+
+  <div class="about">
+    <p>
+      I am Dawood Tariq, building a professional digital brand around 3D website design, WordPress websites,
+      AI website assistants, Excel automation, trading tools and business documentation. My focus is simple:
+      clean design, easy understanding, strong first impression and client-focused results.
+    </p>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-title">
+    <span>Skills</span>
+    <h2>Tools & Skills I Use</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🌐 3D Website Development</h3>
+      <p>Animated, responsive and modern business websites with premium visual experience.</p>
+    </div>
+
+    <div class="card">
+      <h3>🧩 WordPress Websites</h3>
+      <p>WordPress business websites, inquiry forms, service pages and professional layouts.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤖 AI Website Assistant</h3>
+      <p>Smart assistant for pricing, services, quote collection and WhatsApp lead redirect.</p>
+    </div>
+
+    <div class="card">
+      <h3>📊 Excel Automation</h3>
+      <p>Dashboards, trackers, calculators, trading journals and business automation sheets.</p>
+    </div>
+
+    <div class="card">
+      <h3>📈 Trading Tools</h3>
+      <p>XAUUSD trading journals, risk tools, market structure support and discipline systems.</p>
+    </div>
+
+    <div class="card">
+      <h3>📦 Documentation</h3>
+      <p>Import/export documentation support, GD-related work and business document handling.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-title">
+    <span>Services</span>
+    <h2>What I Can Build For You</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Premium 3D Website</h3>
+      <p>Modern animated website with 3D hero, glass cards, premium layout and mobile-friendly design.</p>
+    </div>
+
+    <div class="card">
+      <h3>WordPress Website</h3>
+      <p>Professional WordPress website setup for businesses, booking/inquiry forms and service pages.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing Page Design</h3>
+      <p>High-converting landing page for offers, services, portfolios and client lead generation.</p>
+    </div>
+
+    <div class="card">
+      <h3>AI Website Assistant</h3>
+      <p>Website chatbot that answers questions, explains packages and sends leads to WhatsApp.</p>
+    </div>
+
+    <div class="card">
+      <h3>Excel Automation</h3>
+      <p>Dashboards, calculators, journals, trackers and business reporting sheets.</p>
+    </div>
+
+    <div class="card">
+      <h3>Trading Support Tools</h3>
+      <p>XAUUSD journals, risk calculators, strategy documents and discipline-focused tools.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certificate" class="reveal">
+  <div class="section-title">
+    <span>My Work</span>
+    <h2>Portfolio & Proof</h2>
+  </div>
+
+  <img src="certificate.jpg" alt="FundedNext Elite Certificate">
+
+  <div class="cards" style="margin-top:28px;">
+    <div class="card">
+      <h3>🌐 Demo Landing Page</h3>
+      <p>Modern responsive landing page for business and service websites.</p>
+      <a class="btn btn-secondary" href="landing-page.html" target="_blank">Live Preview</a>
+    </div>
+
+    <div class="card">
+      <h3>🤖 Live AI Assistant Demo</h3>
+      <p>Test the same AI assistant style used on this website for pricing, services and quotes.</p>
+      <a class="btn btn-secondary" href="javascript:void(0)" onclick="openAIDemo();">Try AI Demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-title">
+    <span>Testimonials</span>
+    <h2>Client Feedback</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>⭐ Professional Website Work</h3>
+      <p>“Clean design, fast communication and mobile-friendly website delivery. Very professional experience.”</p>
+    </div>
+
+    <div class="card">
+      <h3>⭐ Smart AI Assistant</h3>
+      <p>“The AI assistant makes the website feel more advanced and helps visitors understand services quickly.”</p>
+    </div>
+
+    <div class="card">
+      <h3>⭐ Modern 3D Look</h3>
+      <p>“The website looks premium, modern and more attractive for business clients.”</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-title">
+    <span>AI Assistant</span>
+    <h2>Smart Website AI Assistant</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Fast Replies</h3>
+      <p>Answers customer questions instantly and professionally.</p>
+    </div>
+
+    <div class="card">
+      <h3>Lead Capture</h3>
+      <p>Collects client details and sends them directly to WhatsApp for a quote.</p>
+    </div>
+
+    <div class="card">
+      <h3>Website Package Guide</h3>
+      <p>Helps visitors understand 3D website, WordPress, AI assistant and Excel services.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="contact-box">
+    <h2>Let’s Build Your Digital Presence</h2>
+    <p>Have a 3D website, WordPress website, AI assistant, Excel or documentation project? Contact me directly for a free quote.</p>
+
+    <a href="mailto:tdawood444@gmail.com">Email: tdawood444@gmail.com</a>
+    <a href="https://wa.me/923428305707" target="_blank">WhatsApp: 03428305707</a>
+    <a href="https://t.me/Dawoodforex" target="_blank">Telegram: @Dawoodforex</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Dawood Tariq | All Rights Reserved
+</footer>
+
+<div class="dt-ai-widget">
+  <div class="dt-ai-soft-bubble" id="aiSoftBubble" onclick="toggleAI()">
+    👋 Need help choosing a website package?
+  </div>
+
+  <button class="dt-ai-launcher" onclick="toggleAI()" aria-label="Open AI Assistant">
+    <span class="dt-ai-avatar"><span class="dt-ai-face">DT</span></span>
+    <span>
+      <b>Dawood AI</b>
+      <small>Ask me anything</small>
+    </span>
+  </button>
+
+  <div class="dt-ai-panel" id="aiPanel">
+    <div class="dt-ai-header">
+      <div class="dt-ai-head-left">
+        <div class="dt-ai-avatar big"><span class="dt-ai-face">DT</span></div>
+        <div>
+          <strong>Dawood AI Assistant</strong>
+          <small id="aiGreeting">Welcome 👋</small>
+        </div>
+      </div>
+
+      <div class="dt-ai-head-actions">
+        <button onclick="toggleVoice()" id="voiceBtn">🔊</button>
+        <button onclick="clearAI()">🧹</button>
+        <button onclick="toggleAI()">×</button>
+      </div>
+    </div>
+
+    <div class="dt-ai-top-buttons">
+      <button onclick="quickAsk('website')">🌐 Website</button>
+      <button onclick="quickAsk('wordpress')">🧩 WordPress</button>
+      <button onclick="quickAsk('pricing')">💰 Pricing</button>
+      <button onclick="quickAsk('excel')">📊 Excel</button>
+      <button onclick="quickAsk('trading')">📈 Trading</button>
+      <button onclick="quickAsk('quote')">⚡ Quote</button>
+      <button onclick="quickAsk('payment')">💳 Payment</button>
+      <button onclick="quickAsk('contact')">📲 WhatsApp</button>
+    </div>
+
+    <div class="dt-ai-chat" id="aiChat"></div>
+
+    <div class="dt-ai-input-area">
+      <input id="aiInput" type="text" placeholder="Ask about website, WordPress, price..." onkeypress="aiEnter(event)">
+      <button onclick="sendAI()">➤</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.dt-ai-widget{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:999999;
+  font-family:Inter,Arial,sans-serif;
+}
+
+.dt-ai-soft-bubble{
+  display:none;
+  position:fixed;
+  right:18px;
+  bottom:84px;
+  background:#050816;
+  color:#fff;
+  border:1px solid rgba(0,212,255,.45);
+  padding:10px 14px;
+  border-radius:18px;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,212,255,.15);
+}
+
+.dt-ai-launcher{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#050816;
+  color:#fff;
+  border:1px solid rgba(0,212,255,.45);
+  padding:10px 15px 10px 10px;
+  border-radius:999px;
+  cursor:pointer;
+  box-shadow:0 12px 35px rgba(0,212,255,.16);
+}
+
+.dt-ai-launcher small{
+  display:block;
+  color:var(--cyan);
+  font-size:11px;
+  margin-top:1px;
+}
+
+.dt-ai-avatar{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:conic-gradient(from 180deg,var(--purple),var(--cyan),var(--blue),var(--purple));
+  padding:3px;
+  box-shadow:0 0 0 3px rgba(0,212,255,.12),0 0 18px rgba(0,212,255,.25);
+}
+
+.dt-ai-face{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background:#050816;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  font-size:13px;
+}
+
+.dt-ai-avatar.big{
+  width:46px;
+  height:46px;
+}
+
+.dt-ai-panel{
+  display:none;
+  flex-direction:column;
+  position:fixed;
+  right:18px;
+  bottom:82px;
+  width:410px;
+  height:min(640px, calc(100vh - 105px));
+  max-height:calc(100vh - 105px);
+  max-width:calc(100vw - 36px);
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 18px 60px rgba(0,0,0,.45);
+  border:1px solid rgba(0,212,255,.35);
+}
+
+.dt-ai-header{
+  background:linear-gradient(135deg,#050816,#111827);
+  color:#fff;
+  padding:13px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.dt-ai-head-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.dt-ai-header small{
+  display:block;
+  color:var(--cyan);
+  font-size:12px;
+  margin-top:3px;
+}
+
+.dt-ai-head-actions{
+  display:flex;
+  gap:5px;
+}
+
+.dt-ai-head-actions button{
+  width:30px;
+  height:30px;
+  border:none;
+  border-radius:50%;
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.dt-ai-top-buttons{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px;
+  padding:10px;
+  background:#f5f7fb;
+}
+
+.dt-ai-top-buttons button{
+  border:1px solid #dbeafe;
+  background:#fff;
+  color:#111827;
+  border-radius:12px;
+  padding:9px 5px;
+  font-size:11px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.dt-ai-chat{
+  flex:1;
+  min-height:0;
+  overflow-y:auto;
+  padding:14px;
+  background:linear-gradient(180deg,#fff,#f8fbff);
+}
+
+.dt-ai-msg{
+  max-width:88%;
+  padding:11px 12px;
+  margin-bottom:11px;
+  border-radius:16px;
+  font-size:14px;
+  line-height:1.45;
+  word-wrap:break-word;
+}
+
+.dt-ai-msg.bot{
+  background:#eef7ff;
+  color:#111827;
+  border-top-left-radius:5px;
+}
+
+.dt-ai-msg.user{
+  background:linear-gradient(135deg,var(--purple),var(--cyan));
+  color:#fff;
+  margin-left:auto;
+  border-top-right-radius:5px;
+}
+
+.dt-ai-card,.dt-ai-price{
+  background:#fff;
+  border:1px solid #dbeafe;
+  border-radius:14px;
+  padding:10px;
+  margin-top:8px;
+}
+
+.dt-ai-followups{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:9px;
+}
+
+.dt-ai-followups button{
+  background:#050816;
+  color:#fff;
+  border:none;
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:12px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.dt-ai-wa{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--purple),var(--cyan));
+  color:#fff !important;
+  padding:10px 12px;
+  border-radius:10px;
+  text-decoration:none;
+  margin-top:8px;
+  font-weight:900;
+}
+
+.dt-ai-input-area{
+  display:flex;
+  border-top:1px solid #dbeafe;
+  background:#fff;
+}
+
+.dt-ai-input-area input{
+  flex:1;
+  border:none;
+  padding:16px;
+  outline:none;
+  font-size:14px;
+}
+
+.dt-ai-input-area button{
+  width:56px;
+  border:none;
+  background:#050816;
+  color:var(--cyan);
+  font-size:20px;
+  cursor:pointer;
+}
+
+@media(max-width:600px){
+  .dt-ai-widget{
+    right:0;
+    bottom:0;
+  }
+
+  .dt-ai-soft-bubble{
+    right:12px;
+    bottom:78px;
+    max-width:260px;
+    font-size:12px;
+  }
+
+  .dt-ai-launcher{
+    right:12px;
+    bottom:12px;
+    position:fixed;
+  }
+
+  .dt-ai-panel{
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100vw;
+    height:100vh;
+    max-width:100vw;
+    border-radius:0;
+  }
+
+  .dt-ai-top-buttons{
+    grid-template-columns:repeat(4,1fr);
+    gap:6px;
+    padding:8px;
+  }
+
+  .dt-ai-top-buttons button{
+    font-size:10.5px;
+    padding:8px 3px;
+  }
+
+  .dt-ai-msg{
+    max-width:92%;
+    font-size:13.5px;
+  }
+}
+</style>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+}
+
+const aiChat = document.getElementById("aiChat");
+let voiceOn = false;
+
+document.addEventListener("DOMContentLoaded", function(){
+  document.getElementById("aiPanel").style.display = "none";
+  greet();
+
+  const reveals = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add("active");
+      }
+    });
+  },{threshold:.12});
+
+  reveals.forEach(function(el){
+    observer.observe(el);
+  });
+
+  setTimeout(function(){
+    const panel = document.getElementById("aiPanel");
+    const bubble = document.getElementById("aiSoftBubble");
+    if(panel.style.display !== "flex"){
+      bubble.style.display = "block";
+    }
+  },12000);
+});
+
+function toggleAI(){
+  const panel = document.getElementById("aiPanel");
+  const bubble = document.getElementById("aiSoftBubble");
+  panel.style.display = panel.style.display === "flex" ? "none" : "flex";
+  if(panel.style.display === "flex"){
+    bubble.style.display = "none";
+  }
+}
+
+function openAIDemo(){
+  document.getElementById("aiPanel").style.display = "flex";
+  document.getElementById("aiSoftBubble").style.display = "none";
+  if(aiChat.innerHTML.trim() === "") greet();
+  setTimeout(function(){
+    addBot("You opened the live AI demo 🤖 I can guide visitors about 3D websites, WordPress websites, AI assistants, pricing, Excel tools, trading support and WhatsApp quotes.",["pricing","wordpress","quote"]);
+  },300);
+}
+
+function clearAI(){
+  aiChat.innerHTML = "";
+  greet();
+}
+
+function toggleVoice(){
+  voiceOn = !voiceOn;
+  document.getElementById("voiceBtn").innerText = voiceOn ? "🔇" : "🔊";
+}
+
+function speak(text){
+  if(!voiceOn || !window.speechSynthesis) return;
+  const clean = text.replace(/<[^>]*>/g," ");
+  const utter = new SpeechSynthesisUtterance(clean);
+  utter.rate = 1;
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utter);
+}
+
+function addUser(text){
+  const d = document.createElement("div");
+  d.className = "dt-ai-msg user";
+  d.textContent = text;
+  aiChat.appendChild(d);
+  aiChat.scrollTop = aiChat.scrollHeight;
+}
+
+function followupButtons(buttons){
+  if(!buttons || !buttons.length) return "";
+  let html = "<div class='dt-ai-followups'>";
+  const labels = {
+    website:"🌐 Website",
+    wordpress:"🧩 WordPress",
+    pricing:"💰 Pricing",
+    excel:"📊 Excel",
+    trading:"📈 Trading",
+    quote:"⚡ Quote",
+    payment:"💳 Payment",
+    contact:"📲 WhatsApp"
+  };
+  buttons.forEach(function(btn){
+    html += "<button onclick=\"quickAsk('" + btn + "')\">" + (labels[btn] || btn) + "</button>";
+  });
+  html += "</div>";
+  return html;
+}
+
+function addBot(html, buttons){
+  const d = document.createElement("div");
+  d.className = "dt-ai-msg bot";
+  d.innerHTML = html + followupButtons(buttons);
+  aiChat.appendChild(d);
+  aiChat.scrollTop = aiChat.scrollHeight;
+  speak(html);
+}
+
+function quickAsk(type){
+  const labels = {
+    website:"Website",
+    wordpress:"WordPress",
+    pricing:"Pricing",
+    excel:"Excel",
+    trading:"Trading",
+    quote:"Quote",
+    payment:"Payment",
+    contact:"WhatsApp"
+  };
+  addUser(labels[type] || type);
+  setTimeout(function(){
+    reply(type);
+  },350);
+}
+
+function reply(type){
+  const wa = "https://wa.me/923428305707";
+
+  const answers = {
+    website:{
+      text:"Yes ✅ Dawood can build premium 3D websites with animated hero sections, glass cards, mobile-friendly layout, SEO wording, WhatsApp buttons and professional service sections.",
+      buttons:["wordpress","pricing","quote"]
+    },
+    wordpress:{
+      text:"Yes ✅ Dawood can create WordPress websites too, including business websites, inquiry forms, booking/contact forms, service pages and email notification setup.",
+      buttons:["website","pricing","quote"]
+    },
+    pricing:{
+      text:"Pricing depends on pages and features. Simple landing pages cost less, while 3D websites, AI assistant websites and WordPress websites cost more because they need advanced layout, mobile testing and setup.",
+      buttons:["website","wordpress","quote"]
+    },
+    excel:{
+      text:"Dawood provides Excel dashboards, trackers, calculators, trading journals, risk tools and business automation sheets.",
+      buttons:["quote","contact"]
+    },
+    trading:{
+      text:"Trading support includes XAUUSD journals, risk planning tools, strategy documents and discipline-based support.",
+      buttons:["excel","quote"]
+    },
+    payment:{
+      text:"Payment options include Bank Transfer, USDT and Upwork contract depending on the project.",
+      buttons:["quote","contact"]
+    },
+    quote:{
+      text:"For a fast quote, send your project details directly on WhatsApp.<br><a class='dt-ai-wa' href='" + wa + "' target='_blank'>📲 Send Quote on WhatsApp</a>",
+      buttons:["website","wordpress","payment"]
+    },
+    contact:{
+      text:"You can contact Dawood directly on WhatsApp for 3D website, WordPress, AI assistant, Excel or trading tools.<br><a class='dt-ai-wa' href='" + wa + "' target='_blank'>📲 WhatsApp Dawood</a>",
+      buttons:["pricing","quote"]
+    },
+    default:{
+      text:"I can help with 3D websites, WordPress websites, AI assistants, pricing, Excel automation, trading tools and WhatsApp quotes. What do you need?",
+      buttons:["website","wordpress","pricing","quote"]
+    }
+  };
+
+  const ans = answers[type] || answers.default;
+  addBot(ans.text, ans.buttons);
+}
+
+function detect(text){
+  const t = text.toLowerCase();
+  if(t.includes("wordpress") || t.includes("word press")) return "wordpress";
+  if(t.includes("website") || t.includes("web") || t.includes("3d") || t.includes("landing")) return "website";
+  if(t.includes("price") || t.includes("cost") || t.includes("package")) return "pricing";
+  if(t.includes("excel") || t.includes("sheet") || t.includes("dashboard")) return "excel";
+  if(t.includes("trading") || t.includes("xauusd") || t.includes("gold")) return "trading";
+  if(t.includes("payment") || t.includes("bank") || t.includes("usdt")) return "payment";
+  if(t.includes("quote") || t.includes("proposal")) return "quote";
+  if(t.includes("contact") || t.includes("whatsapp") || t.includes("number")) return "contact";
+  return "default";
+}
+
+function sendAI(){
+  const input = document.getElementById("aiInput");
+  const text = input.value.trim();
+  if(!text) return;
+  addUser(text);
+  input.value = "";
+  setTimeout(function(){
+    reply(detect(text));
+  },450);
+}
+
+function aiEnter(e){
+  if(e.key === "Enter") sendAI();
+}
+
+function greet(){
+  const h = new Date().getHours();
+  let msg = "Welcome 👋";
+  if(h < 12) msg = "Good morning 👋";
+  else if(h < 18) msg = "Good afternoon 👋";
+  else msg = "Good evening 👋";
+
+  const g = document.getElementById("aiGreeting");
+  if(g) g.innerText = msg;
+
+  if(aiChat && aiChat.innerHTML.trim() === ""){
+    addBot(msg + " I’m Dawood AI Assistant. I can guide you about 3D websites, WordPress websites, AI assistants, Excel automation, trading tools, pricing and WhatsApp quotes.",["website","wordpress","pricing","quote"]);
+  }
+}
+</script>
+
+</body>
+</html>
