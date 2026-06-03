@@ -333,17 +333,19 @@ nav a:hover::after{
 }
 
 .hero-logo{
-  width:245px;
+  width:280px;
   height:auto;
-  max-height:245px;
+  max-height:280px;
   object-fit:contain;
-  border-radius:28px;
-  background:rgba(5,8,22,.75);
-  border:1px solid rgba(0,212,255,.35);
-  padding:8px;
-  box-shadow:0 0 55px rgba(0,212,255,.22);
+  border-radius:0;
+  background:transparent;
+  border:none;
+  padding:0;
+  box-shadow:none;
   display:block;
   margin:auto;
+  filter:drop-shadow(0 25px 45px rgba(0,212,255,.35));
+  animation:logoFloat 5s ease-in-out infinite;
 }
 
 .hero-card h3{
