@@ -599,7 +599,15 @@ footer{
   z-index:999;
   box-shadow:0 0 18px rgba(37,211,102,.35);
 }
-@media(max-width:950px){
+@keyframes logoFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-15px);
+  }
+}
+  @media(max-width:950px){
 
   header{
     flex-direction:row;
