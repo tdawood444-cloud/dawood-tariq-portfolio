@@ -1,58 +1,15 @@
-<div class="cato-widget">
-  <div class="cato-welcome" id="catoWelcome">
-    <button class="cato-welcome-close" onclick="closeCatoWelcome()">×</button>
-    <div class="cato-heart">💜</div>
-    <h3>Hi, I’m CATO</h3>
-    <p>I can help you choose the right website, WordPress, Excel, trading tool or chatbot package.</p>
-    <button onclick="openCatoFromWelcome()">Yes, guide me ✨</button>
-  </div>
+/* CATO Smart Digital Companion
+   Shared AI Assistant File
+   Add before </body> on every page:
+   <script src="ai-assistant.js"></script>
+*/
 
-  <button class="cato-launcher" onclick="toggleCato()" aria-label="Open CATO Chatbot">
-    <span class="cato-launch-avatar">💜</span>
-    <span>
-      <b>CATO</b>
-      <small>Smart Digital Companion</small>
-    </span>
-  </button>
+(function(){
+  if(document.getElementById("catoSharedStyle")) return;
 
-  <div class="cato-panel" id="catoPanel">
-    <div class="cato-header">
-      <div class="cato-profile">
-        <div class="cato-avatar">💜</div>
-        <div>
-          <strong>CATO</strong>
-          <small id="catoStatus">Your cute smart assistant ✨</small>
-        </div>
-      </div>
-
-      <div class="cato-actions">
-        <button onclick="clearCato()">🧹</button>
-        <button onclick="toggleCato()">×</button>
-      </div>
-    </div>
-
-    <div class="cato-quick">
-      <button onclick="quickCato('website')">🌐 Website</button>
-      <button onclick="quickCato('cato')">💜 CATO</button>
-      <button onclick="quickCato('wordpress')">🧩 WordPress</button>
-      <button onclick="quickCato('pricing')">💰 Pricing</button>
-      <button onclick="quickCato('excel')">📊 Excel</button>
-      <button onclick="quickCato('trading')">📈 Trading</button>
-      <button onclick="quickCato('payment')">💳 Payment</button>
-      <button onclick="quickCato('quote')">⚡ Quote</button>
-    </div>
-
-    <div class="cato-chat" id="catoChat"></div>
-
-    <div class="cato-input">
-      <input id="catoInput" type="text" placeholder="Ask CATO anything..." onkeypress="catoEnter(event)">
-      <button onclick="sendCato()">➤</button>
-    </div>
-  </div>
-</div>
-
-<style>
-.site-footer{
+  const style = document.createElement("style");
+  style.id = "catoSharedStyle";
+  style.textContent = `.site-footer{
   padding:28px 14px;
   text-align:center;
   color:var(--muted);
@@ -426,21 +383,78 @@
   .cato-input input{
     padding:17px 14px;
   }
-}
-</style>
+}`;
+  document.head.appendChild(style);
 
-<script>
-function toggleMenu(){
-  document.getElementById("navMenu").classList.toggle("active");
-}
+  function injectCatoWidget(){
+    if(document.querySelector(".cato-widget")) return;
+    document.body.insertAdjacentHTML("beforeend", `<div class="cato-widget">
+  <div class="cato-welcome" id="catoWelcome">
+    <button class="cato-welcome-close" onclick="closeCatoWelcome()">×</button>
+    <div class="cato-heart">💜</div>
+    <h3>Hi, I’m CATO</h3>
+    <p>I can help you choose the right website, WordPress, Excel, trading tool or chatbot package.</p>
+    <button onclick="openCatoFromWelcome()">Yes, guide me ✨</button>
+  </div>
 
-document.addEventListener("mousemove", function(e){
-  document.body.style.setProperty("--mx", e.clientX + "px");
-  document.body.style.setProperty("--my", e.clientY + "px");
-});
+  <button class="cato-launcher" onclick="toggleCato()" aria-label="Open CATO Chatbot">
+    <span class="cato-launch-avatar">💜</span>
+    <span>
+      <b>CATO</b>
+      <small>Smart Digital Companion</small>
+    </span>
+  </button>
+
+  <div class="cato-panel" id="catoPanel">
+    <div class="cato-header">
+      <div class="cato-profile">
+        <div class="cato-avatar">💜</div>
+        <div>
+          <strong>CATO</strong>
+          <small id="catoStatus">Your cute smart assistant ✨</small>
+        </div>
+      </div>
+
+      <div class="cato-actions">
+        <button onclick="clearCato()">🧹</button>
+        <button onclick="toggleCato()">×</button>
+      </div>
+    </div>
+
+    <div class="cato-quick">
+      <button onclick="quickCato('website')">🌐 Website</button>
+      <button onclick="quickCato('cato')">💜 CATO</button>
+      <button onclick="quickCato('wordpress')">🧩 WordPress</button>
+      <button onclick="quickCato('pricing')">💰 Pricing</button>
+      <button onclick="quickCato('excel')">📊 Excel</button>
+      <button onclick="quickCato('trading')">📈 Trading</button>
+      <button onclick="quickCato('payment')">💳 Payment</button>
+      <button onclick="quickCato('quote')">⚡ Quote</button>
+    </div>
+
+    <div class="cato-chat" id="catoChat"></div>
+
+    <div class="cato-input">
+      <input id="catoInput" type="text" placeholder="Ask CATO anything..." onkeypress="catoEnter(event)">
+      <button onclick="sendCato()">➤</button>
+    </div>
+  </div>
+</div>`);
+  }
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", injectCatoWidget);
+  }else{
+    injectCatoWidget();
+  }
+})();
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function(){
-  setupReveal();
+  
   greetCato();
 
   const seen = localStorage.getItem("cato_seen");
@@ -496,7 +510,7 @@ function openCatoDemo(){
   addCatoBot("You opened my live demo 💜 I’m CATO, your smart digital companion. I can guide visitors about websites, WordPress, pricing, Excel tools, trading journals and project quotes ✨",["pricing","website","quote"]);
 }
 
-const catoChat = document.getElementById("catoChat");
+let catoChat = null;
 
 function catoFollowups(buttons){
   if(!buttons || !buttons.length) return "";
@@ -701,4 +715,31 @@ function detectCato(text){
 
   return "default";
 }
-</script>
+
+// Re-initialize CATO safely after the widget is injected
+document.addEventListener("DOMContentLoaded", function(){
+  catoChat = document.getElementById("catoChat");
+
+  if(typeof greetCato === "function"){
+    greetCato();
+  }
+
+  const seen = localStorage.getItem("cato_seen");
+  if(!seen){
+    setTimeout(function(){
+      const welcome = document.getElementById("catoWelcome");
+      const panel = document.getElementById("catoPanel");
+      if(welcome && panel && panel.style.display !== "flex"){
+        welcome.style.display = "block";
+        localStorage.setItem("cato_seen","yes");
+      }
+    },2200);
+  }
+});
+
+// Compatibility helper for pages that already use openAI()
+function openAI(){
+  if(typeof toggleCato === "function"){
+    toggleCato();
+  }
+}
