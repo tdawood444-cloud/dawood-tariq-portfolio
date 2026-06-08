@@ -1,1096 +1,229 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="google-site-verification" content="bFXjDvDsyrvKpTUFZRE9VWSM5eRM9Jzs8qVqgLDnmB0" />
 
-<title>Dawood Tariq | 3D Website Designer, NOVA AI Chatbot & Digital Systems</title>
-
-<meta name="description" content="Dawood Tariq builds premium mobile-first 3D websites, AI chatbots, WordPress websites, Excel automation tools, trading journals and import export documentation systems.">
-<meta name="keywords" content="Dawood Tariq, 3D Website Designer, NOVA AI Chatbot, AI Website Assistant, WordPress Website, Mobile Friendly Website, Responsive Website, Landing Page Designer, Excel Automation, Trading Tools, XAUUSD, Import Export Documentation, WhatsApp Chat Website, SEO Website">
+<title>Dawood Tariq | Premium Website Specialist & Modern Web Designer</title>
+<meta name="description" content="Dawood Tariq creates premium mobile-first websites, WordPress websites, landing pages, portfolio websites, website redesigns and business websites with WhatsApp lead systems.">
+<meta name="keywords" content="Dawood Tariq, website specialist, web designer Pakistan, premium website, business website, portfolio website, WordPress website, landing page designer, responsive website, WhatsApp website, website redesign, SEO friendly website">
 <meta name="author" content="Dawood Tariq">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="logo-icon.png">
 
-<meta property="og:title" content="Dawood Tariq | Premium 3D Websites & NOVA AI Chatbot">
-<meta property="og:description" content="Mobile-first 3D websites, AI chatbot systems, WordPress websites, Excel automation and business documentation support.">
+<meta property="og:title" content="Dawood Tariq | Premium Website Specialist">
+<meta property="og:description" content="Premium business websites, WordPress websites, landing pages, portfolio websites and responsive redesigns.">
 <meta property="og:image" content="logo.png">
 <meta property="og:type" content="website">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#030712;
-  --bg2:#060b18;
-  --panel:#0b1020;
-  --panel2:#10172a;
-
-  --cyan:#00e5ff;
-  --blue:#3b82f6;
-  --purple:#9b5cff;
-  --pink:#ec5cff;
-  --green:#22c55e;
-
-  --text:#f8fafc;
-  --muted:#a8b3cf;
-  --soft:#dbeafe;
-
-  --glass:rgba(255,255,255,.075);
-  --glass2:rgba(255,255,255,.045);
+  --bg:#050505;
+  --bg2:#0b0a08;
+  --panel:#11100d;
+  --panel2:#17140f;
+  --card:#15130f;
+  --gold:#d8b45a;
+  --gold2:#f3d890;
+  --bronze:#8a612f;
+  --emerald:#1f8a5b;
+  --emerald2:#57c68c;
+  --ivory:#fff8ea;
+  --text:#f8f4ea;
+  --muted:#b9ad99;
+  --soft:#e7d8bd;
   --line:rgba(255,255,255,.13);
-  --line2:rgba(0,229,255,.32);
-
-  --shadow:0 30px 90px rgba(0,0,0,.45);
-  --glow:0 0 45px rgba(0,229,255,.22);
+  --glass:rgba(255,255,255,.065);
+  --shadow:0 30px 95px rgba(0,0,0,.48);
   --radius:28px;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-  font-family:'Inter',sans-serif;
-  background:
-    radial-gradient(circle at 15% 15%,rgba(155,92,255,.26),transparent 28%),
-    radial-gradient(circle at 85% 12%,rgba(0,229,255,.18),transparent 30%),
-    radial-gradient(circle at 50% 105%,rgba(59,130,246,.16),transparent 38%),
-    linear-gradient(135deg,#02040d,#050816 45%,#07111f);
+  font-family:"Inter",system-ui,sans-serif;
   color:var(--text);
+  background:
+    radial-gradient(circle at 8% 6%,rgba(216,180,90,.18),transparent 30%),
+    radial-gradient(circle at 88% 10%,rgba(31,138,91,.17),transparent 29%),
+    radial-gradient(circle at 55% 100%,rgba(138,97,47,.16),transparent 34%),
+    linear-gradient(135deg,#030303,#0b0906 46%,#070806);
   overflow-x:hidden;
 }
-
-body::before{
+body:before{
   content:"";
   position:fixed;
   inset:0;
-  z-index:-3;
+  z-index:-2;
   pointer-events:none;
   background-image:
-    linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.024) 1px,transparent 1px);
-  background-size:44px 44px;
-  mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 78%);
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:48px 48px;
+  mask-image:linear-gradient(to bottom,#000,transparent 78%);
 }
-
-body::after{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:-2;
-  background:
-    radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(0,229,255,.12),transparent 24%);
-}
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-button,input{
-  font-family:inherit;
-}
-
-::selection{
-  background:var(--cyan);
-  color:#020617;
-}
-
-/* =========================
-   TOP MOBILE-FIRST NAV
-========================= */
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button,input,textarea,select{font-family:inherit}
+::selection{background:var(--gold);color:#050505}
 
 .site-header{
-  position:sticky;
-  top:0;
-  z-index:99999;
-  width:100%;
-  padding:12px 5%;
-  background:rgba(3,7,18,.72);
-  backdrop-filter:blur(24px);
-  border-bottom:1px solid var(--line);
-}
-
-.nav-shell{
-  max-width:1240px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:11px;
-  min-width:0;
-}
-
-.brand-logo{
-  width:50px;
-  height:50px;
-  border-radius:16px;
-  object-fit:contain;
-  filter:drop-shadow(0 0 18px rgba(0,229,255,.35));
-}
-
-.brand-text{
-  min-width:0;
-}
-
-.brand-text h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:16px;
-  line-height:1.1;
-  white-space:nowrap;
-}
-
-.brand-text p{
-  color:var(--muted);
-  font-size:11px;
-  margin-top:3px;
-  white-space:nowrap;
-}
-
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:22px;
-}
-
-.nav-links a{
-  color:#eef6ff;
-  font-size:14px;
-  font-weight:800;
-  opacity:.86;
-  position:relative;
-  transition:.25s ease;
-}
-
-.nav-links a:hover{
-  color:var(--cyan);
-}
-
-.nav-links a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-9px;
-  width:0;
-  height:2px;
-  border-radius:50px;
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  transition:.25s ease;
-}
-
-.nav-links a:hover::after{
-  width:100%;
-}
-
-.header-cta{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:12px 18px;
-  border-radius:999px;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  font-size:13px;
-  font-weight:900;
-  box-shadow:0 14px 35px rgba(0,229,255,.18);
-  transition:.3s;
-}
-
-.header-cta:hover{
-  transform:translateY(-3px);
-  box-shadow:0 20px 55px rgba(0,229,255,.28);
-}
-
-.menu-btn{
-  display:none;
-  width:46px;
-  height:46px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.06);
-  color:#fff;
-  font-size:24px;
-  cursor:pointer;
-  box-shadow:0 12px 35px rgba(0,0,0,.25);
-}
-
-/* =========================
-   SHARED ELEMENTS
-========================= */
-
-main{
-  position:relative;
-  z-index:1;
-}
-
-.section{
-  padding:86px 5%;
-}
-
-.section-inner{
-  max-width:1240px;
-  margin:auto;
-}
-
-.section-title{
-  text-align:center;
-  max-width:820px;
-  margin:0 auto 42px;
-}
-
-.eyebrow{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  padding:8px 13px;
-  border-radius:999px;
-  border:1px solid rgba(0,229,255,.28);
-  background:rgba(0,229,255,.06);
-  color:var(--cyan);
-  font-size:12px;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:1.8px;
-}
-
-.eyebrow::before{
-  content:"";
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:var(--green);
-  box-shadow:0 0 14px var(--green);
-}
-
-.section-title h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(30px,5vw,52px);
-  line-height:1.05;
-  letter-spacing:-1px;
-  margin-top:14px;
-}
-
-.section-title p{
-  color:var(--muted);
-  line-height:1.8;
-  margin-top:15px;
-  font-size:16px;
-}
-
-.gradient-text{
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  -webkit-background-clip:text;
-  color:transparent;
-}
-
-.btn-row{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:13px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  padding:14px 22px;
-  border-radius:16px;
-  font-size:14px;
-  font-weight:900;
-  border:1px solid transparent;
-  transition:.3s ease;
-  transform-style:preserve-3d;
-  cursor:pointer;
-}
-
-.btn-primary{
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  box-shadow:0 14px 38px rgba(0,229,255,.2);
-}
-
-.btn-secondary{
-  color:#fff;
-  background:rgba(255,255,255,.045);
-  border-color:rgba(255,255,255,.16);
-}
-
-.btn-dark{
-  color:#fff;
-  background:#050816;
-  border-color:rgba(0,229,255,.35);
-}
-
-.btn:hover{
-  transform:translateY(-5px) scale(1.025);
-  box-shadow:0 24px 60px rgba(0,229,255,.22);
-}
-
-.glass{
-  background:
-    radial-gradient(circle at top left,rgba(155,92,255,.13),transparent 35%),
-    linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.028));
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  backdrop-filter:blur(18px);
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-  min-height:calc(100vh - 75px);
-  padding:70px 5% 45px;
-  position:relative;
-  overflow:hidden;
-  isolation:isolate;
-}
-
-.hero-inner{
-  max-width:1240px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.03fr .97fr;
-  gap:44px;
-  align-items:center;
-}
-
-.hero-bg-orb{
-  position:absolute;
-  border-radius:50%;
-  pointer-events:none;
-  z-index:-1;
-  filter:blur(18px);
-  opacity:.8;
-}
-
-.orb-1{
-  width:360px;
-  height:360px;
-  left:-120px;
-  top:100px;
-  background:radial-gradient(circle,rgba(155,92,255,.32),transparent 65%);
-  animation:orbOne 10s ease-in-out infinite;
-}
-
-.orb-2{
-  width:330px;
-  height:330px;
-  right:-90px;
-  top:90px;
-  background:radial-gradient(circle,rgba(0,229,255,.28),transparent 65%);
-  animation:orbTwo 11s ease-in-out infinite;
-}
-
-.orb-3{
-  width:280px;
-  height:280px;
-  left:42%;
-  bottom:-110px;
-  background:radial-gradient(circle,rgba(236,92,255,.20),transparent 65%);
-  animation:orbThree 12s ease-in-out infinite;
-}
-
-@keyframes orbOne{
-  0%,100%{transform:translateY(0) scale(1);}
-  50%{transform:translateY(-34px) scale(1.1);}
-}
-
-@keyframes orbTwo{
-  0%,100%{transform:translateY(0) scale(1);}
-  50%{transform:translateY(32px) scale(1.08);}
-}
-
-@keyframes orbThree{
-  0%,100%{transform:translateX(0) scale(1);}
-  50%{transform:translateX(40px) scale(1.12);}
-}
-
-.particle{
-  position:absolute;
-  width:9px;
-  height:9px;
-  border-radius:50%;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  opacity:.48;
-  filter:blur(.2px);
-  animation:particleFloat 9s ease-in-out infinite;
-  z-index:-1;
-}
-
-.p1{left:12%;top:24%;animation-delay:.2s;}
-.p2{left:45%;top:18%;animation-delay:1s;}
-.p3{right:18%;top:34%;animation-delay:1.6s;}
-.p4{left:32%;bottom:18%;animation-delay:2.1s;}
-.p5{right:8%;bottom:22%;animation-delay:2.7s;}
-.p6{right:42%;bottom:12%;animation-delay:3.3s;}
-
-@keyframes particleFloat{
-  0%,100%{transform:translateY(0) translateX(0);opacity:.32;}
-  50%{transform:translateY(-36px) translateX(18px);opacity:.78;}
-}
-
-.hero-copy{
-  position:relative;
-  z-index:2;
-}
-
-.hero-kicker{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  color:#eaf6ff;
-  font-size:12px;
-  font-weight:950;
-  letter-spacing:1.7px;
-  text-transform:uppercase;
-  padding:9px 14px;
-  border-radius:999px;
-  background:rgba(255,255,255,.055);
-  border:1px solid rgba(255,255,255,.12);
-  box-shadow:0 18px 50px rgba(0,0,0,.2);
-}
-
-.hero-kicker span{
-  width:9px;
-  height:9px;
-  border-radius:50%;
-  background:#22c55e;
-  box-shadow:0 0 14px #22c55e;
-}
-
-.hero h1{
-  margin-top:18px;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(43px,6.4vw,76px);
-  line-height:1.02;
-  letter-spacing:-2px;
-}
-
-.hero h2{
-  margin-top:18px;
-  font-size:clamp(18px,2vw,24px);
-  line-height:1.45;
-  color:#eef4ff;
-  font-weight:700;
-}
-
-.hero p{
-  margin-top:18px;
-  color:var(--muted);
-  line-height:1.85;
-  max-width:650px;
-  font-size:16px;
-}
-
-.hero-actions{
-  margin-top:30px;
-}
-
-.hero-mini{
-  margin-top:25px;
-  display:grid;
-  grid-template-columns:repeat(2,minmax(145px,1fr));
-  gap:12px;
-  max-width:540px;
-}
-
-.hero-mini div{
-  padding:13px 14px;
-  border-radius:18px;
-  background:rgba(255,255,255,.055);
-  border:1px solid rgba(255,255,255,.12);
-  color:#eaf6ff;
-  font-weight:850;
-  font-size:14px;
-  box-shadow:0 18px 45px rgba(0,0,0,.18);
-  transition:.35s ease;
-}
-
-.hero-mini div:hover{
-  transform:translateY(-7px) rotateX(5deg);
-  border-color:rgba(0,229,255,.44);
-  box-shadow:0 24px 60px rgba(0,229,255,.14);
-}
-
-.hero-visual{
-  min-height:560px;
-  position:relative;
-  perspective:1200px;
-}
-
-.logo-stage{
-  position:absolute;
-  left:50%;
-  top:45%;
-  width:min(430px,90vw);
-  min-height:430px;
-  transform:translate(-50%,-50%);
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.logo-ring{
-  position:absolute;
-  inset:0;
-  border-radius:50%;
-  border:1px solid rgba(0,229,255,.28);
-  box-shadow:
-    inset 0 0 60px rgba(0,229,255,.12),
-    0 0 80px rgba(155,92,255,.18);
-  animation:ringRotate 18s linear infinite;
-}
-
-.logo-ring::before,
-.logo-ring::after{
-  content:"";
-  position:absolute;
-  inset:26px;
-  border-radius:50%;
-  border:1px dashed rgba(155,92,255,.35);
-}
-
-.logo-ring::after{
-  inset:55px;
-  border-color:rgba(0,229,255,.35);
-  animation:ringRotate 10s linear infinite reverse;
-}
-
-@keyframes ringRotate{
-  from{transform:rotate(0deg);}
-  to{transform:rotate(360deg);}
-}
-
-.logo-platform{
-  position:absolute;
-  width:70%;
-  height:52px;
-  bottom:42px;
-  border-radius:50%;
-  background:linear-gradient(90deg,transparent,rgba(0,229,255,.75),rgba(155,92,255,.62),transparent);
-  filter:blur(12px);
-  transform:perspective(460px) rotateX(64deg);
-  opacity:.88;
-  animation:platformPulse 4s ease-in-out infinite;
-}
-
-@keyframes platformPulse{
-  0%,100%{opacity:.55;width:58%;}
-  50%{opacity:1;width:76%;}
-}
-
-.hero-logo-card{
-  width:280px;
-  height:280px;
-  border-radius:46px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:
-    radial-gradient(circle at top,rgba(0,229,255,.18),transparent 50%),
-    linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.035));
-  border:1px solid rgba(255,255,255,.15);
-  box-shadow:
-    0 40px 100px rgba(0,0,0,.46),
-    0 0 80px rgba(0,229,255,.18);
-  transform-style:preserve-3d;
-  animation:logoCardFloat 6s ease-in-out infinite;
-}
-
-@keyframes logoCardFloat{
-  0%,100%{transform:translateY(0) rotateX(0deg) rotateY(0deg);}
-  50%{transform:translateY(-18px) rotateX(4deg) rotateY(-5deg);}
-}
-
-.hero-logo-card img{
-  width:220px;
-  height:220px;
-  object-fit:contain;
-  filter:drop-shadow(0 28px 45px rgba(0,229,255,.38));
-  animation:logoFloat 5s ease-in-out infinite;
-}
-
-@keyframes logoFloat{
-  0%,100%{transform:translateY(0) scale(1);}
-  50%{transform:translateY(-10px) scale(1.04);}
-}
-
-.float-chip{
-  position:absolute;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:13px 16px;
-  border-radius:20px;
-  background:rgba(255,255,255,.07);
-  border:1px solid rgba(255,255,255,.14);
-  backdrop-filter:blur(18px);
-  box-shadow:0 22px 65px rgba(0,0,0,.32);
-  font-weight:900;
-  color:#fff;
-  animation:chipFloat 6s ease-in-out infinite;
-}
-
-.float-chip b{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  width:34px;
-  height:34px;
-  border-radius:13px;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-}
-
-.chip-1{left:5%;top:16%;}
-.chip-2{right:3%;top:25%;animation-delay:1s;}
-.chip-3{left:0;bottom:24%;animation-delay:2s;}
-.chip-4{right:5%;bottom:18%;animation-delay:3s;}
-
-@keyframes chipFloat{
-  0%,100%{transform:translateY(0);}
-  50%{transform:translateY(-18px);}
-}
-
-.project-card{
-  position:absolute;
-  right:0;
-  top:58%;
-  width:255px;
-  padding:20px;
-  border-radius:26px;
-  background:
-    linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.04));
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:0 30px 90px rgba(0,0,0,.36);
-  backdrop-filter:blur(18px);
-  animation:projectFloat 7s ease-in-out infinite;
-}
-
-@keyframes projectFloat{
-  0%,100%{transform:translateY(0) rotateY(-7deg);}
-  50%{transform:translateY(-15px) rotateY(-2deg);}
-}
-
-.project-card small{
-  color:var(--green);
-  font-weight:900;
-}
-
-.project-card h3{
-  margin-top:10px;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:20px;
-}
-
-.project-card ul{
-  list-style:none;
-  margin-top:14px;
-}
-
-.project-card li{
-  color:var(--muted);
-  font-size:14px;
-  margin:9px 0;
-}
-
-.project-card li::before{
-  content:"✓ ";
-  color:var(--cyan);
-  font-weight:900;
-}
-
-/* =========================
-   TRUST BAR
-========================= */
-
-.trust-bar{
-  margin-top:28px;
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:1px;
-  overflow:hidden;
-  border-radius:24px;
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.06);
-  box-shadow:0 24px 70px rgba(0,0,0,.28);
-}
-
-.trust-item{
-  padding:20px 14px;
-  text-align:center;
-  background:rgba(255,255,255,.035);
-}
-
-.trust-item h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:28px;
-  color:#fff;
-}
-
-.trust-item p{
-  color:var(--muted);
-  font-size:12px;
-  margin-top:4px;
-}
-
-/* =========================
-   MOBILE PERFECT LAYOUT
-========================= */
-
-@media(max-width:980px){
-  .site-header{
-    padding:10px 14px;
-  }
-
-  .brand-logo{
-    width:44px;
-    height:44px;
-  }
-
-  .brand-text h3{
-    font-size:14px;
-  }
-
-  .brand-text p{
-    font-size:10px;
-  }
-
-  .menu-btn{
-    display:grid;
-    place-items:center;
-  }
-
-  .header-cta{
-    display:none;
-  }
-
-  .nav-links{
-    position:fixed;
-    top:70px;
-    left:12px;
-    right:12px;
-    display:none;
-    flex-direction:column;
-    gap:10px;
-    padding:16px;
-    border-radius:24px;
-    background:rgba(3,7,18,.96);
-    border:1px solid rgba(0,229,255,.25);
-    box-shadow:0 24px 80px rgba(0,0,0,.45);
-    backdrop-filter:blur(20px);
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
-
-  .nav-links a{
-    width:100%;
-    padding:13px 14px;
-    border-radius:14px;
-    background:rgba(255,255,255,.045);
-    text-align:center;
-  }
-
-  .nav-links a::after{
-    display:none;
-  }
-
-  .hero{
-    min-height:auto;
-    padding:44px 14px 38px;
-  }
-
-  .hero-inner{
-    grid-template-columns:1fr;
-    gap:28px;
-    text-align:center;
-  }
-
-  .hero-kicker{
-    font-size:10.5px;
-    letter-spacing:1.1px;
-    padding:8px 12px;
-  }
-
-  .hero h1{
-    font-size:clamp(39px,11vw,56px);
-    letter-spacing:-1.4px;
-  }
-
-  .hero h2{
-    font-size:17px;
-  }
-
-  .hero p{
-    font-size:15px;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .hero-actions,
-  .btn-row{
-    justify-content:center;
-  }
-
-  .btn{
-    width:100%;
-    max-width:330px;
-  }
-
-  .hero-mini{
-    grid-template-columns:1fr;
-    max-width:360px;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .hero-visual{
-    min-height:430px;
-  }
-
-  .logo-stage{
-    width:350px;
-    min-height:350px;
-    top:46%;
-  }
-
-  .hero-logo-card{
-    width:220px;
-    height:220px;
-    border-radius:38px;
-  }
-
-  .hero-logo-card img{
-    width:170px;
-    height:170px;
-  }
-
-  .float-chip{
-    font-size:12px;
-    padding:10px 11px;
-    border-radius:16px;
-  }
-
-  .float-chip b{
-    width:28px;
-    height:28px;
-    border-radius:10px;
-  }
-
-  .chip-1{left:4%;top:8%;}
-  .chip-2{right:2%;top:13%;}
-  .chip-3{left:4%;bottom:18%;}
-  .chip-4{right:2%;bottom:12%;}
-
-  .project-card{
-    position:relative;
-    right:auto;
-    top:auto;
-    width:100%;
-    max-width:350px;
-    margin:0 auto;
-    transform:none;
-    text-align:left;
-  }
-
-  .trust-bar{
-    grid-template-columns:repeat(2,1fr);
-    border-radius:22px;
-  }
-
-  .trust-item:last-child{
-    grid-column:1/-1;
-  }
-}
-
-@media(max-width:480px){
-  .hero h1{
-    font-size:38px;
-  }
-
-  .hero-visual{
-    min-height:390px;
-  }
-
-  .logo-stage{
-    width:310px;
-    min-height:310px;
-  }
-
-  .hero-logo-card{
-    width:190px;
-    height:190px;
-  }
-
-  .hero-logo-card img{
-    width:145px;
-    height:145px;
-  }
-
-  .float-chip{
-    transform:scale(.88);
-  }
-
-  .chip-1{left:-2%;top:6%;}
-  .chip-2{right:-5%;top:15%;}
-  .chip-3{left:-3%;bottom:18%;}
-  .chip-4{right:-7%;bottom:8%;}
-
-  .section{
-    padding:64px 14px;
-  }
-}
+  position:sticky;top:0;z-index:9999;width:100%;padding:13px 5%;
+  border-bottom:1px solid var(--line);background:rgba(5,5,5,.78);backdrop-filter:blur(22px);
+}
+.nav-shell{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo{width:50px;height:50px;object-fit:contain;border-radius:16px;filter:drop-shadow(0 0 18px rgba(216,180,90,.28))}
+.brand-text h3{font-family:"Manrope",sans-serif;font-size:16px;line-height:1.1;white-space:nowrap}
+.brand-text p{color:var(--muted);font-size:11px;margin-top:3px;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:21px}
+.nav-links a{color:#efe5d1;font-size:14px;font-weight:850;opacity:.88;position:relative;transition:.25s ease}
+.nav-links a:hover{color:var(--gold2)}
+.nav-links a:after{content:"";position:absolute;left:0;bottom:-9px;width:0;height:2px;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--emerald2));transition:.25s ease}
+.nav-links a:hover:after{width:100%}
+.header-cta{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;color:#100b04;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));font-size:13px;font-weight:950;box-shadow:0 16px 42px rgba(216,180,90,.2);transition:.28s ease;white-space:nowrap}
+.header-cta:hover{transform:translateY(-3px)}
+.menu-btn{display:none;width:46px;height:46px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;font-size:24px;cursor:pointer}
+
+.section{padding:86px 5%}.section-inner{max-width:1240px;margin:auto}
+.section-title{text-align:center;max-width:860px;margin:0 auto 44px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border-radius:999px;border:1px solid rgba(216,180,90,.34);background:rgba(216,180,90,.08);color:var(--gold2);font-size:12px;font-weight:950;letter-spacing:1.6px;text-transform:uppercase}
+.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--emerald2);box-shadow:0 0 14px rgba(87,198,140,.7)}
+.section-title h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,60px);line-height:1.05;letter-spacing:-1.2px;margin-top:14px}
+.section-title p{color:var(--muted);line-height:1.85;margin-top:15px;font-size:16px}
+.gradient-text{background:linear-gradient(135deg,#fff,var(--gold2),var(--gold),#d5ffe6);-webkit-background-clip:text;color:transparent}
+.btn-row{display:flex;flex-wrap:wrap;align-items:center;gap:13px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:16px;font-size:14px;font-weight:950;border:1px solid transparent;transition:.28s ease;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));color:#100b04;box-shadow:0 16px 42px rgba(216,180,90,.2)}
+.btn-secondary{color:var(--ivory);background:rgba(255,255,255,.055);border-color:var(--line)}
+.btn-dark{background:#090806;border-color:rgba(216,180,90,.28);color:var(--ivory)}
+.btn:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(216,180,90,.16)}
+.glass{background:radial-gradient(circle at top left,rgba(216,180,90,.12),transparent 36%),linear-gradient(145deg,rgba(255,255,255,.082),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+
+.hero{min-height:calc(100vh - 76px);padding:76px 5% 54px;position:relative;overflow:hidden;isolation:isolate}
+.hero:after{content:"";position:absolute;right:-12%;top:8%;width:620px;height:620px;background:radial-gradient(circle,rgba(216,180,90,.13),transparent 67%);filter:blur(5px);z-index:-1}
+.hero-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;color:#fff5da;font-size:12px;font-weight:950;letter-spacing:1.7px;text-transform:uppercase;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 50px rgba(0,0,0,.2)}
+.hero-kicker span{width:9px;height:9px;border-radius:50%;background:var(--emerald2);box-shadow:0 0 14px var(--emerald2)}
+.hero h1{margin-top:18px;font-family:"Playfair Display",serif;font-size:clamp(46px,6.7vw,82px);line-height:1.01;letter-spacing:-2px}
+.hero h2{margin-top:18px;font-size:clamp(18px,2vw,24px);line-height:1.45;color:#fff2d8;font-weight:750}
+.hero p{margin-top:18px;color:var(--muted);line-height:1.85;max-width:650px;font-size:16px}
+.hero-actions{margin-top:30px}.hero-mini{margin-top:25px;display:grid;grid-template-columns:repeat(2,minmax(145px,1fr));gap:12px;max-width:560px}
+.hero-mini div{padding:13px 14px;border-radius:18px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);color:#fff0d4;font-weight:850;font-size:14px;box-shadow:0 18px 45px rgba(0,0,0,.18);transition:.35s ease}
+.hero-mini div:hover{transform:translateY(-7px);border-color:rgba(216,180,90,.4)}
+.hero-visual{min-height:585px;position:relative;perspective:1200px}
+.browser-stack{position:absolute;inset:12px 0 0 0}
+.browser-card{position:absolute;overflow:hidden;border:1px solid rgba(255,255,255,.14);border-radius:30px;background:#100e0a;box-shadow:0 30px 95px rgba(0,0,0,.46)}
+.browser-card img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.04)}
+.browser-main{right:0;top:0;width:82%;height:67%;transform:rotateY(-10deg) rotateZ(2deg)}
+.browser-second{left:0;bottom:58px;width:56%;height:37%;transform:rotateZ(-5deg)}
+.browser-label{position:absolute;left:18px;bottom:18px;z-index:2;padding:10px 13px;border-radius:999px;background:rgba(0,0,0,.56);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(12px);font-weight:900;color:#fff;font-size:13px}
+.browser-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.65));pointer-events:none}
+.audit-card{position:absolute;right:5%;bottom:0;width:320px;padding:22px;border-radius:26px;background:rgba(8,7,5,.8);border:1px solid var(--line);backdrop-filter:blur(20px);box-shadow:0 28px 80px rgba(0,0,0,.45)}
+.audit-card strong{display:block;font-family:"Manrope",sans-serif;font-size:22px;margin-bottom:8px}.audit-card p{font-size:14px;line-height:1.65;margin:0;color:var(--muted)}
+.trust-bar{margin-top:32px;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:rgba(255,255,255,.06);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.trust-item{padding:20px 14px;text-align:center;background:rgba(255,255,255,.035)}.trust-item h3{font-family:"Playfair Display",serif;font-size:30px;color:#fff}.trust-item p{color:var(--muted);font-size:12px;margin-top:4px}
+
+.offer-box{position:relative;overflow:hidden;max-width:1120px;margin:auto;text-align:center;padding:48px 30px;border-radius:34px;background:radial-gradient(circle at 10% 20%,rgba(216,180,90,.20),transparent 32%),radial-gradient(circle at 90% 0%,rgba(31,138,91,.18),transparent 30%),linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.14);box-shadow:0 32px 100px rgba(0,0,0,.38);backdrop-filter:blur(20px);transition:.35s ease}.offer-box:hover{transform:translateY(-8px)}
+.offer-box h2{font-family:"Playfair Display",serif;font-size:clamp(31px,5vw,54px);line-height:1.08;margin-top:14px}.offer-box p{color:var(--muted);line-height:1.85;max-width:820px;margin:15px auto 0}
+.offer-points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.offer-point{padding:18px 16px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);color:#fff;font-weight:900;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+
+.specialist-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:24px;align-items:stretch}.specialist-image{min-height:520px;overflow:hidden}.specialist-image img{width:100%;height:100%;object-fit:cover}.specialist-content{padding:34px}.specialist-content h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.06;margin:14px 0}.specialist-content p{color:var(--muted);line-height:1.85}.check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}.check{padding:15px;border-radius:18px;background:rgba(255,255,255,.055);border:1px solid var(--line);font-weight:850;color:#fff3da}
+
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{position:relative;overflow:hidden;min-height:330px;padding:26px;transition:.38s ease}.service-card:hover{transform:translateY(-12px);border-color:rgba(216,180,90,.42)}.service-card.featured{grid-column:span 2}.service-icon{width:54px;height:54px;display:flex;align-items:center;justify-content:center;border-radius:18px;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--emerald));box-shadow:0 18px 40px rgba(216,180,90,.18);font-size:26px;margin-bottom:18px}.service-card h3{font-family:"Manrope",sans-serif;font-size:23px;margin-bottom:11px}.service-card p{color:var(--muted);line-height:1.75;font-size:15px}.service-card ul{list-style:none;margin-top:18px}.service-card li{color:#f0dfbd;font-size:14px;margin:9px 0}.service-card li:before{content:"✓ ";color:var(--emerald2);font-weight:900}
+
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.process-card{padding:26px;min-height:235px;transition:.35s ease}.process-card:hover{transform:translateY(-10px);border-color:rgba(216,180,90,.38)}.process-card span{display:inline-flex;margin-bottom:18px;font-family:"Playfair Display",serif;font-size:34px;font-weight:900;background:linear-gradient(90deg,var(--gold2),var(--emerald2));-webkit-background-clip:text;color:transparent}.process-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px}.process-card p{color:var(--muted);line-height:1.75}
+
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project{overflow:hidden;transition:.35s ease}.project:hover{transform:translateY(-12px);border-color:rgba(216,180,90,.42)}.project-img{height:255px;overflow:hidden;border-radius:26px 26px 0 0}.project-img img{width:100%;height:100%;object-fit:cover;transition:.55s ease}.project:hover .project-img img{transform:scale(1.06)}.project-body{padding:24px}.project-body h3{font-family:"Playfair Display",serif;font-size:28px;margin-bottom:10px}.project-body p{color:var(--muted);line-height:1.75;font-size:15px;margin-bottom:18px}.project-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.project-tags span{padding:7px 10px;border-radius:999px;background:rgba(216,180,90,.10);border:1px solid rgba(216,180,90,.22);color:var(--gold2);font-size:12px;font-weight:900}
+
+.pricing-banner{padding:34px;display:grid;grid-template-columns:1.08fr .92fr auto;gap:25px;align-items:center}.pricing-banner h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,48px);line-height:1.1;margin-top:12px}.pricing-banner p{color:var(--muted);line-height:1.8;margin-top:12px}.pricing-mini{display:grid;gap:10px}.pricing-mini div{padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:space-between;gap:16px}.pricing-mini span{color:#f0dfbd;font-size:13px;font-weight:850}.pricing-mini strong{color:var(--gold2);font-family:"Manrope",sans-serif;font-size:24px}
+
+.image-showcase{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:280px 280px;gap:18px}.showcase-item{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:28px;box-shadow:0 18px 55px rgba(0,0,0,.28)}.showcase-item.large{grid-row:span 2}.showcase-item img{width:100%;height:100%;object-fit:cover;transition:.55s ease}.showcase-item:hover img{transform:scale(1.07)}.showcase-item span{position:absolute;left:18px;bottom:18px;background:rgba(0,0,0,.56);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(14px);padding:10px 14px;border-radius:999px;font-weight:900;color:#fff}
+
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.why-card{padding:26px;min-height:230px;transition:.35s ease}.why-card:hover{transform:translateY(-10px)}.why-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px}.why-card p{color:var(--muted);line-height:1.75}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.testimonial-card{padding:28px;min-height:240px}.stars{color:var(--gold2);letter-spacing:2px;margin-bottom:16px;font-weight:900}.testimonial-card p{color:#ecdcbc;line-height:1.8;font-size:15px}.testimonial-card h4{margin-top:18px;color:var(--gold2);font-family:"Manrope",sans-serif}
+
+.final-cta{position:relative;overflow:hidden;padding:44px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:30px}.final-cta h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.08;margin-top:14px}.final-cta p{color:var(--muted);line-height:1.85;margin:16px 0 24px;max-width:720px}.final-preview{min-height:330px;border-radius:30px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}.final-preview img{width:100%;height:100%;object-fit:cover}
+.site-footer{padding:30px 14px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.1)}
+.reveal{opacity:0;transform:translateY(26px);transition:1s ease}.reveal.active{opacity:1;transform:translateY(0)}
+
+@media(max-width:1180px){.service-grid{grid-template-columns:repeat(2,1fr)}.process-grid,.why-grid{grid-template-columns:repeat(2,1fr)}.pricing-banner{grid-template-columns:1fr}.portfolio-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:980px){.site-header{padding:10px 14px}.brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}.menu-btn{display:grid;place-items:center}.header-cta{display:none}.nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}.nav-links.active{display:flex}.nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}.nav-links a:after{display:none}.hero{min-height:auto;padding:48px 14px 38px}.hero-inner,.specialist-grid,.final-cta{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions,.btn-row{justify-content:center}.btn{width:100%;max-width:340px}.hero-mini{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}.hero-visual{min-height:520px}.browser-main{width:88%;height:58%}.browser-second{width:62%;height:28%;bottom:105px}.audit-card{left:0;right:0;width:auto;bottom:0}.trust-bar{grid-template-columns:repeat(2,1fr)}.trust-item:last-child{grid-column:1/-1}.offer-points,.check-grid,.service-grid,.process-grid,.portfolio-grid,.why-grid,.testimonial-grid{grid-template-columns:1fr}.service-card.featured{grid-column:auto}.pricing-banner{padding:24px}.image-showcase{grid-template-columns:1fr 1fr;grid-template-rows:250px 250px 250px}.showcase-item.large{grid-column:span 2;grid-row:span 1}.final-cta{padding:30px 18px}.final-preview{min-height:260px}}
+@media(max-width:560px){.section{padding:66px 14px}.hero h1{font-size:41px}.hero-visual{min-height:455px}.browser-second{bottom:92px}.hero-mini div{text-align:left}.offer-box{padding:36px 18px;border-radius:28px}.project-img{height:230px}.image-showcase{grid-template-columns:1fr;grid-template-rows:none}.showcase-item,.showcase-item.large{height:245px;grid-column:auto;grid-row:auto}.trust-bar{grid-template-columns:1fr}.trust-item:last-child{grid-column:auto}.specialist-content{padding:24px}.nav-shell{gap:10px}}
 </style>
 </head>
 <body>
-
 <header class="site-header">
   <div class="nav-shell">
     <a href="index.html" class="brand">
       <img src="logo-icon.png" alt="Dawood Tariq Logo" class="brand-logo">
       <div class="brand-text">
         <h3>Dawood Tariq</h3>
-        <p>3D Websites • AI • Trading • Excel</p>
+        <p>Premium Website Specialist</p>
       </div>
     </a>
-
     <nav class="nav-links" id="navMenu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="pricing.html">Pricing</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
-      <a href="landing-page.html">Demo</a>
+      <a href="#portfolio">Portfolio</a>
     </nav>
-
-    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20start%20a%20project." target="_blank">
-      Start Project ✨
-    </a>
-
+    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20premium%20website." target="_blank">Start Website ✦</a>
     <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
   </div>
 </header>
 
 <main>
-
 <section class="hero" id="home">
-  <div class="hero-bg-orb orb-1"></div>
-  <div class="hero-bg-orb orb-2"></div>
-  <div class="hero-bg-orb orb-3"></div>
-
-  <span class="particle p1"></span>
-  <span class="particle p2"></span>
-  <span class="particle p3"></span>
-  <span class="particle p4"></span>
-  <span class="particle p5"></span>
-  <span class="particle p6"></span>
-
   <div class="hero-inner">
-
-    <div class="hero-copy">
-      <div class="hero-kicker">
-        <span></span>
-        New Era 3D Digital Experience
-      </div>
-
-      <h1>
-        I Build <span class="gradient-text">Premium 3D Websites</span> With Smart AI Systems
-      </h1>
-
-      <h2>
-        Mobile-first websites, WordPress pages,  AI chatbot, Excel automation, trading tools and business documentation.
-      </h2>
-
-      <p>
-        I help businesses, freelancers and personal brands build a strong online presence with modern design,
-        smooth 3D sections, premium mobile layout, WhatsApp lead system and smart chatbot support.
-      </p>
-
+    <div class="hero-copy reveal">
+      <div class="hero-kicker"><span></span> Premium Website Specialist</div>
+      <h1>I Build <span class="gradient-text">Luxury Websites</span> That Make Brands Look Expensive.</h1>
+      <h2>Modern business websites, landing pages, WordPress websites, portfolio pages and redesigns — built mobile-first with premium visuals.</h2>
+      <p>I help businesses and personal brands turn their online presence into a clean, trusted and high-converting website with strong sections, image-led design, WhatsApp leads and smooth responsive layout.</p>
       <div class="btn-row hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20hire%20you%20for%20a%203D%20website%20or%20AI%20chatbot." target="_blank">
-          Hire Me on WhatsApp
-        </a>
-
-        <a class="btn btn-secondary" href="#work">
-          View My Work
-        </a>
+        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20build%20a%20premium%20website." target="_blank">Hire Me on WhatsApp</a>
+        <a class="btn btn-secondary" href="#portfolio">View Website Portfolio</a>
       </div>
-
       <div class="hero-mini">
-        <div>🌐 Premium 3D Websites</div>
-        <div>💬 AI Chatbot</div>
-        <div>🧩 WordPress Setup</div>
-        <div>📱 Mobile + Laptop Perfect</div>
+        <div>🌐 Business Websites</div>
+        <div>📱 Mobile-First Design</div>
+        <div>🧩 WordPress Websites</div>
+        <div>⚡ Landing Pages</div>
       </div>
     </div>
-
-    <div class="hero-visual">
-      <div class="logo-stage">
-        <div class="logo-ring"></div>
-        <div class="logo-platform"></div>
-
-        <div class="hero-logo-card">
-          <img src="logo.png" alt="Dawood Tariq Main Logo">
+    <div class="hero-visual reveal">
+      <div class="browser-stack">
+        <div class="browser-card browser-main">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1300&q=85" alt="Premium website dashboard design">
+          <span class="browser-label">Premium Web Design</span>
         </div>
-       </div>
+        <div class="browser-card browser-second">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85" alt="Responsive website on laptop">
+          <span class="browser-label">Mobile + Laptop Ready</span>
+        </div>
+        <div class="audit-card">
+          <strong>Website that sells clearly.</strong>
+          <p>Hero section, service flow, portfolio proof, pricing preview and WhatsApp lead path — all in one premium layout.</p>
+        </div>
+      </div>
     </div>
   </div>
-
   <div class="section-inner">
-    <div class="trust-bar">
-      <div class="trust-item">
-        <h3>3D</h3>
-        <p>Modern Experience</p>
-      </div>
-
-      <div class="trust-item">
-        <h3>Smart</h3>
-        <p> AI Chatbot</p>
-      </div>
-
-      <div class="trust-item">
-        <h3>WP</h3>
-        <p>WordPress Support</p>
-      </div>
-
-      <div class="trust-item">
-        <h3>24/7</h3>
-        <p>Lead Contact Ready</p>
-      </div>
-
-      <div class="trust-item">
-        <h3>100%</h3>
-        <p>Responsive Layout</p>
-      </div>
+    <div class="trust-bar reveal">
+      <div class="trust-item"><h3>5+</h3><p>Demo Websites</p></div>
+      <div class="trust-item"><h3>100%</h3><p>Responsive Layout</p></div>
+      <div class="trust-item"><h3>SEO</h3><p>Ready Structure</p></div>
+      <div class="trust-item"><h3>WA</h3><p>WhatsApp Leads</p></div>
+      <div class="trust-item"><h3>2026</h3><p>Modern UI Style</p></div>
     </div>
   </div>
 </section>
@@ -1098,33 +231,17 @@ main{
 <section class="section reveal">
   <div class="section-inner">
     <div class="offer-box">
-      <div class="offer-glow"></div>
-
-      <div class="eyebrow">Limited Offer</div>
-
-      <h2>
-        Start Your First Website With <span class="gradient-text">20% OFF</span>
-      </h2>
-
-      <p>
-        Get a premium mobile-first 3D website with smooth sections, WhatsApp contact, SEO wording,
-        and a free premium logo concept for your first website project.
-      </p>
-
+      <div class="eyebrow">First Website Offer</div>
+      <h2>Start Your First Premium Website With <span class="gradient-text">20% OFF</span></h2>
+      <p>Get a mobile-first website with premium sections, images, WhatsApp contact, SEO wording and a professional layout that works on phone, tablet and laptop.</p>
       <div class="offer-points">
         <div class="offer-point">✔ 20% OFF First Website</div>
-        <div class="offer-point">✔ Free Premium Logo Concept</div>
-        <div class="offer-point">✔ Mobile + Laptop + Tablet Ready</div>
+        <div class="offer-point">✔ Premium Image Sections</div>
+        <div class="offer-point">✔ WhatsApp Lead Button</div>
       </div>
-
       <div class="btn-row" style="justify-content:center;margin-top:26px;">
-        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hello%20Dawood%2C%20I%20want%20to%20claim%2020%25%20OFF%20for%20my%20first%20website." target="_blank">
-          Claim Offer on WhatsApp
-        </a>
-
-        <a class="btn btn-secondary" href="#services">
-          See Services
-        </a>
+        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hello%20Dawood%2C%20I%20want%20to%20claim%2020%25%20OFF%20for%20my%20website." target="_blank">Claim Offer</a>
+        <a class="btn btn-secondary" href="#services">See Website Services</a>
       </div>
     </div>
   </div>
@@ -1132,338 +249,60 @@ main{
 
 <section class="section reveal" id="about">
   <div class="section-inner">
-    <div class="section-title">
-      <div class="eyebrow">About Me</div>
-      <h2>Premium Digital Work With <span class="gradient-text">Clear Business Purpose</span></h2>
-      <p>
-        I am Dawood Tariq. I build websites and digital tools that look modern, explain services clearly,
-        and help visitors take action through WhatsApp, chatbot support and clean business presentation.
-      </p>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-card glass">
-        <h3>🌐 Website Builder</h3>
-        <p>
-          I create modern 3D websites, landing pages, portfolio websites, service pages and responsive layouts
-          for businesses, freelancers and personal brands.
-        </p>
+    <div class="specialist-grid">
+      <div class="specialist-image glass">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Modern web design workspace">
       </div>
-
-      <div class="about-card glass">
-        <h3>💬 Smart Digital Assistant</h3>
-        <p>
-          your smart website assistant.  helps visitors understand services, pricing, packages,
-          quote details and sends serious leads to WhatsApp.
-        </p>
-      </div>
-
-      <div class="about-card glass">
-        <h3>📊 Business Tools</h3>
-        <p>
-          I also create Excel dashboards, trading journals, risk tools, import/export documentation support
-          and professional business systems.
-        </p>
+      <div class="specialist-content glass">
+        <div class="eyebrow">Website Specialist</div>
+        <h2>Focused only on websites, online presence and client-ready digital design.</h2>
+        <p>I create websites that help clients understand your business quickly. The goal is simple: premium first impression, clear services, strong trust, smooth mobile experience and easy contact.</p>
+        <p style="margin-top:14px;">This home page is now positioned as a web design specialist brand — not trading, not Excel, not documentation.</p>
+        <div class="check-grid">
+          <div class="check">✔ Custom Website Design</div>
+          <div class="check">✔ WordPress Website</div>
+          <div class="check">✔ Landing Page</div>
+          <div class="check">✔ Website Redesign</div>
+          <div class="check">✔ Portfolio Website</div>
+          <div class="check">✔ Business Website</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<style>
-/* =========================
-   PART 2 EXTRA SECTIONS
-========================= */
-
-.offer-box{
-  position:relative;
-  overflow:hidden;
-  max-width:1120px;
-  margin:auto;
-  text-align:center;
-  padding:48px 30px;
-  border-radius:34px;
-  background:
-    radial-gradient(circle at 10% 20%,rgba(155,92,255,.25),transparent 32%),
-    radial-gradient(circle at 90% 0%,rgba(0,229,255,.18),transparent 30%),
-    linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.035));
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:0 32px 100px rgba(0,0,0,.38);
-  backdrop-filter:blur(20px);
-  transition:.35s ease;
-}
-
-.offer-box:hover{
-  transform:translateY(-10px);
-  box-shadow:0 42px 120px rgba(0,229,255,.16);
-}
-
-.offer-glow{
-  position:absolute;
-  width:320px;
-  height:320px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(0,229,255,.22),transparent 66%);
-  right:-120px;
-  top:-140px;
-  filter:blur(8px);
-  animation:offerGlowMove 8s ease-in-out infinite;
-}
-
-@keyframes offerGlowMove{
-  0%,100%{transform:translate(0,0);}
-  50%{transform:translate(-35px,35px);}
-}
-
-.offer-box h2{
-  position:relative;
-  z-index:1;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(31px,5vw,52px);
-  line-height:1.08;
-  margin-top:14px;
-  letter-spacing:-1px;
-}
-
-.offer-box p{
-  position:relative;
-  z-index:1;
-  color:var(--muted);
-  line-height:1.85;
-  max-width:820px;
-  margin:15px auto 0;
-}
-
-.offer-points{
-  position:relative;
-  z-index:1;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  margin-top:25px;
-}
-
-.offer-point{
-  padding:18px 16px;
-  border-radius:20px;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.13);
-  color:#fff;
-  font-weight:900;
-  box-shadow:0 18px 50px rgba(0,0,0,.18);
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.about-card{
-  padding:28px;
-  min-height:240px;
-  transition:.35s ease;
-}
-
-.about-card:hover{
-  transform:translateY(-12px) rotateX(4deg);
-  border-color:rgba(0,229,255,.38);
-  box-shadow:0 34px 90px rgba(0,229,255,.14);
-}
-
-.about-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:22px;
-  margin-bottom:12px;
-}
-
-.about-card p{
-  color:var(--muted);
-  line-height:1.8;
-  font-size:15px;
-}
-
-.reveal{
-  opacity:0;
-  transform:translateY(26px);
-  transition:1s ease;
-}
-
-.reveal.active{
-  opacity:1;
-  transform:translateY(0);
-}
-
-@media(max-width:980px){
-  .offer-box{
-    padding:38px 18px;
-    border-radius:28px;
-  }
-
-  .offer-points,
-  .about-grid{
-    grid-template-columns:1fr;
-  }
-
-  .about-card{
-    min-height:auto;
-  }
-}
-
-@media(min-width:981px) and (max-width:1180px){
-  .hero-inner{
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-  }
-
-  .hero h1{
-    font-size:58px;
-  }
-
-  .project-card{
-    right:-5px;
-    width:230px;
-  }
-
-  .float-chip{
-    font-size:13px;
-  }
-
-  .about-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-}
-</style>
 <section class="section reveal" id="services">
   <div class="section-inner">
     <div class="section-title">
-      <div class="eyebrow">Services</div>
-      <h2>What I Can Build For <span class="gradient-text">Your Brand</span></h2>
-      <p>
-        Premium services designed for businesses, freelancers, traders and personal brands who want a modern,
-        mobile-perfect and professional digital presence.
-      </p>
+      <div class="eyebrow">Website Services</div>
+      <h2>Everything Your Brand Needs For A <span class="gradient-text">Premium Website</span></h2>
+      <p>Services are focused only on websites, design, redesign, WordPress, landing pages and website launch support.</p>
     </div>
-
     <div class="service-grid">
-      <div class="service-card featured glass">
-        <div class="service-icon">🌐</div>
-        <h3>Premium 3D Website</h3>
-        <p>
-          A modern website with floating 3D sections, smooth animations, premium layout,
-          WhatsApp contact and mobile-first design.
-        </p>
-        <ul>
-          <li>3D hero section</li>
-          <li>Responsive layout</li>
-          <li>SEO-friendly content</li>
-          <li>WhatsApp lead system</li>
-        </ul>
-      </div>
+      <div class="service-card featured glass"><div class="service-icon">🌐</div><h3>Premium Business Website</h3><p>A complete modern website for businesses, agencies, service providers and personal brands.</p><ul><li>Home, Services, Pricing, FAQ, Contact</li><li>Premium visual sections</li><li>Mobile-first layout</li><li>WhatsApp contact flow</li></ul></div>
+      <div class="service-card glass"><div class="service-icon">⚡</div><h3>Landing Page Design</h3><p>Single-page website built for offers, campaigns, lead collection and service promotion.</p><ul><li>Strong hero section</li><li>Offer + CTA sections</li><li>Fast loading layout</li><li>Lead-focused design</li></ul></div>
+      <div class="service-card glass"><div class="service-icon">🧩</div><h3>WordPress Website</h3><p>Professional WordPress website structure for clients who need easy content updates.</p><ul><li>Business pages</li><li>Contact forms</li><li>Booking/inquiry flow</li><li>Responsive setup</li></ul></div>
+      <div class="service-card glass"><div class="service-icon">🎨</div><h3>Website Redesign</h3><p>Upgrade old websites into a premium, modern and mobile-friendly experience.</p><ul><li>New colors</li><li>Better spacing</li><li>Improved sections</li><li>Modern UI/UX</li></ul></div>
+      <div class="service-card glass"><div class="service-icon">🖼️</div><h3>Portfolio Website</h3><p>Showcase work, services, case studies, testimonials and contact options in one place.</p><ul><li>Project cards</li><li>Live demo buttons</li><li>Client proof</li><li>Personal branding</li></ul></div>
+      <div class="service-card glass"><div class="service-icon">🚀</div><h3>Website Launch Support</h3><p>Basic guidance for publishing and connecting your website with GitHub Pages or hosting.</p><ul><li>Final testing</li><li>Link checking</li><li>SEO meta setup</li><li>Publishing support</li></ul></div>
+    </div>
+  </div>
+</section>
 
-      <div class="service-card glass">
-        <div class="service-icon">💜</div>
-        <h3> AI Chatbot</h3>
-        <p>
-          An advanced website assistant designed to guides visitors, explains your services,
-          answers questions and sends clients to WhatsApp.
-        </p>
-        <ul>
-          <li>Cute branded chatbot</li>
-          <li>Smart quick replies</li>
-          <li>Quote collection</li>
-          <li>WhatsApp redirect</li>
-        </ul>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">🧩</div>
-        <h3>WordPress Website</h3>
-        <p>
-          Business WordPress websites with pages, inquiry forms, booking/contact forms,
-          professional service sections and email notification support.
-        </p>
-        <ul>
-          <li>Business website</li>
-          <li>Inquiry form</li>
-          <li>Booking form</li>
-          <li>Email notification</li>
-        </ul>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">📱</div>
-        <h3>Landing Page Design</h3>
-        <p>
-          High-converting landing pages for offers, services, portfolios and client lead generation.
-          Built to look perfect on mobile, tablet and laptop.
-        </p>
-        <ul>
-          <li>Offer section</li>
-          <li>Lead buttons</li>
-          <li>Fast layout</li>
-          <li>Clean CTA</li>
-        </ul>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">📊</div>
-        <h3>Excel Automation</h3>
-        <p>
-          Excel dashboards, trackers, reports, calculators, business sheets and trading journals
-          to make work faster and organized.
-        </p>
-        <ul>
-          <li>Dashboards</li>
-          <li>Trackers</li>
-          <li>Reports</li>
-          <li>Calculators</li>
-        </ul>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">📈</div>
-        <h3>Trading Tools</h3>
-        <p>
-          XAUUSD trading journals, risk calculators, strategy documents and discipline-focused
-          tools for better trading review.
-        </p>
-        <ul>
-          <li>XAUUSD journal</li>
-          <li>Risk calculator</li>
-          <li>Trade review</li>
-          <li>Strategy sheet</li>
-        </ul>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">📦</div>
-        <h3>Import / Export Docs</h3>
-        <p>
-          Support for documentation-related work including GD, PSW, WebOC, import permit tracking
-          and professional document handling.
-        </p>
-        <ul>
-          <li>GD support</li>
-          <li>PSW / WebOC</li>
-          <li>Import permit</li>
-          <li>Documentation</li>
-        </ul>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">🎨</div>
-        <h3>Premium Logo Concept</h3>
-        <p>
-          Clean logo concept for first website clients so your brand looks more professional
-          when your website goes live.
-        </p>
-        <ul>
-          <li>Logo idea</li>
-          <li>Brand matching</li>
-          <li>Website friendly</li>
-          <li>Premium feel</li>
-        </ul>
-      </div>
+<section class="section reveal" id="portfolio">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Demo Portfolio</div>
+      <h2>Website Concepts I Can Build For <span class="gradient-text">Different Businesses</span></h2>
+      <p>These demo projects show that your service can cover multiple industries, styles and layouts.</p>
+    </div>
+    <div class="portfolio-grid">
+      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=85" alt="Luxury hospitality website demo"></div><div class="project-body"><div class="project-tags"><span>Luxury UI</span><span>Booking</span></div><h3>Aurora House</h3><p>Premium hospitality-style website with gallery, reservation flow and luxury presentation.</p><a class="btn btn-secondary" href="https://tdawood444-cloud.github.io/ARUROA-HOUSE-/" target="_blank">View Demo</a></div></article>
+      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=85" alt="Auto detailing website demo"></div><div class="project-body"><div class="project-tags"><span>Auto Studio</span><span>Packages</span></div><h3>Premium Auto Studio</h3><p>Dark metallic car detailing website with service packages, gallery and WhatsApp booking.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
+      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=85" alt="Luxury watches website demo"></div><div class="project-body"><div class="project-tags"><span>Product</span><span>Luxury</span></div><h3>Luxury Watches</h3><p>Premium product showcase website for luxury watches, collections and inquiries.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
+      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Real estate interior website demo"></div><div class="project-body"><div class="project-tags"><span>Real Estate</span><span>Interior</span></div><h3>Estate & Interior</h3><p>Image-led website for luxury property, interiors, projects and premium consultations.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
+      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85" alt="Service business website demo"></div><div class="project-body"><div class="project-tags"><span>Services</span><span>Leads</span></div><h3>Service Business</h3><p>Professional website for service providers with CTA sections and lead generation flow.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
+      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85" alt="Corporate website demo"></div><div class="project-body"><div class="project-tags"><span>Corporate</span><span>Modern</span></div><h3>Corporate Website</h3><p>A clean premium corporate-style website for consultants, startups and agencies.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
     </div>
   </div>
 </section>
@@ -1471,38 +310,28 @@ main{
 <section class="section reveal">
   <div class="section-inner">
     <div class="section-title">
-      <div class="eyebrow">Process</div>
-      <h2>A Simple Process To Build Your <span class="gradient-text">Premium Website</span></h2>
-      <p>
-        Clear steps, no confusion. You send your business details, I design the structure,
-        build the website and connect your visitors to WhatsApp.
-      </p>
+      <div class="eyebrow">Website Visuals</div>
+      <h2>Image-Led Sections Make The Website Feel <span class="gradient-text">More Premium</span></h2>
+      <p>High-quality visuals, cards and galleries create a better first impression than plain text sections.</p>
     </div>
+    <div class="image-showcase">
+      <div class="showcase-item large"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85" alt="Premium office website image"><span>Modern Business Look</span></div>
+      <div class="showcase-item"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=85" alt="Client meeting"><span>Client Trust</span></div>
+      <div class="showcase-item"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=85" alt="Website planning"><span>Design Planning</span></div>
+      <div class="showcase-item"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=85" alt="Web design screen"><span>Responsive Design</span></div>
+      <div class="showcase-item"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=85" alt="Team web development"><span>Launch Ready</span></div>
+    </div>
+  </div>
+</section>
 
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title"><div class="eyebrow">Process</div><h2>Simple Process To Build Your <span class="gradient-text">Website</span></h2><p>Clear steps from idea to launch so clients know exactly what happens.</p></div>
     <div class="process-grid">
-      <div class="process-card glass">
-        <span>01</span>
-        <h3>Share Your Idea</h3>
-        <p>Tell me your business type, pages, services, colors and example websites you like.</p>
-      </div>
-
-      <div class="process-card glass">
-        <span>02</span>
-        <h3>Design Direction</h3>
-        <p>I prepare the premium layout direction with mobile-first structure and strong sections.</p>
-      </div>
-
-      <div class="process-card glass">
-        <span>03</span>
-        <h3>Website Build</h3>
-        <p>Your website is built with responsive layout, 3D effects, service cards and CTA sections.</p>
-      </div>
-
-      <div class="process-card glass">
-        <span>04</span>
-        <h3> AI Setup </h3>
-        <p> AI is added to guide visitors, answer questions, show pricing and send leads to WhatsApp.</p>
-      </div>
+      <div class="process-card glass"><span>01</span><h3>Share Details</h3><p>Send business name, pages, services, colors and reference websites.</p></div>
+      <div class="process-card glass"><span>02</span><h3>Design Direction</h3><p>I prepare the premium structure, section flow and visual style.</p></div>
+      <div class="process-card glass"><span>03</span><h3>Website Build</h3><p>Your website is built with responsive layout, images and CTA sections.</p></div>
+      <div class="process-card glass"><span>04</span><h3>Test & Launch</h3><p>Final mobile, tablet and laptop testing before publishing.</p></div>
     </div>
   </div>
 </section>
@@ -1510,1473 +339,83 @@ main{
 <section class="section reveal" id="pricing-preview">
   <div class="section-inner">
     <div class="pricing-banner glass">
-      <div>
-        <div class="eyebrow">Pricing Preview</div>
-        <h2>Need A Website That Looks Premium On Every Device?</h2>
-        <p>
-          Pricing depends on pages, features, animations, chatbot setup and website type.
-          Simple landing pages cost less, while 3D websites and WordPress websites cost more.
-        </p>
-      </div>
-
+      <div><div class="eyebrow">Pricing Preview</div><h2>Choose a website package based on your business goal.</h2><p>Pricing depends on pages, features, design level, images, forms, animations and publishing support.</p></div>
       <div class="pricing-mini">
-        <div>
-          <span>Landing Page</span>
-          <strong>$80+</strong>
-        </div>
-        <div>
-          <span>Premium 3D Website</span>
-          <strong>$250+</strong>
-        </div>
-        <div>
-          <span>WordPress Website</span>
-          <strong>$300+</strong>
-        </div>
+        <div><span>Landing Page</span><strong>$80+</strong></div>
+        <div><span>Business Website</span><strong>$150+</strong></div>
+        <div><span>Premium Website</span><strong>$250+</strong></div>
       </div>
-
-      <div class="btn-row">
-        <a class="btn btn-primary" href="pricing.html">View Full Pricing</a>
-        <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20quote%20for%20my%20website." target="_blank">Get Quote</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section reveal" id="work">
-  <div class="section-inner">
-    <div class="section-title">
-      <div class="eyebrow">Portfolio</div>
-      <h2>Proof, Demo Work & <span class="gradient-text">Live Examples</span></h2>
-      <p>
-        Use this section to show your certificate, demo landing page, CATO demo and future client projects.
-      </p>
-    </div>
-
-    <div class="portfolio-showcase">
-      <div class="certificate-card glass">
-        <div class="certificate-top">
-          <span>🏆 Portfolio Proof</span>
-          <small>Trading Certificate / Trust Builder</small>
-        </div>
-
-        <img src="certificate.jpg" alt="FundedNext Elite Certificate">
-
-        <div class="certificate-bottom">
-          <h3>FundedNext Elite Certificate</h3>
-          <p>
-            This builds trust for trading-related clients and shows discipline, experience and proof of work.
-          </p>
-        </div>
-      </div>
-
-      <div class="portfolio-side">
-        <div class="portfolio-card glass">
-          <div class="service-icon">🌐</div>
-          <h3>Demo Landing Page</h3>
-          <p>Modern responsive landing page for service websites and client offers.</p>
-          <a class="btn btn-secondary" href="landing-page.html" target="_blank">Live Preview</a>
-        </div>
-
-        <div class="portfolio-card glass">
-          <div class="service-icon">💜</div>
-          <h3>CATO Live Demo</h3>
-          <p>Visitors can open CATO and test how the chatbot explains services and pricing.</p>
-          <button class="btn btn-primary" onclick="openCatoDemo()">Try CATO 💜</button>
-        </div>
-      </div>
+      <div class="btn-row"><a class="btn btn-primary" href="pricing.html">View Pricing</a><a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20quote%20for%20my%20website." target="_blank">Get Quote</a></div>
     </div>
   </div>
 </section>
 
 <section class="section reveal">
   <div class="section-inner">
-    <div class="section-title">
-      <div class="eyebrow">Why Choose Me</div>
-      <h2>Built For Real Clients, Not Just <span class="gradient-text">Pretty Screens</span></h2>
-      <p>
-        A website should look premium, but it should also explain services, build trust,
-        capture leads and work smoothly on every screen size.
-      </p>
-    </div>
-
+    <div class="section-title"><div class="eyebrow">Why Choose Me</div><h2>Built For Real Clients, Not Just <span class="gradient-text">Pretty Screens</span></h2><p>A good website should explain your service, build trust and make it easy for clients to contact you.</p></div>
     <div class="why-grid">
-      <div class="why-card glass">
-        <h3>📱 Mobile-First Layout</h3>
-        <p>Your website is designed to look beautiful on mobile first, then optimized for tablet and laptop.</p>
-      </div>
-
-      <div class="why-card glass">
-        <h3>🧠 Clear Service Explanation</h3>
-        <p>Every section explains what you do in a simple way so visitors understand quickly.</p>
-      </div>
-
-      <div class="why-card glass">
-        <h3>💬 Chatbot Lead Flow</h3>
-        <p>CATO guides visitors and sends serious clients to WhatsApp for quote requests.</p>
-      </div>
-
-      <div class="why-card glass">
-        <h3>⚡ Fast First Impression</h3>
-        <p>Strong hero section, clean typography and premium 3D visuals create a powerful first impression.</p>
-      </div>
+      <div class="why-card glass"><h3>📱 Mobile-First</h3><p>Designed first for phone users, then optimized for tablet and laptop.</p></div>
+      <div class="why-card glass"><h3>🖼️ Premium Visuals</h3><p>Image sections, cards and gallery blocks make the site look expensive.</p></div>
+      <div class="why-card glass"><h3>⚡ Lead Focused</h3><p>WhatsApp buttons and CTA sections help convert visitors into inquiries.</p></div>
+      <div class="why-card glass"><h3>🔎 SEO Structure</h3><p>Clean headings, meta tags and service wording help your website look professional.</p></div>
     </div>
   </div>
 </section>
 
 <section class="section reveal">
   <div class="section-inner">
-    <div class="section-title">
-      <div class="eyebrow">Testimonials</div>
-      <h2>What Clients Feel About <span class="gradient-text">This Style</span></h2>
-      <p>
-        These testimonials are written in a clean professional style for your website presentation.
-      </p>
-    </div>
-
+    <div class="section-title"><div class="eyebrow">Client Style Reviews</div><h2>Professional Feedback For <span class="gradient-text">Website Work</span></h2><p>Use this section to build trust while you collect real client reviews.</p></div>
     <div class="testimonial-grid">
-      <div class="testimonial-card glass">
-        <div class="stars">★★★★★</div>
-        <p>
-          “The website looks premium, modern and mobile-friendly. The 3D sections make the brand feel more professional.”
-        </p>
-        <h4>Professional Website Client</h4>
-      </div>
-
-      <div class="testimonial-card glass">
-        <div class="stars">★★★★★</div>
-        <p>
-          “AI makes the website feel smart and helpful. Visitors can understand services without confusion.”
-        </p>
-        <h4>AI Chatbot Client</h4>
-      </div>
-
-      <div class="testimonial-card glass">
-        <div class="stars">★★★★★</div>
-        <p>
-          “Fast communication, clean layout and strong service presentation. The website feels ready for business.”
-        </p>
-        <h4>Business Website Client</h4>
-      </div>
+      <div class="testimonial-card glass"><div class="stars">★★★★★</div><p>“The website looks modern, premium and easy to understand. The mobile layout feels very professional.”</p><h4>Business Website Client</h4></div>
+      <div class="testimonial-card glass"><div class="stars">★★★★★</div><p>“Strong design, clean sections and clear call-to-action buttons. It feels ready for clients.”</p><h4>Landing Page Client</h4></div>
+      <div class="testimonial-card glass"><div class="stars">★★★★★</div><p>“The portfolio section makes the work look more trusted and helps visitors understand the service.”</p><h4>Portfolio Client</h4></div>
     </div>
   </div>
 </section>
 
-<section class="section reveal">
+<section class="section reveal" id="contact">
   <div class="section-inner">
     <div class="final-cta glass">
-      <div class="final-cta-content">
+      <div>
         <div class="eyebrow">Ready To Start?</div>
-        <h2>Let’s Build Your New Era Website With <span class="gradient-text">CATO 💜</span></h2>
-        <p>
-          Send your business idea, required pages and reference style. I’ll guide you with the best package
-          for your website, WordPress page, chatbot or business tool.
-        </p>
-
-        <div class="btn-row">
-          <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20build%20a%20New%20Era%203D%20website%20with%20CATO%20AI%20chatbot." target="_blank">
-            Start on WhatsApp
-          </a>
-
-          <button class="btn btn-secondary" onclick="openCatoDemo()">
-            Ask CATO 💜
-          </button>
-        </div>
+        <h2>Let’s build your <span class="gradient-text">premium website</span> and make your brand look professional.</h2>
+        <p>Send your business idea, required pages and reference style. I’ll guide you with the best website package and next steps.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20start%20my%20premium%20website%20project." target="_blank">Start on WhatsApp</a><a class="btn btn-secondary" href="contact.html">Contact Page</a></div>
       </div>
-
-      <div class="final-cato-preview">
-        <div class="cato-mini-phone">
-          <div class="cato-mini-header">
-            <div class="cato-mini-avatar">💜</div>
-            <div>
-              <strong>CATO</strong>
-              <small>Smart girl chatbot</small>
-            </div>
-          </div>
-
-          <div class="cato-mini-chat">
-            <div class="mini-bubble bot">Hi, I’m CATO 💜</div>
-            <div class="mini-bubble bot">I can help you choose the right website package ✨</div>
-            <div class="mini-bubble user">I need a 3D website</div>
-            <div class="mini-bubble bot">Of course 💜 Let’s build something premium.</div>
-          </div>
-        </div>
-      </div>
+      <div class="final-preview"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85" alt="Website project consultation"></div>
     </div>
   </div>
 </section>
+</main>
 
-<style>
-/* =========================
-   PART 3 SERVICES
-========================= */
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.service-card{
-  position:relative;
-  overflow:hidden;
-  min-height:340px;
-  padding:26px;
-  transition:.38s ease;
-  transform-style:preserve-3d;
-}
-
-.service-card::before{
-  content:"";
-  position:absolute;
-  inset:-1px;
-  border-radius:inherit;
-  background:linear-gradient(135deg,rgba(155,92,255,.34),rgba(0,229,255,.25),transparent 62%);
-  opacity:0;
-  transition:.35s ease;
-  z-index:-1;
-}
-
-.service-card:hover{
-  transform:translateY(-14px) rotateX(4deg) rotateY(-3deg);
-  border-color:rgba(0,229,255,.45);
-  box-shadow:0 35px 95px rgba(0,229,255,.16);
-}
-
-.service-card:hover::before{
-  opacity:1;
-}
-
-.service-card.featured{
-  grid-column:span 2;
-}
-
-.service-icon{
-  width:54px;
-  height:54px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:18px;
-  background:linear-gradient(135deg,rgba(155,92,255,.95),rgba(0,229,255,.95));
-  box-shadow:0 18px 40px rgba(0,229,255,.18);
-  font-size:26px;
-  margin-bottom:18px;
-}
-
-.service-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:23px;
-  margin-bottom:11px;
-}
-
-.service-card p{
-  color:var(--muted);
-  line-height:1.75;
-  font-size:15px;
-}
-
-.service-card ul{
-  list-style:none;
-  margin-top:18px;
-}
-
-.service-card li{
-  color:#dce7ff;
-  font-size:14px;
-  margin:9px 0;
-}
-
-.service-card li::before{
-  content:"✓ ";
-  color:var(--cyan);
-  font-weight:900;
-}
-
-/* =========================
-   PROCESS
-========================= */
-
-.process-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-  counter-reset:process;
-}
-
-.process-card{
-  padding:26px;
-  min-height:250px;
-  transition:.35s ease;
-}
-
-.process-card:hover{
-  transform:translateY(-12px);
-  border-color:rgba(0,229,255,.4);
-  box-shadow:0 30px 85px rgba(0,229,255,.14);
-}
-
-.process-card span{
-  display:inline-flex;
-  margin-bottom:18px;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:34px;
-  font-weight:900;
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  -webkit-background-clip:text;
-  color:transparent;
-}
-
-.process-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:21px;
-  margin-bottom:10px;
-}
-
-.process-card p{
-  color:var(--muted);
-  line-height:1.75;
-}
-
-/* =========================
-   PRICING PREVIEW
-========================= */
-
-.pricing-banner{
-  padding:34px;
-  display:grid;
-  grid-template-columns:1.1fr .9fr auto;
-  gap:25px;
-  align-items:center;
-}
-
-.pricing-banner h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(28px,4vw,44px);
-  line-height:1.1;
-  margin-top:12px;
-}
-
-.pricing-banner p{
-  color:var(--muted);
-  line-height:1.8;
-  margin-top:12px;
-}
-
-.pricing-mini{
-  display:grid;
-  gap:10px;
-}
-
-.pricing-mini div{
-  padding:14px 16px;
-  border-radius:18px;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.12);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-}
-
-.pricing-mini span{
-  color:#dce7ff;
-  font-size:13px;
-  font-weight:800;
-}
-
-.pricing-mini strong{
-  color:var(--cyan);
-  font-family:'Space Grotesk',sans-serif;
-  font-size:24px;
-}
-
-/* =========================
-   PORTFOLIO
-========================= */
-
-.portfolio-showcase{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:22px;
-  align-items:stretch;
-}
-
-.certificate-card{
-  overflow:hidden;
-  padding:18px;
-}
-
-.certificate-top{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-  margin-bottom:16px;
-}
-
-.certificate-top span{
-  font-weight:900;
-  color:#fff;
-}
-
-.certificate-top small{
-  color:var(--muted);
-}
-
-.certificate-card img{
-  width:100%;
-  border-radius:22px;
-  border:1px solid rgba(0,229,255,.34);
-  box-shadow:0 25px 80px rgba(0,229,255,.15);
-  object-fit:cover;
-}
-
-.certificate-bottom{
-  padding:18px 5px 4px;
-}
-
-.certificate-bottom h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:24px;
-}
-
-.certificate-bottom p{
-  color:var(--muted);
-  line-height:1.75;
-  margin-top:8px;
-}
-
-.portfolio-side{
-  display:grid;
-  gap:22px;
-}
-
-.portfolio-card{
-  padding:28px;
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  justify-content:center;
-  transition:.35s ease;
-}
-
-.portfolio-card:hover{
-  transform:translateY(-12px);
-  border-color:rgba(0,229,255,.4);
-}
-
-.portfolio-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:24px;
-  margin-bottom:10px;
-}
-
-.portfolio-card p{
-  color:var(--muted);
-  line-height:1.75;
-  margin-bottom:18px;
-}
-
-/* =========================
-   WHY GRID
-========================= */
-
-.why-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.why-card{
-  padding:26px;
-  min-height:230px;
-  transition:.35s ease;
-}
-
-.why-card:hover{
-  transform:translateY(-12px);
-  box-shadow:0 30px 85px rgba(155,92,255,.14);
-}
-
-.why-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:21px;
-  margin-bottom:10px;
-}
-
-.why-card p{
-  color:var(--muted);
-  line-height:1.75;
-}
-
-/* =========================
-   TESTIMONIALS
-========================= */
-
-.testimonial-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.testimonial-card{
-  padding:28px;
-  min-height:250px;
-  transition:.35s ease;
-}
-
-.testimonial-card:hover{
-  transform:translateY(-12px) rotateX(4deg);
-  border-color:rgba(0,229,255,.38);
-}
-
-.stars{
-  color:#67e8f9;
-  letter-spacing:2px;
-  margin-bottom:16px;
-  font-weight:900;
-}
-
-.testimonial-card p{
-  color:#dce7ff;
-  line-height:1.8;
-  font-size:15px;
-}
-
-.testimonial-card h4{
-  margin-top:18px;
-  color:var(--cyan);
-  font-family:'Space Grotesk',sans-serif;
-}
-
-/* =========================
-   FINAL CTA
-========================= */
-
-.final-cta{
-  position:relative;
-  overflow:hidden;
-  padding:44px;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  align-items:center;
-  gap:30px;
-}
-
-.final-cta::before{
-  content:"";
-  position:absolute;
-  width:400px;
-  height:400px;
-  right:-130px;
-  top:-150px;
-  background:radial-gradient(circle,rgba(236,92,255,.18),transparent 65%);
-  filter:blur(10px);
-}
-
-.final-cta-content{
-  position:relative;
-  z-index:1;
-}
-
-.final-cta h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(32px,5vw,54px);
-  line-height:1.08;
-  margin-top:14px;
-}
-
-.final-cta p{
-  color:var(--muted);
-  line-height:1.85;
-  margin:16px 0 24px;
-  max-width:690px;
-}
-
-.final-cato-preview{
-  position:relative;
-  z-index:1;
-  display:flex;
-  justify-content:center;
-}
-
-.cato-mini-phone{
-  width:310px;
-  border-radius:34px;
-  padding:16px;
-  background:
-    radial-gradient(circle at top,rgba(236,92,255,.18),transparent 45%),
-    linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.035));
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:0 34px 100px rgba(0,0,0,.42);
-  animation:catoPhoneFloat 6s ease-in-out infinite;
-}
-
-@keyframes catoPhoneFloat{
-  0%,100%{transform:translateY(0) rotateY(-6deg);}
-  50%{transform:translateY(-16px) rotateY(0deg);}
-}
-
-.cato-mini-header{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:12px;
-  border-radius:22px;
-  background:rgba(3,7,18,.65);
-  border:1px solid rgba(255,255,255,.12);
-}
-
-.cato-mini-avatar{
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg,var(--pink),var(--purple),var(--cyan));
-  box-shadow:0 0 22px rgba(236,92,255,.28);
-}
-
-.cato-mini-header strong{
-  display:block;
-}
-
-.cato-mini-header small{
-  display:block;
-  color:var(--muted);
-  font-size:12px;
-  margin-top:2px;
-}
-
-.cato-mini-chat{
-  padding:14px 4px 4px;
-}
-
-.mini-bubble{
-  max-width:86%;
-  padding:10px 12px;
-  border-radius:16px;
-  margin:9px 0;
-  font-size:13px;
-  line-height:1.45;
-}
-
-.mini-bubble.bot{
-  background:rgba(255,255,255,.10);
-  border-top-left-radius:5px;
-}
-
-.mini-bubble.user{
-  margin-left:auto;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  border-top-right-radius:5px;
-}
-
-/* =========================
-   PART 3 RESPONSIVE
-========================= */
-
-@media(max-width:1180px){
-  .service-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .process-grid,
-  .why-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .pricing-banner{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:980px){
-  .service-grid,
-  .process-grid,
-  .portfolio-showcase,
-  .why-grid,
-  .testimonial-grid,
-  .final-cta{
-    grid-template-columns:1fr;
-  }
-
-  .service-card.featured{
-    grid-column:auto;
-  }
-
-  .service-card,
-  .process-card,
-  .why-card,
-  .testimonial-card{
-    min-height:auto;
-  }
-
-  .pricing-banner{
-    padding:24px;
-  }
-
-  .portfolio-card{
-    align-items:center;
-    text-align:center;
-  }
-
-  .certificate-top{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .final-cta{
-    padding:30px 18px;
-    text-align:center;
-  }
-
-  .final-cta .btn-row{
-    justify-content:center;
-  }
-
-  .cato-mini-phone{
-    width:100%;
-    max-width:330px;
-  }
-}
-
-@media(max-width:520px){
-  .service-grid{
-    gap:14px;
-  }
-
-  .service-card{
-    padding:22px;
-    border-radius:24px;
-  }
-
-  .service-icon{
-    width:50px;
-    height:50px;
-    font-size:24px;
-  }
-
-  .pricing-mini div{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .certificate-card{
-    padding:12px;
-    border-radius:24px;
-  }
-}
-</style>
 <footer class="site-footer">
-  <p>© 2026 Dawood Tariq | New Era 3D Websites • CATO 💜 AI Chatbot • Digital Systems</p>
+  <p>© 2026 Dawood Tariq | Premium Website Specialist • Business Websites • Landing Pages • WordPress Websites</p>
 </footer>
-
-<div class="cato-widget">
-  <div class="cato-welcome" id="catoWelcome">
-    <button class="cato-welcome-close" onclick="closeCatoWelcome()">×</button>
-    <div class="cato-heart">💜</div>
-    <h3>Hi, I’m CATO</h3>
-    <p>I can help you choose the right website, WordPress, Excel, trading tool or chatbot package.</p>
-    <button onclick="openCatoFromWelcome()">Yes, guide me ✨</button>
-  </div>
-
-  <button class="cato-launcher" onclick="toggleCato()" aria-label="Open CATO Chatbot">
-    <span class="cato-launch-avatar">💜</span>
-    <span>
-      <b>CATO</b>
-      <small>Smart Digital Companion</small>
-    </span>
-  </button>
-
-  <div class="cato-panel" id="catoPanel">
-    <div class="cato-header">
-      <div class="cato-profile">
-        <div class="cato-avatar">💜</div>
-        <div>
-          <strong>CATO</strong>
-          <small id="catoStatus">Your cute smart assistant ✨</small>
-        </div>
-      </div>
-
-      <div class="cato-actions">
-        <button onclick="clearCato()">🧹</button>
-        <button onclick="toggleCato()">×</button>
-      </div>
-    </div>
-
-    <div class="cato-quick">
-      <button onclick="quickCato('website')">🌐 Website</button>
-      <button onclick="quickCato('cato')">💜 CATO</button>
-      <button onclick="quickCato('wordpress')">🧩 WordPress</button>
-      <button onclick="quickCato('pricing')">💰 Pricing</button>
-      <button onclick="quickCato('excel')">📊 Excel</button>
-      <button onclick="quickCato('trading')">📈 Trading</button>
-      <button onclick="quickCato('payment')">💳 Payment</button>
-      <button onclick="quickCato('quote')">⚡ Quote</button>
-    </div>
-
-    <div class="cato-chat" id="catoChat"></div>
-
-    <div class="cato-input">
-      <input id="catoInput" type="text" placeholder="Ask CATO anything..." onkeypress="catoEnter(event)">
-      <button onclick="sendCato()">➤</button>
-    </div>
-  </div>
-</div>
-
-<style>
-.site-footer{
-  padding:28px 14px;
-  text-align:center;
-  color:var(--muted);
-  border-top:1px solid rgba(255,255,255,.1);
-}
-
-.cato-widget{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:999999;
-  font-family:Inter,Arial,sans-serif;
-}
-
-.cato-launcher{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  border:none;
-  cursor:pointer;
-  padding:10px 16px 10px 10px;
-  border-radius:999px;
-  color:#fff;
-  background:
-    radial-gradient(circle at top left,rgba(255,107,181,.35),transparent 36%),
-    linear-gradient(135deg,#17091f,#35105d,#061628);
-  border:1px solid rgba(255,255,255,.16);
-  box-shadow:0 18px 55px rgba(192,132,252,.25);
-}
-
-.cato-launch-avatar{
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg,#ff6bb5,#b46cff,#00e5ff);
-  box-shadow:0 0 24px rgba(255,107,181,.45);
-}
-
-.cato-launcher b{
-  display:block;
-  font-size:14px;
-}
-
-.cato-launcher small{
-  display:block;
-  font-size:11px;
-  color:#f5d0fe;
-  margin-top:2px;
-}
-
-.cato-welcome{
-  position:fixed;
-  right:18px;
-  bottom:88px;
-  width:310px;
-  padding:20px;
-  border-radius:26px;
-  color:#fff;
-  background:
-    radial-gradient(circle at top right,rgba(255,107,181,.28),transparent 35%),
-    linear-gradient(145deg,rgba(20,8,34,.96),rgba(4,12,24,.96));
-  border:1px solid rgba(255,255,255,.16);
-  box-shadow:0 25px 80px rgba(0,0,0,.45);
-  display:none;
-}
-
-.cato-welcome-close{
-  position:absolute;
-  right:12px;
-  top:10px;
-  border:none;
-  background:rgba(255,255,255,.12);
-  color:#fff;
-  width:26px;
-  height:26px;
-  border-radius:50%;
-  cursor:pointer;
-}
-
-.cato-heart{
-  width:52px;
-  height:52px;
-  display:grid;
-  place-items:center;
-  border-radius:18px;
-  background:linear-gradient(135deg,#ff6bb5,#b46cff,#00e5ff);
-  box-shadow:0 0 24px rgba(255,107,181,.42);
-  margin-bottom:12px;
-  font-size:24px;
-}
-
-.cato-welcome h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:22px;
-}
-
-.cato-welcome p{
-  color:#e9d5ff;
-  line-height:1.55;
-  font-size:13px;
-  margin:9px 0 14px;
-}
-
-.cato-welcome button:last-child{
-  width:100%;
-  border:none;
-  color:#fff;
-  padding:12px;
-  border-radius:14px;
-  font-weight:900;
-  cursor:pointer;
-  background:linear-gradient(135deg,#ff6bb5,#b46cff,#00e5ff);
-}
-
-.cato-panel{
-  position:fixed;
-  top:90px;
-  bottom:auto;
-  right:18px;
-  bottom:82px;
-  width:420px;
-  height:min(660px,calc(100vh - 110px));
-  max-width:calc(100vw - 36px);
-  display:none;
-  flex-direction:column;
-  overflow:hidden;
-  border-radius:28px;
-  background:#fff;
-  border:1px solid rgba(192,132,252,.45);
-  box-shadow:0 30px 100px rgba(0,0,0,.55);
-}
-
-.cato-header{
-  padding:14px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background:
-    radial-gradient(circle at top left,rgba(255,107,181,.28),transparent 30%),
-    linear-gradient(135deg,#17091f,#35105d,#061628);
-  color:#fff;
-}
-
-.cato-profile{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.cato-avatar{
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg,#ff6bb5,#b46cff,#00e5ff);
-  box-shadow:0 0 26px rgba(255,107,181,.42);
-}
-
-.cato-header strong{
-  display:block;
-  font-size:17px;
-}
-
-.cato-header small{
-  display:block;
-  color:#f5d0fe;
-  margin-top:3px;
-  font-size:12px;
-}
-
-.cato-actions{
-  display:flex;
-  gap:6px;
-}
-
-.cato-actions button{
-  border:none;
-  width:32px;
-  height:32px;
-  border-radius:50%;
-  color:#fff;
-  background:rgba(255,255,255,.13);
-  cursor:pointer;
-  font-size:15px;
-}
-
-.cato-quick{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:7px;
-  padding:10px;
-  background:#fbf7ff;
-  border-bottom:1px solid #eadcff;
-}
-
-.cato-quick button{
-  border:1px solid #eadcff;
-  background:#fff;
-  color:#28123b;
-  border-radius:13px;
-  padding:9px 4px;
-  font-size:11px;
-  font-weight:900;
-  cursor:pointer;
-}
-
-.cato-chat{
-  flex:1;
-  overflow-y:auto;
-  min-height:0;
-  padding:15px;
-  background:
-    radial-gradient(circle at top right,rgba(180,108,255,.08),transparent 32%),
-    linear-gradient(180deg,#fff,#fbf7ff);
-}
-
-.cato-msg{
-  max-width:88%;
-  padding:11px 13px;
-  margin-bottom:11px;
-  border-radius:17px;
-  font-size:14px;
-  line-height:1.5;
-  word-wrap:break-word;
-}
-
-.cato-msg.bot{
-  background:#f3e8ff;
-  color:#1f1230;
-  border:1px solid #eadcff;
-  border-top-left-radius:5px;
-}
-
-.cato-msg.user{
-  margin-left:auto;
-  color:#fff;
-  background:linear-gradient(135deg,#b46cff,#00e5ff);
-  border-top-right-radius:5px;
-}
-
-.cato-typing{
-  width:max-content;
-  color:#7e22ce;
-  background:#f3e8ff;
-  border:1px solid #eadcff;
-  padding:10px 13px;
-  border-radius:16px;
-  margin-bottom:11px;
-  font-size:13px;
-  font-weight:800;
-}
-
-.cato-followups{
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  margin-top:9px;
-}
-
-.cato-followups button{
-  border:none;
-  padding:7px 10px;
-  border-radius:999px;
-  color:#fff;
-  background:linear-gradient(135deg,#35105d,#b46cff);
-  font-size:12px;
-  font-weight:900;
-  cursor:pointer;
-}
-
-.cato-wa{
-  display:inline-block;
-  color:#fff !important;
-  text-decoration:none;
-  padding:10px 12px;
-  border-radius:12px;
-  margin-top:8px;
-  font-weight:900;
-  background:linear-gradient(135deg,#ff6bb5,#b46cff,#00e5ff);
-}
-
-.cato-input{
-  display:flex;
-  border-top:1px solid #eadcff;
-  background:#fff;
-}
-
-.cato-input input{
-  flex:1;
-  border:none;
-  outline:none;
-  padding:16px;
-  font-size:14px;
-}
-
-.cato-input button{
-  width:58px;
-  border:none;
-  color:#fff;
-  cursor:pointer;
-  font-size:20px;
-  background:linear-gradient(135deg,#b46cff,#00e5ff);
-}
-
-/* TABLET / IPAD */
-@media(min-width:601px) and (max-width:1024px){
-  .cato-panel{
-    left:50%;
-    right:auto;
-    bottom:28px;
-    transform:translateX(-50%);
-    width:min(720px,calc(100vw - 40px));
-    height:min(720px,calc(100vh - 70px));
-    border-radius:30px;
-  }
-}
-
-/* MOBILE FULL SCREEN */
-@media(max-width:600px){
-  .cato-widget{
-    right:0;
-    bottom:0;
-  }
-
-  .cato-launcher{
-    position:fixed;
-    right:12px;
-    bottom:12px;
-  }
-
-  .cato-welcome{
-    left:12px;
-    right:12px;
-    bottom:82px;
-    width:auto;
-  }
-
-  .cato-panel{
-    inset:0;
-    width:100vw;
-    height:100vh;
-    max-width:100vw;
-    max-height:100vh;
-    border-radius:0;
-    border:none;
-  }
-
-  .cato-header{
-    padding:15px 14px;
-  }
-
-  .cato-quick{
-    grid-template-columns:repeat(4,1fr);
-    gap:6px;
-    padding:8px;
-  }
-
-  .cato-quick button{
-    font-size:10.5px;
-    padding:8px 3px;
-  }
-
-  .cato-msg{
-    max-width:92%;
-    font-size:13.5px;
-  }
-
-  .cato-input input{
-    padding:17px 14px;
-  }
-}
-</style>
 
 <script>
 function toggleMenu(){
-  document.getElementById("navMenu").classList.toggle("active");
+  const nav=document.getElementById('navMenu');
+  const btn=document.querySelector('.menu-btn');
+  nav.classList.toggle('active');
+  btn.textContent=nav.classList.contains('active')?'×':'☰';
 }
 
-document.addEventListener("mousemove", function(e){
-  document.body.style.setProperty("--mx", e.clientX + "px");
-  document.body.style.setProperty("--my", e.clientY + "px");
+document.querySelectorAll('.nav-links a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    const nav=document.getElementById('navMenu');
+    const btn=document.querySelector('.menu-btn');
+    nav.classList.remove('active');
+    btn.textContent='☰';
+  });
 });
 
-document.addEventListener("DOMContentLoaded", function(){
-  setupReveal();
-  greetCato();
-
-  const seen = localStorage.getItem("cato_seen");
-  if(!seen){
-    setTimeout(function(){
-      const welcome = document.getElementById("catoWelcome");
-      const panel = document.getElementById("catoPanel");
-      if(welcome && panel.style.display !== "flex"){
-        welcome.style.display = "block";
-        localStorage.setItem("cato_seen","yes");
-      }
-    },2200);
-  }
-});
-
-function setupReveal(){
-  const reveals = document.querySelectorAll(".reveal");
-  const observer = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        entry.target.classList.add("active");
-      }
-    });
-  },{threshold:.12});
-
-  reveals.forEach(function(el){
-    observer.observe(el);
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('active');}
   });
-}
+},{threshold:.14});
 
-function closeCatoWelcome(){
-  document.getElementById("catoWelcome").style.display = "none";
-}
-
-function openCatoFromWelcome(){
-  closeCatoWelcome();
-  openCato();
-}
-
-function toggleCato(){
-  const panel = document.getElementById("catoPanel");
-  panel.style.display = panel.style.display === "flex" ? "none" : "flex";
-  closeCatoWelcome();
-}
-
-function openCato(){
-  document.getElementById("catoPanel").style.display = "flex";
-  closeCatoWelcome();
-}
-
-function openCatoDemo(){
-  openCato();
-  addCatoBot("You opened my live demo 💜 I’m CATO, your smart digital companion. I can guide visitors about websites, WordPress, pricing, Excel tools, trading journals and project quotes ✨",["pricing","website","quote"]);
-}
-
-const catoChat = document.getElementById("catoChat");
-
-function catoFollowups(buttons){
-  if(!buttons || !buttons.length) return "";
-  const labels = {
-    website:"🌐 Website",
-    cato:"💜 CATO",
-    wordpress:"🧩 WordPress",
-    pricing:"💰 Pricing",
-    excel:"📊 Excel",
-    trading:"📈 Trading",
-    quote:"⚡ Quote",
-    payment:"💳 Payment",
-    contact:"📲 WhatsApp",
-    mobile:"📱 Mobile",
-    seo:"🔎 SEO",
-    logo:"🎨 Logo",
-    portfolio:"🏆 Portfolio"
-  };
-  let html = "<div class='cato-followups'>";
-  buttons.forEach(function(btn){
-    html += "<button onclick=\"quickCato('" + btn + "')\">" + (labels[btn] || btn) + "</button>";
-  });
-  html += "</div>";
-  return html;
-}
-
-function addCatoUser(text){
-  const d = document.createElement("div");
-  d.className = "cato-msg user";
-  d.textContent = text;
-  catoChat.appendChild(d);
-  catoChat.scrollTop = catoChat.scrollHeight;
-}
-
-function addCatoBot(html, buttons){
-  const d = document.createElement("div");
-  d.className = "cato-msg bot";
-  d.innerHTML = html + catoFollowups(buttons);
-  catoChat.appendChild(d);
-  catoChat.scrollTop = catoChat.scrollHeight;
-}
-
-function showCatoTyping(callback){
-  const typing = document.createElement("div");
-  typing.className = "cato-typing";
-  typing.innerHTML = "CATO is typing 💜...";
-  catoChat.appendChild(typing);
-  catoChat.scrollTop = catoChat.scrollHeight;
-
-  setTimeout(function(){
-    typing.remove();
-    callback();
-  },520);
-}
-
-function clearCato(){
-  catoChat.innerHTML = "";
-  greetCato();
-}
-
-function greetCato(){
-  const h = new Date().getHours();
-  let greeting = "Hi";
-  if(h < 12) greeting = "Good morning";
-  else if(h < 18) greeting = "Good afternoon";
-  else greeting = "Good evening";
-
-  const status = document.getElementById("catoStatus");
-  if(status) status.innerText = greeting + " 💜";
-
-  if(catoChat && catoChat.innerHTML.trim() === ""){
-    addCatoBot(greeting + ", I’m CATO 💜<br>I’m your smart digital companion. I can help you with 3D websites, WordPress, pricing, AI chatbot, Excel automation, trading tools and quotes ✨",["website","pricing","quote","cato"]);
-  }
-}
-
-function quickCato(type){
-  const labels = {
-    website:"Website",
-    cato:"CATO",
-    wordpress:"WordPress",
-    pricing:"Pricing",
-    excel:"Excel",
-    trading:"Trading",
-    quote:"Quote",
-    payment:"Payment",
-    contact:"WhatsApp",
-    mobile:"Mobile layout",
-    seo:"SEO",
-    logo:"Logo",
-    portfolio:"Portfolio"
-  };
-
-  addCatoUser(labels[type] || type);
-  showCatoTyping(function(){
-    const ans = catoAnswers[type] || catoAnswers.default;
-    addCatoBot(ans.text, ans.buttons);
-  });
-}
-
-function sendCato(){
-  const input = document.getElementById("catoInput");
-  const text = input.value.trim();
-  if(!text) return;
-
-  addCatoUser(text);
-  input.value = "";
-
-  showCatoTyping(function(){
-    const type = detectCato(text);
-    const ans = catoAnswers[type] || catoAnswers.default;
-    addCatoBot(ans.text, ans.buttons);
-  });
-}
-
-function catoEnter(e){
-  if(e.key === "Enter") sendCato();
-}
-
-const catoAnswers = {
-  website:{
-    text:"Of course 💜 Dawood can build a premium 3D website with floating sections, modern animations, strong hero area, service cards, WhatsApp CTA and perfect layout for mobile, tablet and laptop.",
-    buttons:["pricing","mobile","quote"]
-  },
-  cato:{
-    text:"I’m CATO 💜 your cute smart website chatbot. I guide visitors, explain services, answer common questions, collect quote details and send serious clients to WhatsApp ✨",
-    buttons:["quote","pricing","contact"]
-  },
-  wordpress:{
-    text:"Yes 💜 Dawood can create WordPress websites too, including service pages, inquiry forms, booking forms, contact forms and email notification setup.",
-    buttons:["pricing","quote","website"]
-  },
-  pricing:{
-    text:"Pricing depends on project size ✨ Landing pages start from $80+, premium 3D websites from $250+, and WordPress websites from $300+. Final price depends on pages, animations, chatbot and features.",
-    buttons:["quote","payment","website"]
-  },
-  excel:{
-    text:"Yes 💜 Dawood can create Excel dashboards, trackers, reports, calculators, business sheets, trading journals and risk tools.",
-    buttons:["quote","contact","trading"]
-  },
-  trading:{
-    text:"Trading tools include XAUUSD journals, risk calculators, trade review sheets, strategy documents and discipline systems for better performance tracking.",
-    buttons:["excel","quote","contact"]
-  },
-  payment:{
-    text:"Payment options include Bank Transfer, USDT and Upwork contract depending on the project. For local clients, bank transfer is simple. For international clients, USDT or Upwork can work.",
-    buttons:["quote","contact","pricing"]
-  },
-  quote:{
-    text:"I’d love to help 💜 Send your project details on WhatsApp: website type, pages needed, design style, deadline and budget.<br><a class='cato-wa' href='https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20quote%20for%20my%20project.' target='_blank'>📲 Get Quote on WhatsApp</a>",
-    buttons:["website","pricing","payment"]
-  },
-  contact:{
-    text:"You can contact Dawood directly on WhatsApp or email 💜<br><a class='cato-wa' href='https://wa.me/923428305707' target='_blank'>📲 WhatsApp Dawood</a>",
-    buttons:["quote","pricing"]
-  },
-  mobile:{
-    text:"Yes 💜 This website is planned mobile-first. On phones, CATO opens as a full-screen chat page. On tablets, she opens in a larger centered panel. On laptops, she opens as a premium side chat box.",
-    buttons:["cato","website","quote"]
-  },
-  seo:{
-    text:"Dawood can add SEO-friendly titles, descriptions, keywords, service wording, fast navigation and clean content structure so your website is easier for Google and visitors to understand.",
-    buttons:["website","quote"]
-  },
-  logo:{
-    text:"First website clients can get a free premium logo concept 💜 The logo should match the website style and look clean on mobile, laptop and social profiles.",
-    buttons:["website","quote"]
-  },
-  portfolio:{
-    text:"Portfolio can include your certificate, demo landing page, CATO chatbot demo, Excel dashboard samples and future client website previews.",
-    buttons:["website","cato","quote"]
-  },
-  default:{
-    text:"I’m here with you 💜 You can ask me about 3D websites, WordPress, CATO chatbot, pricing, Excel automation, trading tools, payment, delivery time, SEO, mobile layout or quotes.",
-    buttons:["website","pricing","quote","cato"]
-  }
-};
-
-function detectCato(text){
-  const t = text.toLowerCase();
-
-  const groups = [
-    {type:"wordpress", words:["wordpress","word press","wp","booking form","inquiry form","plugin","elementor"]},
-    {type:"pricing", words:["price","pricing","cost","charges","package","packages","rate","rates","how much","budget"]},
-    {type:"excel", words:["excel","sheet","dashboard","tracker","report","calculator","automation","data entry"]},
-    {type:"trading", words:["trading","xauusd","gold","journal","risk","forex","strategy","trade"]},
-    {type:"payment", words:["payment","pay","bank","usdt","upwork","transfer","advance"]},
-    {type:"quote", words:["quote","proposal","hire","start project","order","deal","client"]},
-    {type:"contact", words:["contact","whatsapp","number","email","telegram","call","message"]},
-    {type:"mobile", words:["mobile","phone","iphone","android","responsive","tablet","ipad","laptop","desktop"]},
-    {type:"seo", words:["seo","google","rank","search","meta","keyword","sitemap"]},
-    {type:"logo", words:["logo","brand","branding","icon"]},
-    {type:"portfolio", words:["portfolio","work","certificate","demo","sample","preview"]},
-    {type:"cato", words:["cato","chatbot","bot","ai","assistant","girl","heart","cute"]},
-    {type:"website", words:["website","web","site","landing","page","3d","design","developer","business website"]}
-  ];
-
-  for(let i=0;i<groups.length;i++){
-    for(let j=0;j<groups[i].words.length;j++){
-      if(t.includes(groups[i].words[j])) return groups[i].type;
-    }
-  }
-
-  return "default";
-}
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 </script>
-
-</main>
 </body>
 </html>
