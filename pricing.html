@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Pricing | Dawood Tariq | 3D Websites, CATO AI, WordPress, Excel & Trading Services</title>
+<title>Pricing | Dawood Tariq | 3D Websites, AI Assistant, WordPress, Excel & Trading Services</title>
 
-<meta name="description" content="Premium pricing packages by Dawood Tariq for New Era 3D websites, WordPress websites, CATO AI website assistant, landing pages, Excel dashboards, import/export documentation and XAUUSD trading support.">
-<meta name="keywords" content="Dawood Tariq pricing, 3D website Pakistan, WordPress website, CATO AI assistant, AI website assistant, landing page design, Excel dashboard, trading journal, import export documentation, XAUUSD trading support">
+<meta name="description" content="Premium pricing packages by Dawood Tariq for New Era 3D websites, WordPress websites, AI website assistant, landing pages, Excel dashboards, import/export documentation and XAUUSD trading support.">
+<meta name="keywords" content="Dawood Tariq pricing, 3D website Pakistan, WordPress website, AI website assistant, AI website assistant, landing page design, Excel dashboard, trading journal, import export documentation, XAUUSD trading support">
 <meta name="author" content="Dawood Tariq">
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -1074,31 +1075,256 @@ footer{
     padding:17px 13px;
   }
 }
+
+
+/* =========================
+   HOME-STYLE SHARED HEADER UPDATE
+========================= */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:99999;
+  width:100%;
+  padding:12px 5%;
+  background:rgba(3,7,18,.72);
+  backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav-shell{
+  max-width:1240px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.site-header .brand{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  min-width:0;
+}
+
+.brand-logo{
+  width:50px;
+  height:50px;
+  border-radius:16px;
+  object-fit:contain;
+  border:none;
+  background:transparent;
+  padding:0;
+  filter:drop-shadow(0 0 18px rgba(0,229,255,.35));
+  box-shadow:none;
+  transition:.3s ease;
+}
+
+.site-header .brand:hover .brand-logo{
+  transform:scale(1.05);
+}
+
+.brand-text{
+  min-width:0;
+}
+
+.brand-text h3{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:16px;
+  line-height:1.1;
+  white-space:nowrap;
+}
+
+.brand-text p{
+  color:var(--muted);
+  font-size:11px;
+  margin-top:3px;
+  white-space:nowrap;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:22px;
+}
+
+.nav-links a{
+  color:#eef6ff;
+  font-size:14px;
+  font-weight:800;
+  opacity:.86;
+  position:relative;
+  transition:.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+  color:#ffffff;
+  text-shadow:0 0 12px rgba(0,229,255,.7);
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-9px;
+  width:0;
+  height:2px;
+  border-radius:50px;
+  background:linear-gradient(90deg,var(--purple),var(--cyan));
+  transition:.25s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+  width:100%;
+}
+
+.header-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:12px 18px;
+  border-radius:999px;
+  background:linear-gradient(135deg,var(--purple),var(--cyan));
+  color:#fff;
+  font-size:13px;
+  font-weight:900;
+  box-shadow:0 14px 35px rgba(0,229,255,.18);
+  transition:.3s ease;
+}
+
+.header-cta:hover{
+  transform:translateY(-3px);
+  box-shadow:0 20px 55px rgba(0,229,255,.28);
+}
+
+.site-header .menu-btn{
+  display:none;
+  width:46px;
+  height:46px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  font-size:24px;
+  cursor:pointer;
+  box-shadow:0 12px 35px rgba(0,0,0,.25);
+  padding:0;
+}
+
+.ai-ready-btn{
+  background:rgba(255,255,255,.06);
+  box-shadow:none;
+  color:#dffbff;
+}
+
+.site-footer{
+  padding:28px 14px;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+  background:rgba(5,7,22,.72);
+}
+
+.site-footer p + p{
+  margin-top:6px;
+  font-size:13px;
+}
+
+@media(max-width:980px){
+  .site-header{
+    padding:10px 14px;
+  }
+
+  .brand-logo{
+    width:44px;
+    height:44px;
+  }
+
+  .brand-text h3{
+    font-size:14px;
+  }
+
+  .brand-text p{
+    font-size:10px;
+  }
+
+  .site-header .menu-btn{
+    display:grid;
+    place-items:center;
+  }
+
+  .header-cta{
+    display:none;
+  }
+
+  .nav-links{
+    position:fixed;
+    top:70px;
+    left:12px;
+    right:12px;
+    width:auto;
+    display:none;
+    flex-direction:column;
+    gap:10px;
+    padding:16px;
+    border-radius:24px;
+    background:rgba(3,7,18,.96);
+    border:1px solid rgba(0,229,255,.25);
+    box-shadow:0 24px 80px rgba(0,0,0,.45);
+    backdrop-filter:blur(20px);
+    text-align:center;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .nav-links a{
+    width:100%;
+    padding:13px 14px;
+    border-radius:14px;
+    background:rgba(255,255,255,.045);
+    text-align:center;
+  }
+
+  .nav-links a::after{
+    display:none;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
-</header>
-  <a class="brand" href="index.html">
-    <img src="logo.png" alt="Dawood Tariq Premium Logo">
-    <div>
-      <h3>Dawood Tariq</h3>
-      <p>3D Websites • AI • Trading • Excel</p>
-    </div>
-  </a>
+<header class="site-header">
+  <div class="nav-shell">
+    <a href="index.html" class="brand">
+      <img src="logo-icon.png" alt="Dawood Tariq Logo" class="brand-logo">
+      <div class="brand-text">
+        <h3>Dawood Tariq</h3>
+        <p>3D Websites • AI • Trading • Excel</p>
+      </div>
+    </a>
 
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav class="nav-links" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="landing-page.html">Demo</a>
+    </nav>
 
-  <nav id="navMenu">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a class="active" href="pricing.html">Pricing</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-    <a href="landing-page.html">Demo</a>
-    <a class="nav-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20your%20pricing%20packages." target="_blank">Get Quote ✨</a>
-  </nav>
+    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20your%20pricing%20packages." target="_blank">
+      Get Quote ✨
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
+  </div>
 </header>
 
 <section class="hero">
@@ -1114,6 +1340,7 @@ footer{
     <div class="hero-actions">
       <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20quote%20for%20my%20project." target="_blank">Discuss On WhatsApp</a>
       <a class="btn btn-secondary" href="services.html">View Services</a>
+      <a class="btn ai-ready-btn" href="#" onclick="openAI(); return false;">Try AI Assistant</a>
     </div>
   </div>
 
@@ -1465,7 +1692,7 @@ footer{
     <span>Trading Services</span>
     <h2>XAUUSD Trading Support</h2>
     <p>
-      Professional trading support, market analysis, signals, risk management and trading psychology guidance.
+      Professional trading support, market analysis, trading journal, risk management and trading psychology guidance.
     </p>
   </div>
 
@@ -1478,7 +1705,7 @@ footer{
 
       <ul>
         <li>XAUUSD analysis</li>
-        <li>Trading signals</li>
+        <li>Trading journal support</li>
         <li>Basic strategy support</li>
         <li>Risk guidance</li>
         <li>Weekly assistance</li>
@@ -1495,7 +1722,7 @@ footer{
 
       <ul>
         <li>XAUUSD market analysis</li>
-        <li>Trading signals</li>
+        <li>Trading journal support</li>
         <li>Strategy support</li>
         <li>Risk management</li>
         <li>Trading psychology guidance</li>
@@ -1511,7 +1738,7 @@ footer{
       <p>For serious traders who want full support, strategy and guidance.</p>
 
       <ul>
-        <li>Signals + strategy</li>
+        <li>Strategy + trade review</li>
         <li>XAUUSD analysis</li>
         <li>Risk management</li>
         <li>Trade planning support</li>
@@ -1754,12 +1981,50 @@ footer{
   </div>
 </section>
 
-<footer>
-  © 2026 Dawood Tariq | All Rights Reserved
+<footer class="site-footer">
+  <p>© 2026 Dawood Tariq</p>
+  <p>New Era 3D Websites • AI Assistant • WordPress • Excel Automation • Trading Systems</p>
 </footer>
 
 <script>
 function toggleMenu(){
-  document.getElementById("navMenu").classList.toggle("active");
+  const navMenu = document.getElementById("navMenu");
+  if(navMenu){
+    navMenu.classList.toggle("active");
+  }
+}
+
+document.querySelectorAll("#navMenu a").forEach(function(link){
+  link.addEventListener("click", function(){
+    const navMenu = document.getElementById("navMenu");
+    if(navMenu){
+      navMenu.classList.remove("active");
+    }
+  });
+});
+
+document.addEventListener("click", function(event){
+  const navMenu = document.getElementById("navMenu");
+  const menuBtn = document.querySelector(".menu-btn");
+
+  if(navMenu && menuBtn && !navMenu.contains(event.target) && !menuBtn.contains(event.target)){
+    navMenu.classList.remove("active");
+  }
+});
+
+/* Safe AI opener. Later the shared ai-assistant.js file will control the real popup on every page. */
+function openAI(){
+  if(typeof toggleAI === "function"){
+    toggleAI();
+  }else if(typeof toggleCato === "function"){
+    toggleCato();
+  }else{
+    alert("AI Assistant will be connected after the shared ai-assistant.js file is created.");
+  }
 }
 </script>
+
+<!-- Shared AI file will be created later -->
+<script src="ai-assistant.js"></script>
+</body>
+</html>
