@@ -1,1809 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<title>FAQ | Dawood Tariq | Website, AI Assistant, Excel & Trading Support</title>
-
-<meta name="description" content="Frequently asked questions about Dawood Tariq website services, AI website assistant, 3D websites, landing pages, premium logo design, Excel dashboards, import/export documentation, payment methods and XAUUSD trading support.">
-<meta name="keywords" content="Dawood Tariq FAQ, AI Website Assistant FAQ, 3D Website FAQ, Landing Page Design, Premium Logo Design, Excel Dashboard, Import Export Documentation, XAUUSD Trading Support, Web Developer Pakistan">
-<meta name="author" content="Dawood Tariq">
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-:root{
---black:#050505;
---black2:#0b0b0b;
---gold:#cfa64a;
---gold2:#ffd369;
---muted:#b9b9b9;
---line:rgba(207,166,74,.25);
---soft:rgba(255,255,255,.045);
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Inter',sans-serif;
-background:
-radial-gradient(circle at top right, rgba(207,166,74,.14), transparent 36%),
-radial-gradient(circle at bottom left, rgba(255,211,105,.08), transparent 32%),
-linear-gradient(180deg,#050505,#070707,#050505);
-color:#fff;
-overflow-x:hidden;
-}
-
-a{
-text-decoration:none;
-}
-
-header{
-position:sticky;
-top:0;
-z-index:999;
-padding:16px 7%;
-background:rgba(5,5,5,.92);
-backdrop-filter:blur(14px);
-border-bottom:1px solid var(--line);
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.brand{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.brand img{
-width:46px;
-height:46px;
-border-radius:50%;
-object-fit:contain;
-border:1px solid var(--gold);
-background:#111;
-padding:5px;
-box-shadow:0 0 18px rgba(207,166,74,.18);
-}
-
-.brand h3{
-font-family:'Cinzel',serif;
-color:var(--gold2);
-font-size:17px;
-letter-spacing:.5px;
-}
-
-.brand p{
-font-size:12px;
-color:var(--muted);
-}
-
-nav{
-display:flex;
-gap:20px;
-align-items:center;
-}
-
-nav a{
-color:#fff;
-font-weight:600;
-font-size:14px;
-transition:.3s;
-}
-
-nav a:hover,
-nav a.active{
-color:var(--gold2);
-}
-
-.menu-btn{
-  display:none;
-  background:rgba(255,255,255,.04);
-  border:1px solid #ffffff;
-  color:#fff;
-  font-size:28px;
-  padding:8px 14px;
-  border-radius:12px;
-  cursor:pointer;
-}
-/* HERO */
-.hero{
-padding:95px 7% 50px;
-text-align:center;
-position:relative;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-left:50%;
-top:40px;
-transform:translateX(-50%);
-width:260px;
-height:260px;
-background:radial-gradient(circle,rgba(207,166,74,.14),transparent 70%);
-filter:blur(5px);
-z-index:-1;
-}
-
-.hero span{
-display:inline-block;
-color:var(--gold2);
-font-size:13px;
-font-weight:800;
-letter-spacing:3px;
-text-transform:uppercase;
-border:1px solid var(--line);
-padding:9px 16px;
-border-radius:40px;
-background:rgba(255,255,255,.03);
-}
-
-.hero h1{
-font-family:'Cinzel',serif;
-font-size:54px;
-margin-top:18px;
-line-height:1.15;
-}
-
-.hero p{
-max-width:820px;
-margin:20px auto 0;
-line-height:1.85;
-color:var(--muted);
-font-size:16px;
-}
-
-.hero-actions{
-margin-top:28px;
-display:flex;
-justify-content:center;
-gap:14px;
-flex-wrap:wrap;
-}
-
-/* COMMON */
-section{
-padding:55px 7%;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:34px;
-}
-
-.section-title span{
-display:inline-block;
-color:var(--gold2);
-font-size:12px;
-font-weight:800;
-letter-spacing:2.5px;
-text-transform:uppercase;
-margin-bottom:10px;
-}
-
-.section-title h2{
-font-family:'Cinzel',serif;
-font-size:34px;
-color:var(--gold2);
-}
-
-.section-title p{
-max-width:760px;
-margin:14px auto 0;
-color:var(--muted);
-line-height:1.8;
-}
-
-/* STATS */
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
-
-.stat-card{
-background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
-border:1px solid var(--line);
-border-radius:22px;
-padding:26px 20px;
-text-align:center;
-transition:.3s;
-}
-
-.stat-card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 28px rgba(207,166,74,.12);
-}
-
-.stat-card h3{
-font-family:'Cinzel',serif;
-color:var(--gold2);
-font-size:22px;
-margin-bottom:8px;
-}
-
-.stat-card p{
-color:var(--muted);
-font-size:14px;
-line-height:1.7;
-}
-
-/* SEARCH */
-.search-box{
-max-width:780px;
-margin:0 auto 35px;
-}
-
-.search-box input{
-width:100%;
-padding:17px 20px;
-border-radius:40px;
-border:1px solid var(--line);
-background:rgba(255,255,255,.045);
-color:#fff;
-outline:none;
-font-size:15px;
-}
-
-.search-box input::placeholder{
-color:#aaa;
-}
-
-/* FAQ */
-.faq-wrap{
-max-width:980px;
-margin:auto;
-}
-
-.faq-category{
-margin-bottom:38px;
-}
-
-.faq-category h3{
-font-family:'Cinzel',serif;
-color:var(--gold2);
-font-size:25px;
-margin-bottom:18px;
-border-left:4px solid var(--gold);
-padding-left:14px;
-}
-
-.faq{
-display:grid;
-gap:16px;
-}
-
-details{
-background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
-border:1px solid var(--line);
-border-radius:20px;
-padding:20px 24px;
-transition:.3s;
-overflow:hidden;
-}
-
-details:hover{
-border-color:rgba(255,211,105,.45);
-box-shadow:0 0 22px rgba(207,166,74,.10);
-}
-
-details[open]{
-border-color:rgba(255,211,105,.55);
-}
-
-summary{
-cursor:pointer;
-font-weight:800;
-font-size:17px;
-color:var(--gold2);
-list-style:none;
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:12px;
-}
-
-summary::after{
-content:"+";
-font-size:24px;
-color:var(--gold2);
-}
-
-details[open] summary::after{
-content:"−";
-}
-
-summary::-webkit-details-marker{
-display:none;
-}
-
-details p{
-margin-top:14px;
-color:var(--muted);
-line-height:1.85;
-font-size:15px;
-}
-
-/* INFO */
-.info-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
-}
-
-.info-card{
-background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
-border:1px solid var(--line);
-border-radius:24px;
-padding:30px;
-transition:.3s;
-position:relative;
-overflow:hidden;
-}
-
-.info-card::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:3px;
-background:linear-gradient(90deg,transparent,var(--gold2),transparent);
-opacity:.55;
-}
-
-.info-card:hover{
-transform:translateY(-6px);
-box-shadow:0 0 32px rgba(207,166,74,.15);
-}
-
-.info-card h3{
-font-family:'Cinzel',serif;
-color:var(--gold2);
-font-size:22px;
-margin-bottom:10px;
-}
-
-.info-card p{
-color:var(--muted);
-line-height:1.75;
-font-size:15px;
-}
-
-/* CTA */
-.cta{
-max-width:900px;
-margin:auto;
-text-align:center;
-background:
-linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
-border:1px solid var(--line);
-border-radius:28px;
-padding:46px 26px;
-box-shadow:0 0 35px rgba(207,166,74,.1);
-}
-
-.cta h2{
-font-family:'Cinzel',serif;
-color:var(--gold2);
-font-size:34px;
-}
-
-.cta p{
-color:var(--muted);
-margin:14px auto 20px;
-line-height:1.8;
-max-width:700px;
-}
-
-.btn{
-display:inline-block;
-margin:8px;
-background:linear-gradient(135deg,var(--gold),var(--gold2));
-color:#000;
-padding:14px 28px;
-border-radius:40px;
-font-weight:900;
-transition:.3s;
-border:1px solid rgba(255,211,105,.25);
-}
-
-.btn:hover{
-transform:translateY(-2px);
-box-shadow:0 0 22px rgba(207,166,74,.28);
-}
-
-.btn-secondary{
-background:transparent;
-color:var(--gold2);
-border:1px solid var(--gold);
-}
-
-footer{
-padding:28px;
-text-align:center;
-color:var(--muted);
-border-top:1px solid var(--line);
-background:rgba(5,5,5,.8);
-}
-
-/* MOBILE HEADER + HAMBURGER */
-@media(max-width:1000px){
-.stats-grid,
-.info-grid{
-grid-template-columns:repeat(2,1fr);
-}
-}
-
-@media(max-width:950px){
-
-header{
-padding:14px 18px;
-display:flex;
-flex-direction:row;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-}
-
-.menu-btn{
-display:block;
-}
-
-nav{
-display:none;
-position:absolute;
-top:100%;
-left:0;
-width:100%;
-background:#050505;
-border-bottom:1px solid var(--line);
-padding:18px;
-flex-direction:column;
-text-align:center;
-gap:18px;
-}
-
-nav.active{
-display:flex;
-}
-
-
-.brand h3{
-font-size:14px;
-}
-
-.brand p{
-font-size:11px;
-}
-
-.brand img{
-width:52px;
-height:52px;
-}
-
-.hero{
-padding:62px 18px 42px;
-}
-
-.hero h1{
-font-size:38px;
-}
-
-.hero p{
-font-size:15px;
-}
-
-section{
-padding:42px 18px;
-}
-
-.stats-grid,
-.info-grid{
-grid-template-columns:1fr;
-}
-
-.section-title h2{
-font-size:30px;
-}
-
-.faq-category h3{
-font-size:22px;
-}
-
-summary{
-font-size:16px;
-}
-
-details{
-padding:18px 20px;
-}
-
-.cta h2{
-font-size:28px;
-}
-
-.btn{
-width:100%;
-max-width:320px;
-}
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Dawood Tariq | Website, AI Assistant, Excel & Trading Services</title>
+  <meta name="description" content="Frequently asked questions about Dawood Tariq website development, AI assistant, 3D websites, Excel automation, trading support, pricing, payment and delivery." />
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(138,43,226,.35), transparent 35%),
+        radial-gradient(circle at top right, rgba(0,225,255,.22), transparent 35%),
+        #050510;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+
+    header{
+      width:100%;
+      padding:18px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(5,5,16,.78);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand img{
+      width:48px;
+      height:48px;
+      border-radius:14px;
+      object-fit:cover;
+      box-shadow:0 0 22px rgba(0,225,255,.35);
+    }
+
+    .brand h3{font-size:20px}
+    .brand p{font-size:12px;color:#b8b8d6;margin-top:3px}
+
+    nav{
+      display:flex;
+      gap:22px;
+      align-items:center;
+    }
+
+    nav a{
+      color:#ddd;
+      font-size:14px;
+      transition:.3s;
+    }
+
+    nav a:hover,
+    nav a.active{
+      color:#00e1ff;
+    }
+
+    .menu-btn{
+      display:none;
+      font-size:26px;
+      cursor:pointer;
+      color:#fff;
+    }
+
+    .hero{
+      padding:90px 7% 55px;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .tag{
+      display:inline-block;
+      padding:8px 16px;
+      border:1px solid rgba(0,225,255,.35);
+      border-radius:30px;
+      color:#00e1ff;
+      background:rgba(0,225,255,.08);
+      font-size:14px;
+      margin-bottom:18px;
+    }
+
+    .hero h1{
+      font-size:52px;
+      line-height:1.08;
+      margin-bottom:18px;
+      background:linear-gradient(90deg,#fff,#a855f7,#00e1ff);
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+
+    .hero p{
+      color:#c9c9df;
+      line-height:1.7;
+      font-size:17px;
+      max-width:720px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:14px;
+      margin-top:28px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 22px;
+      border-radius:14px;
+      font-weight:700;
+      display:inline-block;
+      transition:.3s;
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg,#8a2be2,#00e1ff);
+      color:#fff;
+      box-shadow:0 0 28px rgba(0,225,255,.25);
+    }
+
+    .btn-outline{
+      border:1px solid rgba(255,255,255,.2);
+      color:#fff;
+      background:rgba(255,255,255,.05);
+    }
+
+    .btn:hover{transform:translateY(-3px)}
+
+    .hero-card{
+      background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:28px;
+      padding:34px;
+      box-shadow:0 30px 80px rgba(0,0,0,.35);
+      transform:perspective(900px) rotateY(-6deg);
+    }
+
+    .hero-card h3{
+      font-size:26px;
+      margin-bottom:15px;
+      color:#00e1ff;
+    }
+
+    .hero-card ul{
+      list-style:none;
+      display:grid;
+      gap:14px;
+      color:#ddd;
+    }
+
+    .hero-card li{
+      padding:14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    section{
+      padding:65px 7%;
+    }
+
+    .section-title{
+      text-align:center;
+      max-width:760px;
+      margin:0 auto 40px;
+    }
+
+    .section-title span{
+      color:#00e1ff;
+      font-size:14px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    .section-title h2{
+      font-size:38px;
+      margin:10px 0;
+    }
+
+    .section-title p{
+      color:#c9c9df;
+      line-height:1.7;
+    }
+
+    .faq-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
+
+    .faq-card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:24px;
+      padding:26px;
+      transition:.3s;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .faq-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg,rgba(138,43,226,.18),rgba(0,225,255,.08));
+      opacity:0;
+      transition:.3s;
+    }
+
+    .faq-card:hover{
+      transform:translateY(-6px);
+      border-color:rgba(0,225,255,.35);
+      box-shadow:0 18px 50px rgba(0,225,255,.08);
+    }
+
+    .faq-card:hover::before{opacity:1}
+
+    .faq-card h3,
+    .faq-card p{
+      position:relative;
+      z-index:1;
+    }
+
+    .faq-card h3{
+      font-size:20px;
+      margin-bottom:12px;
+      color:#fff;
+    }
+
+    .faq-card p{
+      color:#cfcfe8;
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .offer-box{
+      background:linear-gradient(135deg,rgba(138,43,226,.22),rgba(0,225,255,.14));
+      border:1px solid rgba(0,225,255,.25);
+      border-radius:30px;
+      padding:38px;
+      text-align:center;
+      box-shadow:0 20px 70px rgba(0,0,0,.25);
+    }
+
+    .offer-box h2{
+      font-size:34px;
+      margin-bottom:12px;
+    }
+
+    .offer-box p{
+      color:#d7d7ee;
+      line-height:1.7;
+      max-width:760px;
+      margin:0 auto 24px;
+    }
+
+    footer{
+      padding:30px 7%;
+      text-align:center;
+      color:#aaa;
+      border-top:1px solid rgba(255,255,255,.08);
+      background:rgba(0,0,0,.25);
+    }
+
+    @media(max-width:900px){
+      .hero{
+        grid-template-columns:1fr;
+        padding-top:65px;
+      }
+
+      .hero h1{font-size:40px}
+
+      .faq-grid{
+        grid-template-columns:1fr;
+      }
+
+      nav{
+        position:absolute;
+        top:78px;
+        right:7%;
+        width:230px;
+        display:none;
+        flex-direction:column;
+        padding:18px;
+        border-radius:18px;
+        background:rgba(8,8,22,.96);
+        border:1px solid rgba(255,255,255,.12);
+      }
+
+      nav.show{display:flex}
+
+      .menu-btn{display:block}
+
+      .hero-card{
+        transform:none;
+      }
+    }
+
+    @media(max-width:520px){
+      header{padding:14px 5%}
+      .hero,section{padding-left:5%;padding-right:5%}
+      .hero h1{font-size:34px}
+      .section-title h2{font-size:30px}
+      .offer-box{padding:28px 18px}
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
+  <a href="index.html" class="brand">
+    <img src="logo.png" alt="Dawood Tariq Logo">
+    <div>
+      <h3>Dawood Tariq</h3>
+      <p>Web Developer | Professional Trader</p>
+    </div>
+  </a>
 
-<div class="brand">
-<img src="logo.png" alt="Dawood Tariq Premium Logo">
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-<div>
-<h3>Dawood Tariq</h3>
-<p>Web Developer | Professional Trader</p>
-</div>
-</div>
-
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-<nav id="navMenu">
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="pricing.html">Pricing</a>
-  <a class="active" href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-  <a href="landing-page.html">Demo</a>
-</nav>
-
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html" class="active">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="demo.html">Demo</a>
+  </nav>
 </header>
 
-<div class="hero">
+<section class="hero">
+  <div>
+    <span class="tag">Frequently Asked Questions</span>
+    <h1>Clear Answers Before You Start</h1>
+    <p>
+      Find answers about website development, AI website assistant, 3D-style website sections,
+      Excel automation, trading support, pricing, delivery, payments and project process.
+    </p>
 
-<span>Frequently Asked Questions</span>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="https://wa.me/923428305707">Ask On WhatsApp</a>
+      <a class="btn btn-outline" href="pricing.html">View Pricing</a>
+    </div>
+  </div>
 
-<h1>Answers Before You Start</h1>
-
-<p>
-Find quick answers about premium websites, AI website assistants, 3D websites, landing pages, logo design, Excel dashboards, import/export documentation and XAUUSD trading support.
-</p>
-
-<div class="hero-actions">
-<a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20have%20a%20question%20about%20your%20services." target="_blank">Ask On WhatsApp</a>
-<a class="btn btn-secondary" href="pricing.html">View Pricing</a>
-</div>
-
-</div>
-
-<section>
-<div class="stats-grid">
-
-<div class="stat-card">
-<h3>🌐 Websites</h3>
-<p>Responsive business, personal brand and portfolio websites.</p>
-</div>
-
-<div class="stat-card">
-<h3>🤖 AI Assistant</h3>
-<p>Smart assistant setup for visitor guidance and WhatsApp support.</p>
-</div>
-
-<div class="stat-card">
-<h3>📊 Excel</h3>
-<p>Dashboards, trackers, trading journals and business sheets.</p>
-</div>
-
-<div class="stat-card">
-<h3>📈 Trading</h3>
-<p>XAUUSD analysis, signals, risk management and trading support.</p>
-</div>
-
-</div>
+  <div class="hero-card">
+    <h3>What This Page Covers</h3>
+    <ul>
+      <li>✔ Website packages and delivery</li>
+      <li>✔ AI assistant and chatbot setup</li>
+      <li>✔ 3D website effects and premium UI</li>
+      <li>✔ Excel, documentation and trading support</li>
+      <li>✔ Payment methods and client process</li>
+    </ul>
+  </div>
 </section>
 
 <section>
+  <div class="section-title">
+    <span>Website FAQ</span>
+    <h2>Website Development Questions</h2>
+    <p>Important questions for clients who want a personal brand, business, portfolio or service website.</p>
+  </div>
 
-<div class="section-title">
-<span>Search FAQ</span>
-<h2>Find Your Question</h2>
-<p>Type keywords like website, AI, 3D, payment, Excel, trading or hosting.</p>
-</div>
+  <div class="faq-grid">
+    <div class="faq-card">
+      <h3>What type of websites do you build?</h3>
+      <p>I build responsive websites for personal brands, businesses, freelancers, portfolios, landing pages and service providers with clean design and WhatsApp contact flow.</p>
+    </div>
 
-<div class="search-box">
-<input type="text" id="faqSearch" onkeyup="searchFAQ()" placeholder="Search questions..." />
-</div>
+    <div class="faq-card">
+      <h3>Will my website work on mobile?</h3>
+      <p>Yes. Every website is designed to work smoothly on mobile, tablet and desktop with readable sections, buttons and navigation.</p>
+    </div>
 
-<div class="faq-wrap">
+    <div class="faq-card">
+      <h3>Do you provide website content too?</h3>
+      <p>Yes. I can help improve headings, service text, pricing sections, FAQ content and call-to-action wording so the website looks professional.</p>
+    </div>
 
-<div class="faq-category">
-<h3>🌐 Website Questions</h3>
-
-<div class="faq">
-
-<details>
-<summary>Do you create fully responsive websites?</summary>
-<p>
-Yes. Every website is built to work smoothly on mobile phones, tablets and desktop screens with a clean, professional and mobile-friendly layout.
-</p>
-</details>
-
-<details>
-<summary>What type of websites do you create?</summary>
-<p>
-I create personal brand websites, business websites, service websites, portfolio websites, landing pages, premium websites and custom 3D-style websites.
-</p>
-</details>
-
-<details>
-<summary>Do you create landing pages?</summary>
-<p>
-Yes. I create premium landing pages for services, offers, portfolios, campaigns and lead generation with WhatsApp integration and strong call-to-action sections.
-</p>
-</details>
-
-<details>
-<summary>Do you create 3D websites?</summary>
-<p>
-Yes. Premium and custom 3D website packages can include modern 3D effects, advanced animations, interactive sections and a luxury visual experience.
-</p>
-</details>
-
-<details>
-<summary>Is a 3D website mobile friendly?</summary>
-<p>
-Yes. The design is made responsive so it looks professional on laptop and mobile. Heavy effects can be adjusted for mobile speed and better performance.
-</p>
-</details>
-
-<details>
-<summary>Do you provide domain and hosting?</summary>
-<p>
-Website pricing does not include domain registration or paid hosting. I can launch your website on GitHub Pages for free, or help connect your custom domain and hosting if you already have one.
-</p>
-</details>
-
-<details>
-<summary>Can you help launch my website on a paid platform?</summary>
-<p>
-Yes. If you purchase a domain and hosting, I can help connect everything, upload the website files, test the website and make it live.
-</p>
-</details>
-
-<details>
-<summary>How long does website delivery take?</summary>
-<p>
-Delivery depends on project size. Simple websites are usually faster, while larger websites depend on number of pages, content, animations, AI assistant setup and custom features.
-</p>
-</details>
-
-</div>
-</div>
-
-<div class="faq-category">
-<h3>🤖 AI Assistant Questions</h3>
-
-<div class="faq">
-
-<details>
-<summary>Can I add an AI Assistant to my website?</summary>
-<p>
-Yes. I can add a smart AI Assistant to your website that helps visitors understand your services, answer common questions and redirect serious clients to WhatsApp.
-</p>
-</details>
-
-<details>
-<summary>What can the AI Website Assistant do?</summary>
-<p>
-It can greet visitors, explain your services, answer FAQs, guide users to the right package, collect leads and redirect them to WhatsApp for direct contact.
-</p>
-</details>
-
-<details>
-<summary>Will the AI Assistant work on mobile?</summary>
-<p>
-Yes. The AI Assistant can be designed with a mobile-friendly layout so it does not take too much screen space and works properly on phones.
-</p>
-</details>
-
-<details>
-<summary>Can the AI Assistant answer questions based on my business?</summary>
-<p>
-Yes. The assistant can be customized with your website services, pricing direction, contact details and business information so replies feel more relevant.
-</p>
-</details>
-
-</div>
-</div>
-
-<div class="faq-category">
-<h3>🎨 Branding & Premium Design</h3>
-
-<div class="faq">
-
-<details>
-<summary>Do you provide Premium Logo Design?</summary>
-<p>
-Yes. I provide Premium Logo Design for websites, business brands and online profiles. Logo design can also be included in selected website offers.
-</p>
-</details>
-
-<details>
-<summary>Do first-time website clients receive any offer?</summary>
-<p>
-Yes. First website clients can receive a FREE Premium Logo and a 5% discount on selected website packages.
-</p>
-</details>
-
-<details>
-<summary>Can you make my website look premium?</summary>
-<p>
-Yes. I focus on black/gold luxury branding, clean sections, mobile-friendly design, professional spacing, strong call-to-action buttons and modern layouts.
-</p>
-</details>
-
-</div>
-</div>
-
-<div class="faq-category">
-<h3>💳 Pricing & Payment Questions</h3>
-
-<div class="faq">
-
-<details>
-<summary>Are your prices fixed?</summary>
-<p>
-Prices are starting points. Final pricing depends on project size, number of pages, content, features, AI assistant setup, 3D effects and delivery requirements.
-</p>
-</details>
-
-<details>
-<summary>What payment methods do you accept?</summary>
-<p>
-I accept USDT (TRC20) and Bank Transfer. Payment details are shared privately after project confirmation.
-</p>
-</details>
-
-<details>
-<summary>Do you show wallet address or bank details on the website?</summary>
-<p>
-No. For privacy and safety, payment details are not shown publicly. They are shared privately after the client confirms the project.
-</p>
-</details>
-
-<details>
-<summary>Can I discuss my project before choosing a package?</summary>
-<p>
-Yes. You can message me on WhatsApp, explain your project and I will guide you toward the best package based on your requirements.
-</p>
-</details>
-
-</div>
-</div>
-
-<div class="faq-category">
-<h3>📊 Excel & Documentation Questions</h3>
-
-<div class="faq">
-
-<details>
-<summary>Do you create Excel dashboards and journals?</summary>
-<p>
-Yes. I create Excel dashboards, calculators, trackers, trading journals and organized business sheets.
-</p>
-</details>
-
-<details>
-<summary>Can you create a trading journal?</summary>
-<p>
-Yes. I can create trading journals for tracking entries, exits, risk, profit/loss, strategy notes, emotions and performance review.
-</p>
-</details>
-
-<details>
-<summary>Can you help with import/export documentation?</summary>
-<p>
-Yes. I support import/export documentation, business files and organized document workflows.
-</p>
-</details>
-
-</div>
-</div>
-
-<div class="faq-category">
-<h3>📈 Trading Support Questions</h3>
-
-<div class="faq">
-
-<details>
-<summary>Do you provide Forex and Gold trading services?</summary>
-<p>
-Yes. I provide XAUUSD market analysis, trading signals, strategy support, risk management and trading psychology guidance.
-</p>
-</details>
-
-<details>
-<summary>Do you offer trading signals only?</summary>
-<p>
-Yes. Signals can be provided, and support can also include market analysis, strategy guidance and risk management depending on your package.
-</p>
-</details>
-
-<details>
-<summary>Do you help with risk management?</summary>
-<p>
-Yes. Trading support can include risk guidance, trade planning, psychology support and better decision-making structure.
-</p>
-</details>
-
-</div>
-</div>
-
-<div class="faq-category">
-<h3>📞 Contact Questions</h3>
-
-<div class="faq">
-
-<details>
-<summary>How do I contact you?</summary>
-<p>
-You can contact me directly through WhatsApp from the website. The contact page will also include other contact options.
-</p>
-</details>
-
-<details>
-<summary>What should I send before starting?</summary>
-<p>
-Send your project type, required pages or service, preferred style, content details, budget range and any reference website if you have one.
-</p>
-</details>
-
-</div>
-</div>
-
-</div>
-
+    <div class="faq-card">
+      <h3>Can you make a premium 3D-style website?</h3>
+      <p>Yes. I can add modern 3D-style sections, floating cards, premium gradients, animations and luxury UI effects depending on the selected package.</p>
+    </div>
+  </div>
 </section>
 
 <section>
-<div class="section-title">
-<span>Why Clients Choose Me</span>
-<h2>Professional Support For Digital Services</h2>
-</div>
+  <div class="section-title">
+    <span>AI Assistant FAQ</span>
+    <h2>Smart Website Assistant</h2>
+    <p>Questions about chatbot, quick replies, lead support and future AI upgrades.</p>
+  </div>
 
-<div class="info-grid">
+  <div class="faq-grid">
+    <div class="faq-card">
+      <h3>What does the AI website assistant do?</h3>
+      <p>It helps visitors understand your services, pricing, packages and project process. It can also guide serious clients to WhatsApp for a quote.</p>
+    </div>
 
-<div class="info-card">
-<h3>Mobile Friendly</h3>
-<p>Websites are designed to work smoothly on desktop, tablet and mobile screens.</p>
-</div>
+    <div class="faq-card">
+      <h3>Can the AI assistant answer business questions?</h3>
+      <p>Yes. It can be customized with your business services, pricing, common questions and contact flow so visitors get quick answers.</p>
+    </div>
 
-<div class="info-card">
-<h3>AI Integration</h3>
-<p>Smart AI assistants can help guide visitors, answer questions and redirect clients to WhatsApp.</p>
-</div>
+    <div class="faq-card">
+      <h3>Can I add AI assistant later?</h3>
+      <p>Yes. Your website can be built AI-ready first, then the assistant can be added later through a shared assistant file.</p>
+    </div>
 
-<div class="info-card">
-<h3>Premium Design</h3>
-<p>Clean layouts, luxury black/gold styling and professional presentation for business use.</p>
-</div>
-
-<div class="info-card">
-<h3>Trading Experience</h3>
-<p>Support includes XAUUSD analysis, signals, trading psychology and risk management guidance.</p>
-</div>
-
-<div class="info-card">
-<h3>Excel + Documentation</h3>
-<p>Business trackers, dashboards, trading journals and import/export documentation support.</p>
-</div>
-
-<div class="info-card">
-<h3>Fast Communication</h3>
-<p>Clear project discussion and responsive communication through WhatsApp.</p>
-</div>
-
-</div>
+    <div class="faq-card">
+      <h3>Will the AI assistant work on mobile?</h3>
+      <p>Yes. The assistant can be designed with a mobile-friendly chat layout so visitors can use it easily from phone screens.</p>
+    </div>
+  </div>
 </section>
 
 <section>
+  <div class="section-title">
+    <span>Pricing FAQ</span>
+    <h2>Pricing, Payment & Delivery</h2>
+    <p>Simple answers about project pricing, payment methods and what affects final cost.</p>
+  </div>
 
-<div class="cta">
+  <div class="faq-grid">
+    <div class="faq-card">
+      <h3>Are prices fixed?</h3>
+      <p>Prices are starting points. Final price depends on number of pages, design complexity, animations, AI assistant setup and custom features.</p>
+    </div>
 
-<h2>Still Have A Question?</h2>
+    <div class="faq-card">
+      <h3>What payment methods are available?</h3>
+      <p>Payments are accepted through USDT TRC20 and bank transfer. Payment details are shared privately after project confirmation.</p>
+    </div>
 
-<p>
-Send me a message directly on WhatsApp and tell me what service you need: website, AI assistant, landing page, 3D website, Excel dashboard, documentation or trading support.
-</p>
+    <div class="faq-card">
+      <h3>Do you provide a free logo?</h3>
+      <p>For selected first website clients, I can provide 1 free premium logo and a small discount depending on the package.</p>
+    </div>
 
-<a class="btn"
-href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20have%20a%20question%20about%20your%20services."
-target="_blank">
-Contact Me On WhatsApp
-</a>
+    <div class="faq-card">
+      <h3>Is domain and hosting included?</h3>
+      <p>Domain and paid hosting are not included by default. I can launch the website on GitHub Pages for free or help connect a custom domain.</p>
+    </div>
+  </div>
+</section>
 
-<a class="btn btn-secondary" href="pricing.html">
-View Pricing
-</a>
+<section>
+  <div class="section-title">
+    <span>Other Services</span>
+    <h2>Excel, Trading & Documentation FAQ</h2>
+    <p>Questions about Excel automation, trading journals, XAUUSD support and business documentation.</p>
+  </div>
 
-</div>
+  <div class="faq-grid">
+    <div class="faq-card">
+      <h3>Do you create Excel dashboards?</h3>
+      <p>Yes. I can create trackers, dashboards, calculators, trading journals and business sheets with clean formatting and simple structure.</p>
+    </div>
 
+    <div class="faq-card">
+      <h3>Do you provide trading support?</h3>
+      <p>Yes. I provide XAUUSD trading support, market analysis, risk planning, trade review and discipline-based guidance.</p>
+    </div>
+
+    <div class="faq-card">
+      <h3>Do you help with import/export documentation?</h3>
+      <p>Yes. I can support documentation-related tasks, organized sheets, GD-related work and professional document handling.</p>
+    </div>
+
+    <div class="faq-card">
+      <h3>Can I order only one service?</h3>
+      <p>Yes. You can order a single service such as website, AI assistant, logo, Excel sheet, landing page, trading support or documentation help.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="offer-box">
+    <h2>Still Have Questions?</h2>
+    <p>
+      Send your project details on WhatsApp and I will guide you about the best package,
+      required pages, pricing, design direction and delivery process.
+    </p>
+    <a class="btn btn-primary" href="https://wa.me/923428305707">Contact Me On WhatsApp</a>
+  </div>
 </section>
 
 <footer>
-© 2026 Dawood Tariq | All Rights Reserved
+  © 2026 Dawood Tariq | All Rights Reserved
 </footer>
 
 <script>
-function toggleMenu(){
-  document.getElementById("navMenu").classList.toggle("active");
-}
-
-function searchFAQ(){
-  let input = document.getElementById("faqSearch").value.toLowerCase();
-  let items = document.querySelectorAll("details");
-
-  items.forEach(function(item){
-    let text = item.innerText.toLowerCase();
-
-    if(text.includes(input)){
-      item.style.display = "block";
-    }else{
-      item.style.display = "none";
-    }
-  });
-}
+  function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("show");
+  }
 </script>
-<!-- AI ASSISTANT START -->
-<div class="dt-ai-widget">
-
-  <div class="dt-ai-soft-bubble" id="aiSoftBubble" onclick="toggleAI()">
-    👋 Need help choosing a website package?
-  </div>
-
-  <button class="dt-ai-launcher" onclick="toggleAI()" aria-label="Open AI Assistant">
-    <span class="dt-ai-avatar">
-      <span class="dt-ai-face">DT</span>
-    </span>
-    <span>
-      <b>Dawood AI</b>
-      <small>Ask me anything</small>
-    </span>
-  </button>
-
-  <div class="dt-ai-panel" id="aiPanel">
-    <div class="dt-ai-header">
-      <div class="dt-ai-head-left">
-        <div class="dt-ai-avatar big">
-          <span class="dt-ai-face">DT</span>
-        </div>
-        <div>
-          <strong>Dawood AI Assistant</strong>
-          <small id="aiGreeting">Welcome 👋</small>
-        </div>
-      </div>
-
-      <div class="dt-ai-head-actions">
-        <button onclick="toggleVoice()" id="voiceBtn" title="Voice reply">🔊</button>
-        <button onclick="clearAI()" title="Clear chat">🧹</button>
-        <button onclick="toggleAI()" title="Close">×</button>
-      </div>
-    </div>
-
-    <div class="dt-ai-top-buttons">
-      <button onclick="quickAsk('website')">🌐 Website</button>
-      <button onclick="quickAsk('pricing')">💰 Pricing</button>
-      <button onclick="quickAsk('portfolio')">🎨 Portfolio</button>
-      <button onclick="quickAsk('excel')">📊 Excel</button>
-      <button onclick="quickAsk('trading')">📈 Trading</button>
-      <button onclick="quickAsk('quote')">⚡ Quote</button>
-      <button onclick="quickAsk('payment')">💳 Payment</button>
-      <button onclick="quickAsk('contact')">📲 WhatsApp</button>
-    </div>
-
-    <div class="dt-ai-chat" id="aiChat"></div>
-
-    <div class="dt-ai-input-area">
-      <input id="aiInput" type="text" placeholder="Ask about website, price, Excel, trading..." onkeypress="aiEnter(event)">
-      <button onclick="sendAI()">➤</button>
-    </div>
-  </div>
-</div>
-
-<style>
-.dt-ai-widget{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:999999;
-  font-family:Arial,sans-serif;
-}
-
-.dt-ai-soft-bubble{
-  display:none;
-  position:fixed;
-  right:18px;
-  bottom:84px;
-  background:#111;
-  color:#fff;
-  border:1px solid rgba(255,215,0,.55);
-  padding:10px 14px;
-  border-radius:18px;
-  font-size:13px;
-  font-weight:700;
-  cursor:pointer;
-  box-shadow:0 10px 30px rgba(0,0,0,.35);
-  animation:dtSoftPop .35s ease;
-}
-
-@keyframes dtSoftPop{
-  from{opacity:0;transform:translateY(10px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
-.dt-ai-launcher{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background:#111;
-  color:#fff;
-  border:1px solid rgba(255,215,0,.55);
-  padding:10px 15px 10px 10px;
-  border-radius:999px;
-  cursor:pointer;
-  box-shadow:0 12px 35px rgba(0,0,0,.35);
-}
-
-.dt-ai-launcher small{
-  display:block;
-  color:#ffd700;
-  font-size:11px;
-  margin-top:1px;
-}
-
-.dt-ai-avatar{
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:conic-gradient(from 180deg,#ffd700,#ff7a00,#00d4ff,#ffd700);
-  padding:3px;
-  box-shadow:0 0 0 3px rgba(255,215,0,.15),0 0 18px rgba(255,215,0,.25);
-  animation:dtAvatarGlow 3s infinite ease-in-out;
-}
-
-.dt-ai-face{
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  background:#111;
-  color:#ffd700;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:900;
-  font-size:13px;
-}
-
-.dt-ai-avatar.big{
-  width:46px;
-  height:46px;
-}
-
-@keyframes dtAvatarGlow{
-  0%,100%{box-shadow:0 0 0 3px rgba(255,215,0,.15),0 0 14px rgba(255,215,0,.2);}
-  50%{box-shadow:0 0 0 4px rgba(0,212,255,.16),0 0 22px rgba(255,215,0,.38);}
-}
-
-.dt-ai-panel{
-  display:none;
-  flex-direction:column;
-  position:fixed;
-  right:18px;
-  bottom:82px;
-  top:auto;
-  z-index:1000000;
-  width:410px;
-  height:min(640px, calc(100vh - 105px));
-  max-height:calc(100vh - 105px);
-  max-width:calc(100vw - 36px);
-  background:#fff;
-  border-radius:24px;
-  overflow:hidden;
-  box-shadow:0 18px 60px rgba(0,0,0,.45);
-  border:1px solid rgba(255,215,0,.35);
-  animation:dtAiPop .25s ease;
-}
-
-.dt-ai-panel[style*="flex"]{
-  display:flex !important;
-}
-.dt-ai-header{
-  flex-shrink:0;
-  min-height:66px;
-}
-
-.dt-ai-top-buttons{
-  flex-shrink:0;
-}
-
-.dt-ai-chat{
-  flex:1;
-  min-height:0;
-  overflow-y:auto;
-}
-
-.dt-ai-input-area{
-  flex-shrink:0;
-}
-@keyframes dtAiPop{
-  from{opacity:0;transform:translateY(18px) scale(.98);}
-  to{opacity:1;transform:translateY(0) scale(1);}
-}
-
-.dt-ai-header{
-  background:#111;
-  color:#fff;
-  padding:13px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  position:relative;
-  z-index:1000001;
-}
-
-.dt-ai-head-left{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.dt-ai-header small{
-  display:block;
-  color:#ffd700;
-  font-size:12px;
-  margin-top:3px;
-}
-
-.dt-ai-head-actions{
-  display:flex;
-  gap:5px;
-}
-
-.dt-ai-head-actions button{
-  width:30px;
-  height:30px;
-  border:none;
-  border-radius:50%;
-  background:rgba(255,255,255,.12);
-  color:#fff;
-  cursor:pointer;
-  font-size:15px;
-}
-
-.dt-ai-top-buttons{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:7px;
-  padding:10px;
-  background:#f5f5f5;
-}
-
-.dt-ai-top-buttons button{
-  border:1px solid #e1e1e1;
-  background:#fff;
-  color:#111;
-  border-radius:12px;
-  padding:9px 5px;
-  font-size:11px;
-  font-weight:800;
-  cursor:pointer;
-}
-
-.dt-ai-chat{
- flex:1;
-min-height:0;
-  overflow-y:auto;
-  padding:14px;
-  background:linear-gradient(180deg,#fff,#fafafa);
-}
-
-.dt-ai-msg{
-  max-width:88%;
-  padding:11px 12px;
-  margin-bottom:11px;
-  border-radius:16px;
-  font-size:14px;
-  line-height:1.45;
-  word-wrap:break-word;
-}
-
-.dt-ai-msg.bot{
-  background:#f1f1f1;
-  color:#111;
-  border-top-left-radius:5px;
-}
-
-.dt-ai-msg.user{
-  background:#111;
-  color:#fff;
-  margin-left:auto;
-  border-top-right-radius:5px;
-}
-
-.dt-ai-card,.dt-ai-price{
-  background:#fff;
-  border:1px solid #ddd;
-  border-radius:14px;
-  padding:10px;
-  margin-top:8px;
-}
-
-.dt-ai-card strong,.dt-ai-price b{
-  display:block;
-  color:#111;
-  margin-bottom:4px;
-}
-
-.dt-ai-followups{
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  margin-top:9px;
-}
-
-.dt-ai-followups button{
-  background:#111;
-  color:#ffd700;
-  border:none;
-  border-radius:999px;
-  padding:7px 10px;
-  font-size:12px;
-  font-weight:800;
-  cursor:pointer;
-}
-
-.dt-ai-wa{
-  display:inline-block;
-  background:#111;
-  color:#fff !important;
-  padding:10px 12px;
-  border-radius:10px;
-  text-decoration:none;
-  margin-top:8px;
-  font-weight:900;
-}
-
-.dt-ai-input-area{
-  display:flex;
-  border-top:1px solid #ddd;
-  background:#fff;
-}
-
-.dt-ai-input-area input{
-  flex:1;
-  border:none;
-  padding:16px;
-  outline:none;
-  font-size:14px;
-}
-
-.dt-ai-input-area button{
-  width:56px;
-  border:none;
-  background:#111;
-  color:#ffd700;
-  font-size:20px;
-  cursor:pointer;
-}
-
-.dt-ai-typing{
-  display:inline-flex;
-  gap:4px;
-  align-items:center;
-}
-
-.dt-ai-typing span{
-  width:6px;
-  height:6px;
-  background:#777;
-  border-radius:50%;
-  animation:dtBlink 1s infinite;
-}
-
-.dt-ai-typing span:nth-child(2){animation-delay:.2s;}
-.dt-ai-typing span:nth-child(3){animation-delay:.4s;}
-
-@keyframes dtBlink{
-  0%,80%,100%{opacity:.25;}
-  40%{opacity:1;}
-}
-
-@media(max-width:600px){
-  .dt-ai-widget{
-    right:0;
-    bottom:0;
-  }
-
-  .dt-ai-soft-bubble{
-    right:12px;
-    bottom:78px;
-    max-width:260px;
-    font-size:12px;
-  }
-
-  .dt-ai-launcher{
-    right:12px;
-    bottom:12px;
-    position:fixed;
-    padding:9px 13px 9px 9px;
-  }
-
-  .dt-ai-panel{
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    width:100vw;
-   height:100vh;
-    max-width:100vw;
-    border-radius:0;
-    padding-top:0;
-    box-sizing:border-box;
-  }
-  .dt-ai-top-buttons{
-    grid-template-columns:repeat(4,1fr);
-    gap:6px;
-    padding:8px;
-  }
-
-  .dt-ai-top-buttons button{
-    font-size:10.5px;
-    padding:8px 3px;
-  }
-
-  .dt-ai-chat{
-  flex:1;
-  min-height:0;
-  padding:11px;
-  overflow-y:auto;
-}
-
-  .dt-ai-msg{
-    max-width:92%;
-    font-size:13.5px;
-  }
-
-  .dt-ai-input-area input{
-    font-size:15px;
-    padding:17px 13px;
-  }
-}
-</style>
-
-<script>
-const aiChat = document.getElementById("aiChat");
-
-let voiceOn = false;
-let lastQuestion = "";
-let aiOpenedOnce = localStorage.getItem("dtAiOpened") === "yes";
-
-let lead = {
-  name:"",
-  service:"",
-  pages:"",
-  deadline:"",
-  budget:""
-};
-
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("aiPanel").style.display = "none";
-  greet();
-
-  setTimeout(function(){
-    const panel = document.getElementById("aiPanel");
-    const bubble = document.getElementById("aiSoftBubble");
-
-if(!aiOpenedOnce && panel.style.display !== "flex"){     bubble.style.display = "block";
-    }
-  },12000);
-});
-
-function toggleAI(){
-  const panel = document.getElementById("aiPanel");
-  const bubble = document.getElementById("aiSoftBubble");
-
-panel.style.display = panel.style.display === "flex" ? "none" : "flex";
-if(panel.style.display === "flex"){    localStorage.setItem("dtAiOpened","yes");
-    aiOpenedOnce = true;
-    bubble.style.display = "none";
-  }
-
-if(panel.style.display === "flex" && aiChat.innerHTML.trim() === ""){    greet();
-  }
-}
-
-function openAIDemo(){
-document.getElementById("aiPanel").style.display = "flex";  document.getElementById("aiSoftBubble").style.display = "none";
-
-  if(aiChat.innerHTML.trim() === "") greet();
-
-  setTimeout(function(){
-    addBot("You opened the live AI demo 🤖 I can guide visitors about services, pricing, portfolio, Excel, trading tools, documents, payment methods and WhatsApp quotes.",["pricing","portfolio","quote"]);
-  },300);
-}
-
-function clearAI(){
-  aiChat.innerHTML = "";
-  lastQuestion = "";
-  lead = {name:"", service:"", pages:"", deadline:"", budget:""};
-  greet();
-}
-
-function toggleVoice(){
-  voiceOn = !voiceOn;
-  document.getElementById("voiceBtn").innerText = voiceOn ? "🔇" : "🔊";
-}
-
-function speak(text){
-  if(!voiceOn || !window.speechSynthesis) return;
-  const clean = text.replace(/<[^>]*>/g," ");
-  const utter = new SpeechSynthesisUtterance(clean);
-  utter.rate = 1;
-  utter.pitch = 1;
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(utter);
-}
-
-function addUser(text){
-  const d = document.createElement("div");
-  d.className = "dt-ai-msg user";
-  d.textContent = text;
-  aiChat.appendChild(d);
-  aiChat.scrollTop = aiChat.scrollHeight;
-}
-
-function followupButtons(buttons){
-  if(!buttons || !buttons.length) return "";
-
-  let html = "<div class='dt-ai-followups'>";
-  buttons.forEach(function(btn){
-    const labels = {
-      website:"🌐 Website",
-      pricing:"💰 Pricing",
-      portfolio:"🎨 Portfolio",
-      excel:"📊 Excel",
-      trading:"📈 Trading",
-      quote:"⚡ Get Quote",
-      payment:"💳 Payment",
-      contact:"📲 WhatsApp",
-      delivery:"⏱ Delivery",
-      logo:"⭐ Logo"
-    };
-    html += "<button onclick=\"quickAsk('" + btn + "')\">" + (labels[btn] || btn) + "</button>";
-  });
-  html += "</div>";
-  return html;
-}
-
-function addBot(html, buttons){
-  const d = document.createElement("div");
-  d.className = "dt-ai-msg bot";
-  d.innerHTML = html + followupButtons(buttons);
-  aiChat.appendChild(d);
-  aiChat.scrollTop = aiChat.scrollHeight;
-  speak(html);
-}
-
-function typing(){
-  const d = document.createElement("div");
-  d.className = "dt-ai-msg bot";
-  d.id = "dtTyping";
-  d.innerHTML = '<span class="dt-ai-typing"><span></span><span></span><span></span></span>';
-  aiChat.appendChild(d);
-  aiChat.scrollTop = aiChat.scrollHeight;
-}
-
-function removeTyping(){
-  const t = document.getElementById("dtTyping");
-  if(t) t.remove();
-}
-
-function quickAsk(type){
-  const labels = {
-    website:"Website",
-    pricing:"Pricing",
-    portfolio:"Portfolio",
-    excel:"Excel",
-    trading:"Trading",
-    quote:"Quote",
-    payment:"Payment",
-    contact:"WhatsApp",
-    delivery:"Delivery",
-    logo:"Logo"
-  };
-
-  addUser(labels[type] || type);
-
-  typing();
-  setTimeout(function(){
-    removeTyping();
-    reply(type);
-  },650);
-}
-
-function whatsappLink(){
-  const msg =
-    "Hello Dawood, I want a quote.%0A" +
-    "Name: " + encodeURIComponent(lead.name || "Not provided") + "%0A" +
-    "Service: " + encodeURIComponent(lead.service || "Not provided") + "%0A" +
-    "Pages / Work Size: " + encodeURIComponent(lead.pages || "Not provided") + "%0A" +
-    "Deadline: " + encodeURIComponent(lead.deadline || "Not provided") + "%0A" +
-    "Budget: " + encodeURIComponent(lead.budget || "Not provided");
-
-  return "https://wa.me/923428305707?text=" + msg;
-}
-
-function reply(type){
-  const answers = {
-    greeting:{
-      text:"Hello 👋 I’m Dawood Tariq’s AI Assistant. I can help you with websites, landing pages, Excel automation, trading tools, import/export documents, pricing and WhatsApp quotes. May I know your name?",
-      buttons:["website","pricing","portfolio","quote"]
-    },
-
-    website:{
-      text:"Yes ✅ Dawood can build modern, mobile-friendly websites including portfolio websites, business websites, landing pages, service websites and AI assistant websites.<br><br><div class='dt-ai-card'><strong>Best for clients</strong>Home, Services, Pricing, FAQ, Contact, WhatsApp button, premium logo and responsive layout.</div>How many pages do you need?",
-      buttons:["pricing","portfolio","delivery","quote"]
-    },
-
-    pricing:{
-      text:"<div class='dt-ai-price'><b>Starter</b>1-page website or landing page for simple online presence.</div><div class='dt-ai-price'><b>Standard</b>Multi-page website with services, pricing, contact, WhatsApp and mobile layout.</div><div class='dt-ai-price'><b>Premium</b>Advanced business website with stronger sections, FAQ, portfolio cards, AI assistant, revisions and lead-focused design.</div><br>Tell me your pages and features, then I’ll guide you to the best package.",
-      buttons:["portfolio","delivery","payment","quote"]
-    },
-
-    portfolio:{
-      text:"Dawood can create and show work in these styles:<br><div class='dt-ai-card'><strong>🌐 Business Website</strong>Clean service website with sections, contact and WhatsApp.</div><div class='dt-ai-card'><strong>🎨 Portfolio Website</strong>Personal brand website with skills, work, testimonials and contact.</div><div class='dt-ai-card'><strong>📊 Excel Dashboard</strong>Trackers, reports, automation and trading journals.</div><div class='dt-ai-card'><strong>🤖 AI Assistant Demo</strong>Website chatbot with smart answers and lead capture.</div>",
-      buttons:["website","pricing","quote","contact"]
-    },
-
-    excel:{
-      text:"Dawood provides Excel automation, dashboards, trackers, reports, trading journals, risk tools and business sheets. Tell me what Excel file you need and what problem it should solve.",
-      buttons:["pricing","quote","contact"]
-    },
-
-    trading:{
-      text:"Trading support includes XAUUSD guidance, trading journal, risk planning, strategy support and signals. For signals or trading tools, contact Dawood directly on WhatsApp.<br><a class='dt-ai-wa' href='https://wa.me/923428305707' target='_blank'>📲 WhatsApp Dawood</a>",
-      buttons:["excel","quote","contact"]
-    },
-
-    documents:{
-      text:"Dawood can help with import/export documentation, GD-related support and business documents. Tell me the document type and required format.",
-      buttons:["quote","contact","payment"]
-    },
-
-    payment:{
-      text:"Payment methods available:<br><div class='dt-ai-card'><strong>💳 Bank Transfer</strong>Available for direct payment.</div><div class='dt-ai-card'><strong>🪙 USDT</strong>Available for crypto payment.</div><div class='dt-ai-card'><strong>🛡️ Upwork Contract</strong>Best for milestone and freelance protection.</div>",
-      buttons:["quote","contact","pricing"]
-    },
-
-    delivery:{
-      text:"Delivery depends on project size. Simple websites are faster. Larger websites depend on pages, features, content and revisions. Tell me your deadline and I’ll guide you.",
-      buttons:["pricing","quote","contact"]
-    },
-
-    logo:{
-      text:"Yes ✅ Dawood can provide a premium logo with website work. First-time website clients can get 5% discount + 1 FREE Premium Logo.",
-      buttons:["website","pricing","quote"]
-    },
-
-    github:{
-      text:"Yes ✅ Dawood can deploy your static website on GitHub Pages and help with basic setup. For advanced websites, hosting depends on features.",
-      buttons:["website","pricing","quote"]
-    },
-
-    revisions:{
-      text:"Yes, revisions are available. The number of revisions depends on the package and project scope. Tell me what change you need.",
-      buttons:["pricing","quote","contact"]
-    },
-
-    quote:{
-      text:"Sure ⚡ I’ll collect your quote details step by step. What is your name?",
-      buttons:[]
-    },
-
-    contact:{
-      text:"You can contact Dawood directly on WhatsApp for project discussion, quote, website work, Excel automation, trading tools or documents.<br><a class='dt-ai-wa' href='https://wa.me/923428305707' target='_blank'>📲 WhatsApp Dawood</a>",
-      buttons:["pricing","portfolio","quote"]
-    },
-
-    leadService:{
-      text:"Thanks " + (lead.name || "") + " ✅ What service do you need: website, Excel, trading, documents or AI assistant?",
-      buttons:["website","excel","trading"]
-    },
-
-    leadPages:{
-      text:"Great. How many pages or how much work do you need?",
-      buttons:[]
-    },
-
-    leadDeadline:{
-      text:"Good. What is your deadline: urgent, today, 2-3 days or normal delivery?",
-      buttons:[]
-    },
-
-    leadBudget:{
-      text:"Almost done. Do you have a budget range?",
-      buttons:[]
-    },
-
-    leadDone:{
-      text:"Perfect ✅ Send your details to Dawood for a fast quote:<br><a class='dt-ai-wa' href='" + whatsappLink() + "' target='_blank'>📲 Send Quote Details on WhatsApp</a>",
-      buttons:["payment","contact"]
-    },
-
-    default:{
-      text:"I can help with website development, pricing, portfolio, Excel automation, trading tools, import/export documents, payment methods, delivery time, revisions, GitHub Pages and WhatsApp quotes. What do you need?",
-      buttons:["website","pricing","portfolio","quote"]
-    }
-  };
-
-  const ans = answers[type] || answers.default;
-  addBot(ans.text, ans.buttons);
-}
-
-function detect(text){
-  const t = text.toLowerCase().trim();
-
-  if(lastQuestion === "name"){
-    lead.name = text.trim().split(" ")[0];
-    lastQuestion = "service";
-    return "leadService";
-  }
-
-  if(lastQuestion === "service"){
-    lead.service = text;
-    lastQuestion = "pages";
-    return "leadPages";
-  }
-
-  if(lastQuestion === "pages"){
-    lead.pages = text;
-    lastQuestion = "deadline";
-    return "leadDeadline";
-  }
-
-  if(lastQuestion === "deadline"){
-    lead.deadline = text;
-    lastQuestion = "budget";
-    return "leadBudget";
-  }
-
-  if(lastQuestion === "budget"){
-    lead.budget = text;
-    lastQuestion = "";
-    return "leadDone";
-  }
-
-  if(t === "hi" || t === "hello" || t === "hey" || t === "hy"){
-    lastQuestion = "name";
-    return "greeting";
-  }
-
-  if(t.includes("my name is")){
-    lead.name = text.replace(/my name is/i,"").trim().split(" ")[0];
-    lastQuestion = "service";
-    return "leadService";
-  }
-
-  if(t.includes("quote") || t.includes("estimate") || t.includes("proposal")){
-    lastQuestion = "name";
-    return "quote";
-  }
-
-  if(t.includes("price") || t.includes("cost") || t.includes("pricing") || t.includes("package")){
-    return "pricing";
-  }
-
-  if(t.includes("website") || t.includes("web") || t.includes("landing") || t.includes("site")){
-    lead.service = "Website";
-    lastQuestion = "pages";
-    return "website";
-  }
-
-  if(t.includes("portfolio") || t.includes("sample") || t.includes("work proof") || t.includes("previous work")){
-    return "portfolio";
-  }
-
-  if(t.includes("excel") || t.includes("dashboard") || t.includes("sheet") || t.includes("automation")){
-    return "excel";
-  }
-
-  if(t.includes("trading") || t.includes("xauusd") || t.includes("gold") || t.includes("signal")){
-    return "trading";
-  }
-
-  if(t.includes("import") || t.includes("export") || t.includes("document") || t.includes("gd")){
-    return "documents";
-  }
-
-  if(t.includes("payment") || t.includes("bank") || t.includes("usdt") || t.includes("upwork")){
-    return "payment";
-  }
-
-  if(t.includes("delivery") || t.includes("how long") || t.includes("deadline") || t.includes("urgent") || t.includes("fast")){
-    return "delivery";
-  }
-
-  if(t.includes("logo")){
-    return "logo";
-  }
-
-  if(t.includes("github") || t.includes("deploy") || t.includes("publish") || t.includes("hosting")){
-    return "github";
-  }
-
-  if(t.includes("revision") || t.includes("changes") || t.includes("edit")){
-    return "revisions";
-  }
-
-  if(t.includes("contact") || t.includes("whatsapp") || t.includes("number")){
-    return "contact";
-  }
-
-  return "default";
-}
-
-function sendAI(){
-  const input = document.getElementById("aiInput");
-  const text = input.value.trim();
-
-  if(!text) return;
-
-  addUser(text);
-  input.value = "";
-
-  typing();
-
-  setTimeout(function(){
-    removeTyping();
-    reply(detect(text));
-  },700);
-}
-
-function aiEnter(e){
-  if(e.key === "Enter") sendAI();
-}
-
-function greet(){
-  const h = new Date().getHours();
-  let msg = "Welcome 👋";
-
-  if(h < 12) msg = "Good morning 👋";
-  else if(h < 18) msg = "Good afternoon 👋";
-  else msg = "Good evening 👋";
-
-  const g = document.getElementById("aiGreeting");
-  if(g) g.innerText = msg;
-
-  if(aiChat && aiChat.innerHTML.trim() === ""){
-    addBot(msg + " I’m Dawood AI Assistant. I can guide you about website services, pricing, portfolio, Excel automation, trading tools, documents, payment methods and WhatsApp quotes.",["website","pricing","portfolio","quote"]);
-  }
-}
-</script>
-<!-- AI ASSISTANT END -->
-
 
 </body>
 </html>
