@@ -5,635 +5,211 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>FAQ | Dawood Tariq | Website, AI Assistant, Excel & Trading Services</title>
-
-<meta name="description" content="Frequently asked questions about Dawood Tariq website development, AI assistant, 3D websites, Excel automation, trading support, pricing, payment and delivery.">
-<meta name="keywords" content="Dawood Tariq FAQ, 3D Website FAQ, AI Website Assistant FAQ, WordPress Website FAQ, Excel Automation FAQ, XAUUSD Trading Support, Import Export Documentation">
+<title>FAQ | Dawood Tariq | Premium Website Specialist</title>
+<meta name="description" content="Frequently asked questions about Dawood Tariq's premium website design services, landing pages, WordPress websites, redesigns, pricing, delivery, hosting and support.">
+<meta name="keywords" content="Dawood Tariq FAQ, website design FAQ, premium website, business website, WordPress website, landing page, website redesign, responsive website, WhatsApp website">
 <meta name="author" content="Dawood Tariq">
 <meta name="robots" content="index, follow">
-
 <link rel="icon" href="logo-icon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#030712;
-  --bg2:#08101f;
-  --purple:#9b5cff;
-  --cyan:#00e5ff;
-  --blue:#3b82f6;
-  --pink:#ec5cff;
-  --green:#22c55e;
-  --text:#f8fafc;
-  --muted:#a8b3cf;
-  --line:rgba(255,255,255,.12);
+  --bg:#050505;
+  --bg2:#0b0a08;
+  --panel:#11100d;
+  --panel2:#17140f;
+  --card:#15130f;
+  --gold:#d8b45a;
+  --gold2:#f3d890;
+  --bronze:#8a612f;
+  --emerald:#1f8a5b;
+  --emerald2:#57c68c;
+  --ivory:#fff8ea;
+  --text:#f8f4ea;
+  --muted:#b9ad99;
+  --soft:#e7d8bd;
+  --line:rgba(255,255,255,.13);
+  --glass:rgba(255,255,255,.065);
+  --shadow:0 30px 95px rgba(0,0,0,.48);
   --radius:28px;
-  --shadow:0 30px 90px rgba(0,0,0,.45);
 }
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-  font-family:'Inter',sans-serif;
+  font-family:"Inter",system-ui,sans-serif;
   color:var(--text);
   background:
-    radial-gradient(circle at 15% 15%,rgba(155,92,255,.26),transparent 28%),
-    radial-gradient(circle at 85% 12%,rgba(0,229,255,.18),transparent 30%),
-    radial-gradient(circle at 50% 105%,rgba(59,130,246,.16),transparent 38%),
-    linear-gradient(135deg,#02040d,#050816 45%,#07111f);
+    radial-gradient(circle at 8% 6%,rgba(216,180,90,.18),transparent 30%),
+    radial-gradient(circle at 88% 10%,rgba(31,138,91,.17),transparent 29%),
+    radial-gradient(circle at 55% 100%,rgba(138,97,47,.16),transparent 34%),
+    linear-gradient(135deg,#030303,#0b0906 46%,#070806);
   overflow-x:hidden;
 }
-
-body::before{
+body:before{
   content:"";
   position:fixed;
   inset:0;
-  z-index:-3;
+  z-index:-2;
   pointer-events:none;
   background-image:
-    linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.024) 1px,transparent 1px);
-  background-size:44px 44px;
-  mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 78%);
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:48px 48px;
+  mask-image:linear-gradient(to bottom,#000,transparent 78%);
 }
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-button{
-  font-family:inherit;
-}
-
-::selection{
-  background:var(--cyan);
-  color:#020617;
-}
-
-/* HOME STYLE HEADER */
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{font-family:inherit}
+::selection{background:var(--gold);color:#050505}
 
 .site-header{
   position:sticky;
   top:0;
-  z-index:99999;
+  z-index:9999;
   width:100%;
-  padding:12px 5%;
-  background:rgba(3,7,18,.72);
-  backdrop-filter:blur(24px);
+  padding:13px 5%;
   border-bottom:1px solid var(--line);
+  background:rgba(5,5,5,.78);
+  backdrop-filter:blur(22px);
 }
+.nav-shell{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo{width:50px;height:50px;object-fit:contain;border-radius:16px;filter:drop-shadow(0 0 18px rgba(216,180,90,.28))}
+.brand-text h3{font-family:"Manrope",sans-serif;font-size:16px;line-height:1.1;white-space:nowrap}
+.brand-text p{color:var(--muted);font-size:11px;margin-top:3px;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:21px}
+.nav-links a{color:#efe5d1;font-size:14px;font-weight:850;opacity:.88;position:relative;transition:.25s ease}
+.nav-links a:hover,.nav-links a.active{color:var(--gold2)}
+.nav-links a:after{content:"";position:absolute;left:0;bottom:-9px;width:0;height:2px;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--emerald2));transition:.25s ease}
+.nav-links a:hover:after,.nav-links a.active:after{width:100%}
+.header-cta{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;color:#100b04;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));font-size:13px;font-weight:950;box-shadow:0 16px 42px rgba(216,180,90,.2);transition:.28s ease;white-space:nowrap}
+.header-cta:hover{transform:translateY(-3px)}
+.menu-btn{display:none;width:46px;height:46px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;font-size:24px;cursor:pointer}
 
-.nav-shell{
-  max-width:1240px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:11px;
-  min-width:0;
-}
-
-.brand-logo{
-  width:50px;
-  height:50px;
-  border-radius:16px;
-  object-fit:contain;
-  filter:drop-shadow(0 0 18px rgba(0,229,255,.35));
-  transition:.3s ease;
-}
-
-.brand:hover .brand-logo{
-  transform:scale(1.05);
-}
-
-.brand-text{
-  min-width:0;
-}
-
-.brand-text h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:16px;
-  line-height:1.1;
-  white-space:nowrap;
-}
-
-.brand-text p{
-  color:var(--muted);
-  font-size:11px;
-  margin-top:3px;
-  white-space:nowrap;
-}
-
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:22px;
-}
-
-.nav-links a{
-  color:#eef6ff;
-  font-size:14px;
-  font-weight:800;
-  opacity:.86;
-  position:relative;
-  transition:.25s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active{
-  color:#ffffff;
-  text-shadow:0 0 12px rgba(0,229,255,.7);
-}
-
-.nav-links a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-9px;
-  width:0;
-  height:2px;
-  border-radius:50px;
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  transition:.25s ease;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after{
-  width:100%;
-}
-
-.header-cta{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:12px 18px;
-  border-radius:999px;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  font-size:13px;
-  font-weight:900;
-  box-shadow:0 14px 35px rgba(0,229,255,.18);
-  transition:.3s;
-}
-
-.header-cta:hover{
-  transform:translateY(-3px);
-  box-shadow:0 20px 55px rgba(0,229,255,.28);
-}
-
-.menu-btn{
-  display:none;
-  width:46px;
-  height:46px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.06);
-  color:#fff;
-  font-size:24px;
-  cursor:pointer;
-  box-shadow:0 12px 35px rgba(0,0,0,.25);
-}
-
-/* SHARED */
-
-.section{
-  padding:86px 5%;
-}
-
-.section-inner{
-  max-width:1240px;
-  margin:auto;
-}
-
+.section{padding:84px 5%}
+.section-inner{max-width:1240px;margin:auto}
 .glass{
   background:
-    radial-gradient(circle at top left,rgba(155,92,255,.13),transparent 35%),
-    linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.028));
+    radial-gradient(circle at top left,rgba(216,180,90,.12),transparent 36%),
+    linear-gradient(145deg,rgba(255,255,255,.082),rgba(255,255,255,.03));
   border:1px solid var(--line);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
   backdrop-filter:blur(18px);
 }
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border-radius:999px;border:1px solid rgba(216,180,90,.34);background:rgba(216,180,90,.08);color:var(--gold2);font-size:12px;font-weight:950;letter-spacing:1.6px;text-transform:uppercase}
+.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--emerald2);box-shadow:0 0 14px rgba(87,198,140,.7)}
+.gradient-text{background:linear-gradient(135deg,#fff,var(--gold2),var(--gold),#d5ffe6);-webkit-background-clip:text;color:transparent}
+.btn-row{display:flex;flex-wrap:wrap;align-items:center;gap:13px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:16px;font-size:14px;font-weight:950;border:1px solid transparent;transition:.28s ease;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));color:#100b04;box-shadow:0 16px 42px rgba(216,180,90,.2)}
+.btn-secondary{color:var(--ivory);background:rgba(255,255,255,.055);border-color:var(--line)}
+.btn:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(216,180,90,.16)}
 
-.eyebrow{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  padding:8px 13px;
-  border-radius:999px;
-  border:1px solid rgba(0,229,255,.28);
-  background:rgba(0,229,255,.06);
-  color:var(--cyan);
-  font-size:12px;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:1.8px;
+.hero{padding:76px 5% 56px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-14%;top:6%;width:620px;height:620px;background:radial-gradient(circle,rgba(216,180,90,.13),transparent 67%);filter:blur(5px);z-index:-1}
+.hero-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}
+.hero h1{margin-top:18px;font-family:"Playfair Display",serif;font-size:clamp(46px,6.7vw,78px);line-height:1.01;letter-spacing:-2px}
+.hero h2{margin-top:18px;font-size:clamp(18px,2vw,23px);line-height:1.45;color:#fff2d8;font-weight:750}
+.hero p{margin-top:18px;color:var(--muted);line-height:1.85;max-width:650px;font-size:16px}
+.hero-actions{margin-top:30px}
+.hero-visual{min-height:545px;position:relative}
+.hero-img-main,.hero-img-small{position:absolute;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#100e0a;box-shadow:0 30px 95px rgba(0,0,0,.46)}
+.hero-img-main{right:0;top:0;width:82%;height:66%;border-radius:32px;transform:rotateY(-9deg) rotateZ(2deg)}
+.hero-img-small{left:0;bottom:70px;width:56%;height:34%;border-radius:28px;transform:rotateZ(-5deg)}
+.hero-img-main img,.hero-img-small img{width:100%;height:100%;object-fit:cover}
+.hero-img-main:after,.hero-img-small:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(0,0,0,.68))}
+.hero-label{position:absolute;left:18px;bottom:18px;z-index:2;padding:10px 13px;border-radius:999px;background:rgba(0,0,0,.56);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(12px);font-weight:900;color:#fff;font-size:13px}
+.hero-note{position:absolute;right:5%;bottom:0;width:325px;padding:22px;border-radius:26px;background:rgba(8,7,5,.82);border:1px solid var(--line);backdrop-filter:blur(20px);box-shadow:0 28px 80px rgba(0,0,0,.45)}
+.hero-note strong{display:block;font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:8px}
+.hero-note p{font-size:14px;line-height:1.65;margin:0;color:var(--muted)}
+
+.section-title{text-align:center;max-width:860px;margin:0 auto 44px}
+.section-title h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-1.2px;margin-top:14px}
+.section-title p{color:var(--muted);line-height:1.85;margin-top:15px;font-size:16px}
+
+.faq-layout{display:grid;grid-template-columns:.34fr .66fr;gap:22px;align-items:start}
+.faq-sidebar{position:sticky;top:96px;padding:22px}
+.faq-sidebar h3{font-family:"Playfair Display",serif;font-size:30px;margin-bottom:12px}
+.faq-sidebar p{color:var(--muted);line-height:1.75;font-size:15px;margin-bottom:18px}
+.faq-tabs{display:grid;gap:10px}
+.faq-tabs a{padding:13px 14px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.045);font-weight:900;color:#f2dfb8;transition:.25s}
+.faq-tabs a:hover{background:rgba(216,180,90,.12);border-color:rgba(216,180,90,.32);transform:translateX(4px)}
+
+.faq-group{margin-bottom:26px}
+.faq-group-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:15px}
+.faq-group-head h3{font-family:"Playfair Display",serif;font-size:34px}
+.faq-group-head span{color:var(--gold2);font-weight:900;font-size:13px}
+.faq-list{display:grid;gap:12px}
+.faq-item{border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.052);overflow:hidden;transition:.25s ease}
+.faq-item:hover{border-color:rgba(216,180,90,.32)}
+.faq-question{width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px;background:transparent;border:0;color:var(--ivory);text-align:left;padding:20px 22px;cursor:pointer;font-size:16px;font-weight:950}
+.faq-question span:first-child{line-height:1.4}
+.faq-icon{width:34px;height:34px;min-width:34px;border-radius:50%;display:grid;place-items:center;background:rgba(216,180,90,.10);border:1px solid rgba(216,180,90,.22);color:var(--gold2);font-size:20px;transition:.25s ease}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-answer p{padding:0 22px 20px;color:var(--muted);line-height:1.8;font-size:15px}
+.faq-item.active .faq-icon{transform:rotate(45deg);background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));color:#100b04}
+.faq-item.active{background:rgba(216,180,90,.07);border-color:rgba(216,180,90,.38)}
+
+.feature-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feature-card{padding:24px;min-height:210px;overflow:hidden;position:relative}
+.feature-card img{width:100%;height:140px;object-fit:cover;border-radius:20px;margin-bottom:18px;border:1px solid var(--line)}
+.feature-card h3{font-family:"Manrope",sans-serif;font-size:20px;margin-bottom:8px}
+.feature-card p{color:var(--muted);line-height:1.7;font-size:14px}
+
+.final-cta{display:grid;grid-template-columns:1.08fr .92fr;gap:28px;align-items:center;padding:38px}
+.final-cta h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.08;margin:14px 0}
+.final-cta p{color:var(--muted);line-height:1.85;margin-bottom:24px}
+.final-img{min-height:360px;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+.final-img img{width:100%;height:100%;object-fit:cover}
+
+.site-footer{padding:30px 14px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.1)}
+.reveal{opacity:0;transform:translateY(26px);transition:1s ease}
+.reveal.active{opacity:1;transform:translateY(0)}
+
+@media(max-width:1180px){
+  .feature-strip{grid-template-columns:repeat(2,1fr)}
 }
-
-.eyebrow::before{
-  content:"";
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:var(--green);
-  box-shadow:0 0 14px var(--green);
-}
-
-.gradient-text{
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  -webkit-background-clip:text;
-  color:transparent;
-}
-
-.btn-row{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:13px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  padding:14px 22px;
-  border-radius:16px;
-  font-size:14px;
-  font-weight:900;
-  border:1px solid transparent;
-  transition:.3s ease;
-  cursor:pointer;
-}
-
-.btn-primary{
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  box-shadow:0 14px 38px rgba(0,229,255,.2);
-}
-
-.btn-secondary{
-  color:#fff;
-  background:rgba(255,255,255,.045);
-  border-color:rgba(255,255,255,.16);
-}
-
-.btn:hover{
-  transform:translateY(-5px) scale(1.025);
-  box-shadow:0 24px 60px rgba(0,229,255,.22);
-}
-
-/* HERO */
-
-.hero{
-  padding:90px 5% 55px;
-  position:relative;
-  overflow:hidden;
-}
-
-.hero::before{
-  content:"";
-  position:absolute;
-  width:420px;
-  height:420px;
-  right:-150px;
-  top:80px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(0,229,255,.20),transparent 65%);
-  filter:blur(10px);
-  z-index:-1;
-}
-
-.hero::after{
-  content:"";
-  position:absolute;
-  width:380px;
-  height:380px;
-  left:-150px;
-  bottom:-140px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(155,92,255,.24),transparent 65%);
-  filter:blur(10px);
-  z-index:-1;
-}
-
-.hero-inner{
-  max-width:1240px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:44px;
-  align-items:center;
-}
-
-.hero h1{
-  margin-top:18px;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(43px,6.4vw,72px);
-  line-height:1.02;
-  letter-spacing:-2px;
-}
-
-.hero p{
-  margin-top:18px;
-  color:var(--muted);
-  line-height:1.85;
-  max-width:720px;
-  font-size:16px;
-}
-
-.hero-actions{
-  margin-top:30px;
-}
-
-.hero-card{
-  padding:34px;
-  transform-style:preserve-3d;
-  animation:faqFloat 6s ease-in-out infinite;
-}
-
-@keyframes faqFloat{
-  0%,100%{transform:translateY(0) rotateY(-5deg);}
-  50%{transform:translateY(-14px) rotateY(-2deg);}
-}
-
-.hero-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:28px;
-  margin-bottom:16px;
-  color:#fff;
-}
-
-.hero-card ul{
-  list-style:none;
-  display:grid;
-  gap:13px;
-}
-
-.hero-card li{
-  padding:14px;
-  border-radius:16px;
-  background:rgba(255,255,255,.055);
-  border:1px solid rgba(255,255,255,.12);
-  color:#eaf6ff;
-  font-weight:800;
-}
-
-/* FAQ */
-
-.section-title{
-  text-align:center;
-  max-width:820px;
-  margin:0 auto 42px;
-}
-
-.section-title h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(30px,5vw,52px);
-  line-height:1.05;
-  letter-spacing:-1px;
-  margin-top:14px;
-}
-
-.section-title p{
-  color:var(--muted);
-  line-height:1.8;
-  margin-top:15px;
-  font-size:16px;
-}
-
-.faq-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
-}
-
-.faq-card{
-  position:relative;
-  overflow:hidden;
-  padding:28px;
-  border-radius:26px;
-  background:
-    radial-gradient(circle at top left,rgba(155,92,255,.10),transparent 35%),
-    linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.028));
-  border:1px solid var(--line);
-  box-shadow:0 20px 65px rgba(0,0,0,.25);
-  transition:.35s ease;
-}
-
-.faq-card::before{
-  content:"";
-  position:absolute;
-  inset:-1px;
-  border-radius:inherit;
-  background:linear-gradient(135deg,rgba(155,92,255,.30),rgba(0,229,255,.20),transparent 65%);
-  opacity:0;
-  transition:.35s ease;
-  z-index:-1;
-}
-
-.faq-card:hover{
-  transform:translateY(-10px);
-  border-color:rgba(0,229,255,.38);
-  box-shadow:0 32px 90px rgba(0,229,255,.13);
-}
-
-.faq-card:hover::before{
-  opacity:1;
-}
-
-.faq-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:21px;
-  margin-bottom:11px;
-  color:#fff;
-}
-
-.faq-card p{
-  color:var(--muted);
-  line-height:1.8;
-  font-size:15px;
-}
-
-.offer-box{
-  max-width:1050px;
-  margin:auto;
-  text-align:center;
-  padding:48px 30px;
-  border-radius:34px;
-  background:
-    radial-gradient(circle at 10% 20%,rgba(155,92,255,.25),transparent 32%),
-    radial-gradient(circle at 90% 0%,rgba(0,229,255,.18),transparent 30%),
-    linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.035));
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:0 32px 100px rgba(0,0,0,.38);
-  backdrop-filter:blur(20px);
-}
-
-.offer-box h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(31px,5vw,50px);
-  line-height:1.08;
-  margin-bottom:14px;
-}
-
-.offer-box p{
-  color:var(--muted);
-  line-height:1.85;
-  max-width:780px;
-  margin:0 auto 24px;
-}
-
-.site-footer{
-  padding:28px 14px;
-  text-align:center;
-  color:var(--muted);
-  border-top:1px solid rgba(255,255,255,.1);
-}
-
-/* RESPONSIVE */
-
 @media(max-width:980px){
-  .site-header{
-    padding:10px 14px;
-  }
-
-  .brand-logo{
-    width:44px;
-    height:44px;
-  }
-
-  .brand-text h3{
-    font-size:14px;
-  }
-
-  .brand-text p{
-    font-size:10px;
-  }
-
-  .menu-btn{
-    display:grid;
-    place-items:center;
-  }
-
-  .header-cta{
-    display:none;
-  }
-
-  .nav-links{
-    position:fixed;
-    top:70px;
-    left:12px;
-    right:12px;
-    display:none;
-    flex-direction:column;
-    gap:10px;
-    padding:16px;
-    border-radius:24px;
-    background:rgba(3,7,18,.96);
-    border:1px solid rgba(0,229,255,.25);
-    box-shadow:0 24px 80px rgba(0,0,0,.45);
-    backdrop-filter:blur(20px);
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
-
-  .nav-links a{
-    width:100%;
-    padding:13px 14px;
-    border-radius:14px;
-    background:rgba(255,255,255,.045);
-    text-align:center;
-  }
-
-  .nav-links a::after{
-    display:none;
-  }
-
-  .hero{
-    padding:58px 14px 50px;
-  }
-
-  .hero-inner{
-    grid-template-columns:1fr;
-    text-align:center;
-    gap:28px;
-  }
-
-  .hero h1{
-    font-size:clamp(39px,11vw,56px);
-  }
-
-  .hero p{
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .hero-actions,
-  .btn-row{
-    justify-content:center;
-  }
-
-  .btn{
-    width:100%;
-    max-width:330px;
-  }
-
-  .hero-card{
-    transform:none;
-    animation:none;
-  }
-
-  .section{
-    padding:70px 14px;
-  }
-
-  .faq-grid{
-    grid-template-columns:1fr;
-  }
+  .site-header{padding:10px 14px}
+  .brand-logo{width:44px;height:44px}
+  .brand-text h3{font-size:14px}
+  .brand-text p{font-size:10px}
+  .menu-btn{display:grid;place-items:center}
+  .header-cta{display:none}
+  .nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}
+  .nav-links.active{display:flex}
+  .nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}
+  .nav-links a:after{display:none}
+  .hero{padding:52px 14px 38px}
+  .hero-inner,.faq-layout,.final-cta{grid-template-columns:1fr;text-align:center}
+  .hero p{margin-left:auto;margin-right:auto}
+  .hero-actions,.btn-row{justify-content:center}
+  .btn{width:100%;max-width:340px}
+  .hero-visual{min-height:500px}
+  .hero-img-main{width:88%;height:58%}
+  .hero-img-small{width:62%;height:28%;bottom:104px}
+  .hero-note{left:0;right:0;width:auto;bottom:0}
+  .section{padding:66px 14px}
+  .faq-sidebar{position:relative;top:auto;text-align:left}
+  .faq-group-head{display:block;text-align:left}
+  .faq-group-head span{display:block;margin-top:8px}
+  .final-cta{text-align:center;padding:28px 18px}
+  .final-img{min-height:260px}
 }
-
-@media(max-width:520px){
-  .hero h1{
-    font-size:36px;
-  }
-
-  .faq-card{
-    padding:24px;
-  }
-
-  .offer-box{
-    padding:34px 18px;
-  }
+@media(max-width:560px){
+  .hero h1{font-size:40px}
+  .hero-visual{min-height:450px}
+  .feature-strip{grid-template-columns:1fr}
+  .faq-question{padding:18px 16px;font-size:15px}
+  .faq-answer p{padding:0 16px 18px}
 }
 </style>
 </head>
-
 <body>
 
 <header class="site-header">
@@ -642,7 +218,7 @@ button{
       <img src="logo-icon.png" alt="Dawood Tariq Logo" class="brand-logo">
       <div class="brand-text">
         <h3>Dawood Tariq</h3>
-        <p>3D Websites • AI • Trading • Excel</p>
+        <p>Premium Website Specialist</p>
       </div>
     </a>
 
@@ -652,254 +228,275 @@ button{
       <a href="pricing.html">Pricing</a>
       <a href="faq.html" class="active">FAQ</a>
       <a href="contact.html">Contact</a>
-      <a href="landing-page.html">Demo</a>
+      <a href="index.html#portfolio">Portfolio</a>
     </nav>
 
-    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20ask%20about%20your%20website%20services." target="_blank">
-      Ask Question ✨
-    </a>
-
+    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20have%20a%20question%20about%20a%20website%20project." target="_blank">Ask Question ✦</a>
     <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
   </div>
 </header>
 
 <main>
-
 <section class="hero">
   <div class="hero-inner">
-    <div>
-      <div class="eyebrow">Frequently Asked Questions</div>
-
-      <h1>
-        Clear Answers Before You <span class="gradient-text">Start Your Project</span>
-      </h1>
-
-      <p>
-        Find answers about website development, AI website assistant, 3D-style website sections,
-        Excel automation, trading support, pricing, delivery, payments and project process.
-      </p>
-
-      <div class="btn-row hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20have%20a%20question%20about%20your%20services." target="_blank">
-          Ask On WhatsApp
-        </a>
-
-        <a class="btn btn-secondary" href="pricing.html">
-          View Pricing
-        </a>
-
-        <a class="btn btn-secondary" href="#" onclick="openAI(); return false;">
-          Ask AI Assistant
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-card glass">
-      <h3>What This Page Covers</h3>
-      <ul>
-        <li>✔ Website packages and delivery</li>
-        <li>✔ AI assistant and chatbot setup</li>
-        <li>✔ 3D website effects and premium UI</li>
-        <li>✔ Excel, documentation and trading support</li>
-        <li>✔ Payment methods and client process</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-inner">
-    <div class="section-title">
+    <div class="reveal">
       <div class="eyebrow">Website FAQ</div>
-      <h2>Website Development Questions</h2>
-      <p>Important questions for clients who want a personal brand, business, portfolio or service website.</p>
+      <h1>Answers Before You Start Your <span class="gradient-text">Premium Website</span>.</h1>
+      <h2>Everything clients usually ask about website packages, design process, pricing, hosting, revisions and delivery.</h2>
+      <p>This page is focused only on website services, so visitors can quickly understand how the project works before contacting you.</p>
+      <div class="btn-row hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20have%20a%20question%20about%20a%20website%20project." target="_blank">Ask On WhatsApp</a>
+        <a class="btn btn-secondary" href="pricing.html">View Pricing</a>
+      </div>
     </div>
 
-    <div class="faq-grid">
-      <div class="faq-card">
-        <h3>What type of websites do you build?</h3>
-        <p>I build responsive websites for personal brands, businesses, freelancers, portfolios, landing pages and service providers with clean design and WhatsApp contact flow.</p>
+    <div class="hero-visual reveal">
+      <div class="hero-img-main">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1300&q=85" alt="Website design planning and interface screens">
+        <span class="hero-label">Website Project FAQ</span>
       </div>
-
-      <div class="faq-card">
-        <h3>Will my website work on mobile?</h3>
-        <p>Yes. Every website is designed to work smoothly on mobile, tablet and desktop with readable sections, buttons and navigation.</p>
+      <div class="hero-img-small">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85" alt="Modern office website consultation">
+        <span class="hero-label">Clear Project Process</span>
       </div>
-
-      <div class="faq-card">
-        <h3>Do you provide website content too?</h3>
-        <p>Yes. I can help improve headings, service text, pricing sections, FAQ content and call-to-action wording so the website looks professional.</p>
-      </div>
-
-      <div class="faq-card">
-        <h3>Can you make a premium 3D-style website?</h3>
-        <p>Yes. I can add modern 3D-style sections, floating cards, premium gradients, animations and luxury UI effects depending on the selected package.</p>
+      <div class="hero-note">
+        <strong>Clean accordion layout.</strong>
+        <p>Click any question to open the answer. The page stays clean and professional on mobile and desktop.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="faq-layout">
+      <aside class="faq-sidebar glass">
+        <h3>FAQ Sections</h3>
+        <p>Use these quick links to move through website questions, pricing, delivery and support.</p>
+        <div class="faq-tabs">
+          <a href="#website-faq">Website Services</a>
+          <a href="#pricing-faq">Pricing & Payment</a>
+          <a href="#process-faq">Process & Delivery</a>
+          <a href="#support-faq">After Launch Support</a>
+        </div>
+      </aside>
+
+      <div class="faq-content">
+        <div class="faq-group" id="website-faq">
+          <div class="faq-group-head">
+            <h3>Website Services</h3>
+            <span>Click question to open answer</span>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item active">
+              <button class="faq-question"><span>What type of websites do you build?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>I build premium business websites, landing pages, portfolio websites, WordPress websites, service websites and redesigns for brands that need a professional online presence.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Can you redesign my old website?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. I can upgrade old pages with better spacing, stronger headings, premium colors, image sections, modern cards, improved mobile layout and clearer call-to-action buttons.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Will my website work properly on phone?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. The website is built mobile-first, then optimized for tablet and laptop. Buttons, sections, images and navigation are tested for small screens.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Can you add images and portfolio projects?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. I can add image-led sections, project cards, demo website previews, portfolio screenshots and “Order Similar Website” buttons to build trust.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Can you build a website like my demo projects?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. I can create similar website concepts for restaurants, auto studios, watches, real estate, service businesses, corporate brands and personal portfolios.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="pricing-faq">
+          <div class="faq-group-head">
+            <h3>Pricing & Payment</h3>
+            <span>Simple project answers</span>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question"><span>Are your website prices fixed?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Prices are starting points. Final price depends on number of pages, design level, images, forms, animations, content and launch support.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>What is best for a new client?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>For most new clients, a business website or landing page is best. It gives a professional first impression and helps visitors contact you directly.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Do you offer discount for first website clients?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes, selected first website clients can receive a limited 20% offer depending on project size and package.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Which payment methods do you accept?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Payment methods can include USDT TRC20 and bank transfer. Payment details are shared privately after project confirmation.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="process-faq">
+          <div class="faq-group-head">
+            <h3>Process & Delivery</h3>
+            <span>From idea to launch</span>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question"><span>What do you need from me to start?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>I need your business name, services, pages required, contact details, preferred colors, logo if available, image preference and example websites you like.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Do I need to provide all website text?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>No. You can send rough details and I can help organize the wording into professional headings, service sections, CTA text and FAQ content.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Can you help publish the website?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. I can guide you with GitHub Pages publishing for static websites and help with custom domain or hosting connection guidance if needed.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Do you test before delivery?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. Before delivery, the page is checked for mobile layout, button links, navigation, spacing, images and overall responsive behavior.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-group" id="support-faq">
+          <div class="faq-group-head">
+            <h3>After Launch Support</h3>
+            <span>Updates and improvements</span>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question"><span>Can I update the website later?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. Text, images, prices, sections, buttons and portfolio items can be updated later as your business grows.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Do you provide maintenance?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. Maintenance can include content updates, small fixes, image replacement, mobile cleanup, section improvements and new page additions.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Can you add new pages later?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. You can add pages like Portfolio, Blog, Case Studies, Booking, Gallery, Service Detail pages or any business-specific page later.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question"><span>Can I connect WhatsApp to every page?</span><span class="faq-icon">+</span></button>
+              <div class="faq-answer"><p>Yes. WhatsApp buttons can be added across the website with pre-filled messages so clients can contact you faster.</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
   <div class="section-inner">
     <div class="section-title">
-      <div class="eyebrow">AI Assistant FAQ</div>
-      <h2>Smart Website Assistant</h2>
-      <p>Questions about chatbot, quick replies, lead support and future AI upgrades.</p>
+      <div class="eyebrow">Project Confidence</div>
+      <h2>What Your Website Project Includes</h2>
+      <p>Real client-facing points, not filler content.</p>
     </div>
 
-    <div class="faq-grid">
-      <div class="faq-card">
-        <h3>What does the AI website assistant do?</h3>
-        <p>It helps visitors understand your services, pricing, packages and project process. It can also guide serious clients to WhatsApp for a quote.</p>
+    <div class="feature-strip">
+      <div class="feature-card glass">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Responsive website on laptop">
+        <h3>Responsive Layout</h3>
+        <p>Your website is prepared for phone, tablet and laptop visitors.</p>
       </div>
-
-      <div class="faq-card">
-        <h3>Can the AI assistant answer business questions?</h3>
-        <p>Yes. It can be customized with your business services, pricing, common questions and contact flow so visitors get quick answers.</p>
+      <div class="feature-card glass">
+        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=85" alt="Website design screen">
+        <h3>Premium Sections</h3>
+        <p>Hero, services, pricing, FAQ, portfolio and contact sections are structured clearly.</p>
       </div>
-
-      <div class="faq-card">
-        <h3>Can I add AI assistant later?</h3>
-        <p>Yes. Your website can be built AI-ready first, then the assistant can be added later through a shared assistant file.</p>
+      <div class="feature-card glass">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=85" alt="Client consultation">
+        <h3>Clear Communication</h3>
+        <p>Project details, revisions and next steps are handled through direct contact.</p>
       </div>
-
-      <div class="faq-card">
-        <h3>Will the AI assistant work on mobile?</h3>
-        <p>Yes. The assistant can be designed with a mobile-friendly chat layout so visitors can use it easily from phone screens.</p>
+      <div class="feature-card glass">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=85" alt="Website planning desk">
+        <h3>Launch Support</h3>
+        <p>Basic publishing guidance and final testing are included before handover.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <div class="section-inner">
-    <div class="section-title">
-      <div class="eyebrow">Pricing FAQ</div>
-      <h2>Pricing, Payment & Delivery</h2>
-      <p>Simple answers about project pricing, payment methods and what affects final cost.</p>
-    </div>
-
-    <div class="faq-grid">
-      <div class="faq-card">
-        <h3>Are prices fixed?</h3>
-        <p>Prices are starting points. Final price depends on number of pages, design complexity, animations, AI assistant setup and custom features.</p>
+    <div class="final-cta glass">
+      <div>
+        <div class="eyebrow">Still Unsure?</div>
+        <h2>Send your idea and I’ll guide you with the right <span class="gradient-text">website package</span>.</h2>
+        <p>Share your business type, required pages and reference style. I’ll suggest whether you need a landing page, business website, WordPress site or premium redesign.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20guidance%20for%20my%20website%20project." target="_blank">Ask On WhatsApp</a>
+          <a class="btn btn-secondary" href="services.html">View Services</a>
+        </div>
       </div>
-
-      <div class="faq-card">
-        <h3>What payment methods are available?</h3>
-        <p>Payments are accepted through USDT TRC20 and bank transfer. Payment details are shared privately after project confirmation.</p>
-      </div>
-
-      <div class="faq-card">
-        <h3>Do you provide a free logo?</h3>
-        <p>For selected first website clients, I can provide 1 free premium logo and a small discount depending on the package.</p>
-      </div>
-
-      <div class="faq-card">
-        <h3>Is domain and hosting included?</h3>
-        <p>Domain and paid hosting are not included by default. I can launch the website on GitHub Pages for free or help connect a custom domain.</p>
+      <div class="final-img">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=85" alt="Male website specialist consultation">
       </div>
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="section-inner">
-    <div class="section-title">
-      <div class="eyebrow">Other Services</div>
-      <h2>Excel, Trading & Documentation FAQ</h2>
-      <p>Questions about Excel automation, trading journals, XAUUSD support and business documentation.</p>
-    </div>
-
-    <div class="faq-grid">
-      <div class="faq-card">
-        <h3>Do you create Excel dashboards?</h3>
-        <p>Yes. I can create trackers, dashboards, calculators, trading journals and business sheets with clean formatting and simple structure.</p>
-      </div>
-
-      <div class="faq-card">
-        <h3>Do you provide trading support?</h3>
-        <p>Yes. I provide XAUUSD trading support, market analysis, risk planning, trade review and discipline-based guidance.</p>
-      </div>
-
-      <div class="faq-card">
-        <h3>Do you help with import/export documentation?</h3>
-        <p>Yes. I can support documentation-related tasks, organized sheets, GD-related work and professional document handling.</p>
-      </div>
-
-      <div class="faq-card">
-        <h3>Can I order only one service?</h3>
-        <p>Yes. You can order a single service such as website, AI assistant, logo, Excel sheet, landing page, trading support or documentation help.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-inner">
-    <div class="offer-box">
-      <h2>Still Have Questions?</h2>
-      <p>
-        Send your project details on WhatsApp and I will guide you about the best package,
-        required pages, pricing, design direction and delivery process.
-      </p>
-
-      <div class="btn-row" style="justify-content:center;">
-        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20have%20a%20question%20about%20your%20services." target="_blank">
-          Contact Me On WhatsApp
-        </a>
-
-        <a class="btn btn-secondary" href="#" onclick="openAI(); return false;">
-          Ask AI Assistant
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <footer class="site-footer">
-  <p>© 2026 Dawood Tariq</p>
-  <p>New Era 3D Websites • AI Assistant • WordPress • Excel Automation • Trading Systems</p>
+  <p>© 2026 Dawood Tariq | Premium Website Specialist • Business Websites • Landing Pages • WordPress Websites</p>
 </footer>
 
 <script>
 function toggleMenu(){
-  const navMenu = document.getElementById("navMenu");
-  if(navMenu){
-    navMenu.classList.toggle("active");
-  }
+  const nav=document.getElementById('navMenu');
+  const btn=document.querySelector('.menu-btn');
+  nav.classList.toggle('active');
+  btn.textContent=nav.classList.contains('active')?'×':'☰';
 }
 
-document.querySelectorAll("#navMenu a").forEach(function(link){
-  link.addEventListener("click", function(){
-    document.getElementById("navMenu").classList.remove("active");
+document.querySelectorAll('.nav-links a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    const nav=document.getElementById('navMenu');
+    const btn=document.querySelector('.menu-btn');
+    nav.classList.remove('active');
+    btn.textContent='☰';
   });
 });
 
-document.addEventListener("click", function(event){
-  const navMenu = document.getElementById("navMenu");
-  const menuBtn = document.querySelector(".menu-btn");
+document.querySelectorAll('.faq-question').forEach(button=>{
+  button.addEventListener('click',()=>{
+    const item=button.closest('.faq-item');
+    const answer=item.querySelector('.faq-answer');
+    const isOpen=item.classList.contains('active');
 
-  if(navMenu && menuBtn && !navMenu.contains(event.target) && !menuBtn.contains(event.target)){
-    navMenu.classList.remove("active");
-  }
+    document.querySelectorAll('.faq-item').forEach(faq=>{
+      faq.classList.remove('active');
+      faq.querySelector('.faq-answer').style.maxHeight=null;
+    });
+
+    if(!isOpen){
+      item.classList.add('active');
+      answer.style.maxHeight=answer.scrollHeight + 'px';
+    }
+  });
 });
 
-/* Safe temporary AI opener.
-   Later ai-assistant.js can replace this with the real popup. */
-function openAI(){
-  if(typeof toggleAI === "function"){
-    toggleAI();
-  }else{
-    alert("AI Assistant will be connected after the shared ai-assistant.js file is created.");
-  }
-}
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.faq-item.active').forEach(item=>{
+    const answer=item.querySelector('.faq-answer');
+    answer.style.maxHeight=answer.scrollHeight + 'px';
+  });
+});
+
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('active');}
+  });
+},{threshold:.14});
+
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 </script>
-
-<!-- Shared AI file will be created later -->
-<script src="ai-assistant.js"></script>
-
 </body>
 </html>
