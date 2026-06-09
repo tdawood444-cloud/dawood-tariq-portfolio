@@ -1,21 +1,28 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfolio | Dawood Tariq | Premium Website Specialist</title>
-<meta name="description" content="Portfolio of premium demo websites by Dawood Tariq including restaurant, real estate, auto studio, luxury watch and personal studio website concepts.">
-<meta name="keywords" content="Dawood Tariq portfolio, website portfolio, premium website demos, business website examples, landing page examples">
+
+<title>Portfolio | Dawood Tariq | Premium Business Website Designer</title>
+<meta name="description" content="Explore Dawood Tariq's premium website portfolio with live website samples for restaurants, real estate, auto businesses, luxury products, portfolio websites and custom business website styles.">
+<meta name="keywords" content="Dawood Tariq portfolio, website portfolio, premium website samples, business website examples, landing page examples, web designer Pakistan, business website designer">
 <meta name="author" content="Dawood Tariq">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="logo-icon.png">
+
 <meta property="og:title" content="Portfolio | Dawood Tariq">
-<meta property="og:description" content="Live demo websites for restaurant, real estate, auto, luxury product and personal studio brands.">
+<meta property="og:description" content="Live premium website samples for restaurant, real estate, auto studio, luxury product and portfolio websites.">
 <meta property="og:image" content="logo.png">
 <meta property="og:type" content="website">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
 <style>
 :root{
   --bg:#050505;
@@ -67,6 +74,7 @@ img{max-width:100%;display:block}
 button,input,textarea,select{font-family:inherit}
 ::selection{background:var(--gold);color:#050505}
 
+/* HOME PAGE NAVBAR STYLE */
 .site-header{
   position:sticky;
   top:0;
@@ -77,595 +85,463 @@ button,input,textarea,select{font-family:inherit}
   background:rgba(5,5,5,.78);
   backdrop-filter:blur(22px);
 }
-.nav-shell{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:center;gap:12px;min-width:0}
-.brand-logo{width:50px;height:50px;object-fit:contain;border-radius:16px;filter:drop-shadow(0 0 18px rgba(216,180,90,.28))}
-.brand-text h3{font-family:"Manrope",sans-serif;font-size:16px;line-height:1.1;white-space:nowrap}
-.brand-text p{color:var(--muted);font-size:11px;margin-top:3px;white-space:nowrap}
-.nav-links{display:flex;align-items:center;gap:21px}
-.nav-links a{color:#efe5d1;font-size:14px;font-weight:850;opacity:.88;position:relative;transition:.25s ease}
-.nav-links a:hover,.nav-links a.active{color:var(--gold2)}
-.nav-links a:after{content:"";position:absolute;left:0;bottom:-9px;width:0;height:2px;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--emerald2));transition:.25s ease}
-.nav-links a:hover:after,.nav-links a.active:after{width:100%}
-.header-cta{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;color:#100b04;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));font-size:13px;font-weight:950;box-shadow:0 16px 42px rgba(216,180,90,.2);transition:.28s ease;white-space:nowrap}
-.header-cta:hover{transform:translateY(-3px)}
-.menu-btn{display:none;width:46px;height:46px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;font-size:24px;cursor:pointer}
-
-.section{padding:82px 5%}
-.section-inner{max-width:1240px;margin:auto}
-.section-title{text-align:center;max-width:860px;margin:0 auto 42px}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border-radius:999px;border:1px solid rgba(216,180,90,.34);background:rgba(216,180,90,.08);color:var(--gold2);font-size:12px;font-weight:950;letter-spacing:1.6px;text-transform:uppercase}
-.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--emerald2);box-shadow:0 0 14px rgba(87,198,140,.7)}
-.section-title h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,60px);line-height:1.05;letter-spacing:-1.2px;margin-top:14px}
-.section-title p{color:var(--muted);line-height:1.85;margin-top:15px;font-size:16px}
-.gradient-text{background:linear-gradient(135deg,#fff,var(--gold2),var(--gold),#d5ffe6);-webkit-background-clip:text;color:transparent}
-.btn-row{display:flex;flex-wrap:wrap;align-items:center;gap:13px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:16px;font-size:14px;font-weight:950;border:1px solid transparent;transition:.28s ease;cursor:pointer}
-.btn-primary{background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));color:#100b04;box-shadow:0 16px 42px rgba(216,180,90,.2)}
-.btn-secondary{color:var(--ivory);background:rgba(255,255,255,.055);border-color:var(--line)}
-.btn-dark{background:#090806;border-color:rgba(216,180,90,.28);color:var(--ivory)}
-.btn:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(216,180,90,.16)}
-.glass{background:radial-gradient(circle at top left,rgba(216,180,90,.12),transparent 36%),linear-gradient(145deg,rgba(255,255,255,.082),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
-
-/* DIFFERENT SERVICES HERO */
-.services-hero{
-  padding:74px 5% 48px;
-  position:relative;
-  overflow:hidden;
-}
-.services-hero:after{
-  content:"";
-  position:absolute;
-  right:-180px;
-  top:-140px;
-  width:520px;
-  height:520px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(216,180,90,.18),transparent 66%);
-  filter:blur(8px);
-  z-index:-1;
-}
-.services-hero-grid{
+.nav-shell{
   max-width:1240px;
   margin:auto;
-  display:grid;
-  grid-template-columns:.95fr 1.05fr;
-  gap:38px;
-  align-items:stretch;
-}
-.services-copy{
-  padding:38px;
   display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-.services-copy h1{
-  margin-top:16px;
-  font-family:"Playfair Display",serif;
-  font-size:clamp(44px,6vw,76px);
-  line-height:1.02;
-  letter-spacing:-1.8px;
-}
-.services-copy p{
-  margin-top:18px;
-  color:var(--muted);
-  line-height:1.85;
-  max-width:660px;
-}
-.hero-service-pills{
-  margin-top:26px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-.hero-service-pills span{
-  padding:10px 13px;
-  border-radius:999px;
-  border:1px solid rgba(216,180,90,.23);
-  background:rgba(216,180,90,.075);
-  color:#f3dfb4;
-  font-size:13px;
-  font-weight:850;
-}
-.hero-showcase{
-  position:relative;
-  min-height:500px;
-  overflow:hidden;
-}
-.showcase-large{
-  height:100%;
-  min-height:500px;
-  border-radius:var(--radius);
-  overflow:hidden;
-  border:1px solid var(--line);
-  box-shadow:var(--shadow);
-}
-.showcase-large img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.05)}
-.showcase-large:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.7));pointer-events:none}
-.hero-floating-card{
-  position:absolute;
-  left:24px;
-  right:24px;
-  bottom:24px;
-  padding:20px;
-  border-radius:22px;
-  background:rgba(7,6,5,.78);
-  border:1px solid rgba(255,255,255,.16);
-  backdrop-filter:blur(18px);
-  box-shadow:0 20px 60px rgba(0,0,0,.35);
-}
-.hero-floating-card strong{display:block;font-family:"Manrope",sans-serif;font-size:22px;margin-bottom:8px}
-.hero-floating-card p{font-size:14px;color:var(--muted);line-height:1.65;margin:0}
-.quick-strip{
-  max-width:1240px;
-  margin:26px auto 0;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-}
-.quick-item{
-  padding:18px;
-  border-radius:22px;
-  background:rgba(255,255,255,.055);
-  border:1px solid var(--line);
-  box-shadow:0 18px 50px rgba(0,0,0,.2);
-}
-.quick-item strong{display:block;font-family:"Playfair Display",serif;font-size:30px;color:var(--gold2)}
-.quick-item span{display:block;color:var(--muted);font-size:13px;margin-top:5px;font-weight:800}
-
-.featured-service{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:22px;
-  align-items:stretch;
-}
-.featured-panel{
-  padding:34px;
-  position:relative;
-  overflow:hidden;
-}
-.featured-panel h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.06;margin:14px 0}
-.featured-panel p{color:var(--muted);line-height:1.82}
-.featured-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:24px 0}
-.featured-list div{padding:15px;border-radius:18px;background:rgba(255,255,255,.055);border:1px solid var(--line);font-weight:850;color:#fff3da}
-.featured-image{min-height:520px;overflow:hidden;border-radius:var(--radius)}
-.featured-image img{width:100%;height:100%;object-fit:cover}
-
-.service-lane{display:grid;gap:18px}
-.service-row{
-  display:grid;
-  grid-template-columns:90px 1fr 260px;
-  gap:20px;
   align-items:center;
-  padding:22px;
-  transition:.32s ease;
-}
-.service-row:hover{transform:translateY(-8px);border-color:rgba(216,180,90,.42)}
-.service-number{
-  width:70px;height:70px;border-radius:24px;
-  display:grid;place-items:center;
-  font-family:"Playfair Display",serif;
-  font-size:28px;font-weight:900;
-  color:#130d05;
-  background:linear-gradient(135deg,var(--gold2),var(--gold),var(--emerald));
-  box-shadow:0 18px 40px rgba(216,180,90,.18);
-}
-.service-row h3{font-family:"Manrope",sans-serif;font-size:25px;margin-bottom:8px}
-.service-row p{color:var(--muted);line-height:1.7;font-size:15px}
-.service-row ul{list-style:none;display:grid;gap:7px;color:#f1dfbd;font-size:14px;font-weight:750}
-.service-row li:before{content:"✓ ";color:var(--emerald2);font-weight:900}
-
-.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.package-card{padding:28px;position:relative;overflow:hidden;transition:.34s ease}
-.package-card:hover{transform:translateY(-10px);border-color:rgba(216,180,90,.42)}
-.package-card.featured{border-color:rgba(216,180,90,.45);background:radial-gradient(circle at top left,rgba(216,180,90,.18),transparent 38%),linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.035))}
-.package-card h3{font-family:"Playfair Display",serif;font-size:32px;margin:12px 0}
-.package-card p{color:var(--muted);line-height:1.75}
-.package-price{font-family:"Manrope",sans-serif;font-size:34px;color:var(--gold2);font-weight:900;margin:18px 0}
-.package-card ul{list-style:none;display:grid;gap:10px;margin:20px 0;color:#f0dfbd;font-size:14px}
-.package-card li:before{content:"✓ ";color:var(--emerald2);font-weight:900}
-
-.portfolio-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.strip-project{height:240px;position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--line);box-shadow:0 18px 55px rgba(0,0,0,.28);transition:.35s ease}
-.strip-project:hover{transform:translateY(-10px)}
-.strip-project img{width:100%;height:100%;object-fit:cover;transition:.55s ease}
-.strip-project:hover img{transform:scale(1.06)}
-.strip-project:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.78))}
-.strip-project div{position:absolute;left:14px;right:14px;bottom:14px;z-index:2}
-.strip-project h3{font-family:"Playfair Display",serif;font-size:24px}
-.strip-project p{color:var(--soft);font-size:12px;line-height:1.45;margin-top:4px}
-
-.process-timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:step}
-.step-card{padding:24px;min-height:230px;transition:.32s ease}
-.step-card:hover{transform:translateY(-8px);border-color:rgba(216,180,90,.38)}
-.step-card span{display:inline-flex;margin-bottom:18px;font-family:"Playfair Display",serif;font-size:34px;font-weight:900;background:linear-gradient(90deg,var(--gold2),var(--emerald2));-webkit-background-clip:text;color:transparent}
-.step-card h3{font-family:"Manrope",sans-serif;font-size:20px;margin-bottom:10px}
-.step-card p{color:var(--muted);line-height:1.72;font-size:14px}
-
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.why-card{padding:26px;min-height:220px;transition:.35s ease}
-.why-card:hover{transform:translateY(-9px);border-color:rgba(216,180,90,.38)}
-.why-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px}
-.why-card p{color:var(--muted);line-height:1.75}
-
-
-.service-fit-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
+  justify-content:space-between;
   gap:16px;
 }
-.fit-card{
-  padding:24px;
-  min-height:210px;
-  transition:.35s ease;
-  position:relative;
-  overflow:hidden;
-}
-.fit-card:hover{transform:translateY(-9px);border-color:rgba(216,180,90,.38)}
-.fit-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px;color:#fff}
-.fit-card p{color:var(--muted);line-height:1.72;font-size:14px}
-.fit-card span{
-  display:inline-flex;
-  margin-bottom:16px;
-  width:48px;
-  height:48px;
+.brand{
+  display:flex;
   align-items:center;
-  justify-content:center;
+  gap:12px;
+  min-width:0;
+}
+.brand-logo{
+  width:50px;
+  height:50px;
+  object-fit:contain;
   border-radius:16px;
-  background:linear-gradient(135deg,var(--gold2),var(--gold),var(--emerald));
-  color:#120c05;
-  font-size:22px;
-  font-weight:900;
+  filter:drop-shadow(0 0 18px rgba(216,180,90,.28));
 }
-.chatbot-section{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:24px;
-  align-items:stretch;
+.brand-text h3{
+  font-family:"Manrope",sans-serif;
+  font-size:16px;
+  line-height:1.1;
+  white-space:nowrap;
 }
-.chatbot-card{
-  padding:34px;
+.brand-text p{
+  color:var(--muted);
+  font-size:11px;
+  margin-top:3px;
+  white-space:nowrap;
 }
-.chatbot-card h2{
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:21px;
+}
+.nav-links a{
+  color:#efe5d1;
+  font-size:14px;
+  font-weight:850;
+  opacity:.88;
+  position:relative;
+  transition:.25s ease;
+}
+.nav-links a:hover,
+.nav-links a.active{
+  color:var(--gold2);
+}
+.nav-links a:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-9px;
+  width:0;
+  height:2px;
+  border-radius:99px;
+  background:linear-gradient(90deg,var(--gold),var(--emerald2));
+  transition:.25s ease;
+}
+.nav-links a:hover:after,
+.nav-links a.active:after{
+  width:100%;
+}
+.header-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 18px;
+  border-radius:999px;
+  color:#100b04;
+  background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));
+  font-size:13px;
+  font-weight:950;
+  box-shadow:0 16px 42px rgba(216,180,90,.2);
+  transition:.28s ease;
+  white-space:nowrap;
+}
+.header-cta:hover{transform:translateY(-3px)}
+.menu-btn{
+  display:none;
+  width:46px;
+  height:46px;
+  border-radius:16px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.07);
+  color:#fff;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* GLOBAL */
+.section{padding:86px 5%}
+.section-inner{max-width:1240px;margin:auto}
+.section-title{text-align:center;max-width:900px;margin:0 auto 44px}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:8px 13px;
+  border-radius:999px;
+  border:1px solid rgba(216,180,90,.34);
+  background:rgba(216,180,90,.08);
+  color:var(--gold2);
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+}
+.eyebrow:before{
+  content:"";
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--emerald2);
+  box-shadow:0 0 14px rgba(87,198,140,.7);
+}
+.section-title h2{
   font-family:"Playfair Display",serif;
-  font-size:clamp(34px,5vw,58px);
-  line-height:1.06;
-  margin:14px 0;
+  font-size:clamp(34px,5vw,60px);
+  line-height:1.05;
+  letter-spacing:-1.2px;
+  margin-top:14px;
 }
-.chatbot-card p{
+.section-title p{
   color:var(--muted);
   line-height:1.85;
-  margin-top:12px;
+  margin-top:15px;
+  font-size:16px;
 }
-.chatbot-points{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-  margin-top:22px;
+.gradient-text{
+  background:linear-gradient(135deg,#fff,var(--gold2),var(--gold),#d5ffe6);
+  -webkit-background-clip:text;
+  color:transparent;
 }
-.chatbot-points div{
-  padding:15px;
-  border-radius:18px;
-  background:rgba(255,255,255,.055);
-  border:1px solid var(--line);
-  color:#fff3da;
-  font-weight:850;
-}
-.chatbot-preview{
-  min-height:480px;
-  overflow:hidden;
-  position:relative;
-}
-.chatbot-preview img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.chat-bubble{
-  position:absolute;
-  left:22px;
-  right:22px;
-  bottom:22px;
-  display:grid;
-  gap:10px;
-}
-.chat-bubble div{
-  padding:14px 16px;
-  border-radius:18px;
-  background:rgba(7,6,5,.82);
-  border:1px solid rgba(255,255,255,.15);
-  backdrop-filter:blur(14px);
-  color:#f5e7c8;
-  font-size:14px;
-  line-height:1.55;
-  box-shadow:0 18px 50px rgba(0,0,0,.28);
-}
-.compare-wrap{
-  overflow:hidden;
-}
-.service-compare{
-  width:100%;
-  border-collapse:collapse;
-}
-.service-compare th,
-.service-compare td{
-  padding:17px 15px;
-  border-bottom:1px solid rgba(255,255,255,.10);
-  color:#f2e5cc;
-  text-align:center;
-  font-size:14px;
-}
-.service-compare th{
-  background:rgba(255,255,255,.045);
-  color:#fff;
-  font-family:"Manrope",sans-serif;
-  font-size:15px;
-}
-.service-compare th:first-child,
-.service-compare td:first-child{
-  text-align:left;
-  font-weight:850;
-}
-.service-compare strong{color:var(--gold2)}
-.delivery-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-}
-.delivery-card{
-  padding:24px;
-  min-height:200px;
-  transition:.35s ease;
-}
-.delivery-card:hover{transform:translateY(-9px);border-color:rgba(216,180,90,.38)}
-.delivery-card strong{
-  display:block;
-  font-family:"Playfair Display",serif;
-  font-size:34px;
-  color:var(--gold2);
-  margin-bottom:10px;
-}
-.delivery-card h3{
-  font-family:"Manrope",sans-serif;
-  font-size:20px;
-  margin-bottom:9px;
-}
-.delivery-card p{
-  color:var(--muted);
-  line-height:1.7;
-  font-size:14px;
-}
-.mini-service-cta{
-  margin-top:28px;
-  padding:28px;
-  display:grid;
-  grid-template-columns:1fr auto;
-  gap:20px;
+.btn-row{display:flex;flex-wrap:wrap;align-items:center;gap:13px}
+.btn{
+  display:inline-flex;
   align-items:center;
-}
-.mini-service-cta h3{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(28px,4vw,42px);
-  line-height:1.08;
-}
-.mini-service-cta p{
-  color:var(--muted);
-  line-height:1.75;
-  margin-top:10px;
-}
-.service-faq-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-.service-faq{
-  padding:26px;
-  min-height:220px;
-  transition:.35s ease;
-}
-.service-faq:hover{transform:translateY(-8px);border-color:rgba(216,180,90,.38)}
-.service-faq h3{
-  font-family:"Manrope",sans-serif;
-  font-size:21px;
-  margin-bottom:12px;
-}
-.service-faq p{
-  color:var(--muted);
-  line-height:1.75;
-  font-size:15px;
-}
-
-.includes-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-}
-.includes-card{
-  padding:24px;
-  min-height:185px;
-  transition:.35s ease;
-}
-.includes-card:hover{transform:translateY(-9px);border-color:rgba(216,180,90,.38)}
-.includes-card h3{
-  font-family:"Manrope",sans-serif;
-  font-size:20px;
-  margin-bottom:10px;
-}
-.includes-card p{
-  color:var(--muted);
-  line-height:1.7;
+  justify-content:center;
+  gap:9px;
+  padding:14px 22px;
+  border-radius:16px;
   font-size:14px;
+  font-weight:950;
+  border:1px solid transparent;
+  transition:.28s ease;
+  cursor:pointer;
 }
-.contact-detail-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:22px;
+.btn-primary{
+  background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));
+  color:#100b04;
+  box-shadow:0 16px 42px rgba(216,180,90,.2);
 }
-.contact-detail-row span{
-  padding:10px 13px;
-  border-radius:999px;
+.btn-secondary{
+  color:var(--ivory);
   background:rgba(255,255,255,.055);
-  border:1px solid rgba(255,255,255,.13);
-  color:#f5e4c4;
-  font-size:13px;
-  font-weight:850;
+  border-color:var(--line);
 }
-
-.final-cta{position:relative;overflow:hidden;padding:42px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:28px}
-.final-cta h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.08;margin-top:14px}
-.final-cta p{color:var(--muted);line-height:1.85;margin:16px 0 24px;max-width:720px}
-.final-preview{min-height:330px;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
-.final-preview img{width:100%;height:100%;object-fit:cover}
-.site-footer{padding:30px 14px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.1)}
+.btn-dark{
+  background:#090806;
+  border-color:rgba(216,180,90,.28);
+  color:var(--ivory);
+}
+.btn:hover{
+  transform:translateY(-5px);
+  box-shadow:0 24px 60px rgba(216,180,90,.16);
+}
+.glass{
+  background:radial-gradient(circle at top left,rgba(216,180,90,.12),transparent 36%),linear-gradient(145deg,rgba(255,255,255,.082),rgba(255,255,255,.03));
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(18px);
+}
 .reveal{opacity:0;transform:translateY(26px);transition:1s ease}
 .reveal.active{opacity:1;transform:translateY(0)}
 
-@media(max-width:1180px){
-  .service-fit-grid,.delivery-grid,.includes-grid{grid-template-columns:repeat(2,1fr)}
-  .quick-strip,.process-timeline{grid-template-columns:repeat(2,1fr)}
-  .portfolio-strip{grid-template-columns:repeat(3,1fr)}
-  .package-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
-  .service-row{grid-template-columns:70px 1fr}
-  .service-row ul{grid-column:2}
-}
-@media(max-width:980px){
-  .chatbot-section{grid-template-columns:1fr;text-align:center}
-  .chatbot-points,.service-fit-grid,.delivery-grid,.service-faq-grid,.includes-grid{grid-template-columns:1fr}
-  .compare-wrap{overflow-x:auto}
-  .service-compare{min-width:780px}
-  .mini-service-cta{grid-template-columns:1fr;text-align:center}
-  .site-header{padding:10px 14px}
-  .brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}
-  .menu-btn{display:grid;place-items:center}.header-cta{display:none}
-  .nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}
-  .nav-links.active{display:flex}.nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}.nav-links a:after{display:none}
-  .services-hero{padding:46px 14px 32px}.services-hero-grid,.featured-service,.final-cta{grid-template-columns:1fr;text-align:center}
-  .services-copy{padding:28px 18px}.services-copy p{margin-left:auto;margin-right:auto}.btn-row{justify-content:center}.btn{width:100%;max-width:340px}
-  .hero-showcase,.showcase-large{min-height:420px}.quick-strip{grid-template-columns:repeat(2,1fr)}
-  .featured-list,.package-grid,.why-grid,.process-timeline{grid-template-columns:1fr}
-  .featured-image{min-height:360px}.portfolio-strip{grid-template-columns:repeat(2,1fr)}
-  .final-cta{padding:30px 18px}.final-preview{min-height:260px}
-  .section{padding:66px 14px}
-}
-@media(max-width:560px){
-  .services-copy h1{font-size:41px}.quick-strip,.portfolio-strip{grid-template-columns:1fr}.strip-project{height:250px}
-  .service-row{grid-template-columns:1fr;text-align:left}.service-row ul{grid-column:auto}.service-number{width:62px;height:62px}
-  .hero-showcase,.showcase-large{min-height:360px}.hero-floating-card{left:14px;right:14px;bottom:14px}
-  .nav-shell{gap:10px}.package-card,.why-card,.step-card{padding:22px}
-}
-
+/* PORTFOLIO HERO */
 .portfolio-hero{
-  padding:78px 5% 50px;
+  min-height:calc(100vh - 76px);
+  padding:76px 5% 54px;
   position:relative;
   overflow:hidden;
+  isolation:isolate;
 }
 .portfolio-hero:after{
   content:"";
   position:absolute;
-  right:-160px;
-  top:-140px;
-  width:560px;
-  height:560px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(216,180,90,.18),transparent 66%);
-  filter:blur(8px);
+  right:-12%;
+  top:8%;
+  width:620px;
+  height:620px;
+  background:radial-gradient(circle,rgba(216,180,90,.13),transparent 67%);
+  filter:blur(5px);
   z-index:-1;
 }
-.portfolio-hero-grid{
+.portfolio-hero-inner{
   max-width:1240px;
   margin:auto;
   display:grid;
   grid-template-columns:1.02fr .98fr;
-  gap:36px;
-  align-items:stretch;
+  gap:46px;
+  align-items:center;
 }
-.portfolio-copy{
-  padding:38px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+.portfolio-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#fff5da;
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:1.7px;
+  text-transform:uppercase;
+  padding:9px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 18px 50px rgba(0,0,0,.2);
 }
-.portfolio-copy h1{
-  margin-top:16px;
+.portfolio-kicker span{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--emerald2);
+  box-shadow:0 0 14px var(--emerald2);
+}
+.portfolio-hero h1{
+  margin-top:18px;
   font-family:"Playfair Display",serif;
-  font-size:clamp(44px,6vw,76px);
-  line-height:1.02;
-  letter-spacing:-1.8px;
+  font-size:clamp(46px,6.7vw,82px);
+  line-height:1.01;
+  letter-spacing:-2px;
 }
-.portfolio-copy p{
+.portfolio-hero h2{
+  margin-top:18px;
+  font-size:clamp(18px,2vw,24px);
+  line-height:1.45;
+  color:#fff2d8;
+  font-weight:750;
+}
+.portfolio-hero p{
   margin-top:18px;
   color:var(--muted);
   line-height:1.85;
-  max-width:680px;
+  max-width:650px;
+  font-size:16px;
+}
+.portfolio-actions{margin-top:30px}
+.portfolio-mini{
+  margin-top:25px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(145px,1fr));
+  gap:12px;
+  max-width:560px;
+}
+.portfolio-mini div{
+  padding:13px 14px;
+  border-radius:18px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.12);
+  color:#fff0d4;
+  font-weight:850;
+  font-size:14px;
+  box-shadow:0 18px 45px rgba(0,0,0,.18);
+  transition:.35s ease;
+}
+.portfolio-mini div:hover{
+  transform:translateY(-7px);
+  border-color:rgba(216,180,90,.4);
 }
 .portfolio-visual{
-  min-height:500px;
-  overflow:hidden;
+  min-height:585px;
   position:relative;
+  perspective:1200px;
 }
-.portfolio-visual img{
+.demo-stack{position:absolute;inset:12px 0 0 0}
+.demo-card{
+  position:absolute;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:30px;
+  background:#100e0a;
+  box-shadow:0 30px 95px rgba(0,0,0,.46);
+}
+.demo-card img{
   width:100%;
   height:100%;
   object-fit:cover;
+  filter:saturate(.95) contrast(1.04);
 }
-.portfolio-visual-card{
+.demo-main{
+  right:0;
+  top:0;
+  width:82%;
+  height:67%;
+  transform:rotateY(-10deg) rotateZ(2deg);
+}
+.demo-second{
+  left:0;
+  bottom:58px;
+  width:56%;
+  height:37%;
+  transform:rotateZ(-5deg);
+}
+.demo-label{
   position:absolute;
-  left:24px;
-  right:24px;
-  bottom:24px;
-  padding:20px;
-  border-radius:22px;
-  background:rgba(7,6,5,.80);
+  left:18px;
+  bottom:18px;
+  z-index:2;
+  padding:10px 13px;
+  border-radius:999px;
+  background:rgba(0,0,0,.56);
   border:1px solid rgba(255,255,255,.16);
-  backdrop-filter:blur(18px);
+  backdrop-filter:blur(12px);
+  font-weight:900;
+  color:#fff;
+  font-size:13px;
 }
-.portfolio-visual-card strong{
+.demo-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.65));
+  pointer-events:none;
+}
+.audit-card{
+  position:absolute;
+  right:5%;
+  bottom:0;
+  width:330px;
+  padding:22px;
+  border-radius:26px;
+  background:rgba(8,7,5,.8);
+  border:1px solid var(--line);
+  backdrop-filter:blur(20px);
+  box-shadow:0 28px 80px rgba(0,0,0,.45);
+}
+.audit-card strong{
   display:block;
   font-family:"Manrope",sans-serif;
   font-size:22px;
   margin-bottom:8px;
 }
-.portfolio-visual-card p{
-  color:var(--muted);
-  line-height:1.65;
+.audit-card p{
   font-size:14px;
+  line-height:1.65;
+  margin:0;
+  color:var(--muted);
 }
-.portfolio-grid-main{
+.trust-bar{
+  margin-top:32px;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:1px;
+  overflow:hidden;
+  border-radius:24px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.06);
+  box-shadow:0 24px 70px rgba(0,0,0,.28);
+}
+.trust-item{
+  padding:20px 14px;
+  text-align:center;
+  background:rgba(255,255,255,.035);
+}
+.trust-item h3{
+  font-family:"Playfair Display",serif;
+  font-size:30px;
+  color:#fff;
+}
+.trust-item p{
+  color:var(--muted);
+  font-size:12px;
+  margin-top:4px;
+}
+
+/* PURPOSE */
+.purpose-grid{
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:24px;
+  align-items:stretch;
+}
+.purpose-image{
+  min-height:520px;
+  overflow:hidden;
+}
+.purpose-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.purpose-content{
+  padding:34px;
+}
+.purpose-content h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(34px,5vw,58px);
+  line-height:1.06;
+  margin:14px 0;
+}
+.purpose-content p{
+  color:var(--muted);
+  line-height:1.85;
+  margin-top:12px;
+}
+.check-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:22px;
+}
+.check{
+  padding:15px;
+  border-radius:18px;
+  background:rgba(255,255,255,.055);
+  border:1px solid var(--line);
+  font-weight:850;
+  color:#fff3da;
+}
+
+/* PROJECTS */
+.portfolio-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:24px;
 }
-.case-card{
+.project{
   overflow:hidden;
   transition:.35s ease;
 }
-.case-card:hover{
-  transform:translateY(-10px);
+.project:hover{
+  transform:translateY(-12px);
   border-color:rgba(216,180,90,.42);
 }
-.case-img{
+.project-img{
   height:330px;
   overflow:hidden;
   border-radius:28px 28px 0 0;
   position:relative;
 }
-.case-img img{
+.project-img img{
   width:100%;
   height:100%;
   object-fit:cover;
   transition:.55s ease;
 }
-.case-card:hover .case-img img{
-  transform:scale(1.06);
-}
-.case-img:after{
+.project:hover .project-img img{transform:scale(1.06)}
+.project-img:after{
   content:"";
   position:absolute;
   inset:0;
   background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.78));
 }
-.case-label{
+.project-label{
   position:absolute;
   left:18px;
   bottom:18px;
@@ -678,26 +554,16 @@ button,input,textarea,select{font-family:inherit}
   font-weight:900;
   font-size:13px;
 }
-.case-body{
+.project-body{
   padding:28px;
 }
-.case-body h3{
-  font-family:"Playfair Display",serif;
-  font-size:34px;
-  margin-bottom:10px;
-}
-.case-body p{
-  color:var(--muted);
-  line-height:1.78;
+.project-tags{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
   margin-bottom:18px;
 }
-.case-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-bottom:20px;
-}
-.case-tags span{
+.project-tags span{
   padding:7px 10px;
   border-radius:999px;
   background:rgba(216,180,90,.10);
@@ -706,31 +572,314 @@ button,input,textarea,select{font-family:inherit}
   font-size:12px;
   font-weight:900;
 }
-.portfolio-note{
-  margin-top:26px;
-  padding:24px;
-  text-align:center;
+.project-body h3{
+  font-family:"Playfair Display",serif;
+  font-size:34px;
+  margin-bottom:10px;
 }
-.portfolio-note p{
+.project-body p{
+  color:var(--muted);
+  line-height:1.78;
+  font-size:15px;
+  margin-bottom:18px;
+}
+.project-detail-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin:18px 0 20px;
+}
+.project-detail-grid div{
+  padding:12px;
+  border-radius:16px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.10);
+}
+.project-detail-grid strong{
+  display:block;
+  font-size:12px;
+  color:var(--gold2);
+  text-transform:uppercase;
+  letter-spacing:.8px;
+  margin-bottom:5px;
+}
+.project-detail-grid span{
+  color:#f4e6c8;
+  font-size:13px;
+  line-height:1.45;
+}
+.project-why{
+  padding:14px 15px;
+  border-radius:18px;
+  background:rgba(87,198,140,.07);
+  border:1px solid rgba(87,198,140,.18);
+  color:#dfffe9;
+  line-height:1.55;
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+.project-proof{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0 0 18px;
+}
+.project-proof span{
+  padding:8px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.11);
+  color:#f3e4c4;
+  font-size:12px;
+  font-weight:900;
+}
+
+
+/* SHOWCASE STRIP */
+.showcase-strip{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:14px;
+}
+.strip-item{
+  height:250px;
+  position:relative;
+  overflow:hidden;
+  border-radius:26px;
+  border:1px solid var(--line);
+  box-shadow:0 18px 55px rgba(0,0,0,.28);
+  transition:.35s ease;
+}
+.strip-item:hover{transform:translateY(-10px)}
+.strip-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.55s ease;
+}
+.strip-item:hover img{transform:scale(1.07)}
+.strip-item:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 32%,rgba(0,0,0,.82));
+}
+.strip-item div{
+  position:absolute;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  z-index:2;
+}
+.strip-item h3{
+  font-family:"Playfair Display",serif;
+  font-size:24px;
+}
+.strip-item p{
+  color:var(--soft);
+  font-size:12px;
+  line-height:1.45;
+  margin-top:5px;
+}
+
+/* WHY PORTFOLIO PAGE EXISTS */
+.focus-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.focus-card{
+  padding:26px;
+  min-height:230px;
+  transition:.35s ease;
+}
+.focus-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(216,180,90,.38);
+}
+.focus-card h3{
+  font-family:"Manrope",sans-serif;
+  font-size:21px;
+  margin-bottom:10px;
+}
+.focus-card p{
+  color:var(--muted);
+  line-height:1.75;
+  font-size:14px;
+}
+
+/* PROCESS */
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.process-card{
+  padding:26px;
+  min-height:235px;
+  transition:.35s ease;
+}
+.process-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(216,180,90,.38);
+}
+.process-card span{
+  display:inline-flex;
+  margin-bottom:18px;
+  font-family:"Playfair Display",serif;
+  font-size:34px;
+  font-weight:900;
+  background:linear-gradient(90deg,var(--gold2),var(--emerald2));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.process-card h3{
+  font-family:"Manrope",sans-serif;
+  font-size:21px;
+  margin-bottom:10px;
+}
+.process-card p{
   color:var(--muted);
   line-height:1.75;
 }
+
+/* FINAL CTA */
+.final-cta{
+  position:relative;
+  overflow:hidden;
+  padding:44px;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  align-items:center;
+  gap:30px;
+}
+.final-cta h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(34px,5vw,58px);
+  line-height:1.08;
+  margin-top:14px;
+}
+.final-cta p{
+  color:var(--muted);
+  line-height:1.85;
+  margin:16px 0 24px;
+  max-width:720px;
+}
+.final-preview{
+  min-height:330px;
+  border-radius:30px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.final-preview img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.site-footer{
+  padding:30px 14px;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,.1);
+}
+.site-footer a{color:var(--gold2)}
+
+@media(max-width:1180px){
+  .focus-grid,.process-grid{grid-template-columns:repeat(2,1fr)}
+  .showcase-strip{grid-template-columns:repeat(3,1fr)}
+}
 @media(max-width:980px){
-  .portfolio-hero{padding:46px 14px 32px}
-  .portfolio-hero-grid{grid-template-columns:1fr;text-align:center}
-  .portfolio-copy{padding:28px 18px}
-  .portfolio-copy p{margin-left:auto;margin-right:auto}
-  .portfolio-visual{min-height:420px}
-  .portfolio-grid-main{grid-template-columns:1fr}
-  .case-img{height:280px}
+  .site-header{padding:10px 14px}
+  .brand-logo{width:44px;height:44px}
+  .brand-text h3{font-size:14px}
+  .brand-text p{font-size:10px}
+  .menu-btn{display:grid;place-items:center}
+  .header-cta{display:none}
+  .nav-links{
+    position:fixed;
+    top:70px;
+    left:12px;
+    right:12px;
+    display:none;
+    flex-direction:column;
+    gap:10px;
+    padding:16px;
+    border-radius:24px;
+    background:rgba(5,5,5,.96);
+    border:1px solid rgba(216,180,90,.25);
+    box-shadow:0 24px 80px rgba(0,0,0,.45);
+    backdrop-filter:blur(20px);
+  }
+  .nav-links.active{display:flex}
+  .nav-links a{
+    width:100%;
+    padding:13px 14px;
+    border-radius:14px;
+    background:rgba(255,255,255,.045);
+    text-align:center;
+  }
+  .nav-links a:after{display:none}
+  .portfolio-hero{
+    min-height:auto;
+    padding:48px 14px 38px;
+  }
+  .portfolio-hero-inner,
+  .purpose-grid,
+  .final-cta{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .portfolio-hero p,
+  .purpose-content p{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .portfolio-actions,
+  .btn-row{
+    justify-content:center;
+  }
+  .btn{
+    width:100%;
+    max-width:340px;
+  }
+  .portfolio-mini{
+    grid-template-columns:1fr;
+    max-width:380px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .portfolio-visual{min-height:520px}
+  .demo-main{width:88%;height:58%}
+  .demo-second{width:62%;height:28%;bottom:105px}
+  .audit-card{left:0;right:0;width:auto;bottom:0}
+  .trust-bar{grid-template-columns:repeat(2,1fr)}
+  .trust-item:last-child{grid-column:1/-1}
+  .check-grid,.portfolio-grid,.focus-grid,.process-grid{grid-template-columns:1fr}
+  .showcase-strip{grid-template-columns:repeat(2,1fr)}
+  .section{padding:66px 14px}
+  .final-cta{padding:30px 18px}
+  .final-preview{min-height:260px}
 }
 @media(max-width:560px){
-  .portfolio-copy h1{font-size:41px}
-  .portfolio-visual{min-height:360px}
-  .case-img{height:245px}
+  .portfolio-hero h1{font-size:41px}
+  .portfolio-visual{min-height:455px}
+  .demo-second{bottom:92px}
+  .portfolio-mini div{text-align:left}
+  .project-img{height:245px}
+  .project-body{padding:22px}
+  .project-detail-grid{grid-template-columns:1fr}
+  .purpose-content{padding:24px}
+  .showcase-strip{grid-template-columns:1fr}
+  .strip-item{height:255px}
+  .trust-bar{grid-template-columns:1fr}
+  .trust-item:last-child{grid-column:auto}
+  .nav-shell{gap:10px}
 }
 </style>
 </head>
+
 <body>
 <header class="site-header">
   <div class="nav-shell">
@@ -741,6 +890,7 @@ button,input,textarea,select{font-family:inherit}
         <p>Premium Website Specialist</p>
       </div>
     </a>
+
     <nav class="nav-links" id="navMenu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -749,154 +899,335 @@ button,input,textarea,select{font-family:inherit}
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20saw%20your%20portfolio%20and%20want%20a%20website." target="_blank">Start Website ✦</a>
+
+    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20saw%20your%20portfolio%20and%20want%20a%20premium%20website." target="_blank">Start Project ✦</a>
     <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
   </div>
 </header>
 
 <main>
+
 <section class="portfolio-hero">
-  <div class="portfolio-hero-grid">
-    <div class="portfolio-copy glass reveal">
-      <div class="eyebrow">Live Website Portfolio</div>
-      <h1>Demo websites built to show <span class="gradient-text">real design direction.</span></h1>
-      <p>Explore premium website concepts across restaurant, real estate, auto service, luxury product and personal studio styles. Each demo shows layout quality, visual direction, mobile-first thinking and how a client-facing website can present a brand professionally.</p>
-      <div class="btn-row" style="margin-top:28px;">
-        <a class="btn btn-primary" href="#projects">View Projects</a>
-        <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20website%20similar%20to%20your%20portfolio%20demos." target="_blank">Order Similar Website</a>
+  <div class="portfolio-hero-inner">
+    <div class="portfolio-copy reveal">
+      <div class="portfolio-kicker"><span></span> Premium Website Samples</div>
+      <h1>Premium website samples built for <span class="gradient-text">real business presentation.</span></h1>
+      <h2>Explore polished website styles for restaurants, real estate, auto services, luxury products, portfolio websites and custom business brands.</h2>
+      <p>Each sample is designed to show how a business can present services, visuals, trust sections and contact options in a modern, mobile-friendly way.</p>
+
+      <div class="btn-row portfolio-actions">
+        <a class="btn btn-primary" href="#projects">View Live Projects</a>
+        <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20checked%20your%20portfolio.%20I%20want%20this%20website%20style%20for%20my%20business." target="_blank">Get This Website Style</a>
       </div>
-      <div class="hero-service-pills">
-        <span>Restaurant</span>
-        <span>Real Estate</span>
-        <span>Auto Studio</span>
-        <span>Luxury Product</span>
-        <span>Personal Brand</span>
+
+      <div class="portfolio-mini">
+        <div>🌐 View Website Links</div>
+        <div>📱 Mobile-First Direction</div>
+        <div>🎨 Premium Visual Style</div>
+        <div>⚡ Inquiry-Focused Layout</div>
       </div>
     </div>
-    <div class="portfolio-visual glass reveal">
-      <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1300&q=85" alt="Website portfolio preview on laptop">
-      <div class="portfolio-visual-card">
-        <strong>Portfolio built for client trust.</strong>
-        <p>Visitors can open every live demo and understand the type of website style they can order.</p>
+
+    <div class="portfolio-visual reveal">
+      <div class="demo-stack">
+        <div class="demo-card demo-main">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1300&q=85" alt="Premium portfolio website preview">
+          <span class="demo-label">Website Portfolio Proof</span>
+        </div>
+        <div class="demo-card demo-second">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=85" alt="Website design screen">
+          <span class="demo-label">Website Style Preview</span>
+        </div>
+        <div class="audit-card">
+          <strong>Choose Your Website Direction</strong>
+          <p>View live examples, compare styles and choose the website direction that matches your business.</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="quick-strip reveal">
-    <div class="quick-item"><strong>5</strong><span>Live Demo Projects</span></div>
-    <div class="quick-item"><strong>100%</strong><span>Responsive Direction</span></div>
-    <div class="quick-item"><strong>Multi</strong><span>Business Styles</span></div>
-    <div class="quick-item"><strong>2–4h</strong><span>Usual Response Time</span></div>
+
+  <div class="section-inner">
+    <div class="trust-bar reveal">
+      <div class="trust-item"><h3>5+</h3><p>View Website Projects</p></div>
+      <div class="trust-item"><h3>Multi</h3><p>Business Styles</p></div>
+      <div class="trust-item"><h3>Mobile</h3><p>Responsive Direction</p></div>
+      <div class="trust-item"><h3>SEO</h3><p>Clean Page Structure</p></div>
+      <div class="trust-item"><h3>CTA</h3><p>Inquiry-Focused Layout</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="purpose-grid">
+      <div class="purpose-image glass">
+        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=85" alt="Portfolio website planning workspace">
+      </div>
+      <div class="purpose-content glass">
+        <div class="eyebrow">Portfolio Focus</div>
+        <h2>Website samples that help you choose <span class="gradient-text">the right style faster.</span></h2>
+        <p>Before starting a website, most clients want to see style, quality and structure. This portfolio makes that decision easier by showing live website samples across different industries.</p>
+        <p>You can compare the visual direction, page structure and business purpose, then request a similar website style for your own brand.</p>
+        <div class="check-grid">
+          <div class="check">✔ Shows live demo proof</div>
+          <div class="check">✔ Explains each website type</div>
+          <div class="check">✔ Helps choose the right style</div>
+          <div class="check">✔ Easy WhatsApp Inquiry</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section reveal" id="projects">
   <div class="section-inner">
     <div class="section-title">
-      <div class="eyebrow">Featured Projects</div>
-      <h2>Live demo websites for <span class="gradient-text">different business needs.</span></h2>
-      <p>Each project includes a live demo link. Screenshot images can be replaced later with real project screenshots for even stronger trust.</p>
+      <div class="eyebrow">Featured Website Samples</div>
+      <h2>Premium website samples for <span class="gradient-text">different business goals.</span></h2>
+      <p>Each sample is focused on a specific business type, with clear goals, design direction and a direct action button.</p>
     </div>
 
-    <div class="portfolio-grid-main">
-      <article class="case-card glass">
-        <div class="case-img">
+    <div class="portfolio-grid">
+
+      <article class="project glass">
+        <div class="project-img">
           <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=85" alt="Aurora House restaurant website demo">
-          <span class="case-label">Restaurant Website</span>
+          <span class="project-label">Restaurant Website</span>
         </div>
-        <div class="case-body">
-          <div class="case-tags"><span>Restaurant</span><span>Reservation</span><span>Luxury UI</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Restaurant</span><span>Reservation Flow</span><span>Luxury UI</span></div>
           <h3>Aurora House</h3>
-          <p>A premium restaurant concept with hospitality-style visuals, reservation direction, elegant sections and a luxury first impression.</p>
+          <p>A premium restaurant website style for elegant food presentation, reservation flow and hospitality trust.</p>
+          <div class="project-detail-grid">
+            <div><strong>Best For</strong><span>Restaurants, cafes, lounges and hospitality brands.</span></div>
+            <div><strong>Main Goal</strong><span>Show atmosphere, menu direction and reservation action.</span></div>
+            <div><strong>Design Style</strong><span>Luxury visuals, dark premium sections and smooth CTA flow.</span></div>
+            <div><strong>Client Benefit</strong><span>Visitors quickly understand the brand and book/contact faster.</span></div>
+          </div>
+          <div class="project-proof"><span>Responsive Layout</span><span>Premium Sections</span><span>WhatsApp CTA</span></div>
+          <div class="project-why"><strong>Project focus:</strong> Built to help restaurants present atmosphere, menu direction and booking action clearly.</div>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/ARUROA-HOUSE-/#reserve" target="_blank">View Live Demo</a>
-            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20restaurant%20website%20similar%20to%20Aurora%20House." target="_blank">Order Similar</a>
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/ARUROA-HOUSE-/#reserve" target="_blank">View View Website</a>
+            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20restaurant%20website%20similar%20to%20Aurora%20House." target="_blank">Get Similar Style</a>
           </div>
         </div>
       </article>
 
-      <article class="case-card glass">
-        <div class="case-img">
+      <article class="project glass">
+        <div class="project-img">
           <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Velora Estates real estate website demo">
-          <span class="case-label">Real Estate Website</span>
+          <span class="project-label">Real Estate Website</span>
         </div>
-        <div class="case-body">
-          <div class="case-tags"><span>Real Estate</span><span>Property</span><span>Premium</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Real Estate</span><span>Property Showcase</span><span>Premium Inquiry</span></div>
           <h3>Velora Estates</h3>
-          <p>A real estate concept built for property presentation, premium visuals, listing-style sections and inquiry-focused navigation.</p>
+          <p>A real estate website style for property presentation, trust sections and inquiry-focused layout.</p>
+          <div class="project-detail-grid">
+            <div><strong>Best For</strong><span>Real estate agencies, builders and property consultants.</span></div>
+            <div><strong>Main Goal</strong><span>Show properties, build trust and push inquiries.</span></div>
+            <div><strong>Design Style</strong><span>Luxury property visuals, polished cards and strong layout hierarchy.</span></div>
+            <div><strong>Client Benefit</strong><span>Buyers can understand offers and contact quickly.</span></div>
+          </div>
+          <div class="project-proof"><span>Responsive Layout</span><span>Premium Sections</span><span>WhatsApp CTA</span></div>
+          <div class="project-why"><strong>Project focus:</strong> Built to help agencies and consultants present properties with a premium, client-ready look.</div>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/VELORA-ESTATES-/" target="_blank">View Live Demo</a>
-            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20real%20estate%20website%20similar%20to%20Velora%20Estates." target="_blank">Order Similar</a>
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/VELORA-ESTATES-/" target="_blank">View View Website</a>
+            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20real%20estate%20website%20similar%20to%20Velora%20Estates." target="_blank">Get Similar Style</a>
           </div>
         </div>
       </article>
 
-      <article class="case-card glass">
-        <div class="case-img">
+      <article class="project glass">
+        <div class="project-img">
           <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=85" alt="Elite Auto Studio website demo">
-          <span class="case-label">Auto Service Website</span>
+          <span class="project-label">Auto Business Website</span>
         </div>
-        <div class="case-body">
-          <div class="case-tags"><span>Auto Studio</span><span>Service Business</span><span>Booking</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Auto Studio</span><span>Service Packages</span><span>Booking CTA</span></div>
           <h3>Elite Auto Studio</h3>
-          <p>A dark premium auto service concept with strong service cards, gallery direction and clear call-to-action flow.</p>
+          <p>A dark premium auto website style for service packages, gallery sections and booking actions.</p>
+          <div class="project-detail-grid">
+            <div><strong>Best For</strong><span>Auto detailing, workshops, garages and premium car services.</span></div>
+            <div><strong>Main Goal</strong><span>Show services, gallery and booking/contact action.</span></div>
+            <div><strong>Design Style</strong><span>Bold dark visuals, luxury car energy and powerful CTA sections.</span></div>
+            <div><strong>Client Benefit</strong><span>Customers can check services and book faster.</span></div>
+          </div>
+          <div class="project-proof"><span>Responsive Layout</span><span>Premium Sections</span><span>WhatsApp CTA</span></div>
+          <div class="project-why"><strong>Project focus:</strong> Built to help auto businesses show services, quality and booking options with a strong visual style.</div>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/ELITE-AUTO-STUDIO/" target="_blank">View Live Demo</a>
-            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20an%20auto%20business%20website%20similar%20to%20Elite%20Auto%20Studio." target="_blank">Order Similar</a>
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/ELITE-AUTO-STUDIO/" target="_blank">View View Website</a>
+            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20an%20auto%20business%20website%20similar%20to%20Elite%20Auto%20Studio." target="_blank">Get Similar Style</a>
           </div>
         </div>
       </article>
 
-      <article class="case-card glass">
-        <div class="case-img">
-          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&q=85" alt="Chrono Luxe watch website demo">
-          <span class="case-label">Luxury Product Website</span>
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&q=85" alt="Chrono Luxe luxury watch website demo">
+          <span class="project-label">Luxury Product Website</span>
         </div>
-        <div class="case-body">
-          <div class="case-tags"><span>Luxury Product</span><span>Catalog</span><span>Branding</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Luxury Product</span><span>Catalog</span><span>Brand Story</span></div>
           <h3>Chrono Luxe</h3>
-          <p>A luxury product website concept for watches, catalogs, premium collections and high-end product storytelling.</p>
+          <p>A luxury product website style for collections, catalog sections and high-end brand presentation.</p>
+          <div class="project-detail-grid">
+            <div><strong>Best For</strong><span>Luxury products, watches, accessories and product brands.</span></div>
+            <div><strong>Main Goal</strong><span>Show product value, collection style and brand feel.</span></div>
+            <div><strong>Design Style</strong><span>Elegant product visuals, premium spacing and catalog-style sections.</span></div>
+            <div><strong>Client Benefit</strong><span>Products feel more valuable and brand looks serious.</span></div>
+          </div>
+          <div class="project-proof"><span>Responsive Layout</span><span>Premium Sections</span><span>WhatsApp CTA</span></div>
+          <div class="project-why"><strong>Project focus:</strong> Built to make premium products feel more valuable through visuals, spacing and product storytelling.</div>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/CHRONO-LUXE-/" target="_blank">View Live Demo</a>
-            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20luxury%20product%20website%20similar%20to%20Chrono%20Luxe." target="_blank">Order Similar</a>
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/CHRONO-LUXE-/" target="_blank">View View Website</a>
+            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20luxury%20product%20website%20similar%20to%20Chrono%20Luxe." target="_blank">Get Similar Style</a>
           </div>
         </div>
       </article>
 
-      <article class="case-card glass">
-        <div class="case-img">
-          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85" alt="Dawood Studio website demo">
-          <span class="case-label">Personal Brand Website</span>
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="Dawood Studio portfolio website demo">
+          <span class="project-label">Portfolio Website</span>
         </div>
-        <div class="case-body">
-          <div class="case-tags"><span>Portfolio</span><span>Studio</span><span>Personal Brand</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Portfolio</span><span>Studio</span><span>Portfolio Website</span></div>
           <h3>Dawood Studio</h3>
-          <p>A modern studio and personal brand concept for presenting services, creative work, proof and contact options in one place.</p>
+          <p>A portfolio website style for presenting services, work samples, proof and direct contact options.</p>
+          <div class="project-detail-grid">
+            <div><strong>Best For</strong><span>Freelancers, designers, consultants and portfolios.</span></div>
+            <div><strong>Main Goal</strong><span>Build credibility and show work in one place.</span></div>
+            <div><strong>Design Style</strong><span>Clean modern layout, premium cards and service-focused flow.</span></div>
+            <div><strong>Client Benefit</strong><span>Visitors can understand your work and contact easily.</span></div>
+          </div>
+          <div class="project-proof"><span>Responsive Layout</span><span>Premium Sections</span><span>WhatsApp CTA</span></div>
+          <div class="project-why"><strong>Project focus:</strong> Built to help freelancers, studios and specialists present their work professionally.</div>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/DAWOOD-STUDIO/" target="_blank">View Live Demo</a>
-            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20portfolio%20website%20similar%20to%20Dawood%20Studio." target="_blank">Order Similar</a>
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/DAWOOD-STUDIO/" target="_blank">View View Website</a>
+            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20portfolio%20website%20similar%20to%20Dawood%20Studio." target="_blank">Get Similar Style</a>
           </div>
         </div>
       </article>
 
-      <article class="case-card glass">
-        <div class="case-img">
-          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=85" alt="Custom website consultation">
-          <span class="case-label">Custom Website</span>
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85" alt="Custom website planning">
+          <span class="project-label">Custom Website Direction</span>
         </div>
-        <div class="case-body">
-          <div class="case-tags"><span>Custom</span><span>Client Project</span><span>Consultation</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Custom Website</span><span>Business Planning</span><span>Design Direction</span></div>
           <h3>Need A Different Style?</h3>
-          <p>Share your business type, required pages, color direction and reference website. I will suggest the best website structure.</p>
+          <p>Not every business fits one demo. This card is for clients who need a custom structure, different colors or a unique industry style.</p>
+          <div class="project-detail-grid">
+            <div><strong>Best For</strong><span>Any business that wants a custom website direction.</span></div>
+            <div><strong>Main Goal</strong><span>Plan the right pages, sections and brand style.</span></div>
+            <div><strong>Design Style</strong><span>Based on your business, logo, colors and reference websites.</span></div>
+            <div><strong>Client Benefit</strong><span>You get guidance before choosing the final package.</span></div>
+          </div>
+          <div class="project-proof"><span>Responsive Layout</span><span>Premium Sections</span><span>WhatsApp CTA</span></div>
+          <div class="project-why"><strong>Project focus:</strong> Built for clients who want a custom website direction based on their own brand and goals.</div>
           <div class="btn-row">
             <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20custom%20website%20style%20for%20my%20business." target="_blank">Discuss Custom Website</a>
             <a class="btn btn-secondary" href="pricing.html">View Pricing</a>
           </div>
         </div>
       </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Style Preview</div>
+      <h2>Different industries need <span class="gradient-text">different website energy.</span></h2>
+      <p>This strip quickly shows the portfolio categories so visitors can understand the range without reading every full project card.</p>
     </div>
 
-    <div class="portfolio-note glass">
-      <p><strong style="color:var(--gold2);">Next upgrade:</strong> replace these preview images with real screenshots of each live demo. The layout is already ready for screenshots — just upload images later and replace the image paths.</p>
+    <div class="showcase-strip">
+      <div class="strip-item">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85" alt="Restaurant website style">
+        <div><h3>Restaurant</h3><p>Reservation, atmosphere and premium hospitality flow.</p></div>
+      </div>
+      <div class="strip-item">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Real estate website style">
+        <div><h3>Real Estate</h3><p>Property trust, inquiry sections and luxury presentation.</p></div>
+      </div>
+      <div class="strip-item">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=85" alt="Auto website style">
+        <div><h3>Auto Studio</h3><p>Service cards, gallery, booking and dark premium style.</p></div>
+      </div>
+      <div class="strip-item">
+        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85" alt="Luxury product website style">
+        <div><h3>Luxury Product</h3><p>Collection, catalog and high-end product storytelling.</p></div>
+      </div>
+      <div class="strip-item">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Portfolio website style">
+        <div><h3>Portfolio Website</h3><p>Services, proof, portfolio and direct contact flow.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Why This Portfolio Helps</div>
+      <h2>Choose your website style with <span class="gradient-text">confidence.</span></h2>
+      <p>A strong portfolio should make it easy to compare styles, understand the business purpose and take action with confidence.</p>
+    </div>
+
+    <div class="focus-grid">
+      <div class="focus-card glass">
+        <h3>🔍 Shows Real Direction</h3>
+        <p>Open live website links and see actual layouts, sections and design quality.</p>
+      </div>
+      <div class="focus-card glass">
+        <h3>🎯 Matches Business Type</h3>
+        <p>Each sample connects to a specific business category, making it easier to choose a suitable style.</p>
+      </div>
+      <div class="focus-card glass">
+        <h3>📱 Builds Mobile Trust</h3>
+        <p>The demos show mobile-first thinking so your website can look strong on phone, tablet and laptop.</p>
+      </div>
+      <div class="focus-card glass">
+        <h3>💬 Makes Contact Easy</h3>
+        <p>Get Similar Style buttons make it easy to start with a clear project idea.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">How To Use This Portfolio</div>
+      <h2>Simple path from choosing a style to <span class="gradient-text">starting a website.</span></h2>
+      <p>Use these steps to choose a sample style and start your website project with clear direction.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card glass">
+        <span>01</span>
+        <h3>View Samples</h3>
+        <p>Open the website links and compare which design style fits your business best.</p>
+      </div>
+      <div class="process-card glass">
+        <span>02</span>
+        <h3>Choose Style</h3>
+        <p>Select a similar direction: restaurant, property, auto, luxury product, portfolio or custom.</p>
+      </div>
+      <div class="process-card glass">
+        <span>03</span>
+        <h3>Send Details</h3>
+        <p>Message me your business name, required pages, services, logo, images and reference style.</p>
+      </div>
+      <div class="process-card glass">
+        <span>04</span>
+        <h3>Build Website</h3>
+        <p>I shape the selected style into a business-ready website with clear sections and contact flow.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -906,23 +1237,25 @@ button,input,textarea,select{font-family:inherit}
     <div class="final-cta glass">
       <div>
         <div class="eyebrow">Ready To Build?</div>
-        <h2>Choose a portfolio style and I’ll shape it for <span class="gradient-text">your business.</span></h2>
-        <p>Send the demo name you like, your business type, required pages and preferred color style. I usually respond within 2 to 4 hours.</p>
+        <h2>Choose a sample style and I’ll shape it for <span class="gradient-text">your business.</span></h2>
+        <p>Send the sample name you like, your business type, required pages, color direction and any reference website. I will suggest the right structure and package.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20start%20a%20website%20project." target="_blank">Start on WhatsApp</a>
+          <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20checked%20your%20portfolio%20and%20want%20to%20start%20a%20website%20project." target="_blank">Start on WhatsApp</a>
           <a class="btn btn-secondary" href="services.html">View Services</a>
         </div>
       </div>
       <div class="final-preview">
-        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85" alt="Website portfolio consultation">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85" alt="Website portfolio consultation">
       </div>
     </div>
   </div>
 </section>
+
 </main>
 
 <footer class="site-footer">
-  <p>© 2026 Dawood Tariq | Premium Website Specialist • Portfolio • Live Website Demos</p>
+  <p>© 2026 Dawood Tariq | Premium Website Specialist • Portfolio • Live Website Samples</p>
+  <p style="margin-top:8px;">Email: <a href="mailto:tdawood444@gmail.com">tdawood444@gmail.com</a> • WhatsApp: <a href="https://wa.me/923428305707" target="_blank">+92 342 8305707</a> • Response time: usually within 2–4 hours</p>
 </footer>
 
 <script>
@@ -932,6 +1265,7 @@ function toggleMenu(){
   nav.classList.toggle('active');
   btn.textContent=nav.classList.contains('active')?'×':'☰';
 }
+
 document.querySelectorAll('.nav-links a').forEach(link=>{
   link.addEventListener('click',()=>{
     const nav=document.getElementById('navMenu');
@@ -940,11 +1274,15 @@ document.querySelectorAll('.nav-links a').forEach(link=>{
     btn.textContent='☰';
   });
 });
+
 const revealObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
-    if(entry.isIntersecting){entry.target.classList.add('active');}
+    if(entry.isIntersecting){
+      entry.target.classList.add('active');
+    }
   });
 },{threshold:.14});
+
 document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 </script>
 </body>
