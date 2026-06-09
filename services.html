@@ -1,1537 +1,648 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Services | Dawood Tariq | 3D Websites, AI Assistant, WordPress & Digital Systems</title>
-
-<meta name="description" content="Premium services by Dawood Tariq including 3D websites, AI website assistants, WordPress websites, landing pages, Excel automation, trading tools and import export documentation.">
-<meta name="keywords" content="Dawood Tariq Services, 3D Website, AI Website Assistant, WordPress Website, Landing Page, Excel Automation, Trading Tools, XAUUSD, Import Export Documentation, Mobile Friendly Website">
+<title>Services | Dawood Tariq | Premium Website Specialist</title>
+<meta name="description" content="Premium website services by Dawood Tariq including business websites, landing pages, WordPress websites, portfolio websites, website redesigns and website maintenance with mobile-first design and WhatsApp lead flow.">
+<meta name="keywords" content="Dawood Tariq services, website specialist, business website, landing page design, WordPress website, portfolio website, website redesign, website maintenance, responsive website, WhatsApp website">
 <meta name="author" content="Dawood Tariq">
 <meta name="robots" content="index, follow">
-
 <link rel="icon" href="logo-icon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+<meta property="og:title" content="Services | Dawood Tariq | Premium Website Specialist">
+<meta property="og:description" content="Business websites, landing pages, WordPress websites, portfolio websites and website redesign services.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#030712;
-  --bg2:#060b18;
-  --purple:#9b5cff;
-  --cyan:#00e5ff;
-  --blue:#3b82f6;
-  --pink:#ec5cff;
-  --green:#22c55e;
-  --text:#f8fafc;
-  --muted:#a8b3cf;
-  --line:rgba(255,255,255,.12);
+  --bg:#050505;
+  --bg2:#0b0a08;
+  --panel:#11100d;
+  --panel2:#17140f;
+  --card:#15130f;
+  --gold:#d8b45a;
+  --gold2:#f3d890;
+  --bronze:#8a612f;
+  --emerald:#1f8a5b;
+  --emerald2:#57c68c;
+  --ivory:#fff8ea;
+  --text:#f8f4ea;
+  --muted:#b9ad99;
+  --soft:#e7d8bd;
+  --line:rgba(255,255,255,.13);
+  --glass:rgba(255,255,255,.065);
+  --shadow:0 30px 95px rgba(0,0,0,.48);
   --radius:28px;
-  --shadow:0 30px 90px rgba(0,0,0,.45);
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-  font-family:'Inter',sans-serif;
+  font-family:"Inter",system-ui,sans-serif;
   color:var(--text);
   background:
-    radial-gradient(circle at 15% 15%,rgba(155,92,255,.26),transparent 28%),
-    radial-gradient(circle at 85% 12%,rgba(0,229,255,.18),transparent 30%),
-    radial-gradient(circle at 50% 105%,rgba(59,130,246,.16),transparent 38%),
-    linear-gradient(135deg,#02040d,#050816 45%,#07111f);
+    radial-gradient(circle at 8% 6%,rgba(216,180,90,.18),transparent 30%),
+    radial-gradient(circle at 88% 10%,rgba(31,138,91,.17),transparent 29%),
+    radial-gradient(circle at 55% 100%,rgba(138,97,47,.16),transparent 34%),
+    linear-gradient(135deg,#030303,#0b0906 46%,#070806);
   overflow-x:hidden;
 }
-
-body::before{
+body:before{
   content:"";
   position:fixed;
   inset:0;
   z-index:-2;
   pointer-events:none;
   background-image:
-    linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.024) 1px,transparent 1px);
-background-size:44px 44px;}
-
-a{
-  text-decoration:none;
-  color:inherit;
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:48px 48px;
+  mask-image:linear-gradient(to bottom,#000,transparent 78%);
 }
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-button{
-  font-family:inherit;
-}
-
-::selection{
-  background:var(--cyan);
-  color:#020617;
-}
-
-/* HEADER */
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button,input,textarea,select{font-family:inherit}
+::selection{background:var(--gold);color:#050505}
 
 .site-header{
   position:sticky;
   top:0;
-  z-index:99999;
+  z-index:9999;
   width:100%;
-  padding:12px 5%;
-  background:rgba(3,7,18,.72);
-  backdrop-filter:blur(24px);
+  padding:13px 5%;
   border-bottom:1px solid var(--line);
+  background:rgba(5,5,5,.78);
+  backdrop-filter:blur(22px);
 }
+.nav-shell{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo{width:50px;height:50px;object-fit:contain;border-radius:16px;filter:drop-shadow(0 0 18px rgba(216,180,90,.28))}
+.brand-text h3{font-family:"Manrope",sans-serif;font-size:16px;line-height:1.1;white-space:nowrap}
+.brand-text p{color:var(--muted);font-size:11px;margin-top:3px;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:21px}
+.nav-links a{color:#efe5d1;font-size:14px;font-weight:850;opacity:.88;position:relative;transition:.25s ease}
+.nav-links a:hover,.nav-links a.active{color:var(--gold2)}
+.nav-links a:after{content:"";position:absolute;left:0;bottom:-9px;width:0;height:2px;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--emerald2));transition:.25s ease}
+.nav-links a:hover:after,.nav-links a.active:after{width:100%}
+.header-cta{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;color:#100b04;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));font-size:13px;font-weight:950;box-shadow:0 16px 42px rgba(216,180,90,.2);transition:.28s ease;white-space:nowrap}
+.header-cta:hover{transform:translateY(-3px)}
+.menu-btn{display:none;width:46px;height:46px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;font-size:24px;cursor:pointer}
 
-.nav-shell{
+.section{padding:82px 5%}
+.section-inner{max-width:1240px;margin:auto}
+.section-title{text-align:center;max-width:860px;margin:0 auto 42px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border-radius:999px;border:1px solid rgba(216,180,90,.34);background:rgba(216,180,90,.08);color:var(--gold2);font-size:12px;font-weight:950;letter-spacing:1.6px;text-transform:uppercase}
+.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--emerald2);box-shadow:0 0 14px rgba(87,198,140,.7)}
+.section-title h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,60px);line-height:1.05;letter-spacing:-1.2px;margin-top:14px}
+.section-title p{color:var(--muted);line-height:1.85;margin-top:15px;font-size:16px}
+.gradient-text{background:linear-gradient(135deg,#fff,var(--gold2),var(--gold),#d5ffe6);-webkit-background-clip:text;color:transparent}
+.btn-row{display:flex;flex-wrap:wrap;align-items:center;gap:13px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:16px;font-size:14px;font-weight:950;border:1px solid transparent;transition:.28s ease;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));color:#100b04;box-shadow:0 16px 42px rgba(216,180,90,.2)}
+.btn-secondary{color:var(--ivory);background:rgba(255,255,255,.055);border-color:var(--line)}
+.btn-dark{background:#090806;border-color:rgba(216,180,90,.28);color:var(--ivory)}
+.btn:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(216,180,90,.16)}
+.glass{background:radial-gradient(circle at top left,rgba(216,180,90,.12),transparent 36%),linear-gradient(145deg,rgba(255,255,255,.082),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+
+/* DIFFERENT SERVICES HERO */
+.services-hero{
+  padding:74px 5% 48px;
+  position:relative;
+  overflow:hidden;
+}
+.services-hero:after{
+  content:"";
+  position:absolute;
+  right:-180px;
+  top:-140px;
+  width:520px;
+  height:520px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(216,180,90,.18),transparent 66%);
+  filter:blur(8px);
+  z-index:-1;
+}
+.services-hero-grid{
   max-width:1240px;
   margin:auto;
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:38px;
+  align-items:stretch;
+}
+.services-copy{
+  padding:38px;
   display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
+  flex-direction:column;
+  justify-content:center;
 }
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  min-width:0;
+.services-copy h1{
+  margin-top:16px;
+  font-family:"Playfair Display",serif;
+  font-size:clamp(44px,6vw,76px);
+  line-height:1.02;
+  letter-spacing:-1.8px;
 }
-
-.brand-logo{
-  width:52px;
-  height:52px;
-  object-fit:contain;
-  filter:drop-shadow(0 0 18px rgba(0,229,255,.35));
-}
-
-.brand h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:16px;
-  line-height:1.1;
-  white-space:nowrap;
-}
-
-.brand p{
-  font-size:11px;
+.services-copy p{
+  margin-top:18px;
   color:var(--muted);
-  margin-top:3px;
-  white-space:nowrap;
+  line-height:1.85;
+  max-width:660px;
 }
-
-.nav-links{
+.hero-service-pills{
+  margin-top:26px;
   display:flex;
-  gap:22px;
-  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
 }
-
-.nav-links a{
-  font-size:14px;
-  font-weight:800;
-  color:#eef6ff;
-  position:relative;
-  opacity:.9;
-  transition:.25s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active{
-  color:var(--cyan);
-}
-
-.nav-links a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-8px;
-  width:0;
-  height:2px;
-  border-radius:50px;
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  transition:.3s;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after{
-  width:100%;
-}
-
-.header-btn{
-  padding:12px 18px;
+.hero-service-pills span{
+  padding:10px 13px;
   border-radius:999px;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
+  border:1px solid rgba(216,180,90,.23);
+  background:rgba(216,180,90,.075);
+  color:#f3dfb4;
   font-size:13px;
-  font-weight:900;
-  color:#fff;
-  box-shadow:0 14px 35px rgba(0,229,255,.18);
-  transition:.3s ease;
+  font-weight:850;
 }
-
-.header-btn:hover{
-  transform:translateY(-3px);
+.hero-showcase{
+  position:relative;
+  min-height:500px;
+  overflow:hidden;
 }
-
-.menu-btn{
-  display:none;
-  width:46px;
-  height:46px;
-  border:none;
-  border-radius:14px;
-  background:rgba(255,255,255,.06);
-  color:#fff;
-  font-size:24px;
-  cursor:pointer;
-}
-
-/* SHARED */
-
-.section{
-  padding:90px 5%;
-}
-
-.section-inner{
-  max-width:1250px;
-  margin:auto;
-}
-
-.glass{
-  background:
-    radial-gradient(circle at top left,rgba(155,92,255,.12),transparent 35%),
-    linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
-  border:1px solid var(--line);
+.showcase-large{
+  height:100%;
+  min-height:500px;
   border-radius:var(--radius);
-  backdrop-filter:blur(18px);
+  overflow:hidden;
+  border:1px solid var(--line);
   box-shadow:var(--shadow);
 }
-
-.eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  padding:8px 14px;
-  border-radius:999px;
-  border:1px solid rgba(0,229,255,.25);
-  background:rgba(0,229,255,.08);
-  color:var(--cyan);
-  font-size:12px;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:1.6px;
-}
-
-.eyebrow::before{
-  content:"";
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:#22c55e;
-  box-shadow:0 0 12px #22c55e;
-}
-
-.gradient{
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  -webkit-background-clip:text;
-  color:transparent;
-}
-
-.section-title{
-  text-align:center;
-  max-width:850px;
-  margin:0 auto 50px;
-}
-
-.section-title h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(34px,5vw,56px);
-  line-height:1.08;
-  margin-top:16px;
-}
-
-.section-title p{
-  color:var(--muted);
-  line-height:1.85;
-  margin-top:16px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:15px 22px;
-  border-radius:18px;
-  font-size:14px;
-  font-weight:900;
-  transition:.3s ease;
-  cursor:pointer;
-  border:1px solid transparent;
-}
-
-.btn-primary{
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  box-shadow:0 14px 38px rgba(0,229,255,.2);
-}
-
-.btn-secondary{
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.04);
-  color:#fff;
-}
-
-.btn:hover{
-  transform:translateY(-5px);
-  box-shadow:0 24px 60px rgba(0,229,255,.18);
-}
-
-/* HERO */
-
-.hero{
-  padding:90px 5% 60px;
-  position:relative;
-  overflow:hidden;
-}
-
-.hero::before{
-  content:"";
+.showcase-large img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.05)}
+.showcase-large:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.7));pointer-events:none}
+.hero-floating-card{
   position:absolute;
-  width:420px;
-  height:420px;
-  right:-150px;
-  top:60px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(0,229,255,.20),transparent 65%);
-  filter:blur(10px);
-  z-index:-1;
+  left:24px;
+  right:24px;
+  bottom:24px;
+  padding:20px;
+  border-radius:22px;
+  background:rgba(7,6,5,.78);
+  border:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(18px);
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
 }
-
-.hero::after{
-  content:"";
-  position:absolute;
-  width:360px;
-  height:360px;
-  left:-140px;
-  bottom:-120px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(155,92,255,.22),transparent 65%);
-  filter:blur(10px);
-  z-index:-1;
-}
-
-.hero-inner{
-  max-width:1250px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:45px;
-  align-items:center;
-}
-
-.hero h1{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(48px,7vw,78px);
-  line-height:1.02;
-  margin-top:18px;
-  letter-spacing:-1.5px;
-}
-
-.hero p{
-  margin-top:18px;
-  color:var(--muted);
-  line-height:1.9;
-  max-width:700px;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-  margin-top:28px;
-}
-
-.hero-stats{
-  margin-top:30px;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-  max-width:560px;
-}
-
-.hero-stat{
-  padding:16px;
-  border-radius:18px;
-  background:rgba(255,255,255,.05);
-  border:1px solid var(--line);
-  font-weight:800;
-}
-
-.hero-card{
-  padding:32px;
-  animation:floatCard 6s ease-in-out infinite;
-}
-
-@keyframes floatCard{
-  0%,100%{transform:translateY(0);}
-  50%{transform:translateY(-14px);}
-}
-
-.hero-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:28px;
-  margin-bottom:15px;
-}
-
-.hero-card p{
-  color:var(--muted);
-  line-height:1.8;
-}
-
-.hero-list{
-  display:grid;
-  gap:12px;
-  margin-top:22px;
-}
-
-.hero-list div{
-  padding:14px;
-  border-radius:16px;
-  background:rgba(255,255,255,.05);
-  border:1px solid var(--line);
-  font-weight:800;
-}
-  /* RESPONSIVE HEADER + HERO */
-
-@media(max-width:980px){
-  .site-header{
-    padding:10px 14px;
-  }
-
-  .brand-logo{
-    width:44px;
-    height:44px;
-  }
-
-  .brand h3{
-    font-size:14px;
-  }
-
-  .brand p{
-    font-size:10px;
-  }
-
-  .header-btn{
-    display:none;
-  }
-
-  .menu-btn{
-    display:grid;
-    place-items:center;
-  }
-
-  .nav-links{
-    position:fixed;
-    top:70px;
-    left:12px;
-    right:12px;
-    display:none;
-    flex-direction:column;
-    gap:10px;
-    padding:16px;
-    border-radius:24px;
-    background:rgba(3,7,18,.96);
-    border:1px solid rgba(0,229,255,.25);
-    box-shadow:0 24px 80px rgba(0,0,0,.45);
-    backdrop-filter:blur(20px);
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
-
-  .nav-links a{
-    width:100%;
-    padding:13px 14px;
-    border-radius:14px;
-    background:rgba(255,255,255,.045);
-    text-align:center;
-  }
-
-  .nav-links a::after{
-    display:none;
-  }
-
-  .hero{
-    padding:58px 14px 50px;
-  }
-
-  .hero-inner{
-    grid-template-columns:1fr;
-    text-align:center;
-    gap:28px;
-  }
-
-  .hero h1{
-    font-size:clamp(39px,11vw,56px);
-  }
-
-  .hero p{
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .hero-buttons{
-    justify-content:center;
-  }
-
-  .btn{
-    width:100%;
-    max-width:330px;
-    text-align:center;
-  }
-
-  .hero-stats{
-    grid-template-columns:1fr;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .section{
-    padding:70px 14px;
-  }
-}
-
-/* LIVE STATS */
-
-.live-stats{
+.hero-floating-card strong{display:block;font-family:"Manrope",sans-serif;font-size:22px;margin-bottom:8px}
+.hero-floating-card p{font-size:14px;color:var(--muted);line-height:1.65;margin:0}
+.quick-strip{
+  max-width:1240px;
+  margin:26px auto 0;
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:18px;
+  gap:12px;
 }
-
-.live-stat{
-  padding:28px 20px;
-  text-align:center;
-  transition:.35s ease;
-}
-
-.live-stat:hover{
-  transform:translateY(-10px);
-  box-shadow:0 28px 80px rgba(0,229,255,.14);
-}
-
-.live-stat h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:34px;
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  -webkit-background-clip:text;
-  color:transparent;
-}
-
-.live-stat p{
-  margin-top:8px;
-  color:var(--muted);
-  font-weight:700;
-}
-
-/* CATEGORY CARDS */
-
-.category-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.category-card{
-  padding:30px;
-  transition:.35s ease;
-}
-
-.category-card:hover{
-  transform:translateY(-12px);
-  box-shadow:0 30px 90px rgba(155,92,255,.14);
-}
-
-.category-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:24px;
-  margin-bottom:13px;
-}
-
-.category-card p{
-  color:var(--muted);
-  line-height:1.75;
-}
-
-.category-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:9px;
-  margin-top:18px;
-}
-
-.category-tags span{
-  padding:8px 11px;
-  border-radius:999px;
-  background:rgba(0,229,255,.08);
-  border:1px solid rgba(0,229,255,.22);
-  font-size:12px;
-  font-weight:800;
-  color:#eaf6ff;
-}
-
-/* SERVICES */
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-}
-
-.service-card{
-  padding:28px;
-  position:relative;
-  overflow:hidden;
-  transition:.38s ease;
-}
-
-.service-card::before{
-  content:"";
-  position:absolute;
-  inset:-1px;
-  border-radius:inherit;
-  background:linear-gradient(135deg,rgba(155,92,255,.3),rgba(0,229,255,.25),transparent 65%);
-  opacity:0;
-  transition:.35s ease;
-  z-index:-1;
-}
-
-.service-card:hover{
-  transform:translateY(-14px);
-  border-color:rgba(0,229,255,.38);
-  box-shadow:0 35px 95px rgba(0,229,255,.16);
-}
-
-.service-card:hover::before{
-  opacity:1;
-}
-
-.service-card.featured{
-  grid-column:span 2;
-}
-
-.service-icon{
-  width:58px;
-  height:58px;
-  border-radius:20px;
-  display:grid;
-  place-items:center;
-  font-size:28px;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  box-shadow:0 18px 40px rgba(0,229,255,.18);
-  margin-bottom:18px;
-}
-
-.service-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:24px;
-  margin-bottom:12px;
-}
-
-.service-card p{
-  color:var(--muted);
-  line-height:1.75;
-  font-size:15px;
-}
-
-.service-card ul{
-  list-style:none;
-  margin-top:18px;
-  display:grid;
-  gap:9px;
-}
-
-.service-card li{
-  color:#dce7ff;
-  font-size:14px;
-}
-
-.service-card li::before{
-  content:"✓ ";
-  color:var(--cyan);
-  font-weight:900;
-}
-
-.price-tag{
-  display:inline-flex;
-  margin-top:20px;
-  padding:12px 18px;
-  border-radius:15px;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  font-weight:950;
-  box-shadow:0 14px 35px rgba(0,229,255,.18);
-}
-
-/* EXTRA SECTIONS */
-
-.comparison{
-  overflow:hidden;
-}
-
-.compare-row{
-  display:grid;
-  grid-template-columns:1fr 1.6fr .8fr;
-  gap:1px;
-  border-bottom:1px solid var(--line);
-}
-
-.compare-row:last-child{
-  border-bottom:none;
-}
-
-.compare-row div{
+.quick-item{
   padding:18px;
-  color:#dce7ff;
-  line-height:1.6;
-}
-
-.compare-head div{
-  color:#fff;
-  font-weight:900;
-  background:rgba(0,229,255,.08);
-}
-
-.offer-box,
-.final-cta{
-  max-width:1050px;
-  margin:auto;
-  text-align:center;
-  padding:48px 30px;
-}
-
-.offer-box h2,
-.final-cta h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(32px,5vw,54px);
-  line-height:1.08;
-  margin-top:14px;
-}
-
-.offer-box p,
-.final-cta p{
-  color:var(--muted);
-  line-height:1.85;
-  max-width:780px;
-  margin:16px auto 24px;
-}
-
-.offer-points{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  margin:25px 0;
-}
-
-.offer-points div{
-  padding:18px;
-  border-radius:18px;
+  border-radius:22px;
   background:rgba(255,255,255,.055);
   border:1px solid var(--line);
-  font-weight:900;
+  box-shadow:0 18px 50px rgba(0,0,0,.2);
 }
+.quick-item strong{display:block;font-family:"Playfair Display",serif;font-size:30px;color:var(--gold2)}
+.quick-item span{display:block;color:var(--muted);font-size:13px;margin-top:5px;font-weight:800}
 
-.site-footer{
-  padding:28px 14px;
-  text-align:center;
-  color:var(--muted);
-  border-top:1px solid var(--line);
+.featured-service{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:22px;
+  align-items:stretch;
 }
+.featured-panel{
+  padding:34px;
+  position:relative;
+  overflow:hidden;
+}
+.featured-panel h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.06;margin:14px 0}
+.featured-panel p{color:var(--muted);line-height:1.82}
+.featured-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:24px 0}
+.featured-list div{padding:15px;border-radius:18px;background:rgba(255,255,255,.055);border:1px solid var(--line);font-weight:850;color:#fff3da}
+.featured-image{min-height:520px;overflow:hidden;border-radius:var(--radius)}
+.featured-image img{width:100%;height:100%;object-fit:cover}
 
-/* RESPONSIVE GRIDS */
+.service-lane{display:grid;gap:18px}
+.service-row{
+  display:grid;
+  grid-template-columns:90px 1fr 260px;
+  gap:20px;
+  align-items:center;
+  padding:22px;
+  transition:.32s ease;
+}
+.service-row:hover{transform:translateY(-8px);border-color:rgba(216,180,90,.42)}
+.service-number{
+  width:70px;height:70px;border-radius:24px;
+  display:grid;place-items:center;
+  font-family:"Playfair Display",serif;
+  font-size:28px;font-weight:900;
+  color:#130d05;
+  background:linear-gradient(135deg,var(--gold2),var(--gold),var(--emerald));
+  box-shadow:0 18px 40px rgba(216,180,90,.18);
+}
+.service-row h3{font-family:"Manrope",sans-serif;font-size:25px;margin-bottom:8px}
+.service-row p{color:var(--muted);line-height:1.7;font-size:15px}
+.service-row ul{list-style:none;display:grid;gap:7px;color:#f1dfbd;font-size:14px;font-weight:750}
+.service-row li:before{content:"✓ ";color:var(--emerald2);font-weight:900}
+
+.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.package-card{padding:28px;position:relative;overflow:hidden;transition:.34s ease}
+.package-card:hover{transform:translateY(-10px);border-color:rgba(216,180,90,.42)}
+.package-card.featured{border-color:rgba(216,180,90,.45);background:radial-gradient(circle at top left,rgba(216,180,90,.18),transparent 38%),linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.035))}
+.package-card h3{font-family:"Playfair Display",serif;font-size:32px;margin:12px 0}
+.package-card p{color:var(--muted);line-height:1.75}
+.package-price{font-family:"Manrope",sans-serif;font-size:34px;color:var(--gold2);font-weight:900;margin:18px 0}
+.package-card ul{list-style:none;display:grid;gap:10px;margin:20px 0;color:#f0dfbd;font-size:14px}
+.package-card li:before{content:"✓ ";color:var(--emerald2);font-weight:900}
+
+.portfolio-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.strip-project{height:240px;position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--line);box-shadow:0 18px 55px rgba(0,0,0,.28);transition:.35s ease}
+.strip-project:hover{transform:translateY(-10px)}
+.strip-project img{width:100%;height:100%;object-fit:cover;transition:.55s ease}
+.strip-project:hover img{transform:scale(1.06)}
+.strip-project:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.78))}
+.strip-project div{position:absolute;left:14px;right:14px;bottom:14px;z-index:2}
+.strip-project h3{font-family:"Playfair Display",serif;font-size:24px}
+.strip-project p{color:var(--soft);font-size:12px;line-height:1.45;margin-top:4px}
+
+.process-timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:step}
+.step-card{padding:24px;min-height:230px;transition:.32s ease}
+.step-card:hover{transform:translateY(-8px);border-color:rgba(216,180,90,.38)}
+.step-card span{display:inline-flex;margin-bottom:18px;font-family:"Playfair Display",serif;font-size:34px;font-weight:900;background:linear-gradient(90deg,var(--gold2),var(--emerald2));-webkit-background-clip:text;color:transparent}
+.step-card h3{font-family:"Manrope",sans-serif;font-size:20px;margin-bottom:10px}
+.step-card p{color:var(--muted);line-height:1.72;font-size:14px}
+
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.why-card{padding:26px;min-height:220px;transition:.35s ease}
+.why-card:hover{transform:translateY(-9px);border-color:rgba(216,180,90,.38)}
+.why-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px}
+.why-card p{color:var(--muted);line-height:1.75}
+
+.final-cta{position:relative;overflow:hidden;padding:42px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:28px}
+.final-cta h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.08;margin-top:14px}
+.final-cta p{color:var(--muted);line-height:1.85;margin:16px 0 24px;max-width:720px}
+.final-preview{min-height:330px;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+.final-preview img{width:100%;height:100%;object-fit:cover}
+.site-footer{padding:30px 14px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.1)}
+.reveal{opacity:0;transform:translateY(26px);transition:1s ease}
+.reveal.active{opacity:1;transform:translateY(0)}
 
 @media(max-width:1180px){
-  .service-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .live-stats,
-  .category-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+  .quick-strip,.process-timeline{grid-template-columns:repeat(2,1fr)}
+  .portfolio-strip{grid-template-columns:repeat(3,1fr)}
+  .package-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+  .service-row{grid-template-columns:70px 1fr}
+  .service-row ul{grid-column:2}
 }
-
-@media(max-width:720px){
-  .service-grid,
-  .live-stats,
-  .category-grid{
-    grid-template-columns:1fr;
-  }
-
-  .service-card.featured{
-    grid-column:auto;
-  }
-
-  .compare-row{
-    grid-template-columns:1fr;
-  }
-
-  .offer-points{
-    grid-template-columns:1fr;
-  }
-
-  .offer-box,
-  .final-cta{
-    padding:34px 18px;
-  }
+@media(max-width:980px){
+  .site-header{padding:10px 14px}
+  .brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}
+  .menu-btn{display:grid;place-items:center}.header-cta{display:none}
+  .nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}
+  .nav-links.active{display:flex}.nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}.nav-links a:after{display:none}
+  .services-hero{padding:46px 14px 32px}.services-hero-grid,.featured-service,.final-cta{grid-template-columns:1fr;text-align:center}
+  .services-copy{padding:28px 18px}.services-copy p{margin-left:auto;margin-right:auto}.btn-row{justify-content:center}.btn{width:100%;max-width:340px}
+  .hero-showcase,.showcase-large{min-height:420px}.quick-strip{grid-template-columns:repeat(2,1fr)}
+  .featured-list,.package-grid,.why-grid,.process-timeline{grid-template-columns:1fr}
+  .featured-image{min-height:360px}.portfolio-strip{grid-template-columns:repeat(2,1fr)}
+  .final-cta{padding:30px 18px}.final-preview{min-height:260px}
+  .section{padding:66px 14px}
+}
+@media(max-width:560px){
+  .services-copy h1{font-size:41px}.quick-strip,.portfolio-strip{grid-template-columns:1fr}.strip-project{height:250px}
+  .service-row{grid-template-columns:1fr;text-align:left}.service-row ul{grid-column:auto}.service-number{width:62px;height:62px}
+  .hero-showcase,.showcase-large{min-height:360px}.hero-floating-card{left:14px;right:14px;bottom:14px}
+  .nav-shell{gap:10px}.package-card,.why-card,.step-card{padding:22px}
 }
 </style>
 </head>
-
 <body>
-
 <header class="site-header">
   <div class="nav-shell">
-
-   <a href="index.html" class="brand">
-  <img src="logo-icon.png" alt="Dawood Tariq Logo" class="brand-logo">
-  <div class="brand-text">
-    <h3>Dawood Tariq</h3>
-    <p>3D Websites • AI • Trading • Excel</p>
-  </div>
-</a>
-
+    <a href="index.html" class="brand">
+      <img src="logo-icon.png" alt="Dawood Tariq Logo" class="brand-logo">
+      <div class="brand-text">
+        <h3>Dawood Tariq</h3>
+        <p>Premium Website Specialist</p>
+      </div>
+    </a>
     <nav class="nav-links" id="navMenu">
       <a href="index.html">Home</a>
       <a href="services.html" class="active">Services</a>
       <a href="pricing.html">Pricing</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
-      <a href="landing-page.html">Demo</a>
+      <a href="index.html#portfolio">Portfolio</a>
     </nav>
-
-    <a class="header-btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20your%20services." target="_blank">
-      Discuss Services ✨
-    </a>
-
+    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20premium%20website." target="_blank">Start Website ✦</a>
     <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
-
   </div>
 </header>
 
 <main>
-
-<section class="hero">
-  <div class="hero-inner">
-
-    <div>
-      <div class="eyebrow">Premium Services</div>
-
-      <h1>
-        Luxury Digital Services For <span class="gradient">Modern Brands</span>
-      </h1>
-
-      <p>
-        I create premium websites, smart AI website assistants, WordPress websites, landing pages,
-        Excel automation tools, trading systems and import/export documentation support with a clean,
-        mobile-first and professional experience.
-      </p>
-
-      <div class="hero-buttons">
-        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20your%20services." target="_blank">
-          Discuss Services
-        </a>
-
-        <a class="btn btn-secondary" href="#services">
-          View Services
-        </a>
+<section class="services-hero">
+  <div class="services-hero-grid">
+    <div class="services-copy glass reveal">
+      <div class="eyebrow">Website Services</div>
+      <h1>Premium website services for <span class="gradient-text">modern businesses.</span></h1>
+      <p>From business websites and landing pages to WordPress builds, redesigns and portfolio websites — every service is built around clean presentation, premium visuals, mobile-first layout and direct WhatsApp inquiries.</p>
+      <div class="btn-row" style="margin-top:28px;">
+        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20a%20website%20service." target="_blank">Discuss Website</a>
+        <a class="btn btn-secondary" href="#packages">View Packages</a>
       </div>
-
-      <div class="hero-stats">
-        <div class="hero-stat">🌐 Premium 3D Websites</div>
-        <div class="hero-stat">🤖 Smart AI Assistant</div>
-        <div class="hero-stat">🧩 WordPress Websites</div>
-        <div class="hero-stat">📊 Excel + Business Tools</div>
+      <div class="hero-service-pills">
+        <span>Business Website</span>
+        <span>Landing Page</span>
+        <span>WordPress</span>
+        <span>Redesign</span>
+        <span>Portfolio Website</span>
       </div>
     </div>
 
-    <div class="hero-card glass">
-      <h3>What You Get</h3>
-      <p>
-        Premium design, clear service sections, responsive layout, WhatsApp contact flow,
-        AI assistant guidance and professional presentation for your brand.
-      </p>
-
-      <div class="hero-list">
-        <div>✔ Mobile + Laptop Perfect</div>
-        <div>✔ WhatsApp Lead System</div>
-        <div>✔ Clean Luxury Branding</div>
-        <div>✔ SEO-Friendly Structure</div>
+    <div class="hero-showcase reveal">
+      <div class="showcase-large">
+        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1300&q=85" alt="Premium web design workspace">
+      </div>
+      <div class="hero-floating-card">
+        <strong>Service page with clear focus.</strong>
+        <p>This page is built to explain website services, show visual proof and move clients toward pricing or WhatsApp.</p>
       </div>
     </div>
-
   </div>
-</section>
-<section class="section">
-  <div class="section-inner">
 
-    <div class="live-stats">
-      <div class="live-stat glass">
-        <h3>3D+</h3>
-        <p>Premium Website Style</p>
-      </div>
-
-      <div class="live-stat glass">
-        <h3>100%</h3>
-        <p>Responsive Layout</p>
-      </div>
-
-      <div class="live-stat glass">
-        <h3>AI</h3>
-        <p>Website Assistant Ready</p>
-      </div>
-
-      <div class="live-stat glass">
-        <h3>24/7</h3>
-        <p>Lead Contact Flow</p>
-      </div>
-    </div>
-
+  <div class="quick-strip reveal">
+    <div class="quick-item"><strong>6</strong><span>Core Website Services</span></div>
+    <div class="quick-item"><strong>5+</strong><span>Demo Project Styles</span></div>
+    <div class="quick-item"><strong>100%</strong><span>Phone + Laptop Ready</span></div>
+    <div class="quick-item"><strong>WA</strong><span>Lead Button Included</span></div>
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <div class="section-inner">
-
-    <div class="section-title">
-      <div class="eyebrow">Service Categories</div>
-
-      <h2>
-        Choose The Right <span class="gradient">Service Direction</span>
-      </h2>
-
-      <p>
-        Services are grouped clearly so clients can understand what they need before asking for a quote.
-      </p>
+    <div class="featured-service">
+      <div class="featured-panel glass">
+        <div class="eyebrow">Main Service</div>
+        <h2>Premium business websites that make your brand look trusted.</h2>
+        <p>A business website should not only look attractive. It should explain your offer clearly, show proof, answer common questions and make it easy for visitors to contact you.</p>
+        <div class="featured-list">
+          <div>✔ Premium Hero Section</div>
+          <div>✔ Services + Pricing Flow</div>
+          <div>✔ Portfolio Proof</div>
+          <div>✔ WhatsApp CTA</div>
+          <div>✔ Mobile-First Layout</div>
+          <div>✔ SEO Meta Setup</div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="pricing.html">See Website Pricing</a>
+          <a class="btn btn-secondary" href="index.html#portfolio">View Portfolio</a>
+        </div>
+      </div>
+      <div class="featured-image glass">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Premium website specialist workspace">
+      </div>
     </div>
-
-    <div class="category-grid">
-
-      <div class="category-card glass">
-        <h3>🌐 Website Services</h3>
-        <p>
-          Premium websites, landing pages, WordPress websites and AI assistant-ready layouts
-          for brands that want a strong online presence.
-        </p>
-
-        <div class="category-tags">
-          <span>3D Website</span>
-          <span>Landing Page</span>
-          <span>WordPress</span>
-          <span>AI Assistant</span>
-        </div>
-      </div>
-
-      <div class="category-card glass">
-        <h3>📊 Business Systems</h3>
-        <p>
-          Practical tools for businesses including Excel dashboards, reports,
-          trackers and import/export documentation support.
-        </p>
-
-        <div class="category-tags">
-          <span>Excel</span>
-          <span>Reports</span>
-          <span>Documentation</span>
-          <span>Business Tools</span>
-        </div>
-      </div>
-
-      <div class="category-card glass">
-        <h3>📈 Trading Tools</h3>
-        <p>
-          XAUUSD-focused tools including trading journals, risk calculators,
-          review sheets and discipline-based tracking systems.
-        </p>
-
-        <div class="category-tags">
-          <span>XAUUSD</span>
-          <span>Risk Tool</span>
-          <span>Journal</span>
-          <span>Review System</span>
-        </div>
-      </div>
-
-    </div>
-
   </div>
 </section>
 
-<section class="section" id="services">
+<section class="section reveal" id="services-list">
   <div class="section-inner">
-
     <div class="section-title">
       <div class="eyebrow">Services</div>
-
-      <h2>
-        Premium Services & <span class="gradient">Starting Prices</span>
-      </h2>
-
-      <p>
-        Final pricing depends on project size, pages, custom features, deadline and required support.
-      </p>
+      <h2>Website services built around <span class="gradient-text">business goals.</span></h2>
+      <p>Choose the service that matches your current need: a full website, single landing page, WordPress setup, redesign, portfolio website or ongoing maintenance.</p>
     </div>
 
-    <div class="service-grid">
-
-      <div class="service-card glass featured">
-        <div class="service-icon">🌐</div>
-
-        <h3>Premium 3D Website</h3>
-
-        <p>
-          A luxury website with futuristic sections, premium animations, strong hero layout,
-          mobile-first structure and professional branding.
-        </p>
-
-        <ul>
-          <li>3D-style visual experience</li>
-          <li>Premium hero and service sections</li>
-          <li>Mobile, tablet and laptop ready</li>
-          <li>WhatsApp contact flow</li>
-        </ul>
-
-        <div class="price-tag">$250+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">🧩</div>
-
-        <h3>WordPress Website</h3>
-
-        <p>
-          Business WordPress website setup with pages, inquiry forms, booking/contact forms,
-          service sections and email notification support.
-        </p>
-
-        <ul>
-          <li>Business website setup</li>
-          <li>Inquiry/contact form</li>
-          <li>Booking form option</li>
-          <li>Email notifications</li>
-        </ul>
-
-        <div class="price-tag">$300+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">🤖</div>
-
-        <h3>AI Website Assistant</h3>
-
-        <p>
-          A smart website assistant that helps visitors understand services, pricing,
-          project requirements and contact through WhatsApp.
-        </p>
-
-        <ul>
-          <li>Smart quick replies</li>
-          <li>Service guidance</li>
-          <li>Lead collection flow</li>
-          <li>WhatsApp redirect</li>
-        </ul>
-
-        <div class="price-tag">$50+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">🎯</div>
-
-        <h3>Landing Page Design</h3>
-
-        <p>
-          Clean and high-converting landing page for offers, services, portfolios
-          and client lead generation.
-        </p>
-
-        <ul>
-          <li>Offer-focused layout</li>
-          <li>Clear CTA buttons</li>
-          <li>Fast responsive sections</li>
-          <li>Lead-focused structure</li>
-        </ul>
-
-        <div class="price-tag">$80+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">📱</div>
-
-        <h3>Mobile-Friendly Website</h3>
-
-        <p>
-          Responsive website improvements, hamburger menu setup, readable mobile sections
-          and smooth mobile browsing experience.
-        </p>
-
-        <ul>
-          <li>Mobile layout fix</li>
-          <li>Hamburger menu</li>
-          <li>Responsive cards</li>
-          <li>Phone-friendly sections</li>
-        </ul>
-
-        <div class="price-tag">$70+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">🧑‍💼</div>
-
-        <h3>Portfolio Website</h3>
-
-        <p>
-          Personal brand website with services, portfolio proof, testimonials,
-          contact buttons and premium presentation.
-        </p>
-
-        <ul>
-          <li>Personal brand layout</li>
-          <li>Work showcase</li>
-          <li>Testimonials section</li>
-          <li>Direct contact buttons</li>
-        </ul>
-
-        <div class="price-tag">$80+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">⚙️</div>
-
-        <h3>Website Maintenance</h3>
-
-        <p>
-          Website fixes, redesign, content updates, mobile layout fixes
-          and professional improvements for existing pages.
-        </p>
-
-        <ul>
-          <li>Bug fixes</li>
-          <li>Content updates</li>
-          <li>Layout improvement</li>
-          <li>Mobile fixes</li>
-        </ul>
-
-        <div class="price-tag">$50+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">📊</div>
-
-        <h3>Excel Automation</h3>
-
-        <p>
-          Excel dashboards, trackers, calculators, business sheets,
-          trading journals and reporting systems.
-        </p>
-
-        <ul>
-          <li>Dashboards</li>
-          <li>Reports</li>
-          <li>Calculators</li>
-          <li>Trackers</li>
-        </ul>
-
-        <div class="price-tag">$35+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">📈</div>
-
-        <h3>Trading Tools</h3>
-
-        <p>
-          XAUUSD trading journals, risk calculators, strategy trackers
-          and review systems for discipline-based trading.
-        </p>
-
-        <ul>
-          <li>XAUUSD journal</li>
-          <li>Risk calculator</li>
-          <li>Trade review system</li>
-          <li>Strategy tracker</li>
-        </ul>
-
-        <div class="price-tag">$100+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">📦</div>
-
-        <h3>Import / Export Documentation</h3>
-
-        <p>
-          Documentation-related support including GD, PSW, WebOC,
-          import permit tracking and business document handling.
-        </p>
-
-        <ul>
-          <li>GD support</li>
-          <li>PSW / WebOC</li>
-          <li>Import permit tracking</li>
-          <li>Documentation support</li>
-        </ul>
-
-        <div class="price-tag">$70+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">🎨</div>
-
-        <h3>Premium Logo Concept</h3>
-
-        <p>
-          Clean premium logo concept designed to match your website branding
-          and give your project a professional first impression.
-        </p>
-
-        <ul>
-          <li>Brand matching</li>
-          <li>Website-friendly logo</li>
-          <li>Premium visual style</li>
-          <li>Clean concept</li>
-        </ul>
-
-        <div class="price-tag">$40+</div>
-      </div>
-
-      <div class="service-card glass">
-        <div class="service-icon">💬</div>
-
-        <h3>WhatsApp Lead System</h3>
-
-        <p>
-          Direct WhatsApp buttons, pre-filled messages and contact flow
-          to help serious clients reach you faster.
-        </p>
-
-        <ul>
-          <li>Pre-filled WhatsApp messages</li>
-          <li>Contact buttons</li>
-          <li>Quote request flow</li>
-          <li>Client lead routing</li>
-        </ul>
-
-        <div class="price-tag">Included</div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<section class="section">
-  <div class="section-inner">
-
-    <div class="section-title">
-      <div class="eyebrow">WordPress Service</div>
-
-      <h2>
-        Professional <span class="gradient">WordPress Website</span> Setup
-      </h2>
-
-      <p>
-        Best for businesses that need easy updates, forms, service pages, inquiry systems,
-        booking/contact flow and email notifications.
-      </p>
-    </div>
-
-    <div class="category-grid">
-      <div class="category-card glass">
-        <h3>📝 Easy Content Updates</h3>
-        <p>Update text, images, services and pages more easily through WordPress dashboard.</p>
-      </div>
-
-      <div class="category-card glass">
-        <h3>📩 Inquiry Forms</h3>
-        <p>Add forms for client inquiries, bookings, quote requests and email notifications.</p>
-      </div>
-
-      <div class="category-card glass">
-        <h3>🔎 SEO Friendly</h3>
-        <p>WordPress is good for blogs, service pages and SEO-focused business websites.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-inner">
-
-    <div class="section-title">
-      <div class="eyebrow">Service Guide</div>
-
-      <h2>
-        Which Service Is <span class="gradient">Best For You?</span>
-      </h2>
-
-      <p>
-        This quick guide helps clients understand which service fits their business goal.
-      </p>
-    </div>
-
-    <div class="comparison glass">
-      <div class="compare-row compare-head">
-        <div>Service</div>
-        <div>Best For</div>
-        <div>Starting Price</div>
-      </div>
-
-      <div class="compare-row">
-        <div>Landing Page</div>
-        <div>Single offer, product, service or portfolio lead page</div>
-        <div>$80+</div>
-      </div>
-
-      <div class="compare-row">
-        <div>Premium 3D Website</div>
-        <div>Luxury brands, personal brands and modern business websites</div>
-        <div>$250+</div>
-      </div>
-
-      <div class="compare-row">
-        <div>WordPress Website</div>
-        <div>Businesses needing forms, updates, blog or booking system</div>
-        <div>$300+</div>
-      </div>
-
-      <div class="compare-row">
-        <div>AI Website Assistant</div>
-        <div>Websites that need visitor guidance and WhatsApp lead flow</div>
-        <div>$50+</div>
-      </div>
-
-      <div class="compare-row">
-        <div>Excel Automation</div>
-        <div>Dashboards, reports, trackers and business calculators</div>
-        <div>$35+</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-inner">
-
-    <div class="offer-box glass">
-      <div class="eyebrow">Limited Offer</div>
-
-      <h2>
-        Start Your First Website With <span class="gradient">20% OFF</span>
-      </h2>
-
-      <p>
-        Get a premium mobile-first website with modern layout, WhatsApp contact,
-        SEO-friendly wording and a free premium logo concept for your first website project.
-      </p>
-
-      <div class="offer-points">
-        <div>✔ 20% OFF First Website</div>
-        <div>✔ Free Premium Logo Concept</div>
-        <div>✔ Mobile + Laptop Ready</div>
-      </div>
-
-      <div class="hero-buttons" style="justify-content:center;">
-        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hello%20Dawood%2C%20I%20want%20to%20claim%2020%25%20OFF%20for%20my%20first%20website." target="_blank">
-          Claim Offer on WhatsApp
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-inner">
-
-    <div class="section-title">
-      <div class="eyebrow">Demo Work</div>
-
-      <h2>
-        Preview My <span class="gradient">Digital Work</span>
-      </h2>
-
-      <p>
-        Use these demos and proof sections to show visitors what type of work you can build.
-      </p>
-    </div>
-
-    <div class="category-grid">
-
-      <div class="category-card glass">
-        <h3>🌐 Demo Landing Page</h3>
-        <p>Modern responsive landing page for business and service websites.</p>
-        <div style="margin-top:18px;">
-          <a class="btn btn-secondary" href="landing-page.html" target="_blank">Live Preview</a>
+    <div class="service-lane">
+      <article class="service-row glass">
+        <div class="service-number">01</div>
+        <div>
+          <h3>Premium Business Website</h3>
+          <p>A complete website for businesses, service providers, agencies and personal brands.</p>
         </div>
-      </div>
+        <ul><li>5-page structure</li><li>Premium visuals</li><li>WhatsApp contact</li></ul>
+      </article>
 
-      <div class="category-card glass">
-        <h3>🤖 AI Assistant Demo</h3>
-        <p>Smart website assistant preview for pricing, services and WhatsApp lead guidance.</p>
-        <div style="margin-top:18px;">
-          <a class="btn btn-secondary" href="#" onclick="openAI(); return false;">
-            Try AI Assistant
-          </a>
+      <article class="service-row glass">
+        <div class="service-number">02</div>
+        <div>
+          <h3>Landing Page Design</h3>
+          <p>A single focused page for offers, campaigns, service launches and lead collection.</p>
         </div>
-      </div>
+        <ul><li>Strong CTA</li><li>Offer sections</li><li>Fast layout</li></ul>
+      </article>
 
-      <div class="category-card glass">
-        <h3>🧩 WordPress Demo</h3>
-        <p>Business WordPress setup with forms, pages, inquiry system and email notifications.</p>
-      </div>
+      <article class="service-row glass">
+        <div class="service-number">03</div>
+        <div>
+          <h3>WordPress Website</h3>
+          <p>A professional WordPress structure for businesses that need easier content updates.</p>
+        </div>
+        <ul><li>Business pages</li><li>Contact form</li><li>Easy updates</li></ul>
+      </article>
 
+      <article class="service-row glass">
+        <div class="service-number">04</div>
+        <div>
+          <h3>Website Redesign</h3>
+          <p>Upgrade old pages with better spacing, modern visuals, clear sections and mobile polish.</p>
+        </div>
+        <ul><li>Layout upgrade</li><li>New colors</li><li>Better hierarchy</li></ul>
+      </article>
+
+      <article class="service-row glass">
+        <div class="service-number">05</div>
+        <div>
+          <h3>Portfolio Website</h3>
+          <p>A personal brand website for showing work, services, client proof and contact options.</p>
+        </div>
+        <ul><li>Project cards</li><li>Testimonials</li><li>Personal branding</li></ul>
+      </article>
+
+      <article class="service-row glass">
+        <div class="service-number">06</div>
+        <div>
+          <h3>Website Maintenance</h3>
+          <p>Content updates, layout fixes, responsive improvements and small website changes.</p>
+        </div>
+        <ul><li>Bug fixes</li><li>Content edits</li><li>Mobile fixes</li></ul>
+      </article>
     </div>
-
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal" id="packages">
   <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Packages</div>
+      <h2>Simple website package preview.</h2>
+      <p>Final pricing depends on pages, design level, images, forms, animations, deadline and publishing support.</p>
+    </div>
 
+    <div class="package-grid">
+      <div class="package-card glass">
+        <div class="eyebrow">Starter</div>
+        <h3>Landing Page</h3>
+        <p>Best for one offer, one service or a fast professional online presence.</p>
+        <div class="package-price">$80+</div>
+        <ul><li>Single page</li><li>Hero + service sections</li><li>WhatsApp button</li><li>Responsive layout</li></ul>
+        <a class="btn btn-secondary" href="pricing.html">View Details</a>
+      </div>
+
+      <div class="package-card featured glass">
+        <div class="eyebrow">Popular</div>
+        <h3>Business Website</h3>
+        <p>Best for small businesses, freelancers and service providers who need a complete site.</p>
+        <div class="package-price">$150+</div>
+        <ul><li>Multiple sections/pages</li><li>Service presentation</li><li>Portfolio/proof section</li><li>Contact flow</li></ul>
+        <a class="btn btn-primary" href="pricing.html">View Details</a>
+      </div>
+
+      <div class="package-card glass">
+        <div class="eyebrow">Premium</div>
+        <h3>Luxury Website</h3>
+        <p>Best for brands that need stronger visuals, custom sections and premium presentation.</p>
+        <div class="package-price">$250+</div>
+        <ul><li>Luxury UI sections</li><li>Advanced layout</li><li>Image-led design</li><li>Launch support</li></ul>
+        <a class="btn btn-secondary" href="pricing.html">View Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Portfolio Preview</div>
+      <h2>Website styles available for different industries.</h2>
+      <p>These demo concepts help clients understand what type of website style they can order.</p>
+    </div>
+
+    <div class="portfolio-strip">
+      <a class="strip-project" href="https://tdawood444-cloud.github.io/ARUROA-HOUSE-/" target="_blank">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85" alt="Aurora House demo website">
+        <div><h3>Aurora House</h3><p>Luxury booking-style website</p></div>
+      </a>
+      <a class="strip-project" href="contact.html">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=85" alt="Auto studio website demo">
+        <div><h3>Auto Studio</h3><p>Car detailing service website</p></div>
+      </a>
+      <a class="strip-project" href="contact.html">
+        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85" alt="Luxury watches website demo">
+        <div><h3>Luxury Watches</h3><p>Premium product showcase</p></div>
+      </a>
+      <a class="strip-project" href="contact.html">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Estate interior website demo">
+        <div><h3>Estate Interior</h3><p>Property and interior website</p></div>
+      </a>
+      <a class="strip-project" href="contact.html">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85" alt="Service business website demo">
+        <div><h3>Service Business</h3><p>Lead-focused business site</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Process</div>
+      <h2>From idea to live website.</h2>
+      <p>A clear process keeps the project simple, professional and easy to follow.</p>
+    </div>
+
+    <div class="process-timeline">
+      <div class="step-card glass"><span>01</span><h3>Consultation</h3><p>Share your business, pages, services, colors and reference style.</p></div>
+      <div class="step-card glass"><span>02</span><h3>Structure</h3><p>I plan the section flow, hero message, CTA direction and page hierarchy.</p></div>
+      <div class="step-card glass"><span>03</span><h3>Design</h3><p>The website layout is created with premium visuals and responsive spacing.</p></div>
+      <div class="step-card glass"><span>04</span><h3>Testing</h3><p>Mobile, tablet, laptop, buttons, links and layout are checked before launch.</p></div>
+      <div class="step-card glass"><span>05</span><h3>Launch</h3><p>Final page is ready for GitHub Pages, hosting or your own domain setup.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-inner">
     <div class="section-title">
       <div class="eyebrow">Why Choose Me</div>
-
-      <h2>
-        Built For Real Clients, Not Just <span class="gradient">Pretty Screens</span>
-      </h2>
-
-      <p>
-        The goal is not only design. The goal is to help visitors understand your services,
-        trust your brand and contact you easily.
-      </p>
+      <h2>Why businesses choose my websites.</h2>
+      <p>Every website is built to look premium, load cleanly, explain the service clearly and help visitors take action.</p>
     </div>
 
-    <div class="category-grid">
-
-      <div class="category-card glass">
-        <h3>📱 Mobile-First Layout</h3>
-        <p>Your website is designed to look clean on phone, tablet and laptop screens.</p>
-      </div>
-
-      <div class="category-card glass">
-        <h3>✨ Luxury Visual Style</h3>
-        <p>Premium purple/cyan 3D-inspired design with clean spacing and attractive sections.</p>
-      </div>
-
-      <div class="category-card glass">
-        <h3>💬 Lead Friendly Flow</h3>
-        <p>Clear buttons, WhatsApp links and AI assistant-ready flow for better client contact.</p>
-      </div>
-
+    <div class="why-grid">
+      <div class="why-card glass"><h3>📱 Mobile-First</h3><p>Most visitors open websites from phones, so the mobile experience is handled first.</p></div>
+      <div class="why-card glass"><h3>🖼️ Image-Led Design</h3><p>Strong image sections and visual cards make the website feel more premium.</p></div>
+      <div class="why-card glass"><h3>⚡ Clear CTA Flow</h3><p>Buttons and sections guide visitors toward WhatsApp, pricing or contact.</p></div>
+      <div class="why-card glass"><h3>🔎 SEO Ready</h3><p>Meta tags, page titles and clean service wording are included for a professional setup.</p></div>
+      <div class="why-card glass"><h3>🧭 Better Hierarchy</h3><p>Important services and actions stand out instead of every element looking equal.</p></div>
+      <div class="why-card glass"><h3>🧩 Easy To Expand</h3><p>The structure can later support more pages, portfolio projects and extra features.</p></div>
     </div>
-
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal" id="contact">
   <div class="section-inner">
-
-    <div class="section-title">
-      <div class="eyebrow">Testimonials</div>
-
-      <h2>
-        Client Style <span class="gradient">Feedback</span>
-      </h2>
-    </div>
-
-    <div class="category-grid">
-
-      <div class="category-card glass">
-        <h3>★★★★★</h3>
-        <p>“The design looks modern, premium and mobile-friendly. Perfect for a professional brand.”</p>
-      </div>
-
-      <div class="category-card glass">
-        <h3>★★★★★</h3>
-        <p>“The AI assistant makes the website feel smart and helps visitors understand services quickly.”</p>
-      </div>
-
-      <div class="category-card glass">
-        <h3>★★★★★</h3>
-        <p>“Clean service sections, strong layout and easy WhatsApp contact flow.”</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-inner">
-
     <div class="final-cta glass">
-      <div class="eyebrow">Ready To Start?</div>
-
-      <h2>
-        Let’s Build Your Next <span class="gradient">Premium Digital System</span>
-      </h2>
-
-      <p>
-        Send your project details, required pages and business idea. I will guide you with the best
-        service direction and starting package.
-      </p>
-
-      <div class="hero-buttons" style="justify-content:center;">
-        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20a%20website%2C%20WordPress%20or%20AI%20assistant%20project." target="_blank">
-          Get Quote on WhatsApp
-        </a>
-
-        <a class="btn btn-secondary" href="pricing.html">
-          View Pricing
-        </a>
+      <div>
+        <div class="eyebrow">Ready To Start?</div>
+        <h2>Let’s build your <span class="gradient-text">premium website</span> with a clean service flow.</h2>
+        <p>Send your business idea, required pages and reference style. I’ll guide you with the best website package and next steps.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20start%20my%20website%20project." target="_blank">Start on WhatsApp</a>
+          <a class="btn btn-secondary" href="pricing.html">View Pricing</a>
+        </div>
+      </div>
+      <div class="final-preview">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85" alt="Website project consultation">
       </div>
     </div>
-
   </div>
 </section>
-
 </main>
 
 <footer class="site-footer">
-  <p>© 2026 Dawood Tariq | New Era 3D Websites • AI Assistant • WordPress • Digital Systems</p>
+  <p>© 2026 Dawood Tariq | Premium Website Specialist • Business Websites • Landing Pages • WordPress Websites</p>
 </footer>
 
 <script>
 function toggleMenu(){
-  const navMenu = document.getElementById("navMenu");
-  if(navMenu){
-    navMenu.classList.toggle("active");
-  }
+  const nav=document.getElementById('navMenu');
+  const btn=document.querySelector('.menu-btn');
+  nav.classList.toggle('active');
+  btn.textContent=nav.classList.contains('active')?'×':'☰';
 }
 
-/* Safe temporary AI opener.
-   Later ai-assistant.js can replace this with the real popup. */
-function openAI(){
-  if(typeof toggleAI === "function"){
-    toggleAI();
-  }else{
-    alert("AI Assistant will be connected after the shared ai-assistant.js file is created.");
-  }
-}
+document.querySelectorAll('.nav-links a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    const nav=document.getElementById('navMenu');
+    const btn=document.querySelector('.menu-btn');
+    nav.classList.remove('active');
+    btn.textContent='☰';
+  });
+});
+
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('active');}
+  });
+},{threshold:.14});
+
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 </script>
-
-<script src="ai-assistant.js"></script>
 </body>
 </html>
