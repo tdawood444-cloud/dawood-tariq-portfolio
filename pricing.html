@@ -1,2375 +1,472 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Pricing | Dawood Tariq | 3D Websites, AI Assistant, WordPress, Excel & Trading Services</title>
-
-<meta name="description" content="Premium pricing packages by Dawood Tariq for New Era 3D websites, WordPress websites, AI website assistant, landing pages, Excel dashboards, import/export documentation and XAUUSD trading support.">
-<meta name="keywords" content="Dawood Tariq pricing, 3D website Pakistan, WordPress website, AI website assistant, AI website assistant, landing page design, Excel dashboard, trading journal, import export documentation, XAUUSD trading support">
+<title>Pricing | Dawood Tariq | Premium Website Specialist</title>
+<meta name="description" content="Website pricing packages by Dawood Tariq for premium business websites, landing pages, WordPress websites, portfolio websites, redesigns and website maintenance.">
+<meta name="keywords" content="Dawood Tariq pricing, website pricing, business website package, landing page design, WordPress website, portfolio website, website redesign, website maintenance, web designer Pakistan">
 <meta name="author" content="Dawood Tariq">
+<meta name="robots" content="index, follow">
 <link rel="icon" href="logo-icon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta property="og:title" content="Pricing | Dawood Tariq Premium Website Specialist">
+<meta property="og:description" content="Premium website packages for businesses, portfolios, landing pages, WordPress websites and redesigns.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#030712;
-  --bg2:#060b18;
-  --card:rgba(255,255,255,.075);
-  --card2:rgba(255,255,255,.045);
-  --line:rgba(255,255,255,.14);
-  --text:#ffffff;
-  --muted:#b9c3da;
-  --purple:#9b5cff;
-  --purple2:#a855f7;
-  --cyan:#00e5ff;
-  --cyan2:#38bdf8;
-  --pink:#ec4899;
-  --green:#34d399;
-  --shadow:0 24px 80px rgba(0,0,0,.42);
-  --glow:0 0 35px rgba(34,211,238,.22),0 0 55px rgba(139,92,246,.18);
+  --bg:#050505;
+  --bg2:#0b0a08;
+  --panel:#11100d;
+  --panel2:#17140f;
+  --card:#15130f;
+  --gold:#d8b45a;
+  --gold2:#f3d890;
+  --bronze:#8a612f;
+  --emerald:#1f8a5b;
+  --emerald2:#57c68c;
+  --ivory:#fff8ea;
+  --text:#f8f4ea;
+  --muted:#b9ad99;
+  --soft:#e7d8bd;
+  --line:rgba(255,255,255,.13);
+  --glass:rgba(255,255,255,.065);
+  --shadow:0 30px 95px rgba(0,0,0,.48);
+  --radius:28px;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-  font-family:'Inter',sans-serif;
- background:
-  radial-gradient(circle at 15% 15%,rgba(155,92,255,.26),transparent 28%),
-  radial-gradient(circle at 85% 12%,rgba(0,229,255,.18),transparent 30%),
-  radial-gradient(circle at 50% 105%,rgba(59,130,246,.16),transparent 38%),
-  linear-gradient(135deg,#02040d,#050816 45%,#07111f);
+  font-family:"Inter",system-ui,sans-serif;
   color:var(--text);
+  background:
+    radial-gradient(circle at 8% 6%,rgba(216,180,90,.18),transparent 30%),
+    radial-gradient(circle at 88% 10%,rgba(31,138,91,.17),transparent 29%),
+    radial-gradient(circle at 55% 100%,rgba(138,97,47,.16),transparent 34%),
+    linear-gradient(135deg,#030303,#0b0906 46%,#070806);
   overflow-x:hidden;
 }
-
-body::before{
+body:before{
   content:"";
   position:fixed;
   inset:0;
   z-index:-2;
   pointer-events:none;
   background-image:
-    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-  background-size:46px 46px;
-  mask-image:linear-gradient(to bottom,rgba(0,0,0,.72),transparent 78%);
-}
-
-body::after{
-  content:"";
-  position:fixed;
-  inset:auto -120px -160px auto;
-  width:420px;
-  height:420px;
-  background:radial-gradient(circle,rgba(34,211,238,.18),transparent 65%);
-  filter:blur(10px);
-  z-index:-1;
-  pointer-events:none;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-header{
-  position:sticky;
-  top:0;
-  z-index:999;
-  padding:16px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:rgba(5,7,22,.76);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid var(--line);
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
-.brand img{
-  width:48px;
-  height:48px;
-  border-radius:18px;
-  object-fit:contain;
-  border:1px solid rgba(34,211,238,.45);
-  background:linear-gradient(135deg,rgba(139,92,246,.18),rgba(34,211,238,.13));
-  padding:6px;
-  box-shadow:var(--glow);
-}
-
-.brand h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:17px;
-  line-height:1.1;
-  letter-spacing:.2px;
-}
-
-.brand p{
-  font-size:12px;
-  color:var(--muted);
-  margin-top:3px;
-}
-
-nav{
-  display:flex;
-  align-items:center;
-  gap:20px;
-}
-
-nav a{
-  font-size:14px;
-  font-weight:800;
-  color:#ecf7ff;
-  opacity:.92;
-  transition:.25s;
-}
-
-nav a:hover,
-nav a.active{
-  color:var(--cyan);
-  text-shadow:0 0 18px rgba(34,211,238,.55);
-}
-
-.nav-cta{
-  padding:10px 16px;
-  border-radius:999px;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff!important;
-  box-shadow:var(--glow);
-}
-
-.menu-btn{
-  display:none;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.24);
-  color:#fff;
-  font-size:28px;
-  padding:8px 14px;
-  border-radius:14px;
-  cursor:pointer;
-}
-
-.hero{
-  position:relative;
-  padding:96px 7% 54px;
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:40px;
-  align-items:center;
-}
-
-.hero-left{
-  position:relative;
-  z-index:2;
-}
-
-.kicker{
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
-  color:#c7f9ff;
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:2.8px;
-  text-transform:uppercase;
-  border:1px solid rgba(34,211,238,.25);
-  background:rgba(255,255,255,.06);
-  padding:10px 16px;
-  border-radius:999px;
-}
-
-.hero h1{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:58px;
-  line-height:1.02;
-  margin:20px 0 18px;
-  letter-spacing:-1.5px;
-}
-
-.gradient-text{
-  background:linear-gradient(135deg,#fff,var(--cyan),var(--purple2));
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-}
-
-.hero p{
-  color:var(--muted);
-  line-height:1.85;
-  font-size:16px;
-  max-width:780px;
-}
-
-.hero-actions{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-  margin-top:28px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  border:1px solid rgba(255,255,255,.18);
-  border-radius:999px;
-  padding:14px 22px;
-  font-weight:900;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  box-shadow:var(--glow);
-  transition:.25s;
-}
-
-.btn:hover{
-  transform:translateY(-3px);
-}
-
-.btn-secondary{
-  background:rgba(255,255,255,.06);
-  box-shadow:none;
-  color:#dffbff;
-}
-
-.hero-card{
-  position:relative;
-  border:1px solid var(--line);
-  border-radius:34px;
-  padding:28px;
-  background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.04));
-  box-shadow:var(--shadow);
-  overflow:hidden;
-  transform-style:preserve-3d;
-  animation:floatCard 6s ease-in-out infinite;
-}
-
-.hero-card::before{
-  content:"";
-  position:absolute;
-  inset:-2px;
-  background:
-    radial-gradient(circle at 20% 20%,rgba(34,211,238,.24),transparent 35%),
-    radial-gradient(circle at 80% 10%,rgba(139,92,246,.26),transparent 34%);
-  z-index:-1;
-}
-
-.hero-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:28px;
-  margin-bottom:12px;
-}
-
-.hero-card p{
-  font-size:14px;
-}
-
-.mini-prices{
-  display:grid;
-  gap:12px;
-  margin-top:22px;
-}
-
-.mini-price{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:18px;
-  padding:15px;
-  background:rgba(255,255,255,.055);
-}
-
-.mini-price b{
-  font-family:'Space Grotesk',sans-serif;
-}
-
-.mini-price span{
-  font-weight:950;
-  color:var(--cyan);
-}
-
-@keyframes floatCard{
-  0%,100%{transform:translateY(0) rotateX(0deg) rotateY(0deg);}
-  50%{transform:translateY(-12px) rotateX(2deg) rotateY(-2deg);}
-}
-
-section{
-  padding:58px 7%;
-  position:relative;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:36px;
-}
-
-.section-title span{
-  display:inline-block;
-  color:var(--cyan);
-  font-size:12px;
-  font-weight:950;
-  letter-spacing:2.6px;
-  text-transform:uppercase;
-  margin-bottom:10px;
-}
-
-.section-title h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:38px;
-  letter-spacing:-.7px;
-}
-
-.section-title p{
-  max-width:820px;
-  margin:12px auto 0;
-  color:var(--muted);
-  line-height:1.8;
-}
-
-.pricing-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:22px;
-}
-
-.small-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:22px;
-  max-width:980px;
-  margin:auto;
-}
-
-.info-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.price-card,
-.info-card{
-  position:relative;
-  overflow:hidden;
-  border:1px solid var(--line);
-  border-radius:28px;
-  padding:30px;
-  background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035));
-  box-shadow:0 18px 55px rgba(0,0,0,.24);
-  transition:.28s;
-}
-
-.price-card::before,
-.info-card::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:3px;
-  background:linear-gradient(90deg,transparent,var(--cyan),var(--purple),transparent);
-  opacity:.9;
-}
-
-.price-card::after,
-.info-card::after{
-  content:"";
-  position:absolute;
-  inset:auto -80px -110px auto;
-  width:190px;
-  height:190px;
-  background:radial-gradient(circle,rgba(139,92,246,.18),transparent 66%);
-  pointer-events:none;
-}
-
-.price-card:hover,
-.info-card:hover{
-  transform:translateY(-8px);
-  border-color:rgba(34,211,238,.38);
-  box-shadow:var(--shadow),var(--glow);
-}
-
-.featured{
-  border-color:rgba(34,211,238,.45);
-  box-shadow:var(--shadow),var(--glow);
-}
-
-.badge{
-  position:absolute;
-  top:16px;
-  right:16px;
-  padding:7px 12px;
-  border-radius:999px;
-  background:linear-gradient(135deg,var(--pink),var(--cyan));
-  font-size:11px;
-  font-weight:950;
-  color:#fff;
-  z-index:3;
-}
-
-.price-card h3,
-.info-card h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:23px;
-  margin-bottom:10px;
-  padding-right:82px;
-  position:relative;
-  z-index:2;
-}
-
-.price{
-  font-size:38px;
-  font-weight:950;
-  margin:12px 0 10px;
-  letter-spacing:-1px;
-  position:relative;
-  z-index:2;
-}
-
-.price span{
-  font-size:14px;
-  color:var(--muted);
-  font-weight:700;
-}
-
-.price-card p,
-.info-card p{
-  color:var(--muted);
-  line-height:1.7;
-  font-size:14.5px;
-  position:relative;
-  z-index:2;
-}
-
-.price-card ul,
-.info-card ul{
-  margin:18px 0 0 18px;
-  color:#e7ecff;
-  line-height:1.95;
-  font-size:14px;
-  position:relative;
-  z-index:2;
-}
-
-.price-card .btn,
-.info-card .btn{
-  margin-top:22px;
-  position:relative;
-  z-index:2;
-}
-
-.note{
-  max-width:980px;
-  margin:24px auto 0;
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.8;
-  text-align:center;
-}
-
-.offer{
-  max-width:1050px;
-  margin:auto;
-  border:1px solid rgba(34,211,238,.28);
-  border-radius:32px;
-  padding:38px 30px;
-  text-align:center;
-  background:linear-gradient(135deg,rgba(139,92,246,.16),rgba(34,211,238,.10),rgba(255,255,255,.045));
-  box-shadow:var(--shadow),var(--glow);
-}
-
-.offer h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:36px;
-  margin-bottom:10px;
-}
-
-.offer p{
-  color:var(--muted);
-  line-height:1.8;
-  max-width:820px;
-  margin:10px auto 0;
-}
-
-.payment-list{
-  margin-top:22px;
-  display:flex;
-  justify-content:center;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-.payment-pill{
-  border:1px solid rgba(255,255,255,.16);
-  background:rgba(255,255,255,.075);
-  padding:12px 18px;
-  border-radius:999px;
-  font-weight:900;
-  color:#eefdff;
-}
-
-.compare-wrap{
-  overflow-x:auto;
-  border:1px solid var(--line);
-  border-radius:26px;
-  background:rgba(255,255,255,.045);
-}
-
-table{
-  width:100%;
-  min-width:720px;
-  border-collapse:collapse;
-}
-
-th,td{
-  text-align:left;
-  padding:18px;
-  border-bottom:1px solid rgba(255,255,255,.1);
-  color:#e8eeff;
-}
-
-th{
-  font-family:'Space Grotesk',sans-serif;
-  color:var(--cyan);
-  font-size:15px;
-  background:rgba(255,255,255,.045);
-}
-
-tr:last-child td{
-  border-bottom:none;
-}
-
-.cta{
-  max-width:980px;
-  margin:auto;
-  text-align:center;
-  border:1px solid rgba(34,211,238,.28);
-  border-radius:34px;
-  padding:48px 28px;
-  background:
-    radial-gradient(circle at 15% 20%,rgba(139,92,246,.18),transparent 36%),
-    radial-gradient(circle at 85% 30%,rgba(34,211,238,.17),transparent 36%),
-    linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035));
-  box-shadow:var(--shadow),var(--glow);
-}
-
-.cta h2{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:38px;
-}
-
-.cta p{
-  color:var(--muted);
-  margin:14px auto 20px;
-  line-height:1.8;
-  max-width:720px;
-}
-
-footer{
-  padding:28px;
-  text-align:center;
-  color:var(--muted);
-  border-top:1px solid var(--line);
-  background:rgba(5,7,22,.72);
-}
-
-/* CATO AI ASSISTANT */
-.dt-ai-widget{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:999999;
-  font-family:'Inter',sans-serif;
-}
-
-.dt-ai-soft-bubble{
-  display:none;
-  position:fixed;
-  right:18px;
-  bottom:86px;
-  background:linear-gradient(135deg,#161a3b,#0a3442);
-  color:#fff;
-  border:1px solid rgba(34,211,238,.38);
-  padding:10px 14px;
-  border-radius:18px;
-  font-size:13px;
-  font-weight:800;
-  cursor:pointer;
-  box-shadow:var(--glow);
-  animation:dtSoftPop .35s ease;
-}
-
-@keyframes dtSoftPop{
-  from{opacity:0;transform:translateY(10px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
-.dt-ai-launcher{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background:linear-gradient(135deg,#171033,#07313d);
-  color:#fff;
-  border:1px solid rgba(34,211,238,.42);
-  padding:10px 16px 10px 10px;
-  border-radius:999px;
-  cursor:pointer;
-  box-shadow:var(--glow);
-}
-
-.dt-ai-launcher small{
-  display:block;
-  color:#c7f9ff;
-  font-size:11px;
-  margin-top:1px;
-}
-
-.dt-ai-avatar{
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:conic-gradient(from 180deg,var(--purple),var(--cyan),var(--pink),var(--purple));
-  padding:3px;
-  box-shadow:0 0 0 3px rgba(34,211,238,.12),0 0 20px rgba(34,211,238,.28);
-  animation:dtAvatarGlow 3s infinite ease-in-out;
-}
-
-.dt-ai-face{
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  background:#080b1f;
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-  font-size:12px;
-}
-
-.dt-ai-avatar.big{
-  width:48px;
-  height:48px;
-}
-
-@keyframes dtAvatarGlow{
-  0%,100%{box-shadow:0 0 0 3px rgba(34,211,238,.12),0 0 14px rgba(139,92,246,.20);}
-  50%{box-shadow:0 0 0 4px rgba(139,92,246,.16),0 0 26px rgba(34,211,238,.38);}
-}
-
-.dt-ai-panel{
-  display:none;
-  flex-direction:column;
-  position:fixed;
-  right:18px;
-  bottom:84px;
-  z-index:1000000;
-  width:420px;
-  height:min(650px, calc(100vh - 110px));
-  max-height:calc(100vh - 110px);
-  max-width:calc(100vw - 36px);
-  background:#080b1f;
-  border-radius:28px;
-  overflow:hidden;
-  box-shadow:var(--shadow),var(--glow);
-  border:1px solid rgba(34,211,238,.32);
-  animation:dtAiPop .25s ease;
-}
-
-.dt-ai-panel[style*="flex"]{
-  display:flex !important;
-}
-
-@keyframes dtAiPop{
-  from{opacity:0;transform:translateY(18px) scale(.98);}
-  to{opacity:1;transform:translateY(0) scale(1);}
-}
-
-.dt-ai-header{
-  flex-shrink:0;
-  min-height:70px;
-  background:linear-gradient(135deg,rgba(139,92,246,.35),rgba(34,211,238,.18));
-  color:#fff;
-  padding:14px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  border-bottom:1px solid rgba(255,255,255,.12);
-}
-
-.dt-ai-head-left{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.dt-ai-header strong{
-  font-family:'Space Grotesk',sans-serif;
-}
-
-.dt-ai-header small{
-  display:block;
-  color:#c8f7ff;
-  font-size:12px;
-  margin-top:3px;
-}
-
-.dt-ai-head-actions{
-  display:flex;
-  gap:5px;
-}
-
-.dt-ai-head-actions button{
-  width:32px;
-  height:32px;
-  border:none;
-  border-radius:50%;
-  background:rgba(255,255,255,.12);
-  color:#fff;
-  cursor:pointer;
-  font-size:15px;
-}
-
-.dt-ai-top-buttons{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:7px;
-  padding:10px;
-  background:rgba(255,255,255,.045);
-  flex-shrink:0;
-}
-
-.dt-ai-top-buttons button{
-  border:1px solid rgba(255,255,255,.12);
-  background:rgba(255,255,255,.075);
-  color:#fff;
-  border-radius:12px;
-  padding:9px 5px;
-  font-size:11px;
-  font-weight:850;
-  cursor:pointer;
-}
-
-.dt-ai-chat{
-  flex:1;
-  min-height:0;
-  overflow-y:auto;
-  padding:14px;
-  background:linear-gradient(180deg,#080b1f,#050716);
-}
-
-.dt-ai-msg{
-  max-width:88%;
-  padding:11px 12px;
-  margin-bottom:11px;
-  border-radius:16px;
-  font-size:14px;
-  line-height:1.45;
-  word-wrap:break-word;
-}
-
-.dt-ai-msg.bot{
-  background:rgba(255,255,255,.09);
-  color:#eff7ff;
-  border:1px solid rgba(255,255,255,.10);
-  border-top-left-radius:5px;
-}
-
-.dt-ai-msg.user{
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  margin-left:auto;
-  border-top-right-radius:5px;
-  font-weight:700;
-}
-
-.dt-ai-card,.dt-ai-price{
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:14px;
-  padding:10px;
-  margin-top:8px;
-}
-
-.dt-ai-card strong,.dt-ai-price b{
-  display:block;
-  color:#fff;
-  margin-bottom:4px;
-}
-
-.dt-ai-followups{
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  margin-top:9px;
-}
-
-.dt-ai-followups button{
-  background:rgba(34,211,238,.14);
-  color:#dffbff;
-  border:1px solid rgba(34,211,238,.24);
-  border-radius:999px;
-  padding:7px 10px;
-  font-size:12px;
-  font-weight:850;
-  cursor:pointer;
-}
-
-.dt-ai-wa{
-  display:inline-block;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff !important;
-  padding:10px 12px;
-  border-radius:12px;
-  text-decoration:none;
-  margin-top:8px;
-  font-weight:950;
-}
-
-.dt-ai-input-area{
-  display:flex;
-  border-top:1px solid rgba(255,255,255,.12);
-  background:#060817;
-  flex-shrink:0;
-}
-
-.dt-ai-input-area input{
-  flex:1;
-  border:none;
-  background:transparent;
-  color:#fff;
-  padding:16px;
-  outline:none;
-  font-size:14px;
-}
-
-.dt-ai-input-area input::placeholder{
-  color:#97a6c8;
-}
-
-.dt-ai-input-area button{
-  width:58px;
-  border:none;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  font-size:20px;
-  cursor:pointer;
-}
-
-.dt-ai-typing{
-  display:inline-flex;
-  gap:4px;
-  align-items:center;
-}
-
-.dt-ai-typing span{
-  width:6px;
-  height:6px;
-  background:#c7f9ff;
-  border-radius:50%;
-  animation:dtBlink 1s infinite;
-}
-
-.dt-ai-typing span:nth-child(2){animation-delay:.2s;}
-.dt-ai-typing span:nth-child(3){animation-delay:.4s;}
-
-@keyframes dtBlink{
-  0%,80%,100%{opacity:.25;}
-  40%{opacity:1;}
-}
-
-@media(max-width:1120px){
-  .service-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .hero{
-    grid-template-columns:1fr;
-  }
-
-  .hero-card{
-    max-width:680px;
-  }
-}
-
-@media(max-width:950px){
-  header{
-    padding:14px 18px;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  nav{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    padding:18px;
-    background:#050716;
-    border-bottom:1px solid var(--line);
-    flex-direction:column;
-    text-align:center;
-    gap:18px;
-  }
-
-  nav.active{
-    display:flex;
-  }
-
-  .nav-cta{
-    width:100%;
-  }
-
-  .brand h3{
-    font-size:14px;
-  }
-
-  .brand p{
-    font-size:11px;
-  }
-
-  .brand img{
-    width:46px;
-    height:46px;
-    border-radius:15px;
-  }
-
-  .hero{
-    padding:64px 18px 42px;
-  }
-
-  .hero h1{
-    font-size:42px;
-  }
-
-  .hero p{
-    font-size:15px;
-  }
-
-  section{
-    padding:46px 18px;
-  }
-
-  .pricing-grid,
-  .small-grid,
-  .service-grid,
-  .info-grid{
-    grid-template-columns:1fr;
-  }
-
-  .section-title h2{
-    font-size:31px;
-  }
-
-  .price-card,
-  .info-card{
-    padding:26px 22px;
-  }
-
-  .offer h2,
-  .cta h2{
-    font-size:30px;
-  }
-}
-
-@media(max-width:600px){
-  .hero h1{
-    font-size:36px;
-  }
-
-  .hero-actions .btn{
-    width:100%;
-  }
-
-  .price{
-    font-size:34px;
-  }
-
-  .price-card h3,
-  .info-card h3{
-    padding-right:70px;
-    font-size:21px;
-  }
-
-  .dt-ai-widget{
-    right:0;
-    bottom:0;
-  }
-
-  .dt-ai-soft-bubble{
-    right:12px;
-    bottom:78px;
-    max-width:260px;
-    font-size:12px;
-  }
-
-  .dt-ai-launcher{
-    right:12px;
-    bottom:12px;
-    position:fixed;
-    padding:9px 13px 9px 9px;
-  }
-
-  .dt-ai-panel{
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    width:100vw;
-    height:100vh;
-    max-width:100vw;
-    max-height:100vh;
-    border-radius:0;
-  }
-
-  .dt-ai-top-buttons{
-    grid-template-columns:repeat(4,1fr);
-    gap:6px;
-    padding:8px;
-  }
-
-  .dt-ai-top-buttons button{
-    font-size:10px;
-    padding:8px 2px;
-  }
-
-  .dt-ai-chat{
-    padding:11px;
-  }
-
-  .dt-ai-msg{
-    max-width:92%;
-    font-size:13.5px;
-  }
-
-  .dt-ai-input-area input{
-    font-size:15px;
-    padding:17px 13px;
-  }
-}
-
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:48px 48px;
+  mask-image:linear-gradient(to bottom,#000,transparent 78%);
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button,input,textarea,select{font-family:inherit}
+::selection{background:var(--gold);color:#050505}
 
-/* =========================
-   HOME-STYLE SHARED HEADER UPDATE
-========================= */
 .site-header{
-  position:sticky;
-  top:0;
-  z-index:99999;
-  width:100%;
-  padding:12px 5%;
-  background:rgba(3,7,18,.72);
-  backdrop-filter:blur(24px);
-  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:9999;width:100%;padding:13px 5%;
+  border-bottom:1px solid var(--line);background:rgba(5,5,5,.78);backdrop-filter:blur(22px);
 }
+.nav-shell{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo{width:50px;height:50px;object-fit:contain;border-radius:16px;filter:drop-shadow(0 0 18px rgba(216,180,90,.28))}
+.brand-text h3{font-family:"Manrope",sans-serif;font-size:16px;line-height:1.1;white-space:nowrap}
+.brand-text p{color:var(--muted);font-size:11px;margin-top:3px;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:21px}
+.nav-links a{color:#efe5d1;font-size:14px;font-weight:850;opacity:.88;position:relative;transition:.25s ease}
+.nav-links a:hover,.nav-links a.active{color:var(--gold2)}
+.nav-links a:after{content:"";position:absolute;left:0;bottom:-9px;width:0;height:2px;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--emerald2));transition:.25s ease}
+.nav-links a:hover:after,.nav-links a.active:after{width:100%}
+.header-cta{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;color:#100b04;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));font-size:13px;font-weight:950;box-shadow:0 16px 42px rgba(216,180,90,.2);transition:.28s ease;white-space:nowrap}
+.header-cta:hover{transform:translateY(-3px)}
+.menu-btn{display:none;width:46px;height:46px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.07);color:#fff;font-size:24px;cursor:pointer}
 
-.nav-shell{
-  max-width:1240px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
+.section{padding:86px 5%}.section-inner{max-width:1240px;margin:auto}
+.section-title{text-align:center;max-width:860px;margin:0 auto 44px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border-radius:999px;border:1px solid rgba(216,180,90,.34);background:rgba(216,180,90,.08);color:var(--gold2);font-size:12px;font-weight:950;letter-spacing:1.6px;text-transform:uppercase}
+.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--emerald2);box-shadow:0 0 14px rgba(87,198,140,.7)}
+.section-title h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,60px);line-height:1.05;letter-spacing:-1.2px;margin-top:14px}
+.section-title p{color:var(--muted);line-height:1.85;margin-top:15px;font-size:16px}
+.gradient-text{background:linear-gradient(135deg,#fff,var(--gold2),var(--gold),#d5ffe6);-webkit-background-clip:text;color:transparent}
+.btn-row{display:flex;flex-wrap:wrap;align-items:center;gap:13px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:16px;font-size:14px;font-weight:950;border:1px solid transparent;transition:.28s ease;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,var(--gold2),var(--gold),var(--bronze));color:#100b04;box-shadow:0 16px 42px rgba(216,180,90,.2)}
+.btn-secondary{color:var(--ivory);background:rgba(255,255,255,.055);border-color:var(--line)}
+.btn-dark{background:#090806;border-color:rgba(216,180,90,.28);color:var(--ivory)}
+.btn:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(216,180,90,.16)}
+.glass{background:radial-gradient(circle at top left,rgba(216,180,90,.12),transparent 36%),linear-gradient(145deg,rgba(255,255,255,.082),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+
+.pricing-hero{padding:74px 5% 50px;position:relative;overflow:hidden}
+.pricing-hero:after{content:"";position:absolute;right:-12%;top:8%;width:620px;height:620px;background:radial-gradient(circle,rgba(216,180,90,.13),transparent 67%);filter:blur(5px);z-index:-1}
+.hero-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:.95fr 1.05fr;gap:42px;align-items:center}
+.hero-copy h1{margin-top:18px;font-family:"Playfair Display",serif;font-size:clamp(46px,6.4vw,78px);line-height:1.01;letter-spacing:-2px}
+.hero-copy h2{margin-top:18px;font-size:clamp(18px,2vw,23px);line-height:1.45;color:#fff2d8;font-weight:750}
+.hero-copy p{margin-top:18px;color:var(--muted);line-height:1.85;max-width:670px}
+.hero-actions{margin-top:30px}
+.price-preview{padding:26px;border-radius:34px;position:relative;overflow:hidden}
+.preview-top{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:18px}
+.preview-top h3{font-family:"Playfair Display",serif;font-size:32px}
+.preview-badge{padding:9px 12px;border-radius:999px;background:rgba(87,198,140,.12);border:1px solid rgba(87,198,140,.3);color:#d5ffe6;font-weight:900;font-size:12px}
+.preview-list{display:grid;gap:12px}
+.preview-item{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px;border-radius:20px;background:rgba(255,255,255,.055);border:1px solid var(--line)}
+.preview-item b{color:#fff3da}.preview-item span{font-family:"Manrope",sans-serif;font-size:24px;font-weight:900;color:var(--gold2)}
+.preview-note{margin-top:16px;color:var(--muted);font-size:14px;line-height:1.65}
+
+.offer-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.offer-strip div{padding:16px;border-radius:18px;background:rgba(255,255,255,.055);border:1px solid var(--line);font-weight:900;color:#fff3da}
+
+.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.price-card{position:relative;overflow:hidden;padding:30px;border-radius:30px;border:1px solid var(--line);background:radial-gradient(circle at top left,rgba(216,180,90,.10),transparent 36%),linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.03));box-shadow:0 22px 70px rgba(0,0,0,.28);transition:.35s ease}
+.price-card:hover{transform:translateY(-12px);border-color:rgba(216,180,90,.42);box-shadow:var(--shadow)}
+.price-card.featured{border-color:rgba(216,180,90,.44);transform:translateY(-10px);box-shadow:0 34px 110px rgba(216,180,90,.12)}
+.price-card.featured:hover{transform:translateY(-16px)}
+.badge{position:absolute;top:18px;right:18px;padding:8px 12px;border-radius:999px;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--emerald));color:#100b04;font-size:11px;font-weight:950}
+.price-card h3{font-family:"Playfair Display",serif;font-size:31px;line-height:1.05;margin-bottom:8px;padding-right:78px}
+.price{font-family:"Manrope",sans-serif;font-size:42px;font-weight:900;margin:14px 0;color:#fff}
+.price small{font-size:14px;color:var(--muted);font-weight:800}
+.price-card p{color:var(--muted);line-height:1.75;font-size:15px}
+.price-card ul{list-style:none;margin:22px 0 0;display:grid;gap:10px}
+.price-card li{color:#f0dfbd;font-size:14px;line-height:1.5}
+.price-card li:before{content:"✓ ";color:var(--emerald2);font-weight:900}
+.price-card .btn{margin-top:24px;width:100%}
+
+.addon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.addon-card{padding:24px;transition:.35s ease;min-height:245px}
+.addon-card:hover{transform:translateY(-10px);border-color:rgba(216,180,90,.38)}
+.addon-icon{width:52px;height:52px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--emerald));color:#100b04;font-size:25px;margin-bottom:16px}
+.addon-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:9px}
+.addon-card p{color:var(--muted);line-height:1.7;font-size:14.5px}
+.addon-card strong{display:inline-flex;margin-top:16px;color:var(--gold2);font-family:"Manrope",sans-serif;font-size:24px}
+
+.compare-box{overflow:hidden}
+.compare-row{display:grid;grid-template-columns:1fr 1.4fr .8fr .9fr;border-bottom:1px solid var(--line)}
+.compare-row:last-child{border-bottom:none}
+.compare-row div{padding:18px;color:#f0dfbd;line-height:1.6}
+.compare-row.head div{font-weight:950;color:#fff;background:rgba(216,180,90,.08)}
+.compare-row div strong{color:var(--gold2)}
+
+.included-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.included-card{padding:24px;min-height:190px}
+.included-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px}
+.included-card p{color:var(--muted);line-height:1.72}
+
+.payment-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.info-panel{padding:34px;position:relative;overflow:hidden}
+.info-panel h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,46px);line-height:1.08;margin:12px 0}
+.info-panel p{color:var(--muted);line-height:1.85}
+.pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.pill{display:inline-flex;padding:10px 13px;border-radius:999px;background:rgba(216,180,90,.10);border:1px solid rgba(216,180,90,.22);color:var(--gold2);font-size:13px;font-weight:900}
+
+.final-cta{position:relative;overflow:hidden;padding:44px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px}
+.final-cta h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.08;margin-top:14px}
+.final-cta p{color:var(--muted);line-height:1.85;margin:16px 0 24px;max-width:720px}
+.final-preview{min-height:330px;border-radius:30px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);position:relative;background:#090806}
+.final-preview img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.04)}
+.final-preview:after{content:"Website Preview • Laptop + Mobile Ready";position:absolute;left:18px;bottom:18px;padding:10px 14px;border-radius:999px;background:rgba(0,0,0,.58);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(14px);color:#fff;font-weight:900;font-size:13px}
+.site-footer{padding:30px 14px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.1)}
+.reveal{opacity:0;transform:translateY(26px);transition:1s ease}.reveal.active{opacity:1;transform:translateY(0)}
+
+@media(max-width:1180px){
+  .package-grid{grid-template-columns:1fr 1fr}
+  .price-card.featured{transform:none}
+  .addon-grid,.included-grid{grid-template-columns:repeat(2,1fr)}
 }
-
-.site-header .brand{
-  display:flex;
-  align-items:center;
-  gap:11px;
-  min-width:0;
-}
-
-.brand-logo{
-  width:50px;
-  height:50px;
-  border-radius:16px;
-  object-fit:contain;
-  border:none;
-  background:transparent;
-  padding:0;
-  filter:drop-shadow(0 0 18px rgba(0,229,255,.35));
-  box-shadow:none;
-  transition:.3s ease;
-}
-
-.site-header .brand:hover .brand-logo{
-  transform:scale(1.05);
-}
-
-.brand-text{
-  min-width:0;
-}
-
-.brand-text h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:16px;
-  line-height:1.1;
-  white-space:nowrap;
-}
-
-.brand-text p{
-  color:var(--muted);
-  font-size:11px;
-  margin-top:3px;
-  white-space:nowrap;
-}
-
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:22px;
-}
-
-.nav-links a{
-  color:#eef6ff;
-  font-size:14px;
-  font-weight:800;
-  opacity:.86;
-  position:relative;
-  transition:.25s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active{
-  color:#ffffff;
-  text-shadow:0 0 12px rgba(0,229,255,.7);
-}
-
-.nav-links a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-9px;
-  width:0;
-  height:2px;
-  border-radius:50px;
-  background:linear-gradient(90deg,var(--purple),var(--cyan));
-  transition:.25s ease;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after{
-  width:100%;
-}
-
-.header-cta{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:12px 18px;
-  border-radius:999px;
-  background:linear-gradient(135deg,var(--purple),var(--cyan));
-  color:#fff;
-  font-size:13px;
-  font-weight:900;
-  box-shadow:0 14px 35px rgba(0,229,255,.18);
-  transition:.3s ease;
-}
-
-.header-cta:hover{
-  transform:translateY(-3px);
-  box-shadow:0 20px 55px rgba(0,229,255,.28);
-}
-
-.site-header .menu-btn{
-  display:none;
-  width:46px;
-  height:46px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.06);
-  color:#fff;
-  font-size:24px;
-  cursor:pointer;
-  box-shadow:0 12px 35px rgba(0,0,0,.25);
-  padding:0;
-}
-
-.ai-ready-btn{
-  background:rgba(255,255,255,.06);
-  box-shadow:none;
-  color:#dffbff;
-}
-
-.site-footer{
-  padding:28px 14px;
-  text-align:center;
-  color:var(--muted);
-  border-top:1px solid var(--line);
-  background:rgba(5,7,22,.72);
-}
-
-.site-footer p + p{
-  margin-top:6px;
-  font-size:13px;
-}
-
 @media(max-width:980px){
-  .site-header{
-    padding:10px 14px;
-  }
-
-  .brand-logo{
-    width:44px;
-    height:44px;
-  }
-
-  .brand-text h3{
-    font-size:14px;
-  }
-
-  .brand-text p{
-    font-size:10px;
-  }
-
-  .site-header .menu-btn{
-    display:grid;
-    place-items:center;
-  }
-
-  .header-cta{
-    display:none;
-  }
-
-  .nav-links{
-    position:fixed;
-    top:70px;
-    left:12px;
-    right:12px;
-    width:auto;
-    display:none;
-    flex-direction:column;
-    gap:10px;
-    padding:16px;
-    border-radius:24px;
-    background:rgba(3,7,18,.96);
-    border:1px solid rgba(0,229,255,.25);
-    box-shadow:0 24px 80px rgba(0,0,0,.45);
-    backdrop-filter:blur(20px);
-    text-align:center;
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
-
-  .nav-links a{
-    width:100%;
-    padding:13px 14px;
-    border-radius:14px;
-    background:rgba(255,255,255,.045);
-    text-align:center;
-  }
-
-  .nav-links a::after{
-    display:none;
-  }
+  .site-header{padding:10px 14px}.brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}.menu-btn{display:grid;place-items:center}.header-cta{display:none}
+  .nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}
+  .nav-links.active{display:flex}.nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}.nav-links a:after{display:none}
+  .pricing-hero{padding:48px 14px 38px}.hero-inner,.payment-grid,.final-cta{grid-template-columns:1fr;text-align:center}.hero-copy p{margin-left:auto;margin-right:auto}.hero-actions,.btn-row{justify-content:center}.btn{width:100%;max-width:340px}
+  .section{padding:66px 14px}.offer-strip,.package-grid,.addon-grid,.included-grid{grid-template-columns:1fr}.price-card.featured{transform:none}
+  .compare-row{grid-template-columns:1fr}.compare-row.head{display:none}.compare-row div{padding:14px 18px}.compare-row div:first-child{font-weight:950;color:var(--gold2);background:rgba(216,180,90,.07)}
+  .final-cta{padding:30px 18px}.final-preview{min-height:260px}
 }
-
+@media(max-width:560px){
+  .hero-copy h1{font-size:41px}.preview-top{display:block}.preview-badge{margin-top:12px;display:inline-flex}.preview-item{display:block;text-align:left}.preview-item span{display:block;margin-top:8px}
+  .price-card h3{font-size:28px}.price{font-size:38px}.info-panel{padding:26px}
+}
 </style>
-
-<style>
-/* FINAL HOME-MATCH HEADER FIX */
-.site-header{
-  position:sticky !important;
-  top:0 !important;
-  z-index:99999 !important;
-  width:100% !important;
-  padding:12px 5% !important;
-  background:rgba(3,7,18,.72) !important;
-  backdrop-filter:blur(24px) !important;
-  border-bottom:1px solid var(--line) !important;
-}
-
-.nav-shell{
-  max-width:1240px !important;
-  margin:auto !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:space-between !important;
-  gap:14px !important;
-}
-
-.site-header .brand{
-  display:flex !important;
-  align-items:center !important;
-  gap:11px !important;
-  min-width:0 !important;
-}
-
-.brand-logo{
-  width:50px !important;
-  height:50px !important;
-  border-radius:16px !important;
-  object-fit:contain !important;
-  border:none !important;
-  background:transparent !important;
-  padding:0 !important;
-  box-shadow:none !important;
-  filter:drop-shadow(0 0 18px rgba(0,229,255,.35)) !important;
-}
-
-.brand-text h3{
-  font-family:'Space Grotesk',sans-serif !important;
-  font-size:16px !important;
-  line-height:1.1 !important;
-  white-space:nowrap !important;
-}
-
-.brand-text p{
-  color:var(--muted) !important;
-  font-size:11px !important;
-  margin-top:3px !important;
-  white-space:nowrap !important;
-}
-
-.nav-links{
-  display:flex !important;
-  align-items:center !important;
-  gap:22px !important;
-}
-
-.nav-links a{
-  color:#eef6ff !important;
-  font-size:14px !important;
-  font-weight:800 !important;
-  opacity:.86 !important;
-  position:relative !important;
-}
-
-.nav-links a:hover,
-.nav-links a.active{
-  color:#ffffff !important;
-  text-shadow:0 0 12px rgba(0,229,255,.7) !important;
-}
-
-.header-cta{
-  display:inline-flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  gap:8px !important;
-  padding:12px 18px !important;
-  border-radius:999px !important;
-  background:linear-gradient(135deg,var(--purple),var(--cyan)) !important;
-  color:#fff !important;
-  font-size:13px !important;
-  font-weight:900 !important;
-  box-shadow:0 14px 35px rgba(0,229,255,.18) !important;
-}
-
-.site-header .menu-btn{
-  display:none;
-  width:46px !important;
-  height:46px !important;
-  border-radius:16px !important;
-  border:1px solid rgba(255,255,255,.18) !important;
-  background:rgba(255,255,255,.06) !important;
-  color:#fff !important;
-  font-size:24px !important;
-  cursor:pointer !important;
-  padding:0 !important;
-}
-
-@media(max-width:980px){
-  .site-header{padding:10px 14px !important;}
-  .brand-logo{width:44px !important;height:44px !important;}
-  .brand-text h3{font-size:14px !important;}
-  .brand-text p{font-size:10px !important;}
-  .site-header .menu-btn{display:grid !important;place-items:center !important;}
-  .header-cta{display:none !important;}
-  .nav-links{
-    position:fixed !important;
-    top:70px !important;
-    left:12px !important;
-    right:12px !important;
-    display:none !important;
-    flex-direction:column !important;
-    gap:10px !important;
-    padding:16px !important;
-    border-radius:24px !important;
-    background:rgba(3,7,18,.96) !important;
-    border:1px solid rgba(0,229,255,.25) !important;
-    box-shadow:0 24px 80px rgba(0,0,0,.45) !important;
-    backdrop-filter:blur(20px) !important;
-  }
-  .nav-links.active{display:flex !important;}
-  .nav-links a{
-    width:100% !important;
-    padding:13px 14px !important;
-    border-radius:14px !important;
-    background:rgba(255,255,255,.045) !important;
-    text-align:center !important;
-  }
-  .nav-links a::after{display:none !important;}
-}
-
-
-/* ==================================================
-   FINAL EXACT HOME HEADER LOCK - DO NOT REMOVE
-   This overrides old Pricing header CSS completely.
-================================================== */
-
-body .site-header{
-  position:sticky !important;
-  top:0 !important;
-  z-index:99999 !important;
-  width:100% !important;
-  padding:12px 5% !important;
-  margin:0 !important;
-  display:block !important;
-  background:rgba(3,7,18,.72) !important;
-  backdrop-filter:blur(24px) !important;
-  -webkit-backdrop-filter:blur(24px) !important;
-  border-bottom:1px solid rgba(255,255,255,.13) !important;
-}
-
-body .site-header .nav-shell{
-  max-width:1240px !important;
-  width:100% !important;
-  margin:0 auto !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:space-between !important;
-  gap:14px !important;
-}
-
-body .site-header .brand{
-  display:flex !important;
-  align-items:center !important;
-  gap:11px !important;
-  min-width:0 !important;
-}
-
-body .site-header .brand-logo,
-body .site-header .brand img.brand-logo{
-  width:50px !important;
-  height:50px !important;
-  min-width:50px !important;
-  min-height:50px !important;
-  max-width:50px !important;
-  max-height:50px !important;
-  border-radius:16px !important;
-  object-fit:contain !important;
-  border:0 !important;
-  outline:0 !important;
-  background:transparent !important;
-  padding:0 !important;
-  box-shadow:none !important;
-  filter:drop-shadow(0 0 18px rgba(0,229,255,.35)) !important;
-}
-
-body .site-header .brand-text{
-  min-width:0 !important;
-}
-
-body .site-header .brand-text h3{
-  font-family:'Space Grotesk',sans-serif !important;
-  font-size:16px !important;
-  line-height:1.1 !important;
-  margin:0 !important;
-  letter-spacing:0 !important;
-  white-space:nowrap !important;
-  color:#f8fafc !important;
-}
-
-body .site-header .brand-text p{
-  color:#a8b3cf !important;
-  font-size:11px !important;
-  line-height:1.2 !important;
-  margin:3px 0 0 !important;
-  white-space:nowrap !important;
-}
-
-body .site-header .nav-links{
-  display:flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  gap:22px !important;
-  position:static !important;
-  width:auto !important;
-  padding:0 !important;
-  margin:0 !important;
-  background:transparent !important;
-  border:0 !important;
-  box-shadow:none !important;
-  flex-direction:row !important;
-  text-align:left !important;
-}
-
-body .site-header .nav-links a{
-  color:#eef6ff !important;
-  font-size:14px !important;
-  font-weight:800 !important;
-  opacity:.86 !important;
-  position:relative !important;
-  transition:.25s ease !important;
-  padding:0 !important;
-  border-radius:0 !important;
-  background:transparent !important;
-  text-align:left !important;
-  text-shadow:none !important;
-}
-
-body .site-header .nav-links a:hover,
-body .site-header .nav-links a.active{
-  color:#00e5ff !important;
-  text-shadow:none !important;
-}
-
-body .site-header .nav-links a::after{
-  content:"" !important;
-  position:absolute !important;
-  left:0 !important;
-  bottom:-9px !important;
-  width:0 !important;
-  height:2px !important;
-  border-radius:50px !important;
-  background:linear-gradient(90deg,#9b5cff,#00e5ff) !important;
-  transition:.25s ease !important;
-  display:block !important;
-}
-
-body .site-header .nav-links a:hover::after,
-body .site-header .nav-links a.active::after{
-  width:100% !important;
-}
-
-body .site-header .header-cta{
-  display:inline-flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  gap:8px !important;
-  padding:12px 18px !important;
-  border-radius:999px !important;
-  background:linear-gradient(135deg,#9b5cff,#00e5ff) !important;
-  color:#fff !important;
-  font-size:13px !important;
-  font-weight:900 !important;
-  box-shadow:0 14px 35px rgba(0,229,255,.18) !important;
-  border:0 !important;
-  white-space:nowrap !important;
-}
-
-body .site-header .header-cta:hover{
-  transform:translateY(-3px) !important;
-  box-shadow:0 20px 55px rgba(0,229,255,.28) !important;
-}
-
-body .site-header .menu-btn{
-  display:none !important;
-  width:46px !important;
-  height:46px !important;
-  border-radius:16px !important;
-  border:1px solid rgba(255,255,255,.18) !important;
-  background:rgba(255,255,255,.06) !important;
-  color:#fff !important;
-  font-size:24px !important;
-  cursor:pointer !important;
-  box-shadow:0 12px 35px rgba(0,0,0,.25) !important;
-  padding:0 !important;
-}
-
-@media(max-width:980px){
-  body .site-header{
-    padding:10px 14px !important;
-  }
-
-  body .site-header .brand-logo,
-  body .site-header .brand img.brand-logo{
-    width:44px !important;
-    height:44px !important;
-    min-width:44px !important;
-    min-height:44px !important;
-    max-width:44px !important;
-    max-height:44px !important;
-  }
-
-  body .site-header .brand-text h3{
-    font-size:14px !important;
-  }
-
-  body .site-header .brand-text p{
-    font-size:10px !important;
-  }
-
-  body .site-header .header-cta{
-    display:none !important;
-  }
-
-  body .site-header .menu-btn{
-    display:grid !important;
-    place-items:center !important;
-  }
-
-  body .site-header .nav-links{
-    position:fixed !important;
-    top:70px !important;
-    left:12px !important;
-    right:12px !important;
-    width:auto !important;
-    display:none !important;
-    flex-direction:column !important;
-    gap:10px !important;
-    padding:16px !important;
-    border-radius:24px !important;
-    background:rgba(3,7,18,.96) !important;
-    border:1px solid rgba(0,229,255,.25) !important;
-    box-shadow:0 24px 80px rgba(0,0,0,.45) !important;
-    backdrop-filter:blur(20px) !important;
-    -webkit-backdrop-filter:blur(20px) !important;
-    text-align:center !important;
-  }
-
-  body .site-header .nav-links.active{
-    display:flex !important;
-  }
-
-  body .site-header .nav-links a{
-    width:100% !important;
-    padding:13px 14px !important;
-    border-radius:14px !important;
-    background:rgba(255,255,255,.045) !important;
-    text-align:center !important;
-  }
-
-  body .site-header .nav-links a::after{
-    display:none !important;
-  }
-}
-
-</style>
-
 </head>
 
 <body>
-
 <header class="site-header">
   <div class="nav-shell">
     <a href="index.html" class="brand">
       <img src="logo-icon.png" alt="Dawood Tariq Logo" class="brand-logo">
       <div class="brand-text">
         <h3>Dawood Tariq</h3>
-        <p>3D Websites • AI • Trading • Excel</p>
+        <p>Premium Website Specialist</p>
       </div>
     </a>
-
     <nav class="nav-links" id="navMenu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="pricing.html" class="active">Pricing</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
-      <a href="landing-page.html">Demo</a>
+      <a href="index.html#portfolio">Portfolio</a>
     </nav>
-
-    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20start%20a%20project." target="_blank">
-      Start Project ✨
-    </a>
-
+    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20pricing%20for%20a%20premium%20website." target="_blank">Get Website Quote ✦</a>
     <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-left">
-    <span class="kicker">Premium Pricing</span>
-    <h1>Simple Packages For <span class="gradient-text">Modern Digital Growth</span></h1>
-    <p>
-      Choose the package that matches your business stage. These are starting prices for websites,
-      AI assistant setup, WordPress, Excel dashboards, documentation support and trading-related services.
-      Final pricing depends on pages, animations, content, custom features, deadline and project scope.
-    </p>
-
-    <div class="hero-actions">
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20quote%20for%20my%20project." target="_blank">Discuss On WhatsApp</a>
-      <a class="btn btn-secondary" href="services.html">View Services</a>
-      <a class="btn ai-ready-btn" href="#" onclick="openAI(); return false;">Try AI Assistant</a>
-    </div>
-  </div>
-
-  <div class="hero-card">
-    <h3>Pricing Preview</h3>
-    <p>Best starting points based on your current website services.</p>
-
-    <div class="mini-prices">
-      <div class="mini-price">
-        <b>Starter Website</b>
-        <span>$70</span>
+<main>
+<section class="pricing-hero">
+  <div class="hero-inner">
+    <div class="hero-copy reveal">
+      <div class="eyebrow">Website Pricing</div>
+      <h1>Clear Website Packages For <span class="gradient-text">Premium Brands.</span></h1>
+      <h2>Choose a website package based on your business goal, page count and design level.</h2>
+      <p>Every package is focused on responsive design, premium visuals, clean sections, WhatsApp lead flow and a professional online presence. Final pricing can change based on pages, features, images, forms and deadline.</p>
+      <div class="btn-row hero-actions">
+        <a class="btn btn-primary" href="#packages">View Packages</a>
+        <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20website%20quote.%20My%20business%20details%20are%3A" target="_blank">Discuss on WhatsApp</a>
       </div>
-
-      <div class="mini-price">
-        <b>Business Website</b>
-        <span>$150</span>
-      </div>
-
-      <div class="mini-price">
-        <b>Premium 3D Website</b>
-        <span>$250+</span>
-      </div>
-
-      <div class="mini-price">
-        <b>AI Website Assistant</b>
-        <span>$50+</span>
+      <div class="offer-strip">
+        <div>✔ 20% First Website Offer</div>
+        <div>✔ Mobile + Laptop Ready</div>
+        <div>✔ WhatsApp Lead Button</div>
       </div>
     </div>
-  </div>
-</section>
 
-<section>
-  <div class="section-title">
-    <span>Website Packages</span>
-    <h2>Premium Website Pricing</h2>
-    <p>
-      Professional website packages for personal brands, businesses, service providers,
-      freelancers and online portfolios.
-    </p>
-  </div>
-
-  <div class="pricing-grid">
-
-    <div class="price-card">
-      <h3>Starter Website</h3>
-      <div class="price">$70 <span>starting</span></div>
-      <p>Best for first-time personal websites and simple online presence.</p>
-
-      <ul>
-        <li>1–2 pages</li>
-        <li>Mobile responsive design</li>
-        <li>Premium clean layout</li>
-        <li>WhatsApp button</li>
-        <li>Basic contact section</li>
-        <li>Free Premium Logo for selected first website clients</li>
-        <li>20% first website offer available</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Starter%20Website%20package." target="_blank">Choose Package</a>
-    </div>
-
-    <div class="price-card featured">
-      <div class="badge">Popular</div>
-      <h3>Business Website</h3>
-      <div class="price">$150 <span>starting</span></div>
-      <p>Best for businesses, freelancers and service providers who need a professional website.</p>
-
-      <ul>
-        <li>4–5 pages</li>
-        <li>Premium responsive design</li>
-        <li>Services section</li>
-        <li>Pricing / FAQ section</li>
-        <li>Contact + WhatsApp integration</li>
-        <li>Clean professional structure</li>
-        <li>Basic performance optimization</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Business%20Website%20package." target="_blank">Choose Package</a>
-    </div>
-
-    <div class="price-card featured">
-      <div class="badge">3D Ready</div>
-      <h3>Premium 3D Website</h3>
-      <div class="price">$250+ <span>starting</span></div>
-      <p>Best for strong personal brands and businesses needing a premium visual experience.</p>
-
-      <ul>
-        <li>Multiple pages</li>
-        <li>New Era 3D design style</li>
-        <li>Floating glass UI sections</li>
-        <li>Modern animations</li>
-        <li>Premium branding style</li>
-        <li>AI Assistant ready</li>
-        <li>Free Premium Logo design on selected offers</li>
-        <li>WhatsApp/contact integration</li>
-        <li>Priority support</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Premium%203D%20Website%20package." target="_blank">Choose Package</a>
-    </div>
-
-  </div>
-
-  <p class="note">
-    Note: Final website pricing depends on number of pages, design complexity, content, animations,
-    AI assistant requirements, 3D effects and delivery scope.
-  </p>
-</section>
-
-<section>
-  <div class="section-title">
-    <span>Premium Digital Services</span>
-    <h2>AI, Landing Page, Logo, WordPress & 3D Website</h2>
-    <p>
-      These services can be ordered separately or added to a website package for a stronger professional brand experience.
-    </p>
-  </div>
-
-  <div class="service-grid">
-
-    <div class="price-card featured">
-      <div class="badge">Smart</div>
-      <h3>AI Website Assistant</h3>
-      <div class="price">$50+ <span>starting</span></div>
-      <p>Best for websites that need a smart assistant to guide visitors and answer common questions.</p>
-
-      <ul>
-        <li>Smart website chatbot</li>
-        <li>FAQ answering</li>
-        <li>Lead capture support</li>
-        <li>WhatsApp redirect</li>
-        <li>Mobile friendly layout</li>
-        <li>Custom business knowledge</li>
-        <li>Upgrade-ready structure</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20AI%20Website%20Assistant%20service." target="_blank">Discuss AI Assistant</a>
-    </div>
-
-    <div class="price-card">
-      <h3>Landing Page Design</h3>
-      <div class="price">$80+ <span>starting</span></div>
-      <p>Best for a single high-converting page for offers, services, portfolios, products or campaigns.</p>
-
-      <ul>
-        <li>Premium landing page</li>
-        <li>Mobile responsive design</li>
-        <li>Call-to-action sections</li>
-        <li>Lead generation layout</li>
-        <li>WhatsApp integration</li>
-        <li>Modern business structure</li>
-        <li>Fast loading layout</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Landing%20Page%20Design%20service." target="_blank">Discuss Landing Page</a>
-    </div>
-
-    <div class="price-card">
-      <h3>Premium Logo Design</h3>
-      <div class="price">$30+ <span>starting</span></div>
-      <p>Best for new brands, websites, business pages and professional profile identity.</p>
-
-      <ul>
-        <li>Professional logo</li>
-        <li>Business branding style</li>
-        <li>Modern premium design</li>
-        <li>Clean visual identity</li>
-        <li>Social media ready</li>
-        <li>Website-ready logo format</li>
-        <li>Included free with selected first website offers</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Premium%20Logo%20Design%20service." target="_blank">Discuss Logo</a>
-    </div>
-
-    <div class="price-card featured">
-      <div class="badge">Luxury</div>
-      <h3>Custom 3D Website</h3>
-      <div class="price">$300+ <span>starting</span></div>
-      <p>Best for luxury brands and businesses that want a modern, interactive and premium visual experience.</p>
-
-      <ul>
-        <li>Premium 3D effects</li>
-        <li>Advanced animations</li>
-        <li>Interactive sections</li>
-        <li>Luxury business design</li>
-        <li>Mobile optimized layout</li>
-        <li>Premium branding feel</li>
-        <li>Priority support</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Custom%203D%20Website%20service." target="_blank">Discuss 3D Website</a>
-    </div>
-
-  </div>
-</section>
-<section>
-  <div class="section-title">
-    <span>WordPress Website</span>
-    <h2>WordPress Website Package</h2>
-    <p>
-      Best for clients who want a website with easier future editing, content updates, booking forms,
-      inquiry forms, service pages or business website management.
-    </p>
-  </div>
-
-  <div class="small-grid">
-
-    <div class="price-card featured">
-      <div class="badge">WordPress</div>
-      <h3>WordPress Business Website</h3>
-      <div class="price">$300+ <span>starting</span></div>
-      <p>Best for businesses that need a professional WordPress website with easy content management.</p>
-
-      <ul>
-        <li>WordPress setup</li>
-        <li>Business website structure</li>
-        <li>Mobile responsive layout</li>
-        <li>Pages like Home, Services, Pricing, FAQ and Contact</li>
-        <li>Inquiry or booking form support</li>
-        <li>WhatsApp/contact integration</li>
-        <li>Basic SEO structure</li>
-        <li>Future editing support</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20WordPress%20Business%20Website%20package." target="_blank">Discuss WordPress</a>
-    </div>
-
-    <div class="price-card">
-      <h3>Custom Inquiry Form</h3>
-      <div class="price">$80+ <span>starting</span></div>
-      <p>Best for WordPress or business websites that need a clean form to collect customer requests.</p>
-
-      <ul>
-        <li>Booking or inquiry form</li>
-        <li>Email notification setup</li>
-        <li>Client information fields</li>
-        <li>Service request fields</li>
-        <li>Mobile friendly form layout</li>
-        <li>Basic spam protection guidance</li>
-        <li>Website integration support</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20WordPress%20Inquiry%20Form%20service." target="_blank">Discuss Form</a>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <span>Business Tools</span>
-    <h2>Excel + Documentation</h2>
-    <p>
-      Organized Excel sheets, trading journals, dashboards and import/export documentation support
-      for business workflow.
-    </p>
-  </div>
-
-  <div class="small-grid">
-
-    <div class="price-card">
-      <h3>Starter Work</h3>
-      <div class="price">$35 <span>starting</span></div>
-      <p>Best for simple Excel sheets, small documents and basic business organization.</p>
-
-      <ul>
-        <li>Simple Excel sheet</li>
-        <li>Basic document formatting</li>
-        <li>Small tracker</li>
-        <li>Clean structure</li>
-        <li>Easy-to-use layout</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Excel%20or%20Documentation%20Starter%20work." target="_blank">Discuss Service</a>
-    </div>
-
-    <div class="price-card featured">
-      <div class="badge">Best Value</div>
-      <h3>Professional Work</h3>
-      <div class="price">$60 <span>starting</span></div>
-      <p>Best for full Excel dashboards, trading journals, business trackers and documentation packages.</p>
-
-      <ul>
-        <li>Excel dashboards</li>
-        <li>Trading journals</li>
-        <li>Business trackers</li>
-        <li>Import/export documentation</li>
-        <li>Organized workflow system</li>
-        <li>Professional formatting</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Professional%20Excel%20and%20Documentation%20work." target="_blank">Discuss Service</a>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <span>Support</span>
-    <h2>Website Maintenance</h2>
-    <p>
-      Keep your website updated, mobile-friendly, clean and working properly after launch.
-    </p>
-  </div>
-
-  <div class="small-grid">
-
-    <div class="price-card">
-      <h3>Basic Update</h3>
-      <div class="price">$35+ <span>starting</span></div>
-      <p>Best for small website fixes, text changes, image changes and minor layout improvements.</p>
-
-      <ul>
-        <li>Content changes</li>
-        <li>Image updates</li>
-        <li>Button/link fixing</li>
-        <li>Minor design cleanup</li>
-        <li>Small mobile fixes</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Basic%20Website%20Update." target="_blank">Discuss Service</a>
-    </div>
-
-    <div class="price-card featured">
-      <div class="badge">Monthly</div>
-      <h3>Monthly Maintenance</h3>
-      <div class="price">$100+ <span>monthly</span></div>
-      <p>Best for ongoing website support, updates, improvements and mobile responsiveness fixes.</p>
-
-      <ul>
-        <li>Monthly updates</li>
-        <li>Mobile fixes</li>
-        <li>Layout improvement</li>
-        <li>Content updates</li>
-        <li>Priority support</li>
-        <li>Future improvement support</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Monthly%20Website%20Maintenance." target="_blank">Discuss Service</a>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <span>Trading Services</span>
-    <h2>XAUUSD Trading Support</h2>
-    <p>
-      Professional trading support, market analysis, trading journal, risk management and trading psychology guidance.
-    </p>
-  </div>
-
-  <div class="pricing-grid">
-
-    <div class="price-card">
-      <h3>Starter</h3>
-      <div class="price">$100 <span>/ week</span></div>
-      <p>For traders who need short-term support and market direction.</p>
-
-      <ul>
-        <li>XAUUSD analysis</li>
-        <li>Trading journal support</li>
-        <li>Basic strategy support</li>
-        <li>Risk guidance</li>
-        <li>Weekly assistance</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Trading%20Starter%20package." target="_blank">Choose Plan</a>
-    </div>
-
-    <div class="price-card featured">
-      <div class="badge">Best Value</div>
-      <h3>Biweekly</h3>
-      <div class="price">$200 <span>/ 2 weeks</span></div>
-      <p>For traders who want consistent guidance and improved decision-making.</p>
-
-      <ul>
-        <li>XAUUSD market analysis</li>
-        <li>Trading journal support</li>
-        <li>Strategy support</li>
-        <li>Risk management</li>
-        <li>Trading psychology guidance</li>
-        <li>Trade review support</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Trading%20Biweekly%20package." target="_blank">Choose Plan</a>
-    </div>
-
-    <div class="price-card">
-      <h3>Full Month</h3>
-      <div class="price">$300 <span>/ month</span></div>
-      <p>For serious traders who want full support, strategy and guidance.</p>
-
-      <ul>
-        <li>Strategy + trade review</li>
-        <li>XAUUSD analysis</li>
-        <li>Risk management</li>
-        <li>Trade planning support</li>
-        <li>Psychology guidance</li>
-        <li>Complete monthly support</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20Trading%20Full%20Month%20package." target="_blank">Choose Plan</a>
-    </div>
-
-  </div>
-</section>
-<section>
-  <div class="section-title">
-    <span>Why Choose Me</span>
-    <h2>Professional Value For Clients</h2>
-    <p>
-      A premium service experience focused on clean design, mobile performance, practical business tools and fast communication.
-    </p>
-  </div>
-
-  <div class="info-grid">
-
-    <div class="info-card">
-      <h3>Mobile Friendly</h3>
-      <p>
-        Every website is designed to work smoothly on desktop, tablet and mobile devices.
-      </p>
-    </div>
-
-    <div class="info-card">
-      <h3>AI Integration</h3>
-      <p>
-        Upgrade your website with a smart AI assistant to improve visitor engagement and support.
-      </p>
-    </div>
-
-    <div class="info-card">
-      <h3>Business Experience</h3>
-      <p>
-        Experience in trading, Excel systems, import/export documentation and website development.
-      </p>
-    </div>
-
-    <div class="info-card">
-      <h3>Premium Design</h3>
-      <p>
-        Clean layouts, modern 3D style and professional presentation focused on results.
-      </p>
-    </div>
-
-    <div class="info-card">
-      <h3>Fast Communication</h3>
-      <p>
-        Clear project discussion and responsive support through WhatsApp.
-      </p>
-    </div>
-
-    <div class="info-card">
-      <h3>Ongoing Support</h3>
-      <p>
-        Available for future improvements, maintenance and website upgrades.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <span>Included Features</span>
-    <h2>Every Website Includes</h2>
-    <p>
-      These core features help make each website professional, easy to use and ready for business presentation.
-    </p>
-  </div>
-
-  <div class="info-grid">
-
-    <div class="info-card">
-      <h3>Responsive Design</h3>
-      <p>Optimized for desktop, tablet and mobile screens.</p>
-    </div>
-
-    <div class="info-card">
-      <h3>Client Integration</h3>
-      <p>Direct communication setup with potential clients through WhatsApp or contact forms.</p>
-    </div>
-
-    <div class="info-card">
-      <h3>Modern UI</h3>
-      <p>Professional layouts with clean structure, premium spacing and modern visual flow.</p>
-    </div>
-
-    <div class="info-card">
-      <h3>SEO Friendly</h3>
-      <p>Built with page titles, meta description and structure that supports search visibility.</p>
-    </div>
-
-    <div class="info-card">
-      <h3>Fast Loading</h3>
-      <p>Optimized layouts designed for speed, readability and usability.</p>
-    </div>
-
-    <div class="info-card">
-      <h3>Future Scalability</h3>
-      <p>Easy to expand with new pages, sections, features and upgrades.</p>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <span>Quick Comparison</span>
-    <h2>Which Package Fits You?</h2>
-    <p>
-      Use this quick guide to understand which package is best before contacting me.
-    </p>
-  </div>
-
-  <div class="compare-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Package</th>
-          <th>Best For</th>
-          <th>Starting Price</th>
-          <th>Main Value</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Starter Website</td>
-          <td>First-time personal websites</td>
-          <td>$70</td>
-          <td>Simple online presence</td>
-        </tr>
-
-        <tr>
-          <td>Business Website</td>
-          <td>Freelancers and service businesses</td>
-          <td>$150</td>
-          <td>Professional multi-page structure</td>
-        </tr>
-
-        <tr>
-          <td>Premium 3D Website</td>
-          <td>Premium personal brands and businesses</td>
-          <td>$250+</td>
-          <td>Modern 3D visual experience</td>
-        </tr>
-
-        <tr>
-          <td>Custom 3D Website</td>
-          <td>Luxury brands and advanced visual websites</td>
-          <td>$300+</td>
-          <td>Advanced animations and premium UI</td>
-        </tr>
-
-        <tr>
-          <td>WordPress Website</td>
-          <td>Businesses needing future editing</td>
-          <td>$300+</td>
-          <td>Manageable website with forms</td>
-        </tr>
-
-        <tr>
-          <td>AI Website Assistant</td>
-          <td>Websites needing smart visitor support</td>
-          <td>$50+</td>
-          <td>Lead guidance and FAQ support</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section>
-  <div class="offer">
-    <h2>🎁 First Website Client Offer</h2>
-    <p>
-      If you are building your first website, selected packages can include a
-      <strong>20% discount</strong> plus a <strong>FREE Premium Logo</strong> as a launch gift.
-    </p>
-
-    <div class="payment-list">
-      <div class="payment-pill">20% Limited Offer</div>
-      <div class="payment-pill">FREE Premium Logo</div>
-      <div class="payment-pill">Mobile Friendly Website</div>
+    <div class="price-preview glass reveal">
+      <div class="preview-top">
+        <h3>Quick Preview</h3>
+        <span class="preview-badge">Website only</span>
+      </div>
+      <div class="preview-list">
+        <div class="preview-item"><b>Starter Website</b><span>$70+</span></div>
+        <div class="preview-item"><b>Business Website</b><span>$150+</span></div>
+        <div class="preview-item"><b>Premium Website</b><span>$250+</span></div>
+        <div class="preview-item"><b>WordPress Website</b><span>$300+</span></div>
+      </div>
+      <p class="preview-note">No trading, Excel or documentation packages on this page — this pricing is now focused only on website services.</p>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="offer">
-    <h2>💳 Payment Methods</h2>
-    <p>
-      Payments are accepted through the following methods. Payment details are shared privately after project confirmation.
-    </p>
+<section class="section reveal" id="packages">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Main Packages</div>
+      <h2>Website Packages That Match <span class="gradient-text">Your Stage</span></h2>
+      <p>Start simple, go professional, or build a premium visual website for stronger brand impact.</p>
+    </div>
 
-    <div class="payment-list">
-      <div class="payment-pill">USDT (TRC20)</div>
-      <div class="payment-pill">Bank Transfer</div>
+    <div class="package-grid">
+      <article class="price-card">
+        <h3>Starter Website</h3>
+        <div class="price">$70+ <small>starting</small></div>
+        <p>Best for simple online presence, personal profiles and first-time websites.</p>
+        <ul>
+          <li>1–2 page website</li>
+          <li>Mobile responsive layout</li>
+          <li>Clean premium design</li>
+          <li>WhatsApp contact button</li>
+          <li>Basic contact section</li>
+          <li>SEO title + description setup</li>
+        </ul>
+        <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20the%20Starter%20Website%20package." target="_blank">Choose Starter</a>
+      </article>
+
+      <article class="price-card featured">
+        <div class="badge">Popular</div>
+        <h3>Business Website</h3>
+        <div class="price">$150+ <small>starting</small></div>
+        <p>Best for service businesses, freelancers, agencies and professional brands.</p>
+        <ul>
+          <li>4–5 page website</li>
+          <li>Home, Services, Pricing, FAQ, Contact</li>
+          <li>Premium sections and cards</li>
+          <li>Portfolio or gallery preview</li>
+          <li>WhatsApp lead system</li>
+          <li>Responsive testing</li>
+          <li>Basic launch support</li>
+        </ul>
+        <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20the%20Business%20Website%20package." target="_blank">Choose Business</a>
+      </article>
+
+      <article class="price-card">
+        <div class="badge">Premium</div>
+        <h3>Premium Website</h3>
+        <div class="price">$250+ <small>starting</small></div>
+        <p>Best for brands that want a luxury look with image-led sections and modern effects.</p>
+        <ul>
+          <li>Multiple premium pages</li>
+          <li>Luxury black/gold visual direction</li>
+          <li>Smooth animations</li>
+          <li>Portfolio/demo showcase</li>
+          <li>Premium CTA sections</li>
+          <li>Advanced responsive layout</li>
+          <li>Priority design polish</li>
+        </ul>
+        <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20am%20interested%20in%20the%20Premium%20Website%20package." target="_blank">Choose Premium</a>
+      </article>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="offer">
-    <h2>🌐 Domain & Hosting Information</h2>
-    <p>
-      Website pricing does not include domain registration or paid hosting.
-      I can launch your static website on GitHub Pages for free, or help connect your custom domain and hosting provider.
-    </p>
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Special Website Services</div>
+      <h2>Add The Right Website Service For <span class="gradient-text">Your Project</span></h2>
+      <p>These can be ordered separately or added to your main website package.</p>
+    </div>
 
-    <div class="payment-list">
-      <div class="payment-pill">GitHub Pages Support</div>
-      <div class="payment-pill">Custom Domain Guidance</div>
-      <div class="payment-pill">Hosting Setup Guidance</div>
+    <div class="addon-grid">
+      <div class="addon-card glass"><div class="addon-icon">⚡</div><h3>Landing Page</h3><p>A focused single-page website for an offer, service, product, profile or lead campaign.</p><strong>$80+</strong></div>
+      <div class="addon-card glass"><div class="addon-icon">🧩</div><h3>WordPress Website</h3><p>Best for businesses that need easier future editing, forms, pages and content updates.</p><strong>$300+</strong></div>
+      <div class="addon-card glass"><div class="addon-icon">🎨</div><h3>Website Redesign</h3><p>Upgrade an old website with better spacing, colors, visuals, mobile layout and professional polish.</p><strong>$100+</strong></div>
+      <div class="addon-card glass"><div class="addon-icon">🔧</div><h3>Maintenance</h3><p>Small fixes, content updates, image changes, link fixes and monthly website support.</p><strong>$35+</strong></div>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="cta">
-    <h2>Ready To Start Your Project?</h2>
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Compare Packages</div>
+      <h2>Which Package Should You Choose?</h2>
+      <p>A quick comparison to help clients understand the best starting point.</p>
+    </div>
 
-    <p>
-      Whether you need a premium website, AI assistant, WordPress setup, landing page, logo design,
-      Excel dashboard, import/export documentation or trading support, contact me and let’s discuss your requirements.
-    </p>
-
-    <a class="btn"
-      href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20would%20like%20to%20discuss%20your%20pricing%20and%20services."
-      target="_blank">
-      Contact Me On WhatsApp
-    </a>
+    <div class="compare-box glass">
+      <div class="compare-row head">
+        <div>Package</div>
+        <div>Best For</div>
+        <div>Starting Price</div>
+        <div>Main Value</div>
+      </div>
+      <div class="compare-row">
+        <div><strong>Starter</strong></div>
+        <div>Simple personal website or first online presence</div>
+        <div>$70+</div>
+        <div>Clean launch</div>
+      </div>
+      <div class="compare-row">
+        <div><strong>Business</strong></div>
+        <div>Service providers, freelancers and small businesses</div>
+        <div>$150+</div>
+        <div>Professional trust</div>
+      </div>
+      <div class="compare-row">
+        <div><strong>Premium</strong></div>
+        <div>Brands that need stronger visuals and more polished sections</div>
+        <div>$250+</div>
+        <div>Luxury look</div>
+      </div>
+      <div class="compare-row">
+        <div><strong>WordPress</strong></div>
+        <div>Businesses needing content updates and forms</div>
+        <div>$300+</div>
+        <div>Editable system</div>
+      </div>
+    </div>
   </div>
 </section>
+
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Included Features</div>
+      <h2>Every Website Includes</h2>
+      <p>Core features that make each website ready for real business use.</p>
+    </div>
+
+    <div class="included-grid">
+      <div class="included-card glass"><h3>📱 Responsive Design</h3><p>Optimized for phone, tablet and laptop screens with no overflow issues.</p></div>
+      <div class="included-card glass"><h3>💬 WhatsApp Lead Flow</h3><p>Direct WhatsApp buttons with pre-filled messages for faster client inquiries.</p></div>
+      <div class="included-card glass"><h3>🔎 SEO Structure</h3><p>Clean titles, descriptions, headings and service wording for better presentation.</p></div>
+      <div class="included-card glass"><h3>🖼️ Premium Visuals</h3><p>Image-led sections, cards and layouts that make the website feel expensive.</p></div>
+      <div class="included-card glass"><h3>⚡ Fast Layout</h3><p>Lightweight sections designed for smooth browsing and clear readability.</p></div>
+      <div class="included-card glass"><h3>🚀 Launch Support</h3><p>Guidance for GitHub Pages, hosting, links and final testing before publishing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-inner">
+    <div class="payment-grid">
+      <div class="info-panel glass">
+        <div class="eyebrow">First Website Offer</div>
+        <h2>20% OFF for selected first website clients.</h2>
+        <p>For new clients starting their first website, selected packages can include a launch discount and extra design polish.</p>
+        <div class="pill-row">
+          <span class="pill">20% Limited Offer</span>
+          <span class="pill">Mobile-first design</span>
+          <span class="pill">Premium sections</span>
+        </div>
+      </div>
+
+      <div class="info-panel glass">
+        <div class="eyebrow">Payment & Hosting</div>
+        <h2>Simple payment and publishing guidance.</h2>
+        <p>Website pricing does not include paid domain or hosting. Static websites can be launched on GitHub Pages, or I can guide custom hosting setup.</p>
+        <div class="pill-row">
+          <span class="pill">USDT TRC20</span>
+          <span class="pill">Bank Transfer</span>
+          <span class="pill">GitHub Pages Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="contact">
+  <div class="section-inner">
+    <div class="final-cta glass">
+      <div>
+        <div class="eyebrow">Ready To Start?</div>
+        <h2>Tell me your pages and I’ll suggest the right <span class="gradient-text">website package.</span></h2>
+        <p>Send your business type, required pages, color preference and any reference website. I’ll guide you with the best package and next step.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20start%20a%20website.%20My%20business%20type%20is%3A" target="_blank">Start on WhatsApp</a>
+          <a class="btn btn-secondary" href="services.html">View Services</a>
+        </div>
+      </div>
+      <div class="final-preview">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85" alt="Premium website analytics dashboard on laptop">
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 
 <footer class="site-footer">
-  <p>© 2026 Dawood Tariq</p>
-  <p>New Era 3D Websites • AI Assistant • WordPress • Excel Automation • Trading Systems</p>
+  <p>© 2026 Dawood Tariq | Premium Website Specialist • Website Pricing • Landing Pages • WordPress Websites</p>
 </footer>
 
 <script>
 function toggleMenu(){
-  const navMenu = document.getElementById("navMenu");
-  if(navMenu){
-    navMenu.classList.toggle("active");
-  }
+  const nav=document.getElementById('navMenu');
+  const btn=document.querySelector('.menu-btn');
+  nav.classList.toggle('active');
+  btn.textContent=nav.classList.contains('active')?'×':'☰';
 }
+document.querySelectorAll('.nav-links a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    const nav=document.getElementById('navMenu');
+    const btn=document.querySelector('.menu-btn');
+    nav.classList.remove('active');
+    btn.textContent='☰';
+  });
+});
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('active');}
+  });
+},{threshold:.14});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 </script>
-
-<!-- Shared AI file will be created later -->
-<script src="ai-assistant.js"></script>
 </body>
 </html>
