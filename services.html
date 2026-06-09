@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Services | Dawood Tariq | Premium Website Specialist</title>
-<meta name="description" content="Premium website services by Dawood Tariq including business websites, landing pages, WordPress websites, portfolio websites, website redesigns and website maintenance with mobile-first design and WhatsApp lead flow.">
+<meta name="description" content="Professional website services by Dawood Tariq including business websites, landing pages, WordPress websites, redesigns, maintenance and smart chatbot setup with mobile-first design, clear service flow and timely completion.">
 <meta name="keywords" content="Dawood Tariq services, website specialist, business website, landing page design, WordPress website, portfolio website, website redesign, website maintenance, responsive website, WhatsApp website">
 <meta name="author" content="Dawood Tariq">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="logo-icon.png">
 
 <meta property="og:title" content="Services | Dawood Tariq | Premium Website Specialist">
-<meta property="og:description" content="Business websites, landing pages, WordPress websites, portfolio websites and website redesign services.">
+<meta property="og:description" content="Business websites, landing pages, WordPress websites, portfolio websites, redesigns, maintenance and smart chatbot setup.">
 <meta property="og:image" content="logo.png">
 <meta property="og:type" content="website">
 
@@ -293,6 +295,230 @@ button,input,textarea,select{font-family:inherit}
 .why-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px}
 .why-card p{color:var(--muted);line-height:1.75}
 
+
+.service-fit-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.fit-card{
+  padding:24px;
+  min-height:210px;
+  transition:.35s ease;
+  position:relative;
+  overflow:hidden;
+}
+.fit-card:hover{transform:translateY(-9px);border-color:rgba(216,180,90,.38)}
+.fit-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px;color:#fff}
+.fit-card p{color:var(--muted);line-height:1.72;font-size:14px}
+.fit-card span{
+  display:inline-flex;
+  margin-bottom:16px;
+  width:48px;
+  height:48px;
+  align-items:center;
+  justify-content:center;
+  border-radius:16px;
+  background:linear-gradient(135deg,var(--gold2),var(--gold),var(--emerald));
+  color:#120c05;
+  font-size:22px;
+  font-weight:900;
+}
+.chatbot-section{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  align-items:stretch;
+}
+.chatbot-card{
+  padding:34px;
+}
+.chatbot-card h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(34px,5vw,58px);
+  line-height:1.06;
+  margin:14px 0;
+}
+.chatbot-card p{
+  color:var(--muted);
+  line-height:1.85;
+  margin-top:12px;
+}
+.chatbot-points{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:22px;
+}
+.chatbot-points div{
+  padding:15px;
+  border-radius:18px;
+  background:rgba(255,255,255,.055);
+  border:1px solid var(--line);
+  color:#fff3da;
+  font-weight:850;
+}
+.chatbot-preview{
+  min-height:480px;
+  overflow:hidden;
+  position:relative;
+}
+.chatbot-preview img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.chat-bubble{
+  position:absolute;
+  left:22px;
+  right:22px;
+  bottom:22px;
+  display:grid;
+  gap:10px;
+}
+.chat-bubble div{
+  padding:14px 16px;
+  border-radius:18px;
+  background:rgba(7,6,5,.82);
+  border:1px solid rgba(255,255,255,.15);
+  backdrop-filter:blur(14px);
+  color:#f5e7c8;
+  font-size:14px;
+  line-height:1.55;
+  box-shadow:0 18px 50px rgba(0,0,0,.28);
+}
+.compare-wrap{
+  overflow:hidden;
+}
+.service-compare{
+  width:100%;
+  border-collapse:collapse;
+}
+.service-compare th,
+.service-compare td{
+  padding:17px 15px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  color:#f2e5cc;
+  text-align:center;
+  font-size:14px;
+}
+.service-compare th{
+  background:rgba(255,255,255,.045);
+  color:#fff;
+  font-family:"Manrope",sans-serif;
+  font-size:15px;
+}
+.service-compare th:first-child,
+.service-compare td:first-child{
+  text-align:left;
+  font-weight:850;
+}
+.service-compare strong{color:var(--gold2)}
+.delivery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.delivery-card{
+  padding:24px;
+  min-height:200px;
+  transition:.35s ease;
+}
+.delivery-card:hover{transform:translateY(-9px);border-color:rgba(216,180,90,.38)}
+.delivery-card strong{
+  display:block;
+  font-family:"Playfair Display",serif;
+  font-size:34px;
+  color:var(--gold2);
+  margin-bottom:10px;
+}
+.delivery-card h3{
+  font-family:"Manrope",sans-serif;
+  font-size:20px;
+  margin-bottom:9px;
+}
+.delivery-card p{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:14px;
+}
+.mini-service-cta{
+  margin-top:28px;
+  padding:28px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:20px;
+  align-items:center;
+}
+.mini-service-cta h3{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(28px,4vw,42px);
+  line-height:1.08;
+}
+.mini-service-cta p{
+  color:var(--muted);
+  line-height:1.75;
+  margin-top:10px;
+}
+.service-faq-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.service-faq{
+  padding:26px;
+  min-height:220px;
+  transition:.35s ease;
+}
+.service-faq:hover{transform:translateY(-8px);border-color:rgba(216,180,90,.38)}
+.service-faq h3{
+  font-family:"Manrope",sans-serif;
+  font-size:21px;
+  margin-bottom:12px;
+}
+.service-faq p{
+  color:var(--muted);
+  line-height:1.75;
+  font-size:15px;
+}
+
+.includes-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.includes-card{
+  padding:24px;
+  min-height:185px;
+  transition:.35s ease;
+}
+.includes-card:hover{transform:translateY(-9px);border-color:rgba(216,180,90,.38)}
+.includes-card h3{
+  font-family:"Manrope",sans-serif;
+  font-size:20px;
+  margin-bottom:10px;
+}
+.includes-card p{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:14px;
+}
+.contact-detail-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:22px;
+}
+.contact-detail-row span{
+  padding:10px 13px;
+  border-radius:999px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.13);
+  color:#f5e4c4;
+  font-size:13px;
+  font-weight:850;
+}
+
 .final-cta{position:relative;overflow:hidden;padding:42px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:28px}
 .final-cta h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.08;margin-top:14px}
 .final-cta p{color:var(--muted);line-height:1.85;margin:16px 0 24px;max-width:720px}
@@ -303,6 +529,7 @@ button,input,textarea,select{font-family:inherit}
 .reveal.active{opacity:1;transform:translateY(0)}
 
 @media(max-width:1180px){
+  .service-fit-grid,.delivery-grid,.includes-grid{grid-template-columns:repeat(2,1fr)}
   .quick-strip,.process-timeline{grid-template-columns:repeat(2,1fr)}
   .portfolio-strip{grid-template-columns:repeat(3,1fr)}
   .package-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
@@ -310,6 +537,11 @@ button,input,textarea,select{font-family:inherit}
   .service-row ul{grid-column:2}
 }
 @media(max-width:980px){
+  .chatbot-section{grid-template-columns:1fr;text-align:center}
+  .chatbot-points,.service-fit-grid,.delivery-grid,.service-faq-grid,.includes-grid{grid-template-columns:1fr}
+  .compare-wrap{overflow-x:auto}
+  .service-compare{min-width:780px}
+  .mini-service-cta{grid-template-columns:1fr;text-align:center}
   .site-header{padding:10px 14px}
   .brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}
   .menu-btn{display:grid;place-items:center}.header-cta{display:none}
@@ -344,10 +576,10 @@ button,input,textarea,select{font-family:inherit}
     <nav class="nav-links" id="navMenu">
       <a href="index.html">Home</a>
       <a href="services.html" class="active">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
       <a href="pricing.html">Pricing</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
-      <a href="index.html#portfolio">Portfolio</a>
     </nav>
     <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20premium%20website." target="_blank">Start Website ✦</a>
     <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
@@ -359,8 +591,8 @@ button,input,textarea,select{font-family:inherit}
   <div class="services-hero-grid">
     <div class="services-copy glass reveal">
       <div class="eyebrow">Website Services</div>
-      <h1>Premium website services for <span class="gradient-text">modern businesses.</span></h1>
-      <p>From business websites and landing pages to WordPress builds, redesigns and portfolio websites — every service is built around clean presentation, premium visuals, mobile-first layout and direct WhatsApp inquiries.</p>
+      <h1>Professional websites designed to <span class="gradient-text">build trust, generate leads and grow your business.</span></h1>
+      <p>Choose the service that fits your goal: business website, landing page, WordPress website, redesign, portfolio website, maintenance or smart chatbot setup. Every service is planned with clean structure, premium visuals, mobile-first design, clear communication and timely completion.</p>
       <div class="btn-row" style="margin-top:28px;">
         <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20a%20website%20service." target="_blank">Discuss Website</a>
         <a class="btn btn-secondary" href="#packages">View Packages</a>
@@ -371,6 +603,7 @@ button,input,textarea,select{font-family:inherit}
         <span>WordPress</span>
         <span>Redesign</span>
         <span>Portfolio Website</span>
+        <span>Smart Chatbot</span>
       </div>
     </div>
 
@@ -379,17 +612,17 @@ button,input,textarea,select{font-family:inherit}
         <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1300&q=85" alt="Premium web design workspace">
       </div>
       <div class="hero-floating-card">
-        <strong>Service page with clear focus.</strong>
-        <p>This page is built to explain website services, show visual proof and move clients toward pricing or WhatsApp.</p>
+        <strong>Premium services, clear timelines.</strong>
+        <p>Every website service is structured around clean design, mobile performance, visitor guidance and professional delivery.</p>
       </div>
     </div>
   </div>
 
   <div class="quick-strip reveal">
-    <div class="quick-item"><strong>6</strong><span>Core Website Services</span></div>
-    <div class="quick-item"><strong>5+</strong><span>Demo Project Styles</span></div>
-    <div class="quick-item"><strong>100%</strong><span>Phone + Laptop Ready</span></div>
-    <div class="quick-item"><strong>WA</strong><span>Lead Button Included</span></div>
+    <div class="quick-item"><strong>7+</strong><span>Focused Website Services</span></div>
+    <div class="quick-item"><strong>2–4h</strong><span>Usual Response Time</span></div>
+    <div class="quick-item"><strong>100%</strong><span>Mobile + Laptop Ready</span></div>
+    <div class="quick-item"><strong>Clear</strong><span>Scope + Timeline Before Start</span></div>
   </div>
 </section>
 
@@ -397,16 +630,16 @@ button,input,textarea,select{font-family:inherit}
   <div class="section-inner">
     <div class="featured-service">
       <div class="featured-panel glass">
-        <div class="eyebrow">Main Service</div>
-        <h2>Premium business websites that make your brand look trusted.</h2>
-        <p>A business website should not only look attractive. It should explain your offer clearly, show proof, answer common questions and make it easy for visitors to contact you.</p>
+        <div class="eyebrow">Main Service Direction</div>
+        <h2>Professional websites with clear services, strong visuals and easy client contact.</h2>
+        <p>A service page should help visitors understand what you offer, how the project works, what is included and how to contact you without confusion.</p>
         <div class="featured-list">
-          <div>✔ Premium Hero Section</div>
-          <div>✔ Services + Pricing Flow</div>
-          <div>✔ Portfolio Proof</div>
-          <div>✔ WhatsApp CTA</div>
+          <div>✔ Clear Service Structure</div>
+          <div>✔ Premium Visual Sections</div>
+          <div>✔ Smart Chatbot Option</div>
+          <div>✔ WhatsApp + Email Contact</div>
           <div>✔ Mobile-First Layout</div>
-          <div>✔ SEO Meta Setup</div>
+          <div>✔ Timely Completion Focus</div>
         </div>
         <div class="btn-row">
           <a class="btn btn-primary" href="pricing.html">See Website Pricing</a>
@@ -420,12 +653,36 @@ button,input,textarea,select{font-family:inherit}
   </div>
 </section>
 
+
+<section class="section reveal" id="service-fit">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Choose The Right Service</div>
+      <h2>Each service is designed for a <span class="gradient-text">specific business need.</span></h2>
+      <p>This page stays focused on services only, so visitors can quickly understand what they need and move to pricing or contact when ready.</p>
+    </div>
+    <div class="service-fit-grid">
+      <div class="fit-card glass"><span>🌐</span><h3>Business Website</h3><p>Best for companies, agencies and service providers that need a complete online presence.</p></div>
+      <div class="fit-card glass"><span>⚡</span><h3>Landing Page</h3><p>Best for one offer, one product, campaign pages or quick lead collection.</p></div>
+      <div class="fit-card glass"><span>🎨</span><h3>Redesign</h3><p>Best when your current website looks outdated, confusing or weak on mobile.</p></div>
+      <div class="fit-card glass"><span>🤖</span><h3>Smart Chatbot</h3><p>Best for guiding visitors, answering common questions and collecting serious leads.</p></div>
+    </div>
+    <div class="mini-service-cta glass">
+      <div>
+        <h3>Not sure which service fits?</h3>
+        <p>Send your business type and website goal. I will guide you toward the right service without overcomplicating the project.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20please%20guide%20me%20which%20website%20service%20fits%20my%20business." target="_blank">Ask Which Service Fits Me</a>
+    </div>
+  </div>
+</section>
+
 <section class="section reveal" id="services-list">
   <div class="section-inner">
     <div class="section-title">
       <div class="eyebrow">Services</div>
-      <h2>Website services built around <span class="gradient-text">business goals.</span></h2>
-      <p>Choose the service that matches your current need: a full website, single landing page, WordPress setup, redesign, portfolio website or ongoing maintenance.</p>
+      <h2>Focused website services for <span class="gradient-text">real client needs.</span></h2>
+      <p>Every service below has one purpose: make your business look professional, explain your offer clearly and help visitors contact you faster.</p>
     </div>
 
     <div class="service-lane">
@@ -477,11 +734,74 @@ button,input,textarea,select{font-family:inherit}
       <article class="service-row glass">
         <div class="service-number">06</div>
         <div>
+          <h3>Smart Chatbot Setup</h3>
+          <p>A smart website chatbot built around your preferences, services, packages and inquiry flow.</p>
+        </div>
+        <ul><li>Custom replies</li><li>Lead guidance</li><li>Service support</li></ul>
+      </article>
+
+      <article class="service-row glass">
+        <div class="service-number">07</div>
+        <div>
           <h3>Website Maintenance</h3>
           <p>Content updates, layout fixes, responsive improvements and small website changes.</p>
         </div>
         <ul><li>Bug fixes</li><li>Content edits</li><li>Mobile fixes</li></ul>
       </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section reveal" id="smart-chatbot">
+  <div class="section-inner">
+    <div class="chatbot-section">
+      <div class="chatbot-card glass">
+        <div class="eyebrow">Smart Chatbot Service</div>
+        <h2>Add a smart website assistant based on <span class="gradient-text">your preferences.</span></h2>
+        <p>I can set up a smart chatbot for your website that helps visitors understand your services, packages, process and contact options without searching the whole website.</p>
+        <p>The chatbot can be customized around your business tone, frequently asked questions, service details and WhatsApp inquiry flow.</p>
+        <div class="chatbot-points">
+          <div>✔ Custom quick replies</div>
+          <div>✔ Service guidance</div>
+          <div>✔ Package explanation</div>
+          <div>✔ WhatsApp lead direction</div>
+          <div>✔ Business-specific answers</div>
+          <div>✔ Clean mobile experience</div>
+        </div>
+        <div class="btn-row" style="margin-top:24px;">
+          <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20smart%20chatbot%20for%20my%20website." target="_blank">Ask About Chatbot</a>
+          <a class="btn btn-secondary" href="pricing.html">See Pricing Hint</a>
+        </div>
+      </div>
+      <div class="chatbot-preview glass">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=85" alt="Smart chatbot and website service planning">
+        <div class="chat-bubble">
+          <div><strong>Visitor:</strong> Which package is best for a small business?</div>
+          <div><strong>Assistant:</strong> A business website is usually best if you need services, pricing, portfolio and contact sections.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section reveal" id="included">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Every Website Includes</div>
+      <h2>Core essentials included with <span class="gradient-text">every website service.</span></h2>
+      <p>These basics help your website look professional, work smoothly on different devices and guide visitors toward contact.</p>
+    </div>
+    <div class="includes-grid">
+      <div class="includes-card glass"><h3>📱 Mobile Responsive</h3><p>Layouts are checked for phone, tablet and laptop so visitors get a smooth experience.</p></div>
+      <div class="includes-card glass"><h3>💬 WhatsApp Integration</h3><p>Clear contact buttons make it easy for serious visitors to message you directly.</p></div>
+      <div class="includes-card glass"><h3>🔎 SEO-Friendly Structure</h3><p>Page titles, meta wording and clean service headings are prepared professionally.</p></div>
+      <div class="includes-card glass"><h3>⚡ Fast Loading Layout</h3><p>Clean sections and optimized structure help the website feel smooth and polished.</p></div>
+      <div class="includes-card glass"><h3>🖼️ Premium Visual Style</h3><p>Image-led sections, cards and spacing create a stronger first impression.</p></div>
+      <div class="includes-card glass"><h3>🧭 Clear CTA Flow</h3><p>Visitors are guided toward services, pricing, WhatsApp or contact without confusion.</p></div>
+      <div class="includes-card glass"><h3>🧪 Final Testing</h3><p>Buttons, links, responsive spacing and important sections are checked before delivery.</p></div>
+      <div class="includes-card glass"><h3>🚀 Launch Guidance</h3><p>Basic support is provided so you understand the next step after the website is ready.</p></div>
     </div>
   </div>
 </section>
@@ -525,12 +845,60 @@ button,input,textarea,select{font-family:inherit}
   </div>
 </section>
 
+
+<section class="section reveal" id="service-comparison">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Service Comparison</div>
+      <h2>Compare what each service usually includes.</h2>
+      <p>This keeps the Services page clear while still giving enough detail before a client visits Pricing.</p>
+    </div>
+    <div class="compare-wrap glass">
+      <table class="service-compare">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Landing Page</th>
+            <th>Business Website</th>
+            <th>Redesign</th>
+            <th>Smart Chatbot</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Best For</td><td>Single offer</td><td>Complete presence</td><td>Old website upgrade</td><td>Visitor guidance</td></tr>
+          <tr><td>Mobile Responsive</td><td>✔ Included</td><td>✔ Included</td><td>✔ Improved</td><td>✔ Mobile friendly</td></tr>
+          <tr><td>WhatsApp Flow</td><td>✔ CTA button</td><td>✔ Contact flow</td><td>✔ Improved CTA</td><td>✔ Lead direction</td></tr>
+          <tr><td>SEO Setup</td><td>Basic</td><td>Standard</td><td>Updated basics</td><td>FAQ support</td></tr>
+          <tr><td>Visual Level</td><td>Focused</td><td>Premium</td><td>Modernized</td><td>Branded assistant</td></tr>
+          <tr><td>Service Scope</td><td><strong>Small</strong></td><td><strong>Medium</strong></td><td><strong>Depends</strong></td><td><strong>Add-on</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="delivery-time">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Delivery Timeline</div>
+      <h2>Timely completion with clear scope before work starts.</h2>
+      <p>Delivery depends on content, pages, images, revisions and response speed, but these ranges help clients understand the usual timing.</p>
+    </div>
+    <div class="delivery-grid">
+      <div class="delivery-card glass"><strong>2–4 days</strong><h3>Landing Page</h3><p>For one focused offer, campaign or simple service presentation.</p></div>
+      <div class="delivery-card glass"><strong>5–8 days</strong><h3>Business Website</h3><p>For a professional multi-section or multi-page service website.</p></div>
+      <div class="delivery-card glass"><strong>7–14 days</strong><h3>Premium Website</h3><p>For custom visual sections, stronger brand feel and advanced layout polish.</p></div>
+      <div class="delivery-card glass"><strong>24–48h</strong><h3>Small Updates</h3><p>For minor content changes, button fixes, layout updates or mobile adjustments.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="section reveal">
   <div class="section-inner">
     <div class="section-title">
-      <div class="eyebrow">Portfolio Preview</div>
-      <h2>Website styles available for different industries.</h2>
-      <p>These demo concepts help clients understand what type of website style they can order.</p>
+      <div class="eyebrow">Small Portfolio Preview</div>
+      <h2>A quick look at possible website styles.</h2>
+      <p>This is only a small preview. Visit the portfolio section when you want to see live website examples.</p>
     </div>
 
     <div class="portfolio-strip">
@@ -538,19 +906,19 @@ button,input,textarea,select{font-family:inherit}
         <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85" alt="Aurora House demo website">
         <div><h3>Aurora House</h3><p>Luxury booking-style website</p></div>
       </a>
-      <a class="strip-project" href="contact.html">
+      <a class="strip-project" href="https://tdawood444-cloud.github.io/ELITE-AUTO-STUDIO/" target="_blank">
         <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=85" alt="Auto studio website demo">
         <div><h3>Auto Studio</h3><p>Car detailing service website</p></div>
       </a>
-      <a class="strip-project" href="contact.html">
+      <a class="strip-project" href="https://tdawood444-cloud.github.io/CHRONO-LUXE-/" target="_blank">
         <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85" alt="Luxury watches website demo">
         <div><h3>Luxury Watches</h3><p>Premium product showcase</p></div>
       </a>
-      <a class="strip-project" href="contact.html">
+      <a class="strip-project" href="https://tdawood444-cloud.github.io/VELORA-ESTATES-/" target="_blank">
         <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Estate interior website demo">
         <div><h3>Estate Interior</h3><p>Property and interior website</p></div>
       </a>
-      <a class="strip-project" href="contact.html">
+      <a class="strip-project" href="https://tdawood444-cloud.github.io/DAWOOD-STUDIO/" target="_blank">
         <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85" alt="Service business website demo">
         <div><h3>Service Business</h3><p>Lead-focused business site</p></div>
       </a>
@@ -561,17 +929,17 @@ button,input,textarea,select{font-family:inherit}
 <section class="section reveal">
   <div class="section-inner">
     <div class="section-title">
-      <div class="eyebrow">Process</div>
-      <h2>From idea to live website.</h2>
-      <p>A clear process keeps the project simple, professional and easy to follow.</p>
+      <div class="eyebrow">Timely Project Process</div>
+      <h2>Clear steps, better communication and on-time delivery focus.</h2>
+      <p>The process keeps the website project organized from your first message to final testing and launch.</p>
     </div>
 
     <div class="process-timeline">
-      <div class="step-card glass"><span>01</span><h3>Consultation</h3><p>Share your business, pages, services, colors and reference style.</p></div>
-      <div class="step-card glass"><span>02</span><h3>Structure</h3><p>I plan the section flow, hero message, CTA direction and page hierarchy.</p></div>
-      <div class="step-card glass"><span>03</span><h3>Design</h3><p>The website layout is created with premium visuals and responsive spacing.</p></div>
-      <div class="step-card glass"><span>04</span><h3>Testing</h3><p>Mobile, tablet, laptop, buttons, links and layout are checked before launch.</p></div>
-      <div class="step-card glass"><span>05</span><h3>Launch</h3><p>Final page is ready for GitHub Pages, hosting or your own domain setup.</p></div>
+      <div class="step-card glass"><span>01</span><h3>Project Brief</h3><p>Share your website type, required pages, colors, images and reference style.</p></div>
+      <div class="step-card glass"><span>02</span><h3>Service Plan</h3><p>I confirm the service scope, page flow, features and expected completion direction.</p></div>
+      <div class="step-card glass"><span>03</span><h3>Design Build</h3><p>The website is built with premium visuals, responsive spacing and clear service sections.</p></div>
+      <div class="step-card glass"><span>04</span><h3>Testing</h3><p>Mobile, tablet, laptop, buttons, forms and links are checked before final handover.</p></div>
+      <div class="step-card glass"><span>05</span><h3>Delivery</h3><p>Final delivery is handled professionally with launch support and clear next steps.</p></div>
     </div>
   </div>
 </section>
@@ -579,18 +947,41 @@ button,input,textarea,select{font-family:inherit}
 <section class="section reveal">
   <div class="section-inner">
     <div class="section-title">
-      <div class="eyebrow">Why Choose Me</div>
-      <h2>Why businesses choose my websites.</h2>
-      <p>Every website is built to look premium, load cleanly, explain the service clearly and help visitors take action.</p>
+      <div class="eyebrow">Why Choose These Services</div>
+      <h2>Professional service quality from first message to final delivery.</h2>
+      <p>Each service is built with clear communication, strong design, mobile-friendly layout and a direct path for visitors to contact you.</p>
     </div>
 
     <div class="why-grid">
-      <div class="why-card glass"><h3>📱 Mobile-First</h3><p>Most visitors open websites from phones, so the mobile experience is handled first.</p></div>
-      <div class="why-card glass"><h3>🖼️ Image-Led Design</h3><p>Strong image sections and visual cards make the website feel more premium.</p></div>
-      <div class="why-card glass"><h3>⚡ Clear CTA Flow</h3><p>Buttons and sections guide visitors toward WhatsApp, pricing or contact.</p></div>
-      <div class="why-card glass"><h3>🔎 SEO Ready</h3><p>Meta tags, page titles and clean service wording are included for a professional setup.</p></div>
-      <div class="why-card glass"><h3>🧭 Better Hierarchy</h3><p>Important services and actions stand out instead of every element looking equal.</p></div>
-      <div class="why-card glass"><h3>🧩 Easy To Expand</h3><p>The structure can later support more pages, portfolio projects and extra features.</p></div>
+      <div class="why-card glass"><h3>📱 Mobile-First</h3><p>The layout is planned for phone users first, then polished for tablet and laptop.</p></div>
+      <div class="why-card glass"><h3>🖼️ Premium Visuals</h3><p>Image-led sections, cards and spacing help the service feel more valuable.</p></div>
+      <div class="why-card glass"><h3>⚡ Clear CTA Flow</h3><p>Visitors are guided toward WhatsApp, pricing or contact without confusion.</p></div>
+      <div class="why-card glass"><h3>🔎 SEO Structure</h3><p>Clean titles, meta description and service wording are included for a professional setup.</p></div>
+      <div class="why-card glass"><h3>🧭 Strong Hierarchy</h3><p>Important service details stand out so the page does not feel flat or boring.</p></div>
+      <div class="why-card glass"><h3>🧩 Easy To Expand</h3><p>Your website can later support more pages, portfolio items and extra features.</p></div>
+      <div class="why-card glass"><h3>🤖 Chatbot Option</h3><p>A smart assistant can explain services, answer questions and guide leads to WhatsApp.</p></div>
+      <div class="why-card glass"><h3>⏱️ Timely Delivery</h3><p>Scope, content and timeline are discussed clearly so the project stays organized.</p></div>
+      <div class="why-card glass"><h3>💬 2–4h Response</h3><p>Most project queries receive a response within 2 to 4 hours when available.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section reveal" id="service-faq">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Service FAQs</div>
+      <h2>Quick answers about the services.</h2>
+      <p>Only service-focused answers are included here. Full details can be discussed after you share your project type.</p>
+    </div>
+    <div class="service-faq-grid">
+      <div class="service-faq glass"><h3>Which service should I choose?</h3><p>If you need a full online presence, choose a business website. If you need one focused offer, choose a landing page.</p></div>
+      <div class="service-faq glass"><h3>Can the chatbot be added later?</h3><p>Yes. A smart chatbot can be added later after the main website is ready and your services are clear.</p></div>
+      <div class="service-faq glass"><h3>Do you redesign old websites?</h3><p>Yes. Redesign work can improve layout, colors, spacing, mobile view, CTA flow and visual quality.</p></div>
+    </div>
+    <div class="btn-row" style="justify-content:center;margin-top:26px;">
+      <a class="btn btn-primary" href="contact.html">Ask Service Question</a>
+      <a class="btn btn-secondary" href="pricing.html">View Pricing</a>
     </div>
   </div>
 </section>
@@ -600,15 +991,20 @@ button,input,textarea,select{font-family:inherit}
     <div class="final-cta glass">
       <div>
         <div class="eyebrow">Ready To Start?</div>
-        <h2>Let’s build your <span class="gradient-text">premium website</span> with a clean service flow.</h2>
-        <p>Send your business idea, required pages and reference style. I’ll guide you with the best website package and next steps.</p>
+        <h2>Choose the right <span class="gradient-text">website service</span> for your business.</h2>
+        <p>Send your required service, page count, design style and preferred features. I usually respond within 2 to 4 hours and guide you with the next step. You can also email me at <strong style="color:var(--gold2);">tdawood444@gmail.com</strong>.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20start%20my%20website%20project." target="_blank">Start on WhatsApp</a>
           <a class="btn btn-secondary" href="pricing.html">View Pricing</a>
         </div>
+        <div class="contact-detail-row">
+          <span>📧 tdawood444@gmail.com</span>
+          <span>📱 +92 342 8305707</span>
+          <span>🕒 Response: 2–4 hours</span>
+        </div>
       </div>
       <div class="final-preview">
-        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85" alt="Website project consultation">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=85" alt="Website service discussion on laptop">
       </div>
     </div>
   </div>
