@@ -1,4 +1,9 @@
 
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +11,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="google-site-verification" content="bFXjDvDsyrvKpTUFZRE9VWSM5eRM9Jzs8qVqgLDnmB0" />
 
-<title>Dawood Tariq | Premium Website Specialist & Modern Web Designer</title>
-<meta name="description" content="Dawood Tariq creates premium mobile-first websites, WordPress websites, landing pages, portfolio websites, website redesigns and business websites with WhatsApp lead systems.">
+<title>Dawood Tariq | Premium Business Website Designer</title>
+<meta name="description" content="Dawood Tariq builds premium mobile-first business websites, landing pages, WordPress websites, portfolio websites and redesigns with clear service sections, strong visuals and WhatsApp lead flow.">
 <meta name="keywords" content="Dawood Tariq, website specialist, web designer Pakistan, premium website, business website, portfolio website, WordPress website, landing page designer, responsive website, WhatsApp website, website redesign, SEO friendly website">
 <meta name="author" content="Dawood Tariq">
 <meta name="robots" content="index, follow">
@@ -149,13 +154,272 @@ button,input,textarea,select{font-family:inherit}
 .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.why-card{padding:26px;min-height:230px;transition:.35s ease}.why-card:hover{transform:translateY(-10px)}.why-card h3{font-family:"Manrope",sans-serif;font-size:21px;margin-bottom:10px}.why-card p{color:var(--muted);line-height:1.75}
 .testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.testimonial-card{padding:28px;min-height:240px}.stars{color:var(--gold2);letter-spacing:2px;margin-bottom:16px;font-weight:900}.testimonial-card p{color:#ecdcbc;line-height:1.8;font-size:15px}.testimonial-card h4{margin-top:18px;color:var(--gold2);font-family:"Manrope",sans-serif}
 
+
+.availability-badge{
+  margin-top:18px;
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(87,198,140,.10);
+  border:1px solid rgba(87,198,140,.34);
+  color:#d7ffe7;
+  font-size:13px;
+  font-weight:950;
+  box-shadow:0 16px 42px rgba(87,198,140,.10);
+}
+.availability-badge span{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--emerald2);
+  box-shadow:0 0 16px rgba(87,198,140,.9);
+}
+.meet-grid{
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:24px;
+  align-items:stretch;
+}
+.meet-photo{
+  min-height:500px;
+  overflow:hidden;
+}
+.meet-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.meet-card{
+  padding:34px;
+}
+.meet-card h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(34px,5vw,58px);
+  line-height:1.06;
+  margin:14px 0;
+}
+.meet-card p{
+  color:var(--muted);
+  line-height:1.85;
+  margin-top:12px;
+}
+.meet-points{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:22px;
+}
+.meet-points div{
+  padding:15px;
+  border-radius:18px;
+  background:rgba(255,255,255,.055);
+  border:1px solid var(--line);
+  font-weight:850;
+  color:#fff3da;
+}
+.need-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
+}
+.need-card{
+  padding:22px;
+  min-height:180px;
+  transition:.35s ease;
+}
+.need-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(216,180,90,.38);
+}
+.need-card strong{
+  display:block;
+  font-family:"Manrope",sans-serif;
+  font-size:18px;
+  margin-bottom:10px;
+  color:#fff;
+}
+.need-card p{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:14px;
+}
+.compare-wrap{
+  overflow:hidden;
+}
+.compare-table{
+  width:100%;
+  border-collapse:collapse;
+}
+.compare-table th,
+.compare-table td{
+  padding:18px 16px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  text-align:center;
+  color:#f2e5cc;
+}
+.compare-table th:first-child,
+.compare-table td:first-child{
+  text-align:left;
+}
+.compare-table th{
+  color:#fff;
+  font-family:"Manrope",sans-serif;
+  font-size:16px;
+  background:rgba(255,255,255,.045);
+}
+.compare-table td{
+  font-size:14px;
+}
+.compare-table strong{
+  color:var(--gold2);
+}
+.faq-mini-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.faq-mini{
+  padding:26px;
+  min-height:220px;
+  transition:.35s ease;
+}
+.faq-mini:hover{
+  transform:translateY(-10px);
+  border-color:rgba(216,180,90,.38);
+}
+.faq-mini h3{
+  font-family:"Manrope",sans-serif;
+  font-size:21px;
+  margin-bottom:12px;
+}
+.faq-mini p{
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.contact-strip{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  overflow:hidden;
+  margin-bottom:24px;
+}
+.contact-strip div{
+  padding:20px 16px;
+  background:rgba(255,255,255,.035);
+}
+.contact-strip strong{
+  display:block;
+  color:var(--gold2);
+  font-family:"Manrope",sans-serif;
+  font-size:13px;
+  margin-bottom:8px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.contact-strip a,
+.contact-strip span{
+  color:#fff3da;
+  font-weight:850;
+  word-break:break-word;
+}
+
+.project-form-wrap{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:24px;
+  align-items:stretch;
+}
+.project-form-info{
+  padding:34px;
+}
+.project-form-info h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(34px,5vw,58px);
+  line-height:1.08;
+  margin-top:14px;
+}
+.project-form-info p{
+  color:var(--muted);
+  line-height:1.85;
+  margin-top:15px;
+}
+.project-form-points{
+  display:grid;
+  gap:12px;
+  margin-top:22px;
+}
+.project-form-points div{
+  padding:15px 16px;
+  border-radius:18px;
+  background:rgba(255,255,255,.055);
+  border:1px solid var(--line);
+  color:#fff3da;
+  font-weight:850;
+}
+.project-form{
+  padding:30px;
+}
+.form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+.form-field{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.form-field.full{
+  grid-column:1/-1;
+}
+.form-field label{
+  color:#fff1d4;
+  font-size:13px;
+  font-weight:900;
+}
+.form-field input,
+.form-field select,
+.form-field textarea{
+  width:100%;
+  border:1px solid rgba(255,255,255,.13);
+  background:rgba(255,255,255,.06);
+  color:var(--text);
+  border-radius:16px;
+  padding:14px 15px;
+  outline:none;
+  transition:.25s ease;
+}
+.form-field select option{
+  background:#11100d;
+  color:#fff;
+}
+.form-field textarea{
+  min-height:130px;
+  resize:vertical;
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus{
+  border-color:rgba(216,180,90,.5);
+  box-shadow:0 0 0 4px rgba(216,180,90,.08);
+}
+.form-note{
+  margin-top:14px;
+  color:var(--muted);
+  line-height:1.7;
+  font-size:13px;
+}
+
 .final-cta{position:relative;overflow:hidden;padding:44px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:30px}.final-cta h2{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,58px);line-height:1.08;margin-top:14px}.final-cta p{color:var(--muted);line-height:1.85;margin:16px 0 24px;max-width:720px}.final-preview{min-height:330px;border-radius:30px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}.final-preview img{width:100%;height:100%;object-fit:cover}
 .site-footer{padding:30px 14px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.1)}
 .reveal{opacity:0;transform:translateY(26px);transition:1s ease}.reveal.active{opacity:1;transform:translateY(0)}
 
-@media(max-width:1180px){.service-grid{grid-template-columns:repeat(2,1fr)}.process-grid,.why-grid{grid-template-columns:repeat(2,1fr)}.pricing-banner{grid-template-columns:1fr}.portfolio-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:980px){.site-header{padding:10px 14px}.brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}.menu-btn{display:grid;place-items:center}.header-cta{display:none}.nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}.nav-links.active{display:flex}.nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}.nav-links a:after{display:none}.hero{min-height:auto;padding:48px 14px 38px}.hero-inner,.specialist-grid,.final-cta{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions,.btn-row{justify-content:center}.btn{width:100%;max-width:340px}.hero-mini{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}.hero-visual{min-height:520px}.browser-main{width:88%;height:58%}.browser-second{width:62%;height:28%;bottom:105px}.audit-card{left:0;right:0;width:auto;bottom:0}.trust-bar{grid-template-columns:repeat(2,1fr)}.trust-item:last-child{grid-column:1/-1}.offer-points,.check-grid,.service-grid,.process-grid,.portfolio-grid,.why-grid,.testimonial-grid{grid-template-columns:1fr}.service-card.featured{grid-column:auto}.pricing-banner{padding:24px}.image-showcase{grid-template-columns:1fr 1fr;grid-template-rows:250px 250px 250px}.showcase-item.large{grid-column:span 2;grid-row:span 1}.final-cta{padding:30px 18px}.final-preview{min-height:260px}}
-@media(max-width:560px){.section{padding:66px 14px}.hero h1{font-size:41px}.hero-visual{min-height:455px}.browser-second{bottom:92px}.hero-mini div{text-align:left}.offer-box{padding:36px 18px;border-radius:28px}.project-img{height:230px}.image-showcase{grid-template-columns:1fr;grid-template-rows:none}.showcase-item,.showcase-item.large{height:245px;grid-column:auto;grid-row:auto}.trust-bar{grid-template-columns:1fr}.trust-item:last-child{grid-column:auto}.specialist-content{padding:24px}.nav-shell{gap:10px}}
+@media(max-width:1180px){.need-grid{grid-template-columns:repeat(3,1fr)}.service-grid{grid-template-columns:repeat(2,1fr)}.process-grid,.why-grid{grid-template-columns:repeat(2,1fr)}.pricing-banner{grid-template-columns:1fr}.portfolio-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:980px){.contact-strip{grid-template-columns:1fr}.project-form-wrap{grid-template-columns:1fr}.project-form-info{text-align:center}.form-grid{grid-template-columns:1fr}.meet-grid{grid-template-columns:1fr;text-align:center}.meet-points,.need-grid,.faq-mini-grid{grid-template-columns:1fr}.compare-wrap{overflow-x:auto}.compare-table{min-width:720px}.site-header{padding:10px 14px}.brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}.menu-btn{display:grid;place-items:center}.header-cta{display:none}.nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}.nav-links.active{display:flex}.nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}.nav-links a:after{display:none}.hero{min-height:auto;padding:48px 14px 38px}.hero-inner,.specialist-grid,.final-cta{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions,.btn-row{justify-content:center}.btn{width:100%;max-width:340px}.hero-mini{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}.hero-visual{min-height:520px}.browser-main{width:88%;height:58%}.browser-second{width:62%;height:28%;bottom:105px}.audit-card{left:0;right:0;width:auto;bottom:0}.trust-bar{grid-template-columns:repeat(2,1fr)}.trust-item:last-child{grid-column:1/-1}.offer-points,.check-grid,.service-grid,.process-grid,.portfolio-grid,.why-grid,.testimonial-grid{grid-template-columns:1fr}.service-card.featured{grid-column:auto}.pricing-banner{padding:24px}.image-showcase{grid-template-columns:1fr 1fr;grid-template-rows:250px 250px 250px}.showcase-item.large{grid-column:span 2;grid-row:span 1}.final-cta{padding:30px 18px}.final-preview{min-height:260px}}
+@media(max-width:560px){.project-form,.project-form-info{padding:24px}.meet-card{padding:24px}.section{padding:66px 14px}.hero h1{font-size:41px}.hero-visual{min-height:455px}.browser-second{bottom:92px}.hero-mini div{text-align:left}.offer-box{padding:36px 18px;border-radius:28px}.project-img{height:230px}.image-showcase{grid-template-columns:1fr;grid-template-rows:none}.showcase-item,.showcase-item.large{height:245px;grid-column:auto;grid-row:auto}.trust-bar{grid-template-columns:1fr}.trust-item:last-child{grid-column:auto}.specialist-content{padding:24px}.nav-shell{gap:10px}}
 </style>
 </head>
 <body>
@@ -171,12 +435,12 @@ button,input,textarea,select{font-family:inherit}
     <nav class="nav-links" id="navMenu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="pricing.html">Pricing</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
-      <a href="#portfolio">Portfolio</a>
     </nav>
-    <a class="header-cta" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20a%20premium%20website." target="_blank">Start Website ✦</a>
+    <a class="header-cta" href="#contact">Send Project Details ✦</a>
     <button class="menu-btn" onclick="toggleMenu()" aria-label="Open Menu">☰</button>
   </div>
 </header>
@@ -186,9 +450,10 @@ button,input,textarea,select{font-family:inherit}
   <div class="hero-inner">
     <div class="hero-copy reveal">
       <div class="hero-kicker"><span></span> Premium Website Specialist</div>
-      <h1>I Build <span class="gradient-text">Luxury Websites</span> That Make Brands Look Expensive.</h1>
-      <h2>Modern business websites, landing pages, WordPress websites, portfolio pages and redesigns — built mobile-first with premium visuals.</h2>
-      <p>I help businesses and personal brands turn their online presence into a clean, trusted and high-converting website with strong sections, image-led design, WhatsApp leads and smooth responsive layout.</p>
+      <div class="availability-badge"><span></span> Currently Accepting New Projects • Response Time: 2–4 Hours</div>
+      <h1>Premium <span class="gradient-text">Business Websites</span> Built To Look Professional And Convert Visitors.</h1>
+      <h2>Modern business websites, landing pages, WordPress websites, portfolio pages and redesigns — built mobile-first with premium visuals, clear messaging and a smooth inquiry flow.</h2>
+      <p>I help businesses and personal brands turn their online presence into a clean, trusted and client-ready website with strong service sections, premium image-led design, responsive layout and direct contact options.</p>
       <div class="btn-row hero-actions">
         <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20build%20a%20premium%20website." target="_blank">Hire Me on WhatsApp</a>
         <a class="btn btn-secondary" href="#portfolio">View Website Portfolio</a>
@@ -211,19 +476,19 @@ button,input,textarea,select{font-family:inherit}
           <span class="browser-label">Mobile + Laptop Ready</span>
         </div>
         <div class="audit-card">
-          <strong>Website that sells clearly.</strong>
-          <p>Hero section, service flow, portfolio proof, pricing preview and WhatsApp lead path — all in one premium layout.</p>
+          <strong>Built For Real Business Growth.</strong>
+          <p>Clear messaging, premium visuals, service presentation, portfolio proof and direct contact options — designed to help visitors become clients.</p>
         </div>
       </div>
     </div>
   </div>
   <div class="section-inner">
     <div class="trust-bar reveal">
-      <div class="trust-item"><h3>5+</h3><p>Demo Websites</p></div>
-      <div class="trust-item"><h3>100%</h3><p>Responsive Layout</p></div>
+      <div class="trust-item"><h3>5+</h3><p>Live Demo Projects</p></div>
+      <div class="trust-item"><h3>Mobile</h3><p>Optimized Design</p></div>
       <div class="trust-item"><h3>SEO</h3><p>Ready Structure</p></div>
-      <div class="trust-item"><h3>WA</h3><p>WhatsApp Leads</p></div>
-      <div class="trust-item"><h3>2026</h3><p>Modern UI Style</p></div>
+      <div class="trust-item"><h3>2–4h</h3><p>Response Time</p></div>
+      <div class="trust-item"><h3>Launch</h3><p>Support Included</p></div>
     </div>
   </div>
 </section>
@@ -247,6 +512,33 @@ button,input,textarea,select{font-family:inherit}
   </div>
 </section>
 
+
+<section class="section reveal" id="meet">
+  <div class="section-inner">
+    <div class="meet-grid">
+      <div class="meet-photo glass">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="Website specialist working on a laptop">
+      </div>
+      <div class="meet-card glass">
+        <div class="eyebrow">Meet Dawood Tariq</div>
+        <h2>Hi, I’m Dawood — I design websites that make businesses look serious, modern and trusted.</h2>
+        <p>I build premium, mobile-first websites for businesses, service providers and personal brands that need a stronger online presence and a clear way to receive inquiries.</p>
+        <p>My focus is simple: professional layout, clean messaging, premium visuals, smooth mobile experience, fast communication and launch support.</p>
+        <div class="meet-points">
+          <div>✔ Premium Website Design</div>
+          <div>✔ Client-Facing Layout</div>
+          <div>✔ WhatsApp + Email Contact</div>
+          <div>✔ Launch Support</div>
+        </div>
+        <div class="btn-row" style="margin-top:24px;">
+          <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20discuss%20a%20website%20project." target="_blank">Discuss Project</a>
+          <a class="btn btn-secondary" href="#portfolio">See Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section reveal" id="about">
   <div class="section-inner">
     <div class="specialist-grid">
@@ -255,9 +547,9 @@ button,input,textarea,select{font-family:inherit}
       </div>
       <div class="specialist-content glass">
         <div class="eyebrow">Website Specialist</div>
-        <h2>Focused only on websites, online presence and client-ready digital design.</h2>
-        <p>I create websites that help clients understand your business quickly. The goal is simple: premium first impression, clear services, strong trust, smooth mobile experience and easy contact.</p>
-        <p style="margin-top:14px;">This home page is now positioned as a web design specialist brand — not trading, not Excel, not documentation.</p>
+        <h2>Professional Websites Designed To Build Trust, Generate Leads And Grow Your Business.</h2>
+        <p>I create premium business websites that help visitors understand your services, trust your brand and take action. Every section is designed to improve credibility, user experience and lead generation.</p>
+        <p style="margin-top:14px;">From hero messaging to service cards, portfolio proof, pricing direction and contact flow, the website is planned to make your business easier to understand and easier to contact.</p>
         <div class="check-grid">
           <div class="check">✔ Custom Website Design</div>
           <div class="check">✔ WordPress Website</div>
@@ -276,7 +568,7 @@ button,input,textarea,select{font-family:inherit}
     <div class="section-title">
       <div class="eyebrow">Website Services</div>
       <h2>Everything Your Brand Needs For A <span class="gradient-text">Premium Website</span></h2>
-      <p>Services are focused only on websites, design, redesign, WordPress, landing pages and website launch support.</p>
+      <p>Choose the website service that matches your business goal — from landing pages to full premium business websites and redesigns.</p>
     </div>
     <div class="service-grid">
       <div class="service-card featured glass"><div class="service-icon">🌐</div><h3>Premium Business Website</h3><p>A complete modern website for businesses, agencies, service providers and personal brands.</p><ul><li>Home, Services, Pricing, FAQ, Contact</li><li>Premium visual sections</li><li>Mobile-first layout</li><li>WhatsApp contact flow</li></ul></div>
@@ -289,20 +581,131 @@ button,input,textarea,select{font-family:inherit}
   </div>
 </section>
 
+<section class="section reveal" id="fit">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Perfect For</div>
+      <h2>Websites For Businesses That Need A <span class="gradient-text">Premium Online Presence</span></h2>
+      <p>This website style works best for service-based businesses, personal brands, studios and companies that want to look professional online.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card glass"><h3>🍽️ Restaurants</h3><p>Menu, gallery, reservation flow and premium brand presentation.</p></div>
+      <div class="why-card glass"><h3>🏢 Real Estate</h3><p>Property showcases, featured listings, inquiry sections and trust-building layout.</p></div>
+      <div class="why-card glass"><h3>🚘 Auto Businesses</h3><p>Service packages, gallery, booking buttons and a strong luxury look.</p></div>
+      <div class="why-card glass"><h3>💼 Service Providers</h3><p>Clear services, pricing direction, FAQs and contact flow for serious leads.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section reveal" id="project-details">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">What I Need From You</div>
+      <h2>Send These Details To Start Your <span class="gradient-text">Website Project</span></h2>
+      <p>These details help me understand your project faster and suggest the best layout, package and design direction.</p>
+    </div>
+    <div class="need-grid">
+      <div class="need-card glass"><strong>01. Business Name</strong><p>Your brand name, business type and short introduction.</p></div>
+      <div class="need-card glass"><strong>02. Pages Needed</strong><p>Home, Services, Pricing, FAQ, Contact or any custom page.</p></div>
+      <div class="need-card glass"><strong>03. Services</strong><p>Your main offers, package details and target customers.</p></div>
+      <div class="need-card glass"><strong>04. Images / Logo</strong><p>Your logo, brand images or preferred stock image direction.</p></div>
+      <div class="need-card glass"><strong>05. Reference Style</strong><p>Any website link or design style you want to match.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="section reveal" id="portfolio">
   <div class="section-inner">
     <div class="section-title">
-      <div class="eyebrow">Demo Portfolio</div>
-      <h2>Website Concepts I Can Build For <span class="gradient-text">Different Businesses</span></h2>
-      <p>These demo projects show that your service can cover multiple industries, styles and layouts.</p>
+      <div class="eyebrow">Portfolio</div>
+      <h2>Live Demo Websites Built For <span class="gradient-text">Different Business Styles</span></h2>
+      <p>Explore my demo website work across restaurant, real estate, auto, luxury product and personal studio styles. These samples show the quality, layout direction and premium feel I can create for client projects.</p>
     </div>
     <div class="portfolio-grid">
-      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=85" alt="Luxury hospitality website demo"></div><div class="project-body"><div class="project-tags"><span>Luxury UI</span><span>Booking</span></div><h3>Aurora House</h3><p>Premium hospitality-style website with gallery, reservation flow and luxury presentation.</p><a class="btn btn-secondary" href="https://tdawood444-cloud.github.io/ARUROA-HOUSE-/" target="_blank">View Demo</a></div></article>
-      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=85" alt="Auto detailing website demo"></div><div class="project-body"><div class="project-tags"><span>Auto Studio</span><span>Packages</span></div><h3>Premium Auto Studio</h3><p>Dark metallic car detailing website with service packages, gallery and WhatsApp booking.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
-      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=85" alt="Luxury watches website demo"></div><div class="project-body"><div class="project-tags"><span>Product</span><span>Luxury</span></div><h3>Luxury Watches</h3><p>Premium product showcase website for luxury watches, collections and inquiries.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
-      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Real estate interior website demo"></div><div class="project-body"><div class="project-tags"><span>Real Estate</span><span>Interior</span></div><h3>Estate & Interior</h3><p>Image-led website for luxury property, interiors, projects and premium consultations.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
-      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85" alt="Service business website demo"></div><div class="project-body"><div class="project-tags"><span>Services</span><span>Leads</span></div><h3>Service Business</h3><p>Professional website for service providers with CTA sections and lead generation flow.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
-      <article class="project glass"><div class="project-img"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85" alt="Corporate website demo"></div><div class="project-body"><div class="project-tags"><span>Corporate</span><span>Modern</span></div><h3>Corporate Website</h3><p>A clean premium corporate-style website for consultants, startups and agencies.</p><a class="btn btn-secondary" href="#contact">Order Similar</a></div></article>
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=85" alt="Aurora House restaurant website demo">
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Restaurant</span><span>Reservation</span><span>Luxury UI</span></div>
+          <h3>Aurora House</h3>
+          <p>A premium restaurant website concept with hero visuals, menu-style sections, reservation flow and luxury hospitality presentation.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/ARUROA-HOUSE-/#reserve" target="_blank">View Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Velora Estates real estate website demo">
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Real Estate</span><span>Property</span><span>Premium</span></div>
+          <h3>Velora Estates</h3>
+          <p>A real estate website concept built for luxury property presentation, featured listings, trust sections and inquiry-focused layout.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/VELORA-ESTATES-/" target="_blank">View Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=85" alt="Elite Auto Studio website demo">
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Auto Studio</span><span>Services</span><span>Booking</span></div>
+          <h3>Elite Auto Studio</h3>
+          <p>A dark premium auto business website concept with service packages, gallery sections and strong call-to-action buttons.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/ELITE-AUTO-STUDIO/" target="_blank">View Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=85" alt="Chrono Luxe watch website demo">
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Luxury Product</span><span>Catalog</span><span>Branding</span></div>
+          <h3>Chrono Luxe</h3>
+          <p>A luxury watch website concept made for premium product display, collection showcase and high-end brand storytelling.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/CHRONO-LUXE-/" target="_blank">View Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85" alt="Dawood Studio portfolio website demo">
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Portfolio</span><span>Studio</span><span>Personal Brand</span></div>
+          <h3>Dawood Studio</h3>
+          <p>A creative studio and personal brand website concept with clean sections, service highlights and modern presentation.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://tdawood444-cloud.github.io/DAWOOD-STUDIO/" target="_blank">View Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project glass">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=85" alt="Custom website order card">
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Custom Website</span><span>Client Project</span></div>
+          <h3>Need Similar Website?</h3>
+          <p>Share your business type, required pages, color style and reference website. I will suggest the right website package.</p>
+          <div class="btn-row">
+            <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20saw%20your%20portfolio%20and%20want%20a%20similar%20website." target="_blank">Order Similar</a>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -350,6 +753,43 @@ button,input,textarea,select{font-family:inherit}
   </div>
 </section>
 
+
+<section class="section reveal" id="packages">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Package Comparison</div>
+      <h2>Compare Website Packages Before You <span class="gradient-text">Choose</span></h2>
+      <p>A simple comparison helps clients understand what is included in each package.</p>
+    </div>
+    <div class="compare-wrap glass">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Starter</th>
+            <th>Business</th>
+            <th>Premium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Best For</td><td>Simple landing page</td><td>Small business website</td><td>Premium brand website</td></tr>
+          <tr><td>Pages</td><td><strong>1 Page</strong></td><td><strong>Up to 5 Pages</strong></td><td><strong>Custom Pages</strong></td></tr>
+          <tr><td>Mobile Responsive</td><td>✔ Included</td><td>✔ Included</td><td>✔ Included</td></tr>
+          <tr><td>WhatsApp Lead Button</td><td>✔ Included</td><td>✔ Included</td><td>✔ Included</td></tr>
+          <tr><td>Premium Animations</td><td>Basic</td><td>Standard</td><td>Advanced</td></tr>
+          <tr><td>SEO Meta Setup</td><td>Basic</td><td>Included</td><td>Advanced Structure</td></tr>
+          <tr><td>Portfolio / Gallery</td><td>Optional</td><td>Included</td><td>Premium Layout</td></tr>
+          <tr><td>Publishing Guidance</td><td>Basic</td><td>Included</td><td>Included + Support</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="btn-row" style="justify-content:center;margin-top:26px;">
+      <a class="btn btn-primary" href="pricing.html">View Full Pricing</a>
+      <a class="btn btn-secondary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20please%20help%20me%20choose%20the%20right%20website%20package." target="_blank">Help Me Choose</a>
+    </div>
+  </div>
+</section>
+
 <section class="section reveal">
   <div class="section-inner">
     <div class="section-title"><div class="eyebrow">Why Choose Me</div><h2>Built For Real Clients, Not Just <span class="gradient-text">Pretty Screens</span></h2><p>A good website should explain your service, build trust and make it easy for clients to contact you.</p></div>
@@ -364,32 +804,134 @@ button,input,textarea,select{font-family:inherit}
 
 <section class="section reveal">
   <div class="section-inner">
-    <div class="section-title"><div class="eyebrow">Client Style Reviews</div><h2>Professional Feedback For <span class="gradient-text">Website Work</span></h2><p>Use this section to build trust while you collect real client reviews.</p></div>
+    <div class="section-title"><div class="eyebrow">Why Businesses Choose This Style</div><h2>A Website Should Look Premium And <span class="gradient-text">Make Action Easy</span></h2><p>This section highlights real business benefits instead of fake testimonials, making the homepage more honest and client-facing.</p></div>
     <div class="testimonial-grid">
-      <div class="testimonial-card glass"><div class="stars">★★★★★</div><p>“The website looks modern, premium and easy to understand. The mobile layout feels very professional.”</p><h4>Business Website Client</h4></div>
-      <div class="testimonial-card glass"><div class="stars">★★★★★</div><p>“Strong design, clean sections and clear call-to-action buttons. It feels ready for clients.”</p><h4>Landing Page Client</h4></div>
-      <div class="testimonial-card glass"><div class="stars">★★★★★</div><p>“The portfolio section makes the work look more trusted and helps visitors understand the service.”</p><h4>Portfolio Client</h4></div>
+      <div class="testimonial-card glass"><div class="stars">✓</div><p>Mobile-first sections help phone visitors understand your business quickly without zooming or struggling with layout.</p><h4>Mobile Experience</h4></div>
+      <div class="testimonial-card glass"><div class="stars">✓</div><p>Clear hero messaging, service cards and pricing direction help serious visitors know what you offer and how to start.</p><h4>Clear Communication</h4></div>
+      <div class="testimonial-card glass"><div class="stars">✓</div><p>Live demo projects, professional visuals and direct contact options build trust before the client sends a message.</p><h4>Trust & Contact Flow</h4></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section reveal" id="home-faq">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="eyebrow">Quick FAQs</div>
+      <h2>Quick Answers Before You <span class="gradient-text">Start</span></h2>
+      <p>Clear answers about timeline, WordPress, redesigns and what happens after you send your project details.</p>
+    </div>
+    <div class="faq-mini-grid">
+      <div class="faq-mini glass">
+        <h3>How long does a website take?</h3>
+        <p>A simple landing page can be prepared faster, while a full business website depends on pages, content and revisions.</p>
+      </div>
+      <div class="faq-mini glass">
+        <h3>Do you build WordPress websites?</h3>
+        <p>Yes. I can create WordPress website structures for clients who want easier content updates and forms.</p>
+      </div>
+      <div class="faq-mini glass">
+        <h3>Can you redesign my old website?</h3>
+        <p>Yes. I can improve layout, spacing, colors, sections, mobile view and call-to-action flow.</p>
+      </div>
+    </div>
+    <div class="btn-row" style="justify-content:center;margin-top:26px;">
+      <a class="btn btn-secondary" href="faq.html">View All FAQs</a>
     </div>
   </div>
 </section>
 
 <section class="section reveal" id="contact">
   <div class="section-inner">
-    <div class="final-cta glass">
-      <div>
-        <div class="eyebrow">Ready To Start?</div>
-        <h2>Let’s build your <span class="gradient-text">premium website</span> and make your brand look professional.</h2>
-        <p>Send your business idea, required pages and reference style. I’ll guide you with the best website package and next steps.</p>
-        <div class="btn-row"><a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20start%20my%20premium%20website%20project." target="_blank">Start on WhatsApp</a><a class="btn btn-secondary" href="contact.html">Contact Page</a></div>
+    <div class="section-title">
+      <div class="eyebrow">Send Project Details</div>
+      <h2>Tell Me About Your <span class="gradient-text">Website Project</span></h2>
+      <p>Fill this short form and it will open WhatsApp with your project message ready to send.</p>
+    </div>
+
+    <div class="contact-strip glass">
+      <div><strong>Email</strong><a href="mailto:tdawood444@gmail.com">tdawood444@gmail.com</a></div>
+      <div><strong>WhatsApp</strong><a href="https://wa.me/923428305707" target="_blank">+92 342 8305707</a></div>
+      <div><strong>Location</strong><span>Karachi, Pakistan</span></div>
+      <div><strong>Response Time</strong><span>Usually within 2–4 hours</span></div>
+    </div>
+
+    <div class="project-form-wrap">
+      <div class="project-form-info glass">
+        <div class="eyebrow">Quick Project Query</div>
+        <h2>Send the right details first, so I can guide you faster.</h2>
+        <p>This form helps collect your name, brand, website type, required pages, budget range and reference style in one clean message.</p>
+        <div class="project-form-points">
+          <div>✔ Clear project message</div>
+          <div>✔ Opens directly on WhatsApp</div>
+          <div>✔ Faster quote and package guidance</div>
+          <div>✔ Response time: usually within 2–4 hours</div>
+          <div>📧 Email: tdawood444@gmail.com</div>
+          <div>📱 WhatsApp: +92 342 8305707</div>
+        </div>
       </div>
-      <div class="final-preview"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85" alt="Website project consultation"></div>
+
+      <form class="project-form glass" onsubmit="sendProjectDetails(event)">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="clientName">Your name</label>
+            <input id="clientName" type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="form-field">
+            <label for="brandName">Business / brand name</label>
+            <input id="brandName" type="text" placeholder="Your brand name" required>
+          </div>
+          <div class="form-field">
+            <label for="websiteType">Select website type</label>
+            <select id="websiteType" required>
+              <option value="">Choose website type</option>
+              <option>Business Website</option>
+              <option>Landing Page</option>
+              <option>WordPress Website</option>
+              <option>Portfolio Website</option>
+              <option>Website Redesign</option>
+              <option>Custom Website</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="requiredPages">Required pages</label>
+            <input id="requiredPages" type="text" placeholder="Home, Services, Pricing, Contact..." required>
+          </div>
+          <div class="form-field">
+            <label for="budgetRange">Budget range</label>
+            <select id="budgetRange" required>
+              <option value="">Choose budget range</option>
+              <option>$80 - $150</option>
+              <option>$150 - $250</option>
+              <option>$250 - $500</option>
+              <option>$500+</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="referenceStyle">Reference style / website link</label>
+            <input id="referenceStyle" type="text" placeholder="Paste reference website link">
+          </div>
+          <div class="form-field full">
+            <label for="projectMessage">Project details</label>
+            <textarea id="projectMessage" placeholder="Tell me what you want: colors, pages, sections, images, deadline, special features..." required></textarea>
+          </div>
+        </div>
+        <p class="form-note">Your details will not submit to a server. The button creates a ready WhatsApp message so you can review it before sending. You can also email me directly at tdawood444@gmail.com.</p>
+        <div class="btn-row" style="margin-top:22px;">
+          <button class="btn btn-primary" type="submit">Send Details On WhatsApp</button>
+          <a class="btn btn-secondary" href="mailto:tdawood444@gmail.com?subject=Website%20Project%20Inquiry">Email Instead</a>
+        </div>
+      </form>
     </div>
   </div>
 </section>
 </main>
 
+
 <footer class="site-footer">
   <p>© 2026 Dawood Tariq | Premium Website Specialist • Business Websites • Landing Pages • WordPress Websites</p>
+  <p style="margin-top:8px;">Email: <a href="mailto:tdawood444@gmail.com">tdawood444@gmail.com</a> • WhatsApp: <a href="https://wa.me/923428305707" target="_blank">+92 342 8305707</a> • Response time: usually within 2–4 hours</p>
 </footer>
 
 <script>
@@ -408,6 +950,22 @@ document.querySelectorAll('.nav-links a').forEach(link=>{
     btn.textContent='☰';
   });
 });
+
+
+function sendProjectDetails(event){
+  event.preventDefault();
+  const name=document.getElementById('clientName').value.trim();
+  const brand=document.getElementById('brandName').value.trim();
+  const type=document.getElementById('websiteType').value;
+  const pages=document.getElementById('requiredPages').value.trim();
+  const budget=document.getElementById('budgetRange').value;
+  const reference=document.getElementById('referenceStyle').value.trim();
+  const details=document.getElementById('projectMessage').value.trim();
+
+  const message=`Hi Dawood, I want to discuss a website project.%0A%0AName: ${encodeURIComponent(name)}%0ABusiness / Brand: ${encodeURIComponent(brand)}%0AWebsite Type: ${encodeURIComponent(type)}%0ARequired Pages: ${encodeURIComponent(pages)}%0ABudget Range: ${encodeURIComponent(budget)}%0AReference Style / Link: ${encodeURIComponent(reference || 'Not added')}%0A%0AProject Details:%0A${encodeURIComponent(details)}`;
+
+  window.open(`https://wa.me/923428305707?text=${message}`,'_blank');
+}
 
 const revealObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
