@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -210,6 +211,59 @@ button{font-family:inherit}
   .faq-question{padding:18px 16px;font-size:15px}
   .faq-answer p{padding:0 16px 18px}
 }
+
+/* FAQ HERO IMAGE CLEANUP - UPDATED */
+.hero-label,
+.hero-note{
+  display:none !important;
+}
+
+.hero-img-main:after,
+.hero-img-small:after{
+  display:none !important;
+}
+
+.hero-img-main{
+  right:0 !important;
+  top:0 !important;
+  width:100% !important;
+  height:75% !important;
+}
+
+.hero-img-small{
+  left:0 !important;
+  bottom:20px !important;
+  width:65% !important;
+  height:42% !important;
+}
+
+.hero-visual{
+  min-height:620px !important;
+}
+
+@media(max-width:980px){
+  .hero-img-main{
+    width:100% !important;
+    height:70% !important;
+  }
+
+  .hero-img-small{
+    width:70% !important;
+    height:32% !important;
+    bottom:20px !important;
+  }
+
+  .hero-visual{
+    min-height:500px !important;
+  }
+}
+
+@media(max-width:560px){
+  .hero-visual{
+    min-height:455px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -255,16 +309,13 @@ button{font-family:inherit}
     <div class="hero-visual reveal">
       <div class="hero-img-main">
         <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1300&q=85" alt="Website design planning and interface screens">
-        <span class="hero-label">Website Questions</span>
+        
       </div>
       <div class="hero-img-small">
         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85" alt="Modern office website consultation">
-        <span class="hero-label">Project Guidance</span>
+        
       </div>
-      <div class="hero-note">
-        <strong>Website Questions Answered</strong>
-        <p>Everything you need to know before choosing a website package.</p>
-      </div>
+
     </div>
   </div>
 </section>
