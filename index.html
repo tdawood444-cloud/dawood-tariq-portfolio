@@ -5,6 +5,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,8 +132,8 @@ button,input,textarea,select{font-family:inherit}
 .browser-second{left:0;bottom:58px;width:56%;height:37%;transform:rotateZ(-5deg)}
 .browser-label{position:absolute;left:18px;bottom:18px;z-index:2;padding:10px 13px;border-radius:999px;background:rgba(0,0,0,.56);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(12px);font-weight:900;color:#fff;font-size:13px}
 .browser-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.65));pointer-events:none}
-.audit-card{position:absolute;right:5%;bottom:0;width:320px;padding:22px;border-radius:26px;background:rgba(8,7,5,.8);border:1px solid var(--line);backdrop-filter:blur(20px);box-shadow:0 28px 80px rgba(0,0,0,.45)}
-.audit-card strong{display:block;font-family:"Manrope",sans-serif;font-size:22px;margin-bottom:8px}.audit-card p{font-size:14px;line-height:1.65;margin:0;color:var(--muted)}
+.browser-main{box-shadow:0 34px 100px rgba(0,0,0,.55),0 0 0 1px rgba(216,180,90,.12)}
+.browser-second{box-shadow:0 28px 80px rgba(0,0,0,.5),0 0 0 1px rgba(87,198,140,.10)}
 .trust-bar{margin-top:32px;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:rgba(255,255,255,.06);box-shadow:0 24px 70px rgba(0,0,0,.28)}
 .trust-item{padding:20px 14px;text-align:center;background:rgba(255,255,255,.035)}.trust-item h3{font-family:"Playfair Display",serif;font-size:30px;color:#fff}.trust-item p{color:var(--muted);font-size:12px;margin-top:4px}
 
@@ -419,8 +420,36 @@ button,input,textarea,select{font-family:inherit}
 .reveal{opacity:0;transform:translateY(26px);transition:1s ease}.reveal.active{opacity:1;transform:translateY(0)}
 
 @media(max-width:1180px){.need-grid{grid-template-columns:repeat(3,1fr)}.service-grid{grid-template-columns:repeat(2,1fr)}.process-grid,.why-grid{grid-template-columns:repeat(2,1fr)}.pricing-banner{grid-template-columns:1fr}.portfolio-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:980px){.contact-strip{grid-template-columns:1fr}.project-form-wrap{grid-template-columns:1fr}.project-form-info{text-align:center}.form-grid{grid-template-columns:1fr}.meet-grid{grid-template-columns:1fr;text-align:center}.meet-points,.need-grid,.faq-mini-grid{grid-template-columns:1fr}.compare-wrap{overflow-x:auto}.compare-table{min-width:720px}.site-header{padding:10px 14px}.brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}.menu-btn{display:grid;place-items:center}.header-cta{display:none}.nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}.nav-links.active{display:flex}.nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}.nav-links a:after{display:none}.hero{min-height:auto;padding:48px 14px 38px}.hero-inner,.specialist-grid,.final-cta{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions,.btn-row{justify-content:center}.btn{width:100%;max-width:340px}.hero-mini{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}.hero-visual{min-height:520px}.browser-main{width:88%;height:58%}.browser-second{width:62%;height:28%;bottom:105px}.audit-card{left:0;right:0;width:auto;bottom:0}.trust-bar{grid-template-columns:repeat(2,1fr)}.trust-item:last-child{grid-column:1/-1}.offer-points,.check-grid,.service-grid,.process-grid,.portfolio-grid,.why-grid,.testimonial-grid{grid-template-columns:1fr}.service-card.featured{grid-column:auto}.pricing-banner{padding:24px}.image-showcase{grid-template-columns:1fr 1fr;grid-template-rows:250px 250px 250px}.showcase-item.large{grid-column:span 2;grid-row:span 1}.final-cta{padding:30px 18px}.final-preview{min-height:260px}}
-@media(max-width:560px){.project-form,.project-form-info{padding:24px}.meet-card{padding:24px}.section{padding:66px 14px}.hero h1{font-size:41px}.hero-visual{min-height:455px}.browser-second{bottom:92px}.hero-mini div{text-align:left}.offer-box{padding:36px 18px;border-radius:28px}.project-img{height:230px}.image-showcase{grid-template-columns:1fr;grid-template-rows:none}.showcase-item,.showcase-item.large{height:245px;grid-column:auto;grid-row:auto}.trust-bar{grid-template-columns:1fr}.trust-item:last-child{grid-column:auto}.specialist-content{padding:24px}.nav-shell{gap:10px}}
+@media(max-width:980px){.contact-strip{grid-template-columns:1fr}.project-form-wrap{grid-template-columns:1fr}.project-form-info{text-align:center}.form-grid{grid-template-columns:1fr}.meet-grid{grid-template-columns:1fr;text-align:center}.meet-points,.need-grid,.faq-mini-grid{grid-template-columns:1fr}.compare-wrap{overflow-x:auto}.compare-table{min-width:720px}.site-header{padding:10px 14px}.brand-logo{width:44px;height:44px}.brand-text h3{font-size:14px}.brand-text p{font-size:10px}.menu-btn{display:grid;place-items:center}.header-cta{display:none}.nav-links{position:fixed;top:70px;left:12px;right:12px;display:none;flex-direction:column;gap:10px;padding:16px;border-radius:24px;background:rgba(5,5,5,.96);border:1px solid rgba(216,180,90,.25);box-shadow:0 24px 80px rgba(0,0,0,.45);backdrop-filter:blur(20px)}.nav-links.active{display:flex}.nav-links a{width:100%;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);text-align:center}.nav-links a:after{display:none}.hero{min-height:auto;padding:48px 14px 38px}.hero-inner,.specialist-grid,.final-cta{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions,.btn-row{justify-content:center}.btn{width:100%;max-width:340px}.hero-mini{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}.hero-visual{min-height:500px}.browser-main{width:88%;height:62%}.browser-second{width:64%;height:31%;bottom:55px}.trust-bar{grid-template-columns:repeat(2,1fr)}.trust-item:last-child{grid-column:1/-1}.offer-points,.check-grid,.service-grid,.process-grid,.portfolio-grid,.why-grid,.testimonial-grid{grid-template-columns:1fr}.service-card.featured{grid-column:auto}.pricing-banner{padding:24px}.image-showcase{grid-template-columns:1fr 1fr;grid-template-rows:250px 250px 250px}.showcase-item.large{grid-column:span 2;grid-row:span 1}.final-cta{padding:30px 18px}.final-preview{min-height:260px}}
+@media(max-width:560px){
+.project-form,.project-form-info{padding:24px}
+.meet-card{padding:24px}
+.section{padding:58px 14px}
+.hero{padding-top:32px;padding-bottom:34px}
+.hero-kicker,.availability-badge{font-size:11px;line-height:1.45;justify-content:center}
+.hero h1{font-size:36px;line-height:1.08;letter-spacing:-1px}
+.hero h2{font-size:17px;line-height:1.55}
+.hero p{font-size:15px;line-height:1.75}
+.hero-visual{min-height:auto;margin-top:26px;perspective:none}
+.browser-stack{position:relative;inset:auto;display:flex;flex-direction:column;gap:14px}
+.browser-card{position:relative;border-radius:24px}
+.browser-main{width:100%;height:240px;right:auto;top:auto;transform:none}
+.browser-second{width:100%;height:185px;left:auto;bottom:auto;transform:none}
+.browser-label{font-size:12px;left:14px;bottom:14px}
+.hero-mini div{text-align:left}
+.offer-box{padding:34px 18px;border-radius:28px}
+.offer-points{gap:10px}
+.project-img{height:230px}
+.image-showcase{grid-template-columns:1fr;grid-template-rows:none}
+.showcase-item,.showcase-item.large{height:245px;grid-column:auto;grid-row:auto}
+.trust-bar{grid-template-columns:1fr;margin-top:24px}
+.trust-item:last-child{grid-column:auto}
+.specialist-content{padding:24px}
+.nav-shell{gap:10px}
+.brand-text h3{font-size:13px}
+.brand-text p{font-size:9.5px}
+}
+
 </style>
 </head>
 <body>
@@ -452,9 +481,9 @@ button,input,textarea,select{font-family:inherit}
     <div class="hero-copy reveal">
       <div class="hero-kicker"><span></span> Premium Website Specialist</div>
       <div class="availability-badge"><span></span> Currently Accepting New Projects • Response Time: 2–4 Hours</div>
-      <h1>Premium <span class="gradient-text">Business Websites</span> Built To Look Professional And Convert Visitors.</h1>
-      <h2>Modern business websites, landing pages, WordPress websites, portfolio pages and redesigns — built mobile-first with premium visuals, clear messaging and a smooth inquiry flow.</h2>
-      <p>I help businesses and personal brands turn their online presence into a clean, trusted and client-ready website with strong service sections, premium image-led design, responsive layout and direct contact options.</p>
+      <h1>I Build <span class="gradient-text">Premium Business Websites</span> That Help You Look Trusted And Get More Inquiries.</h1>
+      <h2>Modern mobile-friendly websites, landing pages, WordPress websites and redesigns for small businesses, service providers and personal brands.</h2>
+      <p>Get a clean, professional website with strong service sections, premium visuals, WhatsApp contact buttons, portfolio proof and a smooth client inquiry flow.</p>
       <div class="btn-row hero-actions">
         <a class="btn btn-primary" href="https://wa.me/923428305707?text=Hi%20Dawood%2C%20I%20want%20to%20build%20a%20premium%20website." target="_blank">Hire Me on WhatsApp</a>
         <a class="btn btn-secondary" href="#portfolio">View My Demo Websites</a>
@@ -475,10 +504,6 @@ button,input,textarea,select{font-family:inherit}
         <div class="browser-card browser-second">
           <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85" alt="Responsive website on laptop">
           <span class="browser-label">Mobile + Laptop Ready</span>
-        </div>
-        <div class="audit-card">
-          <strong>Built For Real Business Growth.</strong>
-          <p>Clear messaging, premium visuals, service presentation, portfolio proof and direct contact options — designed to help visitors become clients.</p>
         </div>
       </div>
     </div>
@@ -743,7 +768,7 @@ button,input,textarea,select{font-family:inherit}
 <section class="section reveal" id="pricing-preview">
   <div class="section-inner">
     <div class="pricing-banner glass">
-      <div><div class="eyebrow">Pricing Preview</div><h2>Choose a website package based on your business goal.</h2><p>Pricing depends on pages, features, design level, images, forms, animations and publishing support.</p></div>
+      <div><div class="eyebrow">Pricing Preview</div><h2>Choose a website package based on your business goal.</h2><p>Pricing depends on pages, features, design level, images, forms, animations and publishing support.</p><p style="color:#f3d890;font-weight:800;margin-top:8px;">Starter local packages available from 15,000 PKR. Domain and hosting are not included. I can launch on free GitHub hosting or connect your paid hosting/domain.</p></div>
       <div class="pricing-mini">
         <div><span>Landing Page</span><strong>$80+</strong></div>
         <div><span>Business Website</span><strong>$150+</strong></div>
@@ -902,6 +927,8 @@ button,input,textarea,select{font-family:inherit}
             <label for="budgetRange">Budget range</label>
             <select id="budgetRange" required>
               <option value="">Choose budget range</option>
+              <option>15,000 - 25,000 PKR</option>
+              <option>25,000 - 50,000 PKR</option>
               <option>$80 - $150</option>
               <option>$150 - $250</option>
               <option>$250 - $500</option>
